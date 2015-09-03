@@ -15,6 +15,7 @@ public class View {
     }
 
     public String welcomeMesasge() {
+        System.out.println(message);
         return message;
     }
 

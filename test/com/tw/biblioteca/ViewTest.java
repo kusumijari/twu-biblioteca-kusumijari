@@ -14,16 +14,10 @@ public class ViewTest {
     }
 
     @Test
-    public void shouldShowDisplayNothingWhenThereIsNoList() {
-        View view = new View(" ");
-
-        assertEquals(" ", view.showBookList());
-    }
-
-    @Test
     public void shouldDisplayTheBookList() {
         View view = new View("Showing book list");
 
         assertEquals("Harry Potter"+"Tale of Two Cities", view.showBookList());
     }
+
 }
