@@ -8,10 +8,9 @@ public class DisplayTest {
 
    @Test
    public void shouldShowWelcomeMessage() {
-      Display display = new Display("Hello!");
+      Display display = new Display("Hello!Welcome to biblioteca");
 
-      assertEquals("Hello!", display.welcomeMesasge());
+      assertEquals("Hello!Welcome to biblioteca", display.welcomeMesasge());
    }
-
 
 }
