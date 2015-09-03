@@ -22,8 +22,8 @@ public class ViewTest {
 
     @Test
     public void shouldDisplayTheBookList() {
-        View view = new View("Harry Potter and the Sorcerer's Stone");
+        View view = new View("Showing book list");
 
-        assertEquals("Harry Potter and the Sorcerer's Stone", view.showBookList());
+        assertEquals("Harry Potter"+"Tale of Two Cities", view.showBookList());
     }
 }
