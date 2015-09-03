@@ -13,4 +13,17 @@ public class ViewTest {
         assertEquals("Hello!Welcome to biblioteca", view.welcomeMesasge());
     }
 
+    @Test
+    public void shouldShowDisplayNothingWhenThereIsNoList() {
+        View view = new View(" ");
+
+        assertEquals(" ", view.showBookList());
+    }
+
+    @Test
+    public void shouldDisplayTheBookList() {
+        View view = new View("Harry Potter and the Sorcerer's Stone");
+
+        assertEquals("Harry Potter and the Sorcerer's Stone", view.showBookList());
+    }
 }
