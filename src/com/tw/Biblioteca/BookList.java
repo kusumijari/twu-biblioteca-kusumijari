@@ -12,7 +12,9 @@ public class BookList {
         booklist.add("Tale of Two Cities");
     }
 
-    public Object getBooks() {
-        return booklist.get(0)+booklist.get(1);
+    public void displayBooks () {
+        for (String book : booklist) {
+            System.out.println(book);
+        }
     }
 }
