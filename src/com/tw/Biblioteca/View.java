@@ -14,9 +14,8 @@ public class View {
 
     }
 
-    public String welcomeMesasge() {
+    public void welcomeMesasge() {
         System.out.println(message);
-        return message;
     }
 
     public String showBookList() {

@@ -1,16 +1,27 @@
 package com.tw.biblioteca;
 
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
 
 import static org.junit.Assert.assertEquals;
 
 public class ViewTest {
 
-    @Test
-    public void shouldShowWelcomeMessage() {
-        View view = new View("Hello!Welcome to biblioteca");
+    private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 
-        assertEquals("Hello!Welcome to biblioteca", view.welcomeMesasge());
+    @Before
+    public void setUpStreams() {
+        System.setOut(new PrintStream(outContent));
+    }
+
+    @Test
+    public void out() {
+        System.out.println("Welcome to Biblioteca");
+        assertEquals("Welcome to Biblioteca\n", outContent.toString());
     }
 
     @Test
@@ -20,4 +31,8 @@ public class ViewTest {
         assertEquals("Harry Potter"+"Tale of Two Cities", view.showBookList());
     }
 
+    @After
+    public void cleanUpStreams() {
+        System.setOut(System.out);
+    }
 }
