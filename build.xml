@@ -1,10 +1,10 @@
 <?xml version = "1.0"?>
-<project name="Line" default="report" basedir="." xmlns:jacoco="antlib:org.jacoco.ant">
+<project name="BibliotecaVersion1" default="report" basedir="." xmlns:jacoco="antlib:org.jacoco.ant">
     <property name = "project.name" value="BibliotecaVersion1" />
     <property name = "main.name" value="Application" />
     <property name = "package.name" value="com.tw.biblioteca" />
     <taskdef uri="antlib:org.jacoco.ant" resource="org/jacoco/ant/antlib.xml">
-        <classpath path="./lib/jacocoant.jar" />
+        <classpath path="lib/jacocoant.jar" />
     </taskdef>
     <target name="build" depends="clean">
         <mkdir dir="out"/>
