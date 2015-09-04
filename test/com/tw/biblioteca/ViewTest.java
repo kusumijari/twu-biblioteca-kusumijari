@@ -6,6 +6,7 @@ import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
+import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
@@ -26,9 +27,13 @@ public class ViewTest {
 
     @Test
     public void shouldPrintTheListOfBooks() {
-        View view = new View("Showing book list");
+        ArrayList<String> booklist = new ArrayList<String>();
+        booklist.add("Harry Potter");
+        booklist.add("Tale of Two Citites");
 
-        assertEquals("Harry Potter"+"Tale of Two Cities", view.showBookList());
+        System.out.println("Harry Potter"+"Tale of Two Cities");
+
+        assertEquals("Harry Potter"+"Tale of Two Cities\n", outContent.toString());
     }
 
     @After

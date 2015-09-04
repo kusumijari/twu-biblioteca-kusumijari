@@ -9,8 +9,9 @@ public class View {
     String message;
     ArrayList<String>  bookList = new ArrayList<String>();
 
-    public View(String message) {
+    public View(String message, ArrayList<String> bookList) {
         this.message = message;
+        this.bookList = bookList;
 
     }
 
@@ -18,9 +19,7 @@ public class View {
         System.out.println(message);
     }
 
-    public String showBookList() {
-        bookList.add("Harry Potter");
-        bookList.add("Tale of Two Cities");
-        return (bookList.get(0) + bookList.get(1));
+    public void showBookList() {
+        System.out.println(bookList.get(0).toString() + bookList.get(1).toString());
     }
 }
