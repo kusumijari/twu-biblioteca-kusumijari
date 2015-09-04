@@ -19,13 +19,13 @@ public class ViewTest {
     }
 
     @Test
-    public void out() {
+    public void shouldPrintWelcomeMessage() {
         System.out.println("Welcome to Biblioteca");
         assertEquals("Welcome to Biblioteca\n", outContent.toString());
     }
 
     @Test
-    public void shouldDisplayTheBookList() {
+    public void shouldPrintTheListOfBooks() {
         View view = new View("Showing book list");
 
         assertEquals("Harry Potter"+"Tale of Two Cities", view.showBookList());
