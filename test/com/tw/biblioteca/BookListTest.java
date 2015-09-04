@@ -20,8 +20,8 @@ public class BookListTest {
 
     @Test
     public void shouldDisplayTheBookList() {
-        System.out.println("Harry Potter\tJ. K. Rowling\t1997\nTale Of Two Cities\tCharles Dickens\t1997");
-        assertEquals("Harry Potter\tJ. K. Rowling\t1997\nTale Of Two Cities\tCharles Dickens\t1997\n", outContent.toString());
+        System.out.println("Harry Potter\tJ. K. Rowling\t1997\nTale Of Two Cities\tCharles Dickens\t1859");
+        assertEquals("Harry Potter\tJ. K. Rowling\t1997\nTale Of Two Cities\tCharles Dickens\t1859\n", outContent.toString());
     }
 
     @After
