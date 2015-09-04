@@ -8,8 +8,8 @@ public class BookList {
     private ArrayList<String> booklist = new ArrayList<String>();
 
     BookList(){
-        booklist.add("Harry Potter");
-        booklist.add("Tale of Two Cities");
+        booklist.add("Harry Potter\tJ. K. Rowling\t1997");
+        booklist.add("Tale of Two Cities\tCharles Dickens\t1859");
     }
 
     public void displayBooks () {
