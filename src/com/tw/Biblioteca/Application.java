@@ -7,8 +7,11 @@ public class Application {
         ArrayList<String> bookList = new ArrayList<String>();
         bookList.add("Harry Potter");
         bookList.add("Tale of two cities");
-        View view = new View("Welcome to Biblioteca!", bookList);
-        view.welcomeMesasge();
-        view.showBookList();
+        Application application = new Application();
+        application.start();
+    }
+
+    private void start() {
+        System.out.println("Welcome to biblioteca");
     }
 }
