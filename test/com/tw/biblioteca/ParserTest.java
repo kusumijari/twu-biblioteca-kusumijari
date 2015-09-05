@@ -42,4 +42,11 @@ public class ParserTest {
 
         assertFalse(parser.isValid());
     }
+
+    @Test
+    public void shouldExitObjectIfOptionIsTwo() {
+        Parser parser = new Parser("2");
+
+        assertEquals(Exit.class, parser.createMenuItem().getClass());
+    }
 }

@@ -32,6 +32,9 @@ public class Parser {
                 list.add(book2);
                 return new BookList(list);
             }
+            else if(convertToInt() == 2) {
+                return new Exit();
+            }
         }
         return new InvalidMenuItem();
     }
