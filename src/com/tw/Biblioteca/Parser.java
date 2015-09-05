@@ -12,19 +12,19 @@ public class Parser {
     }
 
     public boolean isValid() {
-        if(option.matches("[0-9]+") && convertToInt() > 0 && convertToInt() <= 2 ) {
+        if(option.matches("[0-9]+") && convertOptionToInt() > 0 && convertOptionToInt() <= 2 ) {
             return true;
         }
         return false;
     }
 
-    private int convertToInt() {
+    private int convertOptionToInt() {
         return Integer.parseInt(option);
     }
 
     public MenuItem createMenuItem() {
         if(isValid()) {
-            if (convertToInt() == 1) {
+            if (convertOptionToInt() == 1) {
                 ArrayList<Book> list = new ArrayList<>();
                 Book book1 = new Book("Harry Potter", "J. K. Rowling", 1997);
                 Book book2 = new Book("Tale of Two Cities", "Charles Dickens", 1859);
@@ -32,7 +32,7 @@ public class Parser {
                 list.add(book2);
                 return new BookList(list);
             }
-            else if(convertToInt() == 2) {
+            else if(convertOptionToInt() == 2) {
                 return new Exit();
             }
         }
