@@ -28,4 +28,11 @@ public class ParserTest {
 
         assertEquals(BookList.class, parser.createMenuItem().getClass());
     }
+
+    @Test
+    public void shouldReturnInvalidMenuItemObjectIfAnIncorrectOptionIsEntered() {
+        Parser parser = new Parser("2");
+
+        assertEquals(InvalidMenuItem.class, parser.createMenuItem().getClass());
+    }
 }

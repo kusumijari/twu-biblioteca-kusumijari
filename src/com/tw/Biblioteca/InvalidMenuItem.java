@@ -12,5 +12,5 @@ public class InvalidMenuItem implements MenuItem{
     public void execute() {
         System.out.println(errorMessage);
     }
-    
+
 }

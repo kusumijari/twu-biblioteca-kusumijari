@@ -23,14 +23,16 @@ public class Parser {
     }
 
     public MenuItem createMenuItem() {
-        if(convertToInt() == 1){
-            ArrayList<Book> list = new ArrayList<>();
-            Book book1 = new Book("Harry Potter", "J. K. Rowling", 1997);
-            Book book2 = new Book("Tale of Two Cities", "Charles Dickens", 1859);
-            list.add(book1);
-            list.add(book2);
-            return new BookList(list);
+        if(isValid()) {
+            if (convertToInt() == 1) {
+                ArrayList<Book> list = new ArrayList<>();
+                Book book1 = new Book("Harry Potter", "J. K. Rowling", 1997);
+                Book book2 = new Book("Tale of Two Cities", "Charles Dickens", 1859);
+                list.add(book1);
+                list.add(book2);
+                return new BookList(list);
+            }
         }
-        return null;
+        return new InvalidMenuItem();
     }
 }
