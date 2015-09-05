@@ -2,14 +2,15 @@
 
 package com.tw.biblioteca;
 
-public class InvalidMenuItem {
+public class InvalidMenuItem implements MenuItem{
 
     String errorMessage;
     InvalidMenuItem() {
         this.errorMessage = "Select a valid option!";
     }
 
-    public void showErrorMessage() {
+    public void execute() {
         System.out.println(errorMessage);
     }
+    
 }

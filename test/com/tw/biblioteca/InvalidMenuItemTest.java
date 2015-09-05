@@ -23,7 +23,7 @@ public class InvalidMenuItemTest {
     public void shouldPrintWelcomeMessage() {
         InvalidMenuItem invalidMenuItem = new InvalidMenuItem();
 
-        invalidMenuItem.showErrorMessage();
+        invalidMenuItem.execute();
 
         assertEquals("Select a valid option!\n", outContent.toString());
     }
