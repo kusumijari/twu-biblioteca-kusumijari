@@ -14,9 +14,14 @@ public class BookList {
         booklist.add(book2);
     }
 
-    public void displayBooks () {
-        for (Book book : booklist) {
-            System.out.println(book);
+    @Override
+    public String toString () {
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("Name\tAuthor\tYear\n");
+
+        for(Book book : booklist) {
+            stringBuilder.append(book.toString()+"\n");
         }
+        return stringBuilder.toString();
     }
 }

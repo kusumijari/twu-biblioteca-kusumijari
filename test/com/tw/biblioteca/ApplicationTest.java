@@ -23,6 +23,7 @@ public class ApplicationTest {
         System.out.println("Welcome to Biblioteca");
         assertEquals("Welcome to Biblioteca\n", outContent.toString());
     }
+
     @After
     public void cleanUpStreams() {
         System.setOut(System.out);

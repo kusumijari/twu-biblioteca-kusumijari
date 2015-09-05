@@ -9,6 +9,6 @@ public class Application {
     private void start() {
         System.out.println("Welcome to biblioteca");
         BookList bookList = new BookList();
-        bookList.displayBooks();
+
     }
 }
