@@ -10,9 +10,13 @@ public class Parser {
     }
 
     public boolean isValid() {
-        if(option.matches("[0-9]+")) {
+        if(option.matches("[0-9]+") && convertToInt() == 1) {
             return true;
         }
         return false;
+    }
+
+    private int convertToInt() {
+        return Integer.parseInt(option);
     }
 }

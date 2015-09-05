@@ -2,6 +2,7 @@ package com.tw.biblioteca;
 
 import org.junit.Test;
 
+import static junit.framework.TestCase.assertFalse;
 import static junit.framework.TestCase.assertTrue;
 
 public class ParserTest {
@@ -11,6 +12,13 @@ public class ParserTest {
         Parser parser = new Parser("1");
 
         assertTrue(parser.isValid());
+    }
+
+    @Test
+    public void shouldReturnFalseIfTheOptionEnteredIsNotAValidMenuOption() {
+        Parser parser = new Parser("2");
+
+        assertFalse(parser.isValid());
     }
 
 

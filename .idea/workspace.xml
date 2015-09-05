@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="528a0a30-9017-42bc-b3cb-0d89ad771639" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/tw/biblioteca/ParserTest.java" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Controller.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Display.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Keyboard.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Parser.java" afterPath="$PROJECT_DIR$/src/com/tw/biblioteca/Parser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/tw/biblioteca/ParserTest.java" afterPath="$PROJECT_DIR$/test/com/tw/biblioteca/ParserTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BibliotecaVersion1.iws" />
@@ -42,10 +43,11 @@
         <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Parser.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+              <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
               <folding>
                 <element signature="e#157#158#0" expanded="true" />
                 <element signature="e#193#194#0" expanded="true" />
+                <element signature="e#431#432#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -54,8 +56,8 @@
       <file leaf-file-name="ParserTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/ParserTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2238806">
-              <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.49751243">
+              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -207,8 +209,8 @@
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/BookList.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/View.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Application.java" />
-        <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Parser.java" />
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/ParserTest.java" />
+        <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Parser.java" />
       </list>
     </option>
   </component>
@@ -317,6 +319,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/kusumi/IdeaProjects/BibliotecaVersion1/test/com/tw/biblioteca/DisplayTest.java" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
@@ -330,33 +333,7 @@
       <recent name="$PROJECT_DIR$/lib" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ParserTest.shouldReturnTrueIfTheOptionEnteredIsAnInteger">
-    <configuration default="false" name="MenuTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.tw.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="BibliotecaVersion1" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.tw.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.biblioteca.MenuTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.ParserTest.shouldReturnFalseIfTheOptionEnteredIsNotAValidMenuOption">
     <configuration default="false" name="MenuTest.shouldPerformTheAppropriateMenuFunction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -448,6 +425,32 @@
       <option name="PACKAGE_NAME" value="com.tw.biblioteca" />
       <option name="MAIN_CLASS_NAME" value="com.tw.biblioteca.ParserTest" />
       <option name="METHOD_NAME" value="shouldReturnTrueIfTheOptionEnteredIsAnInteger" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ParserTest.shouldReturnFalseIfTheOptionEnteredIsNotAValidMenuOption" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.tw.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="BibliotecaVersion1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.tw.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.biblioteca.ParserTest" />
+      <option name="METHOD_NAME" value="shouldReturnFalseIfTheOptionEnteredIsNotAValidMenuOption" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -670,19 +673,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.MenuTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.MenuTest.shouldPerformTheAppropriateMenuFunction" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.BookListTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.BookListTest.shouldDisplayTheBookList" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ParserTest.shouldReturnTrueIfTheOptionEnteredIsAnInteger" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.MenuTest.shouldPerformTheAppropriateMenuFunction" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.BookListTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.BookListTest.shouldDisplayTheBookList" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ParserTest.shouldReturnTrueIfTheOptionEnteredIsAnInteger" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ParserTest.shouldReturnFalseIfTheOptionEnteredIsNotAValidMenuOption" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ParserTest.shouldReturnTrueIfTheOptionEnteredIsAnInteger" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BookListTest.shouldDisplayTheBookList" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.BookListTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.MenuTest.shouldPerformTheAppropriateMenuFunction" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.MenuTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ParserTest.shouldReturnFalseIfTheOptionEnteredIsNotAValidMenuOption" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ParserTest.shouldReturnTrueIfTheOptionEnteredIsAnInteger" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BookListTest.shouldDisplayTheBookList" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.BookListTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.MenuTest.shouldPerformTheAppropriateMenuFunction" />
       </list>
     </recent_temporary>
   </component>
@@ -950,18 +953,19 @@
     <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Parser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
           <folding>
             <element signature="e#157#158#0" expanded="true" />
             <element signature="e#193#194#0" expanded="true" />
+            <element signature="e#431#432#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/ParserTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2238806">
-          <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.49751243">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
