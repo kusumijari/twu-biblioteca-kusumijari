@@ -16,7 +16,7 @@ public class ParserTest {
     }
 
     @Test
-    public void shouldReturnFalseIfTheOptionEnteredIsNotAValidMenuOption() {
+    public void shouldReturnFalseIfTheOptionEnteredIsAValueGreaterThanTheAvailableOptions() {
         Parser parser = new Parser("3");
 
         assertFalse(parser.isValid());
