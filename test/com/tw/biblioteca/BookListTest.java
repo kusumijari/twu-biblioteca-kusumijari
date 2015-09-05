@@ -6,6 +6,7 @@ import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
+import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
@@ -20,9 +21,13 @@ public class BookListTest {
 
     @Test
     public void shouldDisplayTheBookList() {
-        BookList bookList = new BookList();
+        ArrayList<Book>  list = new ArrayList<Book>();
+        list.add(new Book("Harry Potter", "J. K. Rowling", 1997));
+        BookList bookList = new BookList(list);
 
-        assertEquals("Name\tAuthor\tYear\nHarry Potter\tJ. K. Rowling\t1997\nTale of Two Cities\tCharles Dickens\t1859\n", bookList.toString());
+        bookList.execute();
+
+        assertEquals("Name\tAuthor\tYear\nHarry Potter\tJ. K. Rowling\t1997\n", outContent.toString());
     }
 
     @After

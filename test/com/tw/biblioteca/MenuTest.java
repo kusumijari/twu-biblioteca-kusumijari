@@ -13,10 +13,5 @@ public class MenuTest {
         assertEquals("Menu\n1. List Books\n", menu.toString());
     }
 
-    @Test
-    public void shouldPerformTheAppropriateMenuFunction() {
-        Menu menu = new Menu();
 
-        assertEquals("Name\tAuthor\tYear\nHarry Potter\tJ. K. Rowling\t1997\nTale of Two Cities\tCharles Dickens\t1859\n", menu.callFunction("1"));
-    }
 }

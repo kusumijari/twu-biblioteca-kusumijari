@@ -4,7 +4,6 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
@@ -13,7 +12,6 @@ import static org.junit.Assert.assertEquals;
 public class ViewTest {
 
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-    private final ByteArrayInputStream inContent = new ByteArrayInputStream("1".getBytes());
 
     @Before
     public void setUpStreams() {

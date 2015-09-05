@@ -19,12 +19,4 @@ public class Menu {
         }
         return stringBuilder.toString();
     }
-
-    public String callFunction(String option) {
-        if(option == "1") {
-            BookList booklist = new BookList();
-            return booklist.toString();
-        }
-        return null;
-    }
 }
