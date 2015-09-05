@@ -1,6 +1,8 @@
-//should display any message it receives
+//Interacts with the user
 
 package com.tw.biblioteca;
+
+import java.util.Scanner;
 
 public class View {
 
@@ -12,5 +14,10 @@ public class View {
 
     public void displayMessage() {
         System.out.println(message);
+    }
+
+    public String getInput() {
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextLine();
     }
 }

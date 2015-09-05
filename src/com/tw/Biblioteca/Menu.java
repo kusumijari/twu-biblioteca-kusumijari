@@ -1,4 +1,4 @@
-//contains a menu list that can be displayed and calls the appropritate function based on the user input
+//contains a menu list that can be displayed
 
 package com.tw.biblioteca;
 
@@ -6,7 +6,6 @@ import java.util.ArrayList;
 
 public class Menu {
     ArrayList<String> menu= new ArrayList<String>();
-
     Menu() {
         menu.add("1. List Books");
     }
@@ -19,5 +18,13 @@ public class Menu {
             stringBuilder.append(menuItem+"\n");
         }
         return stringBuilder.toString();
+    }
+
+    public String callFunction(String option) {
+        if(option == "1") {
+            BookList booklist = new BookList();
+            return booklist.toString();
+        }
+        return null;
     }
 }

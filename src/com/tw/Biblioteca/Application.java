@@ -8,7 +8,8 @@ public class Application {
 
     private void start() {
         View view = new View("Welcome to Biblioteca");
-        BookList bookList = new BookList();
-
+        Menu menu = new Menu();
+        view = new View(menu.toString());
+        menu.callFunction(view.getInput());
     }
 }
