@@ -9,8 +9,12 @@ public class Application {
     private void start() {
         View view = new View("Welcome to Biblioteca");
         view.displayMessage();
+
         Menu menu = new Menu();
         view = new View(menu.toString());
-        view.getInput();
+        Parser parser = new Parser(view.getInput());
+
+        MenuItem menuItem = parser.createMenuItem();
+        menuItem.execute();
     }
 }
