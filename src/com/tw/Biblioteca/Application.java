@@ -10,11 +10,12 @@ public class Application {
         View view = new View("Welcome to Biblioteca");
         view.displayMessage();
 
-        Menu menu = new Menu();
-        view = new View(menu.toString());
-        Parser parser = new Parser(view.getInput());
-
-        MenuItem menuItem = parser.createMenuItem();
-        menuItem.execute();
+        while(true) {
+            Menu menu = new Menu();
+            view = new View(menu.toString());
+            Parser parser = new Parser(view.getInput());
+            MenuItem menuItem = parser.createMenuItem();
+            menuItem.execute();
+        }
     }
 }
