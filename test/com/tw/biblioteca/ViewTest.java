@@ -9,7 +9,7 @@ import java.io.PrintStream;
 
 import static org.junit.Assert.assertEquals;
 
-public class ApplicationTest {
+public class ViewTest {
 
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 
@@ -20,7 +20,10 @@ public class ApplicationTest {
 
     @Test
     public void shouldPrintWelcomeMessage() {
-        System.out.println("Welcome to Biblioteca");
+        View view = new View("Welcome to Biblioteca");
+
+        view.displayMessage();
+
         assertEquals("Welcome to Biblioteca\n", outContent.toString());
     }
 
@@ -28,5 +31,4 @@ public class ApplicationTest {
     public void cleanUpStreams() {
         System.setOut(System.out);
     }
-
 }

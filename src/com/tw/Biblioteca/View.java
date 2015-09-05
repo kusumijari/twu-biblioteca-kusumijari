@@ -1,25 +1,16 @@
-//Displays any message
+//should display any message it receives
 
 package com.tw.biblioteca;
-
-import java.util.ArrayList;
 
 public class View {
 
     String message;
-    ArrayList<String>  bookList = new ArrayList<String>();
 
-    public View(String message, ArrayList<String> bookList) {
+    public View(String message) {
         this.message = message;
-        this.bookList = bookList;
-
     }
 
-    public void welcomeMesasge() {
+    public void displayMessage() {
         System.out.println(message);
-    }
-
-    public void showBookList() {
-        System.out.println(bookList.get(0).toString() + bookList.get(1).toString());
     }
 }

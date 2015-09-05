@@ -7,7 +7,7 @@ public class Application {
     }
 
     private void start() {
-        System.out.println("Welcome to biblioteca");
+        View view = new View("Welcome to Biblioteca");
         BookList bookList = new BookList();
 
     }
