@@ -8,6 +8,7 @@ public class Menu {
     ArrayList<String> menu= new ArrayList<String>();
     Menu() {
         menu.add("1. List Books");
+        menu.add("2. Exit");
     }
 
     @Override

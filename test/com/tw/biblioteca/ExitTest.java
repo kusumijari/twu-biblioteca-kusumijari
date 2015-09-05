@@ -14,6 +14,4 @@ public class ExitTest {
         exit.expectSystemExit();
         System.exit(0);
     }
-
-
 }
