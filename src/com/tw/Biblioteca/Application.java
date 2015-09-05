@@ -19,5 +19,6 @@ public class Application {
         BookList bookList = new BookList(list);
         Menu menu = new Menu();
         view = new View(menu.toString());
+        view.getInput();
     }
 }
