@@ -10,7 +10,7 @@ public class MenuTest {
     public void shouldReturnTheAvailableMenu() {
         Menu menu = new Menu();
 
-        assertEquals("Menu\n1. List Books\n", menu.toString());
+        assertEquals("Menu\n1. List Books\n2. Exit\n", menu.toString());
     }
 
 
