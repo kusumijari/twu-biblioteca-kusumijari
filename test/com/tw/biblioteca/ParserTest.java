@@ -17,7 +17,7 @@ public class ParserTest {
 
     @Test
     public void shouldReturnFalseIfTheOptionEnteredIsNotAValidMenuOption() {
-        Parser parser = new Parser("2");
+        Parser parser = new Parser("3");
 
         assertFalse(parser.isValid());
     }
@@ -34,5 +34,12 @@ public class ParserTest {
         Parser parser = new Parser("2");
 
         assertEquals(InvalidMenuItem.class, parser.createMenuItem().getClass());
+    }
+
+    @Test
+    public void shouldReturnFalseIfTheOptionEnteredIsANegativeNumber() {
+        Parser parser = new Parser("-1");
+
+        assertFalse(parser.isValid());
     }
 }
