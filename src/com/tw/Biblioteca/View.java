@@ -9,10 +9,12 @@ public class View {
     String message;
 
     public View(String message) {
+
         this.message = message;
     }
 
     public void displayMessage() {
+
         System.out.println(message);
     }
 

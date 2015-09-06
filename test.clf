@@ -1,0 +1,28 @@
+// Charset: UTF-8
+// ///////////////////////////////
+// 
+// Start Session
+// 
+// 06.09.2015 08:24:49.269
+// 
+// ///////////////////////////////
+// 06.09.2015 08:24:49.269
+TEST_SESSION_CONTAINER "1e72f43a-c56c-4eb9-b941-30775e66654e"
+START_TEST_CASE "UNNAMED TESTCASE" 1441527889269 "This is a test case containing all coverage results cause no startTestCase methods where captured."
+START_SECTION "com.tw.biblioteca.Application.java"
+S1 1
+S3 1
+START_SECTION "com.tw.biblioteca.View.java"
+S1 1
+S2 1
+// 06.09.2015 08:24:49.393
+// 00:00.124
+END_TEST_CASE "UNNAMED TESTCASE" 1441527889393
+// ///////////////////////////////
+// 
+// End Session
+// 
+// 06.09.2015 08:24:49.394
+// 00:00.125
+// 
+// ///////////////////////////////

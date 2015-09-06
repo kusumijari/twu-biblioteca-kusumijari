@@ -25,7 +25,7 @@ public class Parser {
     public MenuItem createMenuItem() {
         if(isValid()) {
             if (convertOptionToInt() == 1) {
-                ArrayList<Book> list = new ArrayList<>();
+                ArrayList<Book> list = new ArrayList<Book>();
                 Book book1 = new Book("Harry Potter", "J. K. Rowling", 1997);
                 Book book2 = new Book("Tale of Two Cities", "Charles Dickens", 1859);
                 list.add(book1);
