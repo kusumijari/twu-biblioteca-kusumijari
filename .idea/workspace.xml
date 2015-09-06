@@ -6,59 +6,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Controller.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Display.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Keyboard.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Application.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Application.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$76mvy2cvdcgd41.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$76mvy2cvdcgd41.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$7ig916vgckhhep.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$7ig916vgckhhep.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$8db22my9e9gj8h.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$8db22my9e9gj8h.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$8kslbrqesm7jjakfe6at3iw06xiq5wh.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$8kslbrqesm7jjakfe6at3iw06xiq5wh.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$9cekq05zmc7k9t.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$9cekq05zmc7k9t.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$c7jzv3fosvccawach.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$c7jzv3fosvccawach.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$e6b4rt4ctc7yojpgfq75.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$e6b4rt4ctc7yojpgfq75.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$gii4c0tpm5key2cjebtt.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$gii4c0tpm5key2cjebtt.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/View.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/View.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Application.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Application.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Book.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Book.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/BookList.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/BookList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Exit.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Exit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/InvalidMenuItem.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/InvalidMenuItem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Menu.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Menu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/MenuItem.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/MenuItem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Parser.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Parser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/View.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/View.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codecover.xml" afterPath="$PROJECT_DIR$/codecover.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html-files/com/index.html" afterPath="$PROJECT_DIR$/report.html-files/com/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html-files/com/tw/index.html" afterPath="$PROJECT_DIR$/report.html-files/com/tw/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/index.html" afterPath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/application/index.html" afterPath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/application/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/application/main/index.html" afterPath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/application/main/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/application/start/index.html" afterPath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/application/start/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/book/index.html" afterPath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/book/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/book/book/index.html" afterPath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/book/book/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/book/tostring/index.html" afterPath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/book/tostring/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/booklist/index.html" afterPath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/booklist/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/booklist/booklist/index.html" afterPath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/booklist/booklist/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/booklist/execute/index.html" afterPath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/booklist/execute/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/exit/index.html" afterPath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/exit/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/exit/execute/index.html" afterPath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/exit/execute/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/invalidmenuitem/index.html" afterPath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/invalidmenuitem/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/invalidmenuitem/execute/index.html" afterPath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/invalidmenuitem/execute/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/invalidmenuitem/invalidmenuitem/index.html" afterPath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/invalidmenuitem/invalidmenuitem/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/menu/index.html" afterPath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/menu/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/menu/menu/index.html" afterPath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/menu/menu/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/menu/tostring/index.html" afterPath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/menu/tostring/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/menuitem/index.html" afterPath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/menuitem/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/menuitem/execute/index.html" afterPath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/menuitem/execute/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/parser/index.html" afterPath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/parser/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/parser/convertoptiontoint/index.html" afterPath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/parser/convertoptiontoint/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/parser/createmenuitem/index.html" afterPath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/parser/createmenuitem/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/parser/isvalid/index.html" afterPath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/parser/isvalid/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/parser/parser/index.html" afterPath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/parser/parser/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/view/index.html" afterPath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/view/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/view/displaymessage/index.html" afterPath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/view/displaymessage/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/view/view/index.html" afterPath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/view/view/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html" afterPath="$PROJECT_DIR$/report.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.clf" afterPath="$PROJECT_DIR$/test.clf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BibliotecaVersion1.iws" />
@@ -81,11 +28,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Application.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37313432">
-              <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.07462686">
+              <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -840,14 +797,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.046511628">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/BibliotecaVersion1.jar!/com/tw/biblioteca/ViewTest.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14563107">
@@ -1045,8 +994,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37313432">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07462686">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
           <folding />
         </state>
       </provider>
