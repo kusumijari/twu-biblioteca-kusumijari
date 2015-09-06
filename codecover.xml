@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><TestSessionContainer xmlns="http://www.codecover.org/xml/testsession-container" Date="1441527886410" TestSessionContainerId="1e72f43a-c56c-4eb9-b941-30775e66654e" version="1.0">
+<?xml version="1.0" encoding="UTF-8"?><TestSessionContainer xmlns="http://www.codecover.org/xml/testsession-container" Date="1441528658782" TestSessionContainerId="1444954b-5a58-4c0b-ac21-4e241ff4ee4c" version="1.0">
 <SrcFileList>
 <SrcFile Content="package com.tw.biblioteca;&#10;&#10;public interface MenuItem {&#10;        public void execute();&#10;}&#10;" Filename="MenuItem.java" Intrnl_Id="1"/>
 <SrcFile Content="//Contains a list of books which can be displayed&#10;&#10;package com.tw.biblioteca;&#10;&#10;import java.util.ArrayList;&#10;&#10;public class BookList implements MenuItem{&#10;&#10;    ArrayList&lt;Book&gt; booklist= new ArrayList&lt;Book&gt;();&#10;&#10;    BookList(ArrayList&lt;Book&gt; booklist) {&#10;        this.booklist = booklist;&#10;    }&#10;&#10;&#10;    @Override&#10;    public void execute() {&#10;&#10;        StringBuilder stringBuilder = new StringBuilder();&#10;        stringBuilder.append(&quot;Name\tAuthor\tYear\n&quot;);&#10;&#10;        for(Book book : booklist) {&#10;            stringBuilder.append(book.toString()+&quot;\n&quot;);&#10;        }&#10;&#10;        System.out.print(stringBuilder.toString());&#10;    }&#10;}&#10;" Filename="BookList.java" Intrnl_Id="2"/>
-<SrcFile Content="package com.tw.biblioteca;&#10;&#10;public class Application {&#10;    public static void main(String[] args) {&#10;        Application application = new Application();&#10;        application.start();&#10;    }&#10;&#10;    private void start() {&#10;        View view = new View(&quot;Welcome to Biblioteca&quot;);&#10;        view.displayMessage();&#10;&#10;        //while(true) {&#10;            Menu menu = new Menu();&#10;            view = new View(menu.toString());&#10;            Parser parser = new Parser(view.getInput());&#10;            MenuItem menuItem = parser.createMenuItem();&#10;            menuItem.execute();&#10;        //}&#10;    }&#10;}&#10;" Filename="Application.java" Intrnl_Id="3"/>
-<SrcFile Content="//Interacts with the user&#10;&#10;package com.tw.biblioteca;&#10;&#10;import java.util.Scanner;&#10;&#10;public class View {&#10;&#10;    String message;&#10;&#10;    public View(String message) {&#10;&#10;        this.message = message;&#10;    }&#10;&#10;    public void displayMessage() {&#10;&#10;        System.out.println(message);&#10;        System.exit(0);&#10;    }&#10;&#10;    public String getInput() {&#10;        Scanner scanner = new Scanner(System.in);&#10;        return scanner.nextLine();&#10;    }&#10;}&#10;" Filename="View.java" Intrnl_Id="4"/>
+<SrcFile Content="package com.tw.biblioteca;&#10;&#10;public class Application {&#10;    public static void main(String[] args) {&#10;        Application application = new Application();&#10;        application.start();&#10;    }&#10;&#10;    private void start() {&#10;        View view = new View(&quot;Welcome to Biblioteca&quot;);&#10;        view.displayMessage();&#10;&#10;        //while(true) {&#10;            Menu menu = new Menu();&#10;            view = new View(menu.toString());&#10;            Parser parser = new Parser(&quot;1&quot;);&#10;            MenuItem menuItem = parser.createMenuItem();&#10;            menuItem.execute();&#10;        //}&#10;    }&#10;}&#10;" Filename="Application.java" Intrnl_Id="3"/>
+<SrcFile Content="//Interacts with the user&#10;&#10;package com.tw.biblioteca;&#10;&#10;public class View {&#10;&#10;    String message;&#10;&#10;    public View(String message) {&#10;&#10;        this.message = message;&#10;    }&#10;&#10;    public void displayMessage() {&#10;&#10;        System.out.println(message);&#10;    }&#10;&#10;    //public String getInput() {&#10;    //    Scanner scanner = new Scanner(System.in);&#10;    //    return scanner.nextLine();&#10;    //}&#10;}&#10;" Filename="View.java" Intrnl_Id="4"/>
 <SrcFile Content="//Tells the user to enter a valid menu option&#10;&#10;package com.tw.biblioteca;&#10;&#10;public class InvalidMenuItem implements MenuItem{&#10;&#10;    String errorMessage;&#10;    InvalidMenuItem() {&#10;        this.errorMessage = &quot;Select a valid option!&quot;;&#10;    }&#10;&#10;    public void execute() {&#10;        System.out.println(errorMessage);&#10;    }&#10;&#10;}&#10;" Filename="InvalidMenuItem.java" Intrnl_Id="5"/>
 <SrcFile Content="//Exits the application&#10;&#10;package com.tw.biblioteca;&#10;&#10;public class Exit implements MenuItem{&#10;&#10;    @Override&#10;    public void execute() {&#10;        System.exit(0);&#10;    }&#10;}&#10;" Filename="Exit.java" Intrnl_Id="6"/>
 <SrcFile Content="//Contains book details in a certain format&#10;&#10;package com.tw.biblioteca;&#10;&#10;public class Book {&#10;    private String name, author;&#10;    private int yearOfPublication;&#10;&#10;    public Book(String name, String author, int yearOfPublication) {&#10;        this.name = name;&#10;        this.author = author;&#10;        this. yearOfPublication = yearOfPublication;&#10;    }&#10;&#10;    @Override&#10;    public String toString() {&#10;&#10;        return (name+&quot;\t&quot;+author+&quot;\t&quot;+yearOfPublication);&#10;    }&#10;&#10;}&#10;" Filename="Book.java" Intrnl_Id="7"/>
@@ -33,16 +33,16 @@
 <HierarchyLvlType EnglishName="interface" IntrnlName="interface" Intrnl_Id="15"/>
 </HierarchyLvlTypeList>
 <MASTRoot>
-<HierarchyLvl HierarchyLvlId="32" HierarchyLvlTypeId="14" Intrnl_Id="16" Name="default package">
+<HierarchyLvl HierarchyLvlId="31" HierarchyLvlTypeId="14" Intrnl_Id="16" Name="default package">
 <Header/>
 <LocList/>
-<HierarchyLvl HierarchyLvlId="31" HierarchyLvlTypeId="11" Intrnl_Id="17" Name="com">
+<HierarchyLvl HierarchyLvlId="30" HierarchyLvlTypeId="11" Intrnl_Id="17" Name="com">
 <Header/>
 <LocList/>
-<HierarchyLvl HierarchyLvlId="30" HierarchyLvlTypeId="11" Intrnl_Id="18" Name="tw">
+<HierarchyLvl HierarchyLvlId="29" HierarchyLvlTypeId="11" Intrnl_Id="18" Name="tw">
 <Header/>
 <LocList/>
-<HierarchyLvl HierarchyLvlId="29" HierarchyLvlTypeId="11" Intrnl_Id="19" Name="biblioteca">
+<HierarchyLvl HierarchyLvlId="28" HierarchyLvlTypeId="11" Intrnl_Id="19" Name="biblioteca">
 <Header/>
 <LocList/>
 <HierarchyLvl HierarchyLvlId="2" HierarchyLvlTypeId="15" Intrnl_Id="20" Name="MenuItem">
@@ -149,7 +149,7 @@
 <Loc EndOffset="52" SrcFileId="3" StartOffset="28"/>
 </Header>
 <LocList>
-<Loc EndOffset="574" SrcFileId="3" StartOffset="28"/>
+<Loc EndOffset="562" SrcFileId="3" StartOffset="28"/>
 </LocList>
 <HierarchyLvl HierarchyLvlId="6" HierarchyLvlTypeId="13" Intrnl_Id="37" Name="main">
 <Header>
@@ -180,7 +180,7 @@
 <Loc EndOffset="213" SrcFileId="3" StartOffset="193"/>
 </Header>
 <LocList>
-<Loc EndOffset="572" SrcFileId="3" StartOffset="193"/>
+<Loc EndOffset="560" SrcFileId="3" StartOffset="193"/>
 </LocList>
 <StmntSeq Intrnl_Id="42">
 <LocList>
@@ -188,9 +188,9 @@
 <Loc EndOffset="301" SrcFileId="3" StartOffset="279"/>
 <Loc EndOffset="362" SrcFileId="3" StartOffset="339"/>
 <Loc EndOffset="408" SrcFileId="3" StartOffset="375"/>
-<Loc EndOffset="465" SrcFileId="3" StartOffset="421"/>
-<Loc EndOffset="522" SrcFileId="3" StartOffset="478"/>
-<Loc EndOffset="554" SrcFileId="3" StartOffset="535"/>
+<Loc EndOffset="453" SrcFileId="3" StartOffset="421"/>
+<Loc EndOffset="510" SrcFileId="3" StartOffset="466"/>
+<Loc EndOffset="542" SrcFileId="3" StartOffset="523"/>
 </LocList>
 <BasicStmnt CovItemId="S3" CovItemPrefix="com.tw.biblioteca.Application.java" Intrnl_Id="43">
 <LocList>
@@ -214,127 +214,103 @@
 </BasicStmnt>
 <BasicStmnt CovItemId="S7" CovItemPrefix="com.tw.biblioteca.Application.java" Intrnl_Id="47">
 <LocList>
-<Loc EndOffset="465" SrcFileId="3" StartOffset="421"/>
+<Loc EndOffset="453" SrcFileId="3" StartOffset="421"/>
 </LocList>
 </BasicStmnt>
 <BasicStmnt CovItemId="S8" CovItemPrefix="com.tw.biblioteca.Application.java" Intrnl_Id="48">
 <LocList>
-<Loc EndOffset="522" SrcFileId="3" StartOffset="478"/>
+<Loc EndOffset="510" SrcFileId="3" StartOffset="466"/>
 </LocList>
 </BasicStmnt>
 <BasicStmnt CovItemId="S9" CovItemPrefix="com.tw.biblioteca.Application.java" Intrnl_Id="49">
 <LocList>
-<Loc EndOffset="554" SrcFileId="3" StartOffset="535"/>
+<Loc EndOffset="542" SrcFileId="3" StartOffset="523"/>
 </LocList>
 </BasicStmnt>
 </StmntSeq>
 </HierarchyLvl>
 </HierarchyLvl>
-<HierarchyLvl HierarchyLvlId="12" HierarchyLvlTypeId="12" Intrnl_Id="50" Name="View">
+<HierarchyLvl HierarchyLvlId="11" HierarchyLvlTypeId="12" Intrnl_Id="50" Name="View">
 <Header>
-<Loc EndOffset="99" SrcFileId="4" StartOffset="82"/>
+<Loc EndOffset="72" SrcFileId="4" StartOffset="55"/>
 </Header>
 <LocList>
-<Loc EndOffset="425" SrcFileId="4" StartOffset="82"/>
+<Loc EndOffset="382" SrcFileId="4" StartOffset="55"/>
 </LocList>
 <HierarchyLvl HierarchyLvlId="9" HierarchyLvlTypeId="13" Intrnl_Id="51" Name="View">
 <Header>
-<Loc EndOffset="155" SrcFileId="4" StartOffset="128"/>
+<Loc EndOffset="128" SrcFileId="4" StartOffset="101"/>
 </Header>
 <LocList>
-<Loc EndOffset="196" SrcFileId="4" StartOffset="128"/>
+<Loc EndOffset="169" SrcFileId="4" StartOffset="101"/>
 </LocList>
 <StmntSeq Intrnl_Id="52">
 <LocList>
-<Loc EndOffset="190" SrcFileId="4" StartOffset="167"/>
+<Loc EndOffset="163" SrcFileId="4" StartOffset="140"/>
 </LocList>
 <BasicStmnt CovItemId="S1" CovItemPrefix="com.tw.biblioteca.View.java" Intrnl_Id="53">
 <LocList>
-<Loc EndOffset="190" SrcFileId="4" StartOffset="167"/>
+<Loc EndOffset="163" SrcFileId="4" StartOffset="140"/>
 </LocList>
 </BasicStmnt>
 </StmntSeq>
 </HierarchyLvl>
 <HierarchyLvl HierarchyLvlId="10" HierarchyLvlTypeId="13" Intrnl_Id="54" Name="displayMessage">
 <Header>
-<Loc EndOffset="230" SrcFileId="4" StartOffset="202"/>
+<Loc EndOffset="203" SrcFileId="4" StartOffset="175"/>
 </Header>
 <LocList>
-<Loc EndOffset="300" SrcFileId="4" StartOffset="202"/>
+<Loc EndOffset="249" SrcFileId="4" StartOffset="175"/>
 </LocList>
 <StmntSeq Intrnl_Id="55">
 <LocList>
-<Loc EndOffset="270" SrcFileId="4" StartOffset="242"/>
-<Loc EndOffset="294" SrcFileId="4" StartOffset="279"/>
+<Loc EndOffset="243" SrcFileId="4" StartOffset="215"/>
 </LocList>
 <BasicStmnt CovItemId="S2" CovItemPrefix="com.tw.biblioteca.View.java" Intrnl_Id="56">
 <LocList>
-<Loc EndOffset="270" SrcFileId="4" StartOffset="242"/>
-</LocList>
-</BasicStmnt>
-<BasicStmnt CovItemId="S3" CovItemPrefix="com.tw.biblioteca.View.java" Intrnl_Id="57">
-<LocList>
-<Loc EndOffset="294" SrcFileId="4" StartOffset="279"/>
-</LocList>
-</BasicStmnt>
-</StmntSeq>
-</HierarchyLvl>
-<HierarchyLvl HierarchyLvlId="11" HierarchyLvlTypeId="13" Intrnl_Id="58" Name="getInput">
-<Header>
-<Loc EndOffset="330" SrcFileId="4" StartOffset="306"/>
-</Header>
-<LocList>
-<Loc EndOffset="423" SrcFileId="4" StartOffset="306"/>
-</LocList>
-<StmntSeq Intrnl_Id="59">
-<LocList>
-<Loc EndOffset="382" SrcFileId="4" StartOffset="341"/>
-</LocList>
-<BasicStmnt CovItemId="S4" CovItemPrefix="com.tw.biblioteca.View.java" Intrnl_Id="60">
-<LocList>
-<Loc EndOffset="382" SrcFileId="4" StartOffset="341"/>
+<Loc EndOffset="243" SrcFileId="4" StartOffset="215"/>
 </LocList>
 </BasicStmnt>
 </StmntSeq>
 </HierarchyLvl>
 </HierarchyLvl>
-<HierarchyLvl HierarchyLvlId="15" HierarchyLvlTypeId="12" Intrnl_Id="61" Name="InvalidMenuItem">
+<HierarchyLvl HierarchyLvlId="14" HierarchyLvlTypeId="12" Intrnl_Id="57" Name="InvalidMenuItem">
 <Header>
 <Loc EndOffset="123" SrcFileId="5" StartOffset="75"/>
 </Header>
 <LocList>
 <Loc EndOffset="314" SrcFileId="5" StartOffset="75"/>
 </LocList>
-<HierarchyLvl HierarchyLvlId="13" HierarchyLvlTypeId="13" Intrnl_Id="62" Name="InvalidMenuItem">
+<HierarchyLvl HierarchyLvlId="12" HierarchyLvlTypeId="13" Intrnl_Id="58" Name="InvalidMenuItem">
 <Header>
 <Loc EndOffset="172" SrcFileId="5" StartOffset="155"/>
 </Header>
 <LocList>
 <Loc EndOffset="234" SrcFileId="5" StartOffset="155"/>
 </LocList>
-<StmntSeq Intrnl_Id="63">
+<StmntSeq Intrnl_Id="59">
 <LocList>
 <Loc EndOffset="228" SrcFileId="5" StartOffset="183"/>
 </LocList>
-<BasicStmnt CovItemId="S1" CovItemPrefix="com.tw.biblioteca.InvalidMenuItem.java" Intrnl_Id="64">
+<BasicStmnt CovItemId="S1" CovItemPrefix="com.tw.biblioteca.InvalidMenuItem.java" Intrnl_Id="60">
 <LocList>
 <Loc EndOffset="228" SrcFileId="5" StartOffset="183"/>
 </LocList>
 </BasicStmnt>
 </StmntSeq>
 </HierarchyLvl>
-<HierarchyLvl HierarchyLvlId="14" HierarchyLvlTypeId="13" Intrnl_Id="65" Name="execute">
+<HierarchyLvl HierarchyLvlId="13" HierarchyLvlTypeId="13" Intrnl_Id="61" Name="execute">
 <Header>
 <Loc EndOffset="261" SrcFileId="5" StartOffset="240"/>
 </Header>
 <LocList>
 <Loc EndOffset="311" SrcFileId="5" StartOffset="240"/>
 </LocList>
-<StmntSeq Intrnl_Id="66">
+<StmntSeq Intrnl_Id="62">
 <LocList>
 <Loc EndOffset="305" SrcFileId="5" StartOffset="272"/>
 </LocList>
-<BasicStmnt CovItemId="S2" CovItemPrefix="com.tw.biblioteca.InvalidMenuItem.java" Intrnl_Id="67">
+<BasicStmnt CovItemId="S2" CovItemPrefix="com.tw.biblioteca.InvalidMenuItem.java" Intrnl_Id="63">
 <LocList>
 <Loc EndOffset="305" SrcFileId="5" StartOffset="272"/>
 </LocList>
@@ -342,25 +318,25 @@
 </StmntSeq>
 </HierarchyLvl>
 </HierarchyLvl>
-<HierarchyLvl HierarchyLvlId="17" HierarchyLvlTypeId="12" Intrnl_Id="68" Name="Exit">
+<HierarchyLvl HierarchyLvlId="16" HierarchyLvlTypeId="12" Intrnl_Id="64" Name="Exit">
 <Header>
 <Loc EndOffset="90" SrcFileId="6" StartOffset="53"/>
 </Header>
 <LocList>
 <Loc EndOffset="166" SrcFileId="6" StartOffset="53"/>
 </LocList>
-<HierarchyLvl HierarchyLvlId="16" HierarchyLvlTypeId="13" Intrnl_Id="69" Name="execute">
+<HierarchyLvl HierarchyLvlId="15" HierarchyLvlTypeId="13" Intrnl_Id="65" Name="execute">
 <Header>
 <Loc EndOffset="132" SrcFileId="6" StartOffset="97"/>
 </Header>
 <LocList>
 <Loc EndOffset="164" SrcFileId="6" StartOffset="97"/>
 </LocList>
-<StmntSeq Intrnl_Id="70">
+<StmntSeq Intrnl_Id="66">
 <LocList>
 <Loc EndOffset="158" SrcFileId="6" StartOffset="143"/>
 </LocList>
-<BasicStmnt CovItemId="S1" CovItemPrefix="com.tw.biblioteca.Exit.java" Intrnl_Id="71">
+<BasicStmnt CovItemId="S1" CovItemPrefix="com.tw.biblioteca.Exit.java" Intrnl_Id="67">
 <LocList>
 <Loc EndOffset="158" SrcFileId="6" StartOffset="143"/>
 </LocList>
@@ -368,44 +344,44 @@
 </StmntSeq>
 </HierarchyLvl>
 </HierarchyLvl>
-<HierarchyLvl HierarchyLvlId="20" HierarchyLvlTypeId="12" Intrnl_Id="72" Name="Book">
+<HierarchyLvl HierarchyLvlId="19" HierarchyLvlTypeId="12" Intrnl_Id="68" Name="Book">
 <Header>
 <Loc EndOffset="90" SrcFileId="7" StartOffset="73"/>
 </Header>
 <LocList>
 <Loc EndOffset="459" SrcFileId="7" StartOffset="73"/>
 </LocList>
-<HierarchyLvl HierarchyLvlId="18" HierarchyLvlTypeId="13" Intrnl_Id="73" Name="Book">
+<HierarchyLvl HierarchyLvlId="17" HierarchyLvlTypeId="13" Intrnl_Id="69" Name="Book">
 <Header>
 <Loc EndOffset="228" SrcFileId="7" StartOffset="166"/>
 </Header>
 <LocList>
 <Loc EndOffset="345" SrcFileId="7" StartOffset="166"/>
 </LocList>
-<StmntSeq Intrnl_Id="74">
+<StmntSeq Intrnl_Id="70">
 <LocList>
 <Loc EndOffset="256" SrcFileId="7" StartOffset="239"/>
 <Loc EndOffset="286" SrcFileId="7" StartOffset="265"/>
 <Loc EndOffset="339" SrcFileId="7" StartOffset="295"/>
 </LocList>
-<BasicStmnt CovItemId="S1" CovItemPrefix="com.tw.biblioteca.Book.java" Intrnl_Id="75">
+<BasicStmnt CovItemId="S1" CovItemPrefix="com.tw.biblioteca.Book.java" Intrnl_Id="71">
 <LocList>
 <Loc EndOffset="256" SrcFileId="7" StartOffset="239"/>
 </LocList>
 </BasicStmnt>
-<BasicStmnt CovItemId="S2" CovItemPrefix="com.tw.biblioteca.Book.java" Intrnl_Id="76">
+<BasicStmnt CovItemId="S2" CovItemPrefix="com.tw.biblioteca.Book.java" Intrnl_Id="72">
 <LocList>
 <Loc EndOffset="286" SrcFileId="7" StartOffset="265"/>
 </LocList>
 </BasicStmnt>
-<BasicStmnt CovItemId="S3" CovItemPrefix="com.tw.biblioteca.Book.java" Intrnl_Id="77">
+<BasicStmnt CovItemId="S3" CovItemPrefix="com.tw.biblioteca.Book.java" Intrnl_Id="73">
 <LocList>
 <Loc EndOffset="339" SrcFileId="7" StartOffset="295"/>
 </LocList>
 </BasicStmnt>
 </StmntSeq>
 </HierarchyLvl>
-<HierarchyLvl HierarchyLvlId="19" HierarchyLvlTypeId="13" Intrnl_Id="78" Name="toString">
+<HierarchyLvl HierarchyLvlId="18" HierarchyLvlTypeId="13" Intrnl_Id="74" Name="toString">
 <Header>
 <Loc EndOffset="389" SrcFileId="7" StartOffset="351"/>
 </Header>
@@ -414,56 +390,56 @@
 </LocList>
 </HierarchyLvl>
 </HierarchyLvl>
-<HierarchyLvl HierarchyLvlId="25" HierarchyLvlTypeId="12" Intrnl_Id="79" Name="Parser">
+<HierarchyLvl HierarchyLvlId="24" HierarchyLvlTypeId="12" Intrnl_Id="75" Name="Parser">
 <Header>
 <Loc EndOffset="122" SrcFileId="8" StartOffset="103"/>
 </Header>
 <LocList>
 <Loc EndOffset="1114" SrcFileId="8" StartOffset="103"/>
 </LocList>
-<HierarchyLvl HierarchyLvlId="21" HierarchyLvlTypeId="13" Intrnl_Id="80" Name="Parser">
+<HierarchyLvl HierarchyLvlId="20" HierarchyLvlTypeId="13" Intrnl_Id="76" Name="Parser">
 <Header>
 <Loc EndOffset="185" SrcFileId="8" StartOffset="157"/>
 </Header>
 <LocList>
 <Loc EndOffset="223" SrcFileId="8" StartOffset="157"/>
 </LocList>
-<StmntSeq Intrnl_Id="81">
+<StmntSeq Intrnl_Id="77">
 <LocList>
 <Loc EndOffset="217" SrcFileId="8" StartOffset="196"/>
 </LocList>
-<BasicStmnt CovItemId="S1" CovItemPrefix="com.tw.biblioteca.Parser.java" Intrnl_Id="82">
+<BasicStmnt CovItemId="S1" CovItemPrefix="com.tw.biblioteca.Parser.java" Intrnl_Id="78">
 <LocList>
 <Loc EndOffset="217" SrcFileId="8" StartOffset="196"/>
 </LocList>
 </BasicStmnt>
 </StmntSeq>
 </HierarchyLvl>
-<HierarchyLvl HierarchyLvlId="22" HierarchyLvlTypeId="13" Intrnl_Id="83" Name="isValid">
+<HierarchyLvl HierarchyLvlId="21" HierarchyLvlTypeId="13" Intrnl_Id="79" Name="isValid">
 <Header>
 <Loc EndOffset="253" SrcFileId="8" StartOffset="229"/>
 </Header>
 <LocList>
 <Loc EndOffset="415" SrcFileId="8" StartOffset="229"/>
 </LocList>
-<StmntSeq Intrnl_Id="84">
+<StmntSeq Intrnl_Id="80">
 <LocList>
 <Loc EndOffset="387" SrcFileId="8" StartOffset="264"/>
 </LocList>
-<CondStmnt CovItemId="S2" CovItemPrefix="com.tw.biblioteca.Parser.java" Intrnl_Id="85">
-<Branch CovItemId="B1" CovItemPrefix="com.tw.biblioteca.Parser.java" Implct="false" Intrnl_Id="86">
+<CondStmnt CovItemId="S2" CovItemPrefix="com.tw.biblioteca.Parser.java" Intrnl_Id="81">
+<Branch CovItemId="B1" CovItemPrefix="com.tw.biblioteca.Parser.java" Implct="false" Intrnl_Id="82">
 <Cond/>
 <LocList>
 <Loc EndOffset="387" SrcFileId="8" StartOffset="351"/>
 </LocList>
-<StmntSeq Intrnl_Id="87">
+<StmntSeq Intrnl_Id="83">
 <LocList/>
 </StmntSeq>
 </Branch>
-<Branch CovItemId="B2" CovItemPrefix="com.tw.biblioteca.Parser.java" Implct="true" Intrnl_Id="88">
+<Branch CovItemId="B2" CovItemPrefix="com.tw.biblioteca.Parser.java" Implct="true" Intrnl_Id="84">
 <Cond/>
 <LocList/>
-<StmntSeq Intrnl_Id="89">
+<StmntSeq Intrnl_Id="85">
 <LocList/>
 </StmntSeq>
 </Branch>
@@ -471,15 +447,15 @@
 <LocList>
 <Loc EndOffset="387" SrcFileId="8" StartOffset="264"/>
 </LocList>
-<RootTerm CovItemId="C1" CovItemPrefix="com.tw.biblioteca.Parser.java" Intrnl_Id="90">
-<OpTerm BooleanOpId="10" Intrnl_Id="91">
-<OpTerm BooleanOpId="10" Intrnl_Id="92">
-<BasicBoolTerm Intrnl_Id="93">
+<RootTerm CovItemId="C1" CovItemPrefix="com.tw.biblioteca.Parser.java" Intrnl_Id="86">
+<OpTerm BooleanOpId="10" Intrnl_Id="87">
+<OpTerm BooleanOpId="10" Intrnl_Id="88">
+<BasicBoolTerm Intrnl_Id="89">
 <LocList>
 <Loc EndOffset="291" SrcFileId="8" StartOffset="267"/>
 </LocList>
 </BasicBoolTerm>
-<BasicBoolTerm Intrnl_Id="94">
+<BasicBoolTerm Intrnl_Id="90">
 <LocList>
 <Loc EndOffset="319" SrcFileId="8" StartOffset="295"/>
 </LocList>
@@ -488,7 +464,7 @@
 <Loc EndOffset="294" SrcFileId="8" StartOffset="292"/>
 </LocList>
 </OpTerm>
-<BasicBoolTerm Intrnl_Id="95">
+<BasicBoolTerm Intrnl_Id="91">
 <LocList>
 <Loc EndOffset="348" SrcFileId="8" StartOffset="323"/>
 </LocList>
@@ -501,7 +477,7 @@
 </CondStmnt>
 </StmntSeq>
 </HierarchyLvl>
-<HierarchyLvl HierarchyLvlId="23" HierarchyLvlTypeId="13" Intrnl_Id="96" Name="convertOptionToInt">
+<HierarchyLvl HierarchyLvlId="22" HierarchyLvlTypeId="13" Intrnl_Id="92" Name="convertOptionToInt">
 <Header>
 <Loc EndOffset="453" SrcFileId="8" StartOffset="421"/>
 </Header>
@@ -509,34 +485,34 @@
 <Loc EndOffset="502" SrcFileId="8" StartOffset="421"/>
 </LocList>
 </HierarchyLvl>
-<HierarchyLvl HierarchyLvlId="24" HierarchyLvlTypeId="13" Intrnl_Id="97" Name="createMenuItem">
+<HierarchyLvl HierarchyLvlId="23" HierarchyLvlTypeId="13" Intrnl_Id="93" Name="createMenuItem">
 <Header>
 <Loc EndOffset="540" SrcFileId="8" StartOffset="508"/>
 </Header>
 <LocList>
 <Loc EndOffset="1112" SrcFileId="8" StartOffset="508"/>
 </LocList>
-<StmntSeq Intrnl_Id="98">
+<StmntSeq Intrnl_Id="94">
 <LocList>
 <Loc EndOffset="1068" SrcFileId="8" StartOffset="551"/>
 </LocList>
-<CondStmnt CovItemId="S3" CovItemPrefix="com.tw.biblioteca.Parser.java" Intrnl_Id="99">
-<Branch CovItemId="B3" CovItemPrefix="com.tw.biblioteca.Parser.java" Implct="false" Intrnl_Id="100">
+<CondStmnt CovItemId="S3" CovItemPrefix="com.tw.biblioteca.Parser.java" Intrnl_Id="95">
+<Branch CovItemId="B3" CovItemPrefix="com.tw.biblioteca.Parser.java" Implct="false" Intrnl_Id="96">
 <Cond/>
 <LocList>
 <Loc EndOffset="1068" SrcFileId="8" StartOffset="565"/>
 </LocList>
-<StmntSeq Intrnl_Id="101">
+<StmntSeq Intrnl_Id="97">
 <LocList>
 <Loc EndOffset="1058" SrcFileId="8" StartOffset="579"/>
 </LocList>
-<CondStmnt CovItemId="S4" CovItemPrefix="com.tw.biblioteca.Parser.java" Intrnl_Id="102">
-<Branch CovItemId="B5" CovItemPrefix="com.tw.biblioteca.Parser.java" Implct="false" Intrnl_Id="103">
+<CondStmnt CovItemId="S4" CovItemPrefix="com.tw.biblioteca.Parser.java" Intrnl_Id="98">
+<Branch CovItemId="B5" CovItemPrefix="com.tw.biblioteca.Parser.java" Implct="false" Intrnl_Id="99">
 <Cond/>
 <LocList>
 <Loc EndOffset="960" SrcFileId="8" StartOffset="610"/>
 </LocList>
-<StmntSeq Intrnl_Id="104">
+<StmntSeq Intrnl_Id="100">
 <LocList>
 <Loc EndOffset="673" SrcFileId="8" StartOffset="628"/>
 <Loc EndOffset="751" SrcFileId="8" StartOffset="690"/>
@@ -544,58 +520,58 @@
 <Loc EndOffset="870" SrcFileId="8" StartOffset="854"/>
 <Loc EndOffset="903" SrcFileId="8" StartOffset="887"/>
 </LocList>
-<BasicStmnt CovItemId="S5" CovItemPrefix="com.tw.biblioteca.Parser.java" Intrnl_Id="105">
+<BasicStmnt CovItemId="S5" CovItemPrefix="com.tw.biblioteca.Parser.java" Intrnl_Id="101">
 <LocList>
 <Loc EndOffset="673" SrcFileId="8" StartOffset="628"/>
 </LocList>
 </BasicStmnt>
-<BasicStmnt CovItemId="S6" CovItemPrefix="com.tw.biblioteca.Parser.java" Intrnl_Id="106">
+<BasicStmnt CovItemId="S6" CovItemPrefix="com.tw.biblioteca.Parser.java" Intrnl_Id="102">
 <LocList>
 <Loc EndOffset="751" SrcFileId="8" StartOffset="690"/>
 </LocList>
 </BasicStmnt>
-<BasicStmnt CovItemId="S7" CovItemPrefix="com.tw.biblioteca.Parser.java" Intrnl_Id="107">
+<BasicStmnt CovItemId="S7" CovItemPrefix="com.tw.biblioteca.Parser.java" Intrnl_Id="103">
 <LocList>
 <Loc EndOffset="837" SrcFileId="8" StartOffset="768"/>
 </LocList>
 </BasicStmnt>
-<BasicStmnt CovItemId="S8" CovItemPrefix="com.tw.biblioteca.Parser.java" Intrnl_Id="108">
+<BasicStmnt CovItemId="S8" CovItemPrefix="com.tw.biblioteca.Parser.java" Intrnl_Id="104">
 <LocList>
 <Loc EndOffset="870" SrcFileId="8" StartOffset="854"/>
 </LocList>
 </BasicStmnt>
-<BasicStmnt CovItemId="S9" CovItemPrefix="com.tw.biblioteca.Parser.java" Intrnl_Id="109">
+<BasicStmnt CovItemId="S9" CovItemPrefix="com.tw.biblioteca.Parser.java" Intrnl_Id="105">
 <LocList>
 <Loc EndOffset="903" SrcFileId="8" StartOffset="887"/>
 </LocList>
 </BasicStmnt>
 </StmntSeq>
 </Branch>
-<Branch CovItemId="B6" CovItemPrefix="com.tw.biblioteca.Parser.java" Implct="false" Intrnl_Id="110">
+<Branch CovItemId="B6" CovItemPrefix="com.tw.biblioteca.Parser.java" Implct="false" Intrnl_Id="106">
 <Cond>
 <Loc EndOffset="977" SrcFileId="8" StartOffset="973"/>
 </Cond>
 <LocList>
 <Loc EndOffset="1058" SrcFileId="8" StartOffset="978"/>
 </LocList>
-<StmntSeq Intrnl_Id="111">
+<StmntSeq Intrnl_Id="107">
 <LocList>
 <Loc EndOffset="1058" SrcFileId="8" StartOffset="978"/>
 </LocList>
-<CondStmnt CovItemId="S10" CovItemPrefix="com.tw.biblioteca.Parser.java" Intrnl_Id="112">
-<Branch CovItemId="B7" CovItemPrefix="com.tw.biblioteca.Parser.java" Implct="false" Intrnl_Id="113">
+<CondStmnt CovItemId="S10" CovItemPrefix="com.tw.biblioteca.Parser.java" Intrnl_Id="108">
+<Branch CovItemId="B7" CovItemPrefix="com.tw.biblioteca.Parser.java" Implct="false" Intrnl_Id="109">
 <Cond/>
 <LocList>
 <Loc EndOffset="1058" SrcFileId="8" StartOffset="1008"/>
 </LocList>
-<StmntSeq Intrnl_Id="114">
+<StmntSeq Intrnl_Id="110">
 <LocList/>
 </StmntSeq>
 </Branch>
-<Branch CovItemId="B8" CovItemPrefix="com.tw.biblioteca.Parser.java" Implct="true" Intrnl_Id="115">
+<Branch CovItemId="B8" CovItemPrefix="com.tw.biblioteca.Parser.java" Implct="true" Intrnl_Id="111">
 <Cond/>
 <LocList/>
-<StmntSeq Intrnl_Id="116">
+<StmntSeq Intrnl_Id="112">
 <LocList/>
 </StmntSeq>
 </Branch>
@@ -603,8 +579,8 @@
 <LocList>
 <Loc EndOffset="1058" SrcFileId="8" StartOffset="978"/>
 </LocList>
-<RootTerm CovItemId="C4" CovItemPrefix="com.tw.biblioteca.Parser.java" Intrnl_Id="117">
-<BasicBoolTerm Intrnl_Id="118">
+<RootTerm CovItemId="C4" CovItemPrefix="com.tw.biblioteca.Parser.java" Intrnl_Id="113">
+<BasicBoolTerm Intrnl_Id="114">
 <LocList>
 <Loc EndOffset="1006" SrcFileId="8" StartOffset="981"/>
 </LocList>
@@ -617,8 +593,8 @@
 <LocList>
 <Loc EndOffset="1058" SrcFileId="8" StartOffset="579"/>
 </LocList>
-<RootTerm CovItemId="C3" CovItemPrefix="com.tw.biblioteca.Parser.java" Intrnl_Id="119">
-<BasicBoolTerm Intrnl_Id="120">
+<RootTerm CovItemId="C3" CovItemPrefix="com.tw.biblioteca.Parser.java" Intrnl_Id="115">
+<BasicBoolTerm Intrnl_Id="116">
 <LocList>
 <Loc EndOffset="608" SrcFileId="8" StartOffset="583"/>
 </LocList>
@@ -627,10 +603,10 @@
 </CondStmnt>
 </StmntSeq>
 </Branch>
-<Branch CovItemId="B4" CovItemPrefix="com.tw.biblioteca.Parser.java" Implct="true" Intrnl_Id="121">
+<Branch CovItemId="B4" CovItemPrefix="com.tw.biblioteca.Parser.java" Implct="true" Intrnl_Id="117">
 <Cond/>
 <LocList/>
-<StmntSeq Intrnl_Id="122">
+<StmntSeq Intrnl_Id="118">
 <LocList/>
 </StmntSeq>
 </Branch>
@@ -638,8 +614,8 @@
 <LocList>
 <Loc EndOffset="1068" SrcFileId="8" StartOffset="551"/>
 </LocList>
-<RootTerm CovItemId="C2" CovItemPrefix="com.tw.biblioteca.Parser.java" Intrnl_Id="123">
-<BasicBoolTerm Intrnl_Id="124">
+<RootTerm CovItemId="C2" CovItemPrefix="com.tw.biblioteca.Parser.java" Intrnl_Id="119">
+<BasicBoolTerm Intrnl_Id="120">
 <LocList>
 <Loc EndOffset="563" SrcFileId="8" StartOffset="554"/>
 </LocList>
@@ -649,76 +625,76 @@
 </StmntSeq>
 </HierarchyLvl>
 </HierarchyLvl>
-<HierarchyLvl HierarchyLvlId="28" HierarchyLvlTypeId="12" Intrnl_Id="125" Name="Menu">
+<HierarchyLvl HierarchyLvlId="27" HierarchyLvlTypeId="12" Intrnl_Id="121" Name="Menu">
 <Header>
 <Loc EndOffset="120" SrcFileId="9" StartOffset="103"/>
 </Header>
 <LocList>
 <Loc EndOffset="548" SrcFileId="9" StartOffset="103"/>
 </LocList>
-<StmntSeq Intrnl_Id="126">
+<StmntSeq Intrnl_Id="122">
 <LocList>
 <Loc EndOffset="175" SrcFileId="9" StartOffset="127"/>
 </LocList>
-<BasicStmnt CovItemId="S1" CovItemPrefix="com.tw.biblioteca.Menu.java" Intrnl_Id="127">
+<BasicStmnt CovItemId="S1" CovItemPrefix="com.tw.biblioteca.Menu.java" Intrnl_Id="123">
 <LocList>
 <Loc EndOffset="175" SrcFileId="9" StartOffset="127"/>
 </LocList>
 </BasicStmnt>
 </StmntSeq>
-<HierarchyLvl HierarchyLvlId="26" HierarchyLvlTypeId="13" Intrnl_Id="128" Name="Menu">
+<HierarchyLvl HierarchyLvlId="25" HierarchyLvlTypeId="13" Intrnl_Id="124" Name="Menu">
 <Header>
 <Loc EndOffset="186" SrcFileId="9" StartOffset="180"/>
 </Header>
 <LocList>
 <Loc EndOffset="258" SrcFileId="9" StartOffset="180"/>
 </LocList>
-<StmntSeq Intrnl_Id="129">
+<StmntSeq Intrnl_Id="125">
 <LocList>
 <Loc EndOffset="223" SrcFileId="9" StartOffset="197"/>
 <Loc EndOffset="252" SrcFileId="9" StartOffset="232"/>
 </LocList>
-<BasicStmnt CovItemId="S2" CovItemPrefix="com.tw.biblioteca.Menu.java" Intrnl_Id="130">
+<BasicStmnt CovItemId="S2" CovItemPrefix="com.tw.biblioteca.Menu.java" Intrnl_Id="126">
 <LocList>
 <Loc EndOffset="223" SrcFileId="9" StartOffset="197"/>
 </LocList>
 </BasicStmnt>
-<BasicStmnt CovItemId="S3" CovItemPrefix="com.tw.biblioteca.Menu.java" Intrnl_Id="131">
+<BasicStmnt CovItemId="S3" CovItemPrefix="com.tw.biblioteca.Menu.java" Intrnl_Id="127">
 <LocList>
 <Loc EndOffset="252" SrcFileId="9" StartOffset="232"/>
 </LocList>
 </BasicStmnt>
 </StmntSeq>
 </HierarchyLvl>
-<HierarchyLvl HierarchyLvlId="27" HierarchyLvlTypeId="13" Intrnl_Id="132" Name="toString">
+<HierarchyLvl HierarchyLvlId="26" HierarchyLvlTypeId="13" Intrnl_Id="128" Name="toString">
 <Header>
 <Loc EndOffset="302" SrcFileId="9" StartOffset="264"/>
 </Header>
 <LocList>
 <Loc EndOffset="546" SrcFileId="9" StartOffset="264"/>
 </LocList>
-<StmntSeq Intrnl_Id="133">
+<StmntSeq Intrnl_Id="129">
 <LocList>
 <Loc EndOffset="363" SrcFileId="9" StartOffset="313"/>
 <Loc EndOffset="403" SrcFileId="9" StartOffset="372"/>
 <Loc EndOffset="499" SrcFileId="9" StartOffset="412"/>
 </LocList>
-<BasicStmnt CovItemId="S4" CovItemPrefix="com.tw.biblioteca.Menu.java" Intrnl_Id="134">
+<BasicStmnt CovItemId="S4" CovItemPrefix="com.tw.biblioteca.Menu.java" Intrnl_Id="130">
 <LocList>
 <Loc EndOffset="363" SrcFileId="9" StartOffset="313"/>
 </LocList>
 </BasicStmnt>
-<BasicStmnt CovItemId="S5" CovItemPrefix="com.tw.biblioteca.Menu.java" Intrnl_Id="135">
+<BasicStmnt CovItemId="S5" CovItemPrefix="com.tw.biblioteca.Menu.java" Intrnl_Id="131">
 <LocList>
 <Loc EndOffset="403" SrcFileId="9" StartOffset="372"/>
 </LocList>
 </BasicStmnt>
-<LoopStmnt CovItemId="S6" CovItemPrefix="com.tw.biblioteca.Menu.java" Intrnl_Id="136" MltplExecId="L1-2" MltplExecPrefix="com.tw.biblioteca.Menu.java" NvrExecId="L1-0" NvrExecPrefix="com.tw.biblioteca.Menu.java" OnceExecutedId="L1-1" OnceExecutedPrefix="com.tw.biblioteca.Menu.java" OptBodyExec="true">
-<StmntSeq Intrnl_Id="137">
+<LoopStmnt CovItemId="S6" CovItemPrefix="com.tw.biblioteca.Menu.java" Intrnl_Id="132" MltplExecId="L1-2" MltplExecPrefix="com.tw.biblioteca.Menu.java" NvrExecId="L1-0" NvrExecPrefix="com.tw.biblioteca.Menu.java" OnceExecutedId="L1-1" OnceExecutedPrefix="com.tw.biblioteca.Menu.java" OptBodyExec="true">
+<StmntSeq Intrnl_Id="133">
 <LocList>
 <Loc EndOffset="489" SrcFileId="9" StartOffset="453"/>
 </LocList>
-<BasicStmnt CovItemId="S7" CovItemPrefix="com.tw.biblioteca.Menu.java" Intrnl_Id="138">
+<BasicStmnt CovItemId="S7" CovItemPrefix="com.tw.biblioteca.Menu.java" Intrnl_Id="134">
 <LocList>
 <Loc EndOffset="489" SrcFileId="9" StartOffset="453"/>
 </LocList>
@@ -737,19 +713,77 @@
 </HierarchyLvl>
 </HierarchyLvl>
 </MASTRoot>
-<TestSession Comment="" Date="1441527890422" Name="Test Session">
-<TestCase Comment="This is a test case containing all coverage results cause no startTestCase methods where captured." Date="1441527889269" Name="UNNAMED TESTCASE">
+<TestSession Comment="" Date="1441528663153" Name="Test Session">
+<TestCase Comment="This is a test case containing all coverage results cause no startTestCase methods where captured." Date="1441528661764" Name="UNNAMED TESTCASE">
 <CovList>
 <CovPrefix CovItemPrefix="com.tw.biblioteca.Application.java">
 <Cov CovItemId="S1" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
 <Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S4" Value="1"/>
+<Cov CovItemId="S5" Value="1"/>
+<Cov CovItemId="S6" Value="1"/>
+<Cov CovItemId="S7" Value="1"/>
+<Cov CovItemId="S8" Value="1"/>
+<Cov CovItemId="S9" Value="1"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="com.tw.biblioteca.Book.java">
+<Cov CovItemId="S1" Value="2"/>
+<Cov CovItemId="S2" Value="2"/>
+<Cov CovItemId="S3" Value="2"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="com.tw.biblioteca.BookList.java">
+<Cov CovItemId="L1-2" Value="1"/>
+<Cov CovItemId="S1" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S4" Value="1"/>
+<Cov CovItemId="S5" Value="1"/>
+<Cov CovItemId="S6" Value="2"/>
+<Cov CovItemId="S7" Value="1"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="com.tw.biblioteca.Menu.java">
+<Cov CovItemId="L1-2" Value="1"/>
+<Cov CovItemId="S1" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S4" Value="1"/>
+<Cov CovItemId="S5" Value="1"/>
+<Cov CovItemId="S6" Value="1"/>
+<Cov CovItemId="S7" Value="2"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="com.tw.biblioteca.Parser.java">
+<Cov CovItemId="B1" Value="1"/>
+<Cov CovItemId="B3" Value="1"/>
+<Cov CovItemId="B5" Value="1"/>
+<Cov CovItemId="S1" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S4" Value="1"/>
+<Cov CovItemId="S5" Value="1"/>
+<Cov CovItemId="S6" Value="1"/>
+<Cov CovItemId="S7" Value="1"/>
+<Cov CovItemId="S8" Value="1"/>
+<Cov CovItemId="S9" Value="1"/>
 </CovPrefix>
 <CovPrefix CovItemPrefix="com.tw.biblioteca.View.java">
-<Cov CovItemId="S1" Value="1"/>
+<Cov CovItemId="S1" Value="2"/>
 <Cov CovItemId="S2" Value="1"/>
 </CovPrefix>
 </CovList>
-<AssgnmntList/>
+<AssgnmntList>
+<AssgnmntPrefix RootTermCovItemPrefix="com.tw.biblioteca.Parser.java">
+<AssgnmntListEntry Length="3" RootTermCovItemId="C1">
+<MapEntry BoolAssgnmnt="111" Value="1"/>
+</AssgnmntListEntry>
+<AssgnmntListEntry Length="1" RootTermCovItemId="C2">
+<MapEntry BoolAssgnmnt="1" Value="1"/>
+</AssgnmntListEntry>
+<AssgnmntListEntry Length="1" RootTermCovItemId="C3">
+<MapEntry BoolAssgnmnt="1" Value="1"/>
+</AssgnmntListEntry>
+</AssgnmntPrefix>
+</AssgnmntList>
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>

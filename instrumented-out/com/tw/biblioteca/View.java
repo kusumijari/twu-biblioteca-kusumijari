@@ -2,8 +2,6 @@
 
 package com.tw.biblioteca;
 
-import java.util.Scanner;
-
 public class View {
   static {
     CodeCoverCoverageCounter$9cekq05zmc7k9t.ping();
@@ -22,23 +20,20 @@ CodeCoverCoverageCounter$9cekq05zmc7k9t.statements[1]++;
 
         System.out.println(message);
 CodeCoverCoverageCounter$9cekq05zmc7k9t.statements[2]++;
-        System.exit(0);
-CodeCoverCoverageCounter$9cekq05zmc7k9t.statements[3]++;
     }
 
-    public String getInput() {
-CodeCoverCoverageCounter$9cekq05zmc7k9t.statements[4]++;
-        Scanner scanner = new Scanner(System.in);
-        return scanner.nextLine();
-    }
+    //public String getInput() {
+    //    Scanner scanner = new Scanner(System.in);
+    //    return scanner.nextLine();
+    //}
 }
 
 class CodeCoverCoverageCounter$9cekq05zmc7k9t extends org.codecover.instrumentation.java.measurement.CounterContainer {
 
   static {
-    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "1e72f43a-c56c-4eb9-b941-30775e66654e").addObservedContainer(new CodeCoverCoverageCounter$9cekq05zmc7k9t ());
+    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "1444954b-5a58-4c0b-ac21-4e241ff4ee4c").addObservedContainer(new CodeCoverCoverageCounter$9cekq05zmc7k9t ());
   }
-    public static long[] statements = new long[5];
+    public static long[] statements = new long[3];
     public static long[] branches = new long[0];
     public static long[] loops = new long[1];
 
@@ -49,7 +44,7 @@ class CodeCoverCoverageCounter$9cekq05zmc7k9t extends org.codecover.instrumentat
   public static void ping() {/* nothing to do*/}
 
   public void reset() {
-      for (int i = 1; i <= 4; i++) {
+      for (int i = 1; i <= 2; i++) {
         statements[i] = 0L;
       }
       for (int i = 1; i <= -1; i++) {
@@ -62,7 +57,7 @@ class CodeCoverCoverageCounter$9cekq05zmc7k9t extends org.codecover.instrumentat
 
   public void serializeAndReset(org.codecover.instrumentation.measurement.CoverageCounterLog log) {
     log.startNamedSection("com.tw.biblioteca.View.java");
-      for (int i = 1; i <= 4; i++) {
+      for (int i = 1; i <= 2; i++) {
         if (statements[i] != 0L) {
           log.passCounter("S" + i, statements[i]);
           statements[i] = 0L;

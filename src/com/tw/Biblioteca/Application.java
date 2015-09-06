@@ -13,7 +13,7 @@ public class Application {
         //while(true) {
             Menu menu = new Menu();
             view = new View(menu.toString());
-            Parser parser = new Parser(view.getInput());
+            Parser parser = new Parser("1");
             MenuItem menuItem = parser.createMenuItem();
             menuItem.execute();
         //}

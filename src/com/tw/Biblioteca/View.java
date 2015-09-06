@@ -2,8 +2,6 @@
 
 package com.tw.biblioteca;
 
-import java.util.Scanner;
-
 public class View {
 
     String message;
@@ -18,8 +16,8 @@ public class View {
         System.out.println(message);
     }
 
-    public String getInput() {
-        Scanner scanner = new Scanner(System.in);
-        return scanner.nextLine();
-    }
+    //public String getInput() {
+    //    Scanner scanner = new Scanner(System.in);
+    //    return scanner.nextLine();
+    //}
 }

@@ -56,7 +56,7 @@ CodeCoverCoverageCounter$e6b4rt4ctc7yojpgfq75.statements[7]++;
 class CodeCoverCoverageCounter$e6b4rt4ctc7yojpgfq75 extends org.codecover.instrumentation.java.measurement.CounterContainer {
 
   static {
-    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "1e72f43a-c56c-4eb9-b941-30775e66654e").addObservedContainer(new CodeCoverCoverageCounter$e6b4rt4ctc7yojpgfq75 ());
+    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "1444954b-5a58-4c0b-ac21-4e241ff4ee4c").addObservedContainer(new CodeCoverCoverageCounter$e6b4rt4ctc7yojpgfq75 ());
   }
     public static long[] statements = new long[8];
     public static long[] branches = new long[0];
