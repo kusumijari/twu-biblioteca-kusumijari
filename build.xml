@@ -1,6 +1,6 @@
 <?xml version = "1.0"?>
 
-<project name="BaselineProblem" default="runjUnit" basedir=".">
+<project name="BaselineProblem" default="create-report" basedir=".">
 
     <property name="codecoverDir" value="codecover"/>
     <property name="sourceDir" value="src"/>
