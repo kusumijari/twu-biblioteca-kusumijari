@@ -7,7 +7,7 @@ public interface MenuItem {
 class CodeCoverCoverageCounter$gii4c0tpm5key2cjebtt extends org.codecover.instrumentation.java.measurement.CounterContainer {
 
   static {
-    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "1444954b-5a58-4c0b-ac21-4e241ff4ee4c").addObservedContainer(new CodeCoverCoverageCounter$gii4c0tpm5key2cjebtt ());
+    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "8b2ef426-ee2a-4819-aa3a-b51f34dc17a9").addObservedContainer(new CodeCoverCoverageCounter$gii4c0tpm5key2cjebtt ());
   }
     public static long[] statements = new long[0];
     public static long[] branches = new long[0];

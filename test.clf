@@ -3,12 +3,12 @@
 // 
 // Start Session
 // 
-// 06.09.2015 08:37:41.764
+// 06.09.2015 08:55:21.235
 // 
 // ///////////////////////////////
-// 06.09.2015 08:37:41.764
-TEST_SESSION_CONTAINER "1444954b-5a58-4c0b-ac21-4e241ff4ee4c"
-START_TEST_CASE "UNNAMED TESTCASE" 1441528661764 "This is a test case containing all coverage results cause no startTestCase methods where captured."
+// 06.09.2015 08:55:21.235
+TEST_SESSION_CONTAINER "8b2ef426-ee2a-4819-aa3a-b51f34dc17a9"
+START_TEST_CASE "UNNAMED TESTCASE" 1441529721235 "This is a test case containing all coverage results cause no startTestCase methods where captured."
 START_SECTION "com.tw.biblioteca.Application.java"
 S1 1
 S2 1
@@ -60,14 +60,14 @@ C3-11 1
 START_SECTION "com.tw.biblioteca.View.java"
 S1 2
 S2 1
-// 06.09.2015 08:37:41.980
-// 00:00.216
-END_TEST_CASE "UNNAMED TESTCASE" 1441528661980
+// 06.09.2015 08:55:21.480
+// 00:00.245
+END_TEST_CASE "UNNAMED TESTCASE" 1441529721480
 // ///////////////////////////////
 // 
 // End Session
 // 
-// 06.09.2015 08:37:41.981
-// 00:00.217
+// 06.09.2015 08:55:21.481
+// 00:00.246
 // 
 // ///////////////////////////////
