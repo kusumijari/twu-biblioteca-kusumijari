@@ -23,12 +23,15 @@ CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[5]++;
             Menu menu = new Menu();
             view = new View(menu.toString());
 CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[6]++;
+            view.displayMessage();
 CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[7]++;
-            Parser parser = new Parser("1");
 CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[8]++;
-            MenuItem menuItem = parser.createMenuItem();
-            menuItem.execute();
+            String input = view.getInput();
+            System.out.println(input);
 CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[9]++;
+            //Parser parser = new Parser(input);
+            //MenuItem menuItem = parser.createMenuItem();
+            //menuItem.execute();
         //}
     }
 }
@@ -36,7 +39,7 @@ CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[9]++;
 class CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt extends org.codecover.instrumentation.java.measurement.CounterContainer {
 
   static {
-    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "8ee6c6f4-f0a9-481d-9bd5-348057f94007").addObservedContainer(new CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt ());
+    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "cc82c718-cbd6-4165-a35b-95c28286de3f").addObservedContainer(new CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt ());
   }
     public static long[] statements = new long[10];
     public static long[] branches = new long[0];

@@ -30,7 +30,7 @@ public class Parser {
                 Book book2 = new Book("Tale of Two Cities", "Charles Dickens", 1859);
                 list.add(book1);
                 list.add(book2);
-                return new BookList(list);
+                return new Library(list);
             }
             else if(convertOptionToInt() == 2) {
                 return new Exit();

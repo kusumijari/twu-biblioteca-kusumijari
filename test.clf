@@ -3,12 +3,12 @@
 // 
 // Start Session
 // 
-// 06.09.2015 17:34:31.271
+// 07.09.2015 05:34:51.034
 // 
 // ///////////////////////////////
-// 06.09.2015 17:34:31.271
-TEST_SESSION_CONTAINER "8ee6c6f4-f0a9-481d-9bd5-348057f94007"
-START_TEST_CASE "UNNAMED TESTCASE" 1441560871271 "This is a test case containing all coverage results cause no startTestCase methods where captured."
+// 07.09.2015 05:34:51.034
+TEST_SESSION_CONTAINER "cc82c718-cbd6-4165-a35b-95c28286de3f"
+START_TEST_CASE "UNNAMED TESTCASE" 1441604091034 "This is a test case containing all coverage results cause no startTestCase methods where captured."
 START_SECTION "com.tw.biblioteca.Application.java"
 S1 1
 S2 1
@@ -19,19 +19,6 @@ S6 1
 S7 1
 S8 1
 S9 1
-START_SECTION "com.tw.biblioteca.Book.java"
-S1 2
-S2 2
-S3 2
-START_SECTION "com.tw.biblioteca.BookList.java"
-S1 1
-S2 1
-S3 1
-S4 1
-S5 1
-S6 2
-S7 1
-L1-2 1
 START_SECTION "com.tw.biblioteca.Menu.java"
 S1 1
 S2 1
@@ -41,33 +28,18 @@ S5 1
 S6 1
 S7 2
 L1-2 1
-START_SECTION "com.tw.biblioteca.Parser.java"
-S1 1
-S2 1
-S3 1
-S4 1
-S5 1
-S6 1
-S7 1
-S8 1
-S9 1
-B1 1
-B3 1
-B5 1
-C1-111111 1
-C2-11 1
-C3-11 1
 START_SECTION "com.tw.biblioteca.View.java"
 S1 2
-S2 1
-// 06.09.2015 17:34:31.490
-// 00:00.219
-END_TEST_CASE "UNNAMED TESTCASE" 1441560871490
+S2 2
+S3 1
+// 07.09.2015 05:35:04.412
+// 00:13.378
+END_TEST_CASE "UNNAMED TESTCASE" 1441604104412
 // ///////////////////////////////
 // 
 // End Session
 // 
-// 06.09.2015 17:34:31.490
-// 00:00.219
+// 07.09.2015 05:35:04.413
+// 00:13.379
 // 
 // ///////////////////////////////

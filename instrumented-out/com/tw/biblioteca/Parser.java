@@ -71,7 +71,7 @@ CodeCoverCoverageCounter$c7jzv3fosvccawach.statements[7]++;
 CodeCoverCoverageCounter$c7jzv3fosvccawach.statements[8]++;
                 list.add(book2);
 CodeCoverCoverageCounter$c7jzv3fosvccawach.statements[9]++;
-                return new BookList(list);
+                return new Library(list);
 
             }
             else {
@@ -98,7 +98,7 @@ CodeCoverCoverageCounter$c7jzv3fosvccawach.branches[7]++;
 class CodeCoverCoverageCounter$c7jzv3fosvccawach extends org.codecover.instrumentation.java.measurement.CounterContainer {
 
   static {
-    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "8ee6c6f4-f0a9-481d-9bd5-348057f94007").addObservedContainer(new CodeCoverCoverageCounter$c7jzv3fosvccawach ());
+    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "cc82c718-cbd6-4165-a35b-95c28286de3f").addObservedContainer(new CodeCoverCoverageCounter$c7jzv3fosvccawach ());
   }
     public static long[] statements = new long[11];
     public static long[] branches = new long[9];

@@ -2,6 +2,8 @@
 
 package com.tw.biblioteca;
 
+import java.util.Scanner;
+
 public class View {
   static {
     CodeCoverCoverageCounter$9cekq05zmc7k9t.ping();
@@ -22,18 +24,19 @@ CodeCoverCoverageCounter$9cekq05zmc7k9t.statements[1]++;
 CodeCoverCoverageCounter$9cekq05zmc7k9t.statements[2]++;
     }
 
-    //public String getInput() {
-    //    Scanner scanner = new Scanner(System.in);
-    //    return scanner.nextLine();
-    //}
+    public String getInput() {
+CodeCoverCoverageCounter$9cekq05zmc7k9t.statements[3]++;
+        Scanner scanner = new Scanner(System.in);
+        return scanner.next();
+    }
 }
 
 class CodeCoverCoverageCounter$9cekq05zmc7k9t extends org.codecover.instrumentation.java.measurement.CounterContainer {
 
   static {
-    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "8ee6c6f4-f0a9-481d-9bd5-348057f94007").addObservedContainer(new CodeCoverCoverageCounter$9cekq05zmc7k9t ());
+    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "cc82c718-cbd6-4165-a35b-95c28286de3f").addObservedContainer(new CodeCoverCoverageCounter$9cekq05zmc7k9t ());
   }
-    public static long[] statements = new long[3];
+    public static long[] statements = new long[4];
     public static long[] branches = new long[0];
     public static long[] loops = new long[1];
 
@@ -44,7 +47,7 @@ class CodeCoverCoverageCounter$9cekq05zmc7k9t extends org.codecover.instrumentat
   public static void ping() {/* nothing to do*/}
 
   public void reset() {
-      for (int i = 1; i <= 2; i++) {
+      for (int i = 1; i <= 3; i++) {
         statements[i] = 0L;
       }
       for (int i = 1; i <= -1; i++) {
@@ -57,7 +60,7 @@ class CodeCoverCoverageCounter$9cekq05zmc7k9t extends org.codecover.instrumentat
 
   public void serializeAndReset(org.codecover.instrumentation.measurement.CoverageCounterLog log) {
     log.startNamedSection("com.tw.biblioteca.View.java");
-      for (int i = 1; i <= 2; i++) {
+      for (int i = 1; i <= 3; i++) {
         if (statements[i] != 0L) {
           log.passCounter("S" + i, statements[i]);
           statements[i] = 0L;

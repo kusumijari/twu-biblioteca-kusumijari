@@ -6,10 +6,12 @@ public class InvalidMenuItem implements MenuItem{
 
     String errorMessage;
     InvalidMenuItem() {
+
         this.errorMessage = "Select a valid option!";
     }
 
     public void execute() {
+
         System.out.println(errorMessage);
     }
 

@@ -26,7 +26,7 @@ public class ParserTest {
     public void shouldReturnBookListObjectIfOptionIsOne() {
         Parser parser = new Parser("1");
 
-        assertEquals(BookList.class, parser.createMenuItem().getClass());
+        assertEquals(Library.class, parser.createMenuItem().getClass());
     }
 
     @Test
