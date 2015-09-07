@@ -14,19 +14,19 @@ CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[2]++;
 
     private void start() {
 CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[3]++;
-        View view = new View("Welcome to Biblioteca");
-        view.displayMessage();
+        ConsoleOutput consoleOutput = new ConsoleOutput("Welcome to Biblioteca");
+        consoleOutput.displayMessage();
 CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[4]++;
 CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[5]++;
 
         //while(true) {
             Menu menu = new Menu();
-            view = new View(menu.toString());
+            consoleOutput = new ConsoleOutput(menu.toString());
 CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[6]++;
-            view.displayMessage();
+            consoleOutput.displayMessage();
 CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[7]++;
 CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[8]++;
-            String input = view.getInput();
+            String input = consoleOutput.getInput();
             System.out.println(input);
 CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[9]++;
             //Parser parser = new Parser(input);

@@ -5,11 +5,11 @@ package com.tw.biblioteca;
 public class InvalidMenuItem implements MenuItem{
 
     String errorMessage;
-    View view;
+    ConsoleOutput consoleOutput;
     InvalidMenuItem() {
 
         this.errorMessage = "Select a valid option!";
-        view = new View(errorMessage);
+        consoleOutput = new ConsoleOutput(errorMessage);
     }
 
     public void execute() {

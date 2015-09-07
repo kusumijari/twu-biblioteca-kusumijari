@@ -6,8 +6,8 @@ public class Checkout implements MenuItem{
 
     int bookChoice;
 
-    public String acceptBookChoice(View view) {
-        return view.getInput();
+    public String acceptBookChoice(ConsoleOutput consoleOutput) {
+        return consoleOutput.getInput();
     }
 
     @Override

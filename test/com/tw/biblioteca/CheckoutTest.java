@@ -10,8 +10,8 @@ public class CheckoutTest {
     @Test
     public void shouldAcceptChoiceOfBookFromTheUser() {
         Checkout checkout = new Checkout();
-        View mockView = mock(View.class);
-        when(mockView.getInput()).thenReturn("1");
-        assertEquals("1", checkout.acceptBookChoice(mockView));
+        ConsoleOutput mockConsoleOutput = mock(ConsoleOutput.class);
+        when(mockConsoleOutput.getInput()).thenReturn("1");
+        assertEquals("1", checkout.acceptBookChoice(mockConsoleOutput));
     }
 }

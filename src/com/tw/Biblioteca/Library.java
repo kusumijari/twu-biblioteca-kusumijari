@@ -7,7 +7,6 @@ import java.util.ArrayList;
 public class Library{
 
     private ArrayList<Book> library = new ArrayList<Book>();
-    View view;
 
     Library(ArrayList<Book> library) {
         this.library = library;

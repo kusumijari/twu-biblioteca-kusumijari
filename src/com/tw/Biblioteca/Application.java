@@ -7,15 +7,16 @@ public class Application {
     }
 
     private void start() {
-        View view = new View("Welcome to Biblioteca");
-        view.displayMessage();
+        ConsoleOutput consoleOutput = new ConsoleOutput("Welcome to Biblioteca");
+        consoleOutput.displayMessage();
 
         while(true) {
             Menu menu = new Menu();
-            view = new View(menu.toString());
-            view.displayMessage();
+            consoleOutput = new ConsoleOutput(menu.toString());
+            consoleOutput.displayMessage();
 
-            Parser parser = new Parser(view.getInput());
+            ConsoleInput consoleInput = new ConsoleInput();
+            Parser parser = new Parser(consoleInput.getInput());
             MenuItem menuItem = parser.createMenuItem();
             menuItem.execute();
         }
