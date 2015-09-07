@@ -12,5 +12,4 @@ public class FactoryTest {
         assertEquals(ConsoleOutput.class, factory.createConsoleOutputObject("message"));
     }
 
-
 }
