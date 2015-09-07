@@ -12,7 +12,7 @@ public class Parser {
     }
 
     public boolean isValid() {
-        if(option.matches("[0-9]+") && convertOptionToInt() > 0 && convertOptionToInt() <= 2 ) {
+        if(option.matches("[0-9]+") && convertOptionToInt() > 0 && convertOptionToInt() <= 3 ) {
             return true;
         }
         return false;
