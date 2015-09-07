@@ -49,4 +49,5 @@ public class ParserTest {
 
         assertEquals(Exit.class, parser.createMenuItem().getClass());
     }
+
 }
