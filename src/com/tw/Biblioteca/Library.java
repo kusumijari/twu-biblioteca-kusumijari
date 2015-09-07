@@ -4,26 +4,23 @@ package com.tw.biblioteca;
 
 import java.util.ArrayList;
 
-public class Library implements MenuItem{
+public class Library{
 
-    ArrayList<Book> booklist= new ArrayList<Book>();
+    private ArrayList<Book> library = new ArrayList<Book>();
     View view;
 
-    Library(ArrayList<Book> booklist) {
-        this.booklist = booklist;
+    Library(ArrayList<Book> library) {
+        this.library = library;
     }
 
-
-    @Override
-    public void execute() {
+    public String listOfBooks() {
 
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("Name\tAuthor\tYear\n");
 
-        for(Book book : booklist) {
+        for(Book book : library) {
             stringBuilder.append(book.toString()+"\n");
         }
-
-        view = new View(stringBuilder.toString());
+        return stringBuilder.toString();
     }
 }

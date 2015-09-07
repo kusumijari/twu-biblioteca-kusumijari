@@ -1,38 +1,21 @@
 package com.tw.biblioteca;
 
-import org.junit.After;
-import org.junit.Before;
 import org.junit.Test;
 
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
 import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
 public class LibraryTest {
 
-    private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-
-    @Before
-    public void setUpStreams() {
-        System.setOut(new PrintStream(outContent));
-    }
-
     @Test
-    public void shouldDisplayTheBookList() {
-        ArrayList<Book>  list = new ArrayList<Book>();
-        list.add(new Book("Harry Potter", "J. K. Rowling", 1997));
-        Library library = new Library(list);
+    public void shouldReturnContentsOfLibrary() {
+        ArrayList<Book> booklist = new ArrayList<Book>();
+        booklist.add(new Book("Harry Potter", "J. K. Rowling", 1997));
+        booklist.add(new Book("Tale of Two cities", "Charles Dickens", 1859));
+        Library library = new Library(booklist);
 
-        library.execute();
-
-        assertEquals("Name\tAuthor\tYear\nHarry Potter\tJ. K. Rowling\t1997\n", outContent.toString());
-    }
-
-    @After
-    public void cleanUpStreams() {
-        System.setOut(System.out);
+        assertEquals("Name\tAuthor\tYear", library.listOfBooks());
     }
 
 }

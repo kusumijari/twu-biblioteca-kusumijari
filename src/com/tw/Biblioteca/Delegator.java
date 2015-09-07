@@ -4,11 +4,10 @@ package com.tw.biblioteca;
 
 import java.util.ArrayList;
 
-public class Parser {
+public class Delegator {
     private String option;
-    private Library library;
 
-    public Parser(String option) {
+    public Delegator(String option) {
         this.option = option;
     }
 
@@ -31,7 +30,7 @@ public class Parser {
                 Book book2 = new Book("Tale of Two Cities", "Charles Dickens", 1859);
                 list.add(book1);
                 list.add(book2);
-                return new ListBooks();
+                return new Library(list);
             }
             else if(convertOptionToInt() == 2) {
                 return new Exit();
