@@ -40,9 +40,8 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Controller.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Display.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Keyboard.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/InvalidMenuItem.java" afterPath="$PROJECT_DIR$/src/com/tw/biblioteca/InvalidMenuItem.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Menu.java" afterPath="$PROJECT_DIR$/src/com/tw/biblioteca/Menu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/tw/biblioteca/MenuTest.java" afterPath="$PROJECT_DIR$/test/com/tw/biblioteca/MenuTest.java" />
     </list>
     <ignored path="BibliotecaVersion1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Menu.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Menu.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Menu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27363184">
-              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
               <folding>
                 <element signature="e#164#172#0" expanded="true" />
               </folding>
@@ -142,11 +141,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MenuTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MenuTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/MenuTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.29850745">
+              <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -214,12 +213,12 @@
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/ExitTest.java" />
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/ViewTest.java" />
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/ParserTest.java" />
-        <option value="$PROJECT_DIR$/test/com/tw/biblioteca/MenuTest.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/View.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Application.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Library.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/InvalidMenuItem.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Menu.java" />
+        <option value="$PROJECT_DIR$/test/com/tw/biblioteca/MenuTest.java" />
       </list>
     </option>
   </component>
@@ -944,16 +943,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/MenuTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/ParserTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -990,10 +979,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27363184">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
           <folding>
             <element signature="e#164#172#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/MenuTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29850745">
+          <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
