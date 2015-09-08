@@ -23,12 +23,9 @@ public class Checkout implements MenuItem{
     @Override
     public void execute() {
         bookNameChoice = acceptBookChoice(consoleInput);
-        consoleOutput = new ConsoleOutput(currentListOfBooks());
+        library.removeBook(bookToBeCheckedOut());
+        consoleOutput = new ConsoleOutput("Thank You! Enjoy the book.");
         consoleOutput.displayMessage();
-    }
-
-    private String currentListOfBooks() {
-        return library.removeBook(bookToBeCheckedOut());
     }
 
     private Book bookToBeCheckedOut() {

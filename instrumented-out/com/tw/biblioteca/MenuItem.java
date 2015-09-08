@@ -1,13 +1,13 @@
 package com.tw.biblioteca;
 
 public interface MenuItem {
-        public void execute();
+    public void execute();
 }
 
 class CodeCoverCoverageCounter$gii4c0tpm5key2cjebtt extends org.codecover.instrumentation.java.measurement.CounterContainer {
 
   static {
-    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "cc82c718-cbd6-4165-a35b-95c28286de3f").addObservedContainer(new CodeCoverCoverageCounter$gii4c0tpm5key2cjebtt ());
+    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "2e5e5b2f-b407-4c98-8fa0-918336090532").addObservedContainer(new CodeCoverCoverageCounter$gii4c0tpm5key2cjebtt ());
   }
     public static long[] statements = new long[0];
     public static long[] branches = new long[0];

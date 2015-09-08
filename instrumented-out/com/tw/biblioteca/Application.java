@@ -18,32 +18,48 @@ CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[3]++;
         consoleOutput.displayMessage();
 CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[4]++;
 CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[5]++;
+byte CodeCoverTryBranchHelper_L1 = 0;
+CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.loops[1]++;
 
-        //while(true) {
+
+
+        while(true) {
+if (CodeCoverTryBranchHelper_L1 == 0) {
+  CodeCoverTryBranchHelper_L1++;
+  CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.loops[1]--;
+  CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.loops[2]++;
+} else if (CodeCoverTryBranchHelper_L1 == 1) {
+  CodeCoverTryBranchHelper_L1++;
+  CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.loops[2]--;
+  CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.loops[3]++;
+}
+CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[6]++;
             Menu menu = new Menu();
             consoleOutput = new ConsoleOutput(menu.toString());
-CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[6]++;
-            consoleOutput.displayMessage();
 CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[7]++;
+            consoleOutput.displayMessage();
 CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[8]++;
-            String input = consoleOutput.getInput();
-            System.out.println(input);
 CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[9]++;
-            //Parser parser = new Parser(input);
-            //MenuItem menuItem = parser.createMenuItem();
-            //menuItem.execute();
-        //}
+
+            ConsoleInput consoleInput = new ConsoleInput();
+CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[10]++;
+            Parser parser = new Parser(consoleInput.getInput());
+CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[11]++;
+            MenuItem menuItem = parser.createMenuItem();
+            menuItem.execute();
+CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[12]++;
+        }
     }
 }
 
 class CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt extends org.codecover.instrumentation.java.measurement.CounterContainer {
 
   static {
-    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "cc82c718-cbd6-4165-a35b-95c28286de3f").addObservedContainer(new CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt ());
+    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "2e5e5b2f-b407-4c98-8fa0-918336090532").addObservedContainer(new CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt ());
   }
-    public static long[] statements = new long[10];
+    public static long[] statements = new long[13];
     public static long[] branches = new long[0];
-    public static long[] loops = new long[1];
+    public static long[] loops = new long[4];
 
   public CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt () {
     super("com.tw.biblioteca.Application.java");
@@ -52,20 +68,20 @@ class CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt extends org.codecover.i
   public static void ping() {/* nothing to do*/}
 
   public void reset() {
-      for (int i = 1; i <= 9; i++) {
+      for (int i = 1; i <= 12; i++) {
         statements[i] = 0L;
       }
       for (int i = 1; i <= -1; i++) {
         branches[i] = 0L;
       }
-      for (int i = 1; i <= 0; i++) {
+      for (int i = 1; i <= 3; i++) {
         loops[i] = 0L;
       }
   }
 
   public void serializeAndReset(org.codecover.instrumentation.measurement.CoverageCounterLog log) {
     log.startNamedSection("com.tw.biblioteca.Application.java");
-      for (int i = 1; i <= 9; i++) {
+      for (int i = 1; i <= 12; i++) {
         if (statements[i] != 0L) {
           log.passCounter("S" + i, statements[i]);
           statements[i] = 0L;
@@ -77,7 +93,7 @@ class CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt extends org.codecover.i
           branches[i] = 0L;
         }
       }
-      for (int i = 1; i <= 0; i++) {
+      for (int i = 1; i <= 1; i++) {
         if (loops[i * 3 - 2] != 0L) {
           log.passCounter("L" + i + "-0", loops[i * 3 - 2]);
           loops[i * 3 - 2] = 0L;

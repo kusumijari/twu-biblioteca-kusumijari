@@ -1,31 +1,32 @@
-//Exits the application
+//Building display classes
 
 package com.tw.biblioteca;
 
-public class Exit implements MenuItem{
+public class Factory {
   static {
-    CodeCoverCoverageCounter$7ig916vgckhhep.ping();
+    CodeCoverCoverageCounter$240upl75z1b7c09r42p.ping();
   }
 
 
-    @Override
-    public void execute() {
-        System.exit(0);
-CodeCoverCoverageCounter$7ig916vgckhhep.statements[1]++;
+    private ConsoleOutput consoleOutput;
+    public ConsoleOutput createConsoleOutputObject(String message) {
+        consoleOutput = new ConsoleOutput(message);
+CodeCoverCoverageCounter$240upl75z1b7c09r42p.statements[1]++;
+        return consoleOutput;
     }
 }
 
-class CodeCoverCoverageCounter$7ig916vgckhhep extends org.codecover.instrumentation.java.measurement.CounterContainer {
+class CodeCoverCoverageCounter$240upl75z1b7c09r42p extends org.codecover.instrumentation.java.measurement.CounterContainer {
 
   static {
-    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "2e5e5b2f-b407-4c98-8fa0-918336090532").addObservedContainer(new CodeCoverCoverageCounter$7ig916vgckhhep ());
+    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "2e5e5b2f-b407-4c98-8fa0-918336090532").addObservedContainer(new CodeCoverCoverageCounter$240upl75z1b7c09r42p ());
   }
     public static long[] statements = new long[2];
     public static long[] branches = new long[0];
     public static long[] loops = new long[1];
 
-  public CodeCoverCoverageCounter$7ig916vgckhhep () {
-    super("com.tw.biblioteca.Exit.java");
+  public CodeCoverCoverageCounter$240upl75z1b7c09r42p () {
+    super("com.tw.biblioteca.Factory.java");
   }
 
   public static void ping() {/* nothing to do*/}
@@ -43,7 +44,7 @@ class CodeCoverCoverageCounter$7ig916vgckhhep extends org.codecover.instrumentat
   }
 
   public void serializeAndReset(org.codecover.instrumentation.measurement.CoverageCounterLog log) {
-    log.startNamedSection("com.tw.biblioteca.Exit.java");
+    log.startNamedSection("com.tw.biblioteca.Factory.java");
       for (int i = 1; i <= 1; i++) {
         if (statements[i] != 0L) {
           log.passCounter("S" + i, statements[i]);

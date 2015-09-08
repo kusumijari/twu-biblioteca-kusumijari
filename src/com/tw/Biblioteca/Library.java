@@ -27,12 +27,12 @@ public class Library{
         return stringBuilder.toString();
     }
 
-    public String removeBook(Book nameOfBook) {
+    public boolean removeBook(Book nameOfBook) {
         if(!exists(nameOfBook)) {
-            return toString();
+            return false;
         }
         booklist.remove(nameOfBook);
-        return toString();
+        return true;
     }
 
     public boolean exists(Book nameOfBook) {

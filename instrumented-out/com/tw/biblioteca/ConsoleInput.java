@@ -1,37 +1,43 @@
-//Exits the application
+//Receives input fromt the user
 
 package com.tw.biblioteca;
 
-public class Exit implements MenuItem{
+import java.util.Scanner;
+
+public class ConsoleInput {
   static {
-    CodeCoverCoverageCounter$7ig916vgckhhep.ping();
+    CodeCoverCoverageCounter$se1buoq7zqdgwppb4l63sbusf5.ping();
   }
 
 
-    @Override
-    public void execute() {
-        System.exit(0);
-CodeCoverCoverageCounter$7ig916vgckhhep.statements[1]++;
+    String message;
+
+    public String getInput() {
+CodeCoverCoverageCounter$se1buoq7zqdgwppb4l63sbusf5.statements[1]++;
+        Scanner scanner = new Scanner(System.in);
+        message = scanner.nextLine();
+CodeCoverCoverageCounter$se1buoq7zqdgwppb4l63sbusf5.statements[2]++;
+        return message;
     }
 }
 
-class CodeCoverCoverageCounter$7ig916vgckhhep extends org.codecover.instrumentation.java.measurement.CounterContainer {
+class CodeCoverCoverageCounter$se1buoq7zqdgwppb4l63sbusf5 extends org.codecover.instrumentation.java.measurement.CounterContainer {
 
   static {
-    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "2e5e5b2f-b407-4c98-8fa0-918336090532").addObservedContainer(new CodeCoverCoverageCounter$7ig916vgckhhep ());
+    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "2e5e5b2f-b407-4c98-8fa0-918336090532").addObservedContainer(new CodeCoverCoverageCounter$se1buoq7zqdgwppb4l63sbusf5 ());
   }
-    public static long[] statements = new long[2];
+    public static long[] statements = new long[3];
     public static long[] branches = new long[0];
     public static long[] loops = new long[1];
 
-  public CodeCoverCoverageCounter$7ig916vgckhhep () {
-    super("com.tw.biblioteca.Exit.java");
+  public CodeCoverCoverageCounter$se1buoq7zqdgwppb4l63sbusf5 () {
+    super("com.tw.biblioteca.ConsoleInput.java");
   }
 
   public static void ping() {/* nothing to do*/}
 
   public void reset() {
-      for (int i = 1; i <= 1; i++) {
+      for (int i = 1; i <= 2; i++) {
         statements[i] = 0L;
       }
       for (int i = 1; i <= -1; i++) {
@@ -43,8 +49,8 @@ class CodeCoverCoverageCounter$7ig916vgckhhep extends org.codecover.instrumentat
   }
 
   public void serializeAndReset(org.codecover.instrumentation.measurement.CoverageCounterLog log) {
-    log.startNamedSection("com.tw.biblioteca.Exit.java");
-      for (int i = 1; i <= 1; i++) {
+    log.startNamedSection("com.tw.biblioteca.ConsoleInput.java");
+      for (int i = 1; i <= 2; i++) {
         if (statements[i] != 0L) {
           log.passCounter("S" + i, statements[i]);
           statements[i] = 0L;
