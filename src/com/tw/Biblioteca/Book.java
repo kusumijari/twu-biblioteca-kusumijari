@@ -24,7 +24,7 @@ public class Book {
             return false;
         }
         Book thatBook = (Book)that;
-        if(this.name != thatBook.name){
+        if(!this.name.equals(thatBook.name)){
             return false;
         }
         return true;

@@ -23,4 +23,13 @@ public class CheckoutTest {
 
         assertEquals("Name\tAuthor\tYear\nHarry Potter\tJ. K. Rowling\t1997\nTale of Two Cities\tCharles Dickens\t1859\n", checkout.receiveNewBookList());
     }
+
+    @Test
+    public void shouldRemoveBookFromTheList() {
+    Library library = new Library();
+    Checkout checkout = new Checkout(library);
+
+    ConsoleOutput mockConsoleOutput = mock(ConsoleOutput.class);
+    verify(mockConsoleOutput).displayMessage();
+    }
 }

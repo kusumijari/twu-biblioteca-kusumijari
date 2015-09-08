@@ -5,7 +5,6 @@ import org.junit.Test;
 import static junit.framework.TestCase.assertFalse;
 import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
 
 public class LibraryTest {
 
@@ -13,7 +12,7 @@ public class LibraryTest {
     public void shouldReturnContentsOfLibrary() {
         Library library = new Library();
 
-        assertEquals("Name\tAuthor\tYear\nHarry Potter\tJ. K. Rowling\t1997\nTale of Two Cities\tCharles Dickens\t1859\n", library.listOfBooks());
+        assertEquals("Name\tAuthor\tYear\nHarry Potter\tJ. K. Rowling\t1997\nTale of Two Cities\tCharles Dickens\t1859\n", library.toString());
     }
 
     @Test
@@ -21,7 +20,7 @@ public class LibraryTest {
         Library library = new Library();
         Book book = new Book("Harry Potter", "author", 0);
 
-        assertEquals("Name\tAuthor\tYear\nTale of Two Cities\tCharles Dickens\t1859\n", library.removeBooks(book));
+        assertEquals("Name\tAuthor\tYear\nTale of Two Cities\tCharles Dickens\t1859\n", library.removeBook(book));
     }
 
     @Test
@@ -45,6 +44,6 @@ public class LibraryTest {
         Library library = new Library();
         Book book = new Book("Inferno", "author", 0);
 
-        assertNotEquals("Name\tAuthor\tYear\nTale of Two Cities\tCharles Dickens\t1859\n", library.removeBooks(book));
+        assertEquals("Name\tAuthor\tYear\nHarry Potter\tJ. K. Rowling\t1997\nTale of Two Cities\tCharles Dickens\t1859\n", library.removeBook(book));
     }
 }

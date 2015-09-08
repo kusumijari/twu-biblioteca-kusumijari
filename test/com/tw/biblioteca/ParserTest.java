@@ -44,10 +44,17 @@ public class ParserTest {
     }
 
     @Test
-    public void shouldExitObjectIfOptionIsTwo() {
-        Parser parser = new Parser("2");
+    public void shouldExitObjectIfOptionIsThree() {
+        Parser parser = new Parser("3");
 
         assertEquals(Exit.class, parser.createMenuItem().getClass());
+    }
+
+    @Test
+    public void shouldReturnCheckoutObjectIfOptionIsTwo() {
+        Parser parser = new Parser("2");
+
+        assertEquals(Checkout.class, parser.createMenuItem().getClass());
     }
 
 }

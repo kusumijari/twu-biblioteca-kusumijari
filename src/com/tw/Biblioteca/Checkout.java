@@ -4,11 +4,16 @@ package com.tw.biblioteca;
 
 public class Checkout implements MenuItem{
 
-    int bookChoice;
+    String bookNameChoice;
     Library library;
+    ConsoleOutput consoleOutput;
+    ConsoleInput consoleInput;
+    Book book;
+
 
     Checkout(Library library) {
         this.library = library;
+        consoleInput = new ConsoleInput();
     }
 
     public String acceptBookChoice(ConsoleInput consoleInput) {
@@ -17,10 +22,17 @@ public class Checkout implements MenuItem{
 
     @Override
     public void execute() {
-
+        bookNameChoice = acceptBookChoice(consoleInput);
+        consoleOutput = new ConsoleOutput(currentListOfBooks());
+        consoleOutput.displayMessage();
     }
 
-    public String receiveNewBookList() {
-        return library.listOfBooks().toString();
+    private String currentListOfBooks() {
+        return library.removeBook(bookToBeCheckedOut());
     }
+
+    private Book bookToBeCheckedOut() {
+        return new Book(bookNameChoice, "author", 0);
+    }
+
 }

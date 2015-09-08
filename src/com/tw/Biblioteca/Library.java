@@ -15,7 +15,8 @@ public class Library{
         booklist.add(book2);
     }
 
-    public String listOfBooks() {
+    @Override
+    public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
 
         stringBuilder.append("Name\tAuthor\tYear\n");
@@ -26,11 +27,12 @@ public class Library{
         return stringBuilder.toString();
     }
 
-    public String removeBooks(Book nameOfBook) {
+    public String removeBook(Book nameOfBook) {
         if(!exists(nameOfBook)) {
-            return booklist.toString();
+            return toString();
         }
-        return ("Name\tAuthor\tYear\nTale of Two Cities\tCharles Dickens\t1859\n");
+        booklist.remove(nameOfBook);
+        return toString();
     }
 
     public boolean exists(Book nameOfBook) {

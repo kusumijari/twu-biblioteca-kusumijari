@@ -4,9 +4,10 @@ package com.tw.biblioteca;
 
 public class Parser {
     private String option;
-    private Library library = new Library();
+    private Library library;
 
     public Parser(String option) {
+        this.library = new Library();
         this.option = option;
     }
 
@@ -25,6 +26,9 @@ public class Parser {
         if(isValid()) {
             if (convertOptionToInt() == 1) {
                 return new ListBooks(library);
+            }
+            else if (convertOptionToInt() == 2) {
+                return new Checkout(library);
             }
             else if(convertOptionToInt() == 3) {
                 return new Exit();

@@ -17,6 +17,6 @@ public class ListBooks implements MenuItem {
     }
 
     public String getBooks() {
-        return library.listOfBooks();
+        return library.toString();
     }
 }
