@@ -43,8 +43,38 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Input.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Keyboard.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/View.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/tw/biblioteca/CheckoutTest.java" afterPath="$PROJECT_DIR$/test/com/tw/biblioteca/CheckoutTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/tw/biblioteca/LibraryTest.java" afterPath="$PROJECT_DIR$/test/com/tw/biblioteca/LibraryTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Book.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Book.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Checkout.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Checkout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$240upl75z1b7c09r42p.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$240upl75z1b7c09r42p.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$2ajdxnz382yxmq4ezc1.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$2ajdxnz382yxmq4ezc1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$37xtbhjvcrcf6bkki6fbkx.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$37xtbhjvcrcf6bkki6fbkx.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$5lvtga7ugu3kp77gezq90rir8spt.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$5lvtga7ugu3kp77gezq90rir8spt.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$76mvy2cvdcgd41.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$76mvy2cvdcgd41.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$7ig916vgckhhep.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$7ig916vgckhhep.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$8db22my9e9gj8h.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$8db22my9e9gj8h.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$8kslbrqesm7jjakfe6at3iw06xiq5wh.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$8kslbrqesm7jjakfe6at3iw06xiq5wh.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$c7jzv3fosvccawach.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$c7jzv3fosvccawach.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$eds20578rzh5p5b70msh.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$eds20578rzh5p5b70msh.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$gii4c0tpm5key2cjebtt.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$gii4c0tpm5key2cjebtt.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$se1buoq7zqdgwppb4l63sbusf5.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$se1buoq7zqdgwppb4l63sbusf5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Library.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Library.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Application.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Application.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Book.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Book.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Checkout.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Checkout.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/ConsoleInput.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/ConsoleInput.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/ConsoleOutput.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/ConsoleOutput.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Exit.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Exit.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Factory.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Factory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/InvalidMenuItem.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/InvalidMenuItem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Library.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Library.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/ListBooks.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/ListBooks.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Menu.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Menu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/MenuItem.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/MenuItem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Parser.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Parser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codecover.xml" afterPath="$PROJECT_DIR$/codecover.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.clf" afterPath="$PROJECT_DIR$/test.clf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BibliotecaVersion1.iws" />
@@ -82,14 +112,24 @@
       <file leaf-file-name="Checkout.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Checkout.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.50248754">
-              <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.5771144">
+              <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
               <folding>
                 <element signature="e#415#416#0" expanded="true" />
                 <element signature="e#461#462#0" expanded="true" />
                 <element signature="e#1038#1039#0" expanded="true" />
                 <element signature="e#1085#1086#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -170,18 +210,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParserTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/ParserTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -221,7 +249,6 @@
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Exit.java" />
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/ApplicationTest.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/ExitTest.java" />
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/ViewTest.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/InvalidMenuItem.java" />
@@ -250,6 +277,7 @@
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Checkout.java" />
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/LibraryTest.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Library.java" />
+        <option value="$PROJECT_DIR$/build.xml" />
       </list>
     </option>
   </component>
@@ -878,14 +906,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35384616">
-          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Library.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1119,10 +1139,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Checkout.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50248754">
-          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.5771144">
+          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
           <folding>
             <element signature="e#415#416#0" expanded="true" />
             <element signature="e#461#462#0" expanded="true" />

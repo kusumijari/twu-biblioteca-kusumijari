@@ -47,17 +47,17 @@ CodeCoverCoverageCounter$76mvy2cvdcgd41.statements[5]++;
         Book thatBook = (Book)that;
 CodeCoverCoverageCounter$76mvy2cvdcgd41.statements[6]++;
 int CodeCoverConditionCoverageHelper_C2;
-        if((((((CodeCoverConditionCoverageHelper_C2 = 0) == 0) || true) && (!
+        if((((((CodeCoverConditionCoverageHelper_C2 = 0) == 0) || true) && (
 (((CodeCoverConditionCoverageHelper_C2 |= (2)) == 0 || true) &&
- ((this.name.equals(thatBook.name)) && 
+ (((this.name).equals(thatBook.name)) && 
   ((CodeCoverConditionCoverageHelper_C2 |= (1)) == 0 || true)))
 )) && (CodeCoverCoverageCounter$76mvy2cvdcgd41.conditionCounters[2].incrementCounterOfBitMask(CodeCoverConditionCoverageHelper_C2, 1) || true)) || (CodeCoverCoverageCounter$76mvy2cvdcgd41.conditionCounters[2].incrementCounterOfBitMask(CodeCoverConditionCoverageHelper_C2, 1) && false)){
 CodeCoverCoverageCounter$76mvy2cvdcgd41.branches[3]++;
-            return false;
+            return true;
 
         } else {
   CodeCoverCoverageCounter$76mvy2cvdcgd41.branches[4]++;}
-        return true;
+        return false;
     }
 
     @Override
@@ -106,7 +106,7 @@ CodeCoverCoverageCounter$76mvy2cvdcgd41.statements[10]++;
 class CodeCoverCoverageCounter$76mvy2cvdcgd41 extends org.codecover.instrumentation.java.measurement.CounterContainer {
 
   static {
-    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "2e5e5b2f-b407-4c98-8fa0-918336090532").addObservedContainer(new CodeCoverCoverageCounter$76mvy2cvdcgd41 ());
+    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "b84a8ec3-2731-45e5-a5c1-2583f02fc784").addObservedContainer(new CodeCoverCoverageCounter$76mvy2cvdcgd41 ());
   }
     public static long[] statements = new long[11];
     public static long[] branches = new long[7];
