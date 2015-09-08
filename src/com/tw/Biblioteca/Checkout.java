@@ -23,13 +23,20 @@ public class Checkout implements MenuItem{
     @Override
     public void execute() {
         bookNameChoice = acceptBookChoice(consoleInput);
-        library.removeBook(bookToBeCheckedOut());
-        consoleOutput = new ConsoleOutput("Thank You! Enjoy the book.");
-        consoleOutput.displayMessage();
+        book = new Book(bookNameChoice, "author", 0);
+        if(hasBeenCheckedOut(book)) {
+            consoleOutput = new ConsoleOutput("Thank You! Enjoy the book.");
+            consoleOutput.displayMessage();
+            System.out.print(library.toString());
+        }
+        else {
+            consoleOutput = new ConsoleOutput("That book is not available");
+            consoleOutput.displayMessage();
+
+        }
     }
 
-    private Book bookToBeCheckedOut() {
-        return new Book(bookNameChoice, "author", 0);
+    public boolean hasBeenCheckedOut(Book book) {
+        return library.removeBook(book);
     }
-
 }

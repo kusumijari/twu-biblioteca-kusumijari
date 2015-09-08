@@ -28,7 +28,7 @@ public class LibraryTest {
         Library library = new Library();
         Book book = new Book("Harry Potter", "author", 0);
 
-        assertTrue(library.exists(book));
+        assertTrue(library.removeBook(book));
     }
 
     @Test
@@ -36,7 +36,7 @@ public class LibraryTest {
         Library library = new Library();
         Book book = new Book("Inferno", "author", 0);
 
-        assertFalse(library.exists(book));
+        assertFalse(library.removeBook(book));
     }
 
     @Test

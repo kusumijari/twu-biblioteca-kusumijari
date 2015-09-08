@@ -24,10 +24,10 @@ public class Book {
             return false;
         }
         Book thatBook = (Book)that;
-        if(!this.name.equals(thatBook.name)){
-            return false;
+        if((this.name).equals(thatBook.name)){
+            return true;
         }
-        return true;
+        return false;
     }
 
     @Override

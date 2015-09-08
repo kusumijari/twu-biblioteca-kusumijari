@@ -28,19 +28,19 @@ public class Library{
     }
 
     public boolean removeBook(Book nameOfBook) {
-        if(!exists(nameOfBook)) {
-            return false;
+        if(booklist.contains(nameOfBook)) {
+            booklist.remove(nameOfBook);
+            return true;
         }
-        booklist.remove(nameOfBook);
-        return true;
+        return false;
     }
 
-    public boolean exists(Book nameOfBook) {
+    /*public boolean exists(Book nameOfBook) {
         for(Book book : booklist){
             if(book.equals(nameOfBook)){
                 return true;
             }
         }
         return false;
-    }
+    }*/
 }
