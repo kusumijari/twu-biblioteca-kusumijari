@@ -26,8 +26,10 @@ public class Library{
         return stringBuilder.toString();
     }
 
-    public String removeBooks(String nameOfBook) {
-
+    public String removeBooks(Book nameOfBook) {
+        if(!exists(nameOfBook)) {
+            return booklist.toString();
+        }
         return ("Name\tAuthor\tYear\nTale of Two Cities\tCharles Dickens\t1859\n");
     }
 

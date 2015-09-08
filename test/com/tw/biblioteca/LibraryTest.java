@@ -19,8 +19,9 @@ public class LibraryTest {
     @Test
     public void shouldRemoveASpecifiedBookFromTheLibrary() {
         Library library = new Library();
+        Book book = new Book("Harry Potter", "author", 0);
 
-        assertEquals("Name\tAuthor\tYear\nTale of Two Cities\tCharles Dickens\t1859\n", library.removeBooks("Harry Potter"));
+        assertEquals("Name\tAuthor\tYear\nTale of Two Cities\tCharles Dickens\t1859\n", library.removeBooks(book));
     }
 
     @Test
@@ -42,7 +43,8 @@ public class LibraryTest {
     @Test
     public void shouldNotRemoveABookIfItDoesNotExist() {
         Library library = new Library();
+        Book book = new Book("Inferno", "author", 0);
 
-        assertNotEquals("Name\tAuthor\tYear\nTale of Two Cities\tCharles Dickens\t1859\n", library.removeBooks("Harry Potter"));
+        assertNotEquals("Name\tAuthor\tYear\nTale of Two Cities\tCharles Dickens\t1859\n", library.removeBooks(book));
     }
 }
