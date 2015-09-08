@@ -1,12 +1,10 @@
-//Parses the menu option entered by the user
+//Parses the menu option entered by the user and performs operations on the library
 
 package com.tw.biblioteca;
 
-import java.util.ArrayList;
-
 public class Parser {
     private String option;
-    private Library library;
+    private Library library = new Library();
 
     public Parser(String option) {
         this.option = option;
@@ -26,14 +24,9 @@ public class Parser {
     public MenuItem createMenuItem() {
         if(isValid()) {
             if (convertOptionToInt() == 1) {
-                ArrayList<Book> list = new ArrayList<Book>();
-                Book book1 = new Book("Harry Potter", "J. K. Rowling", 1997);
-                Book book2 = new Book("Tale of Two Cities", "Charles Dickens", 1859);
-                list.add(book1);
-                list.add(book2);
-                return new ListBooks();
+                return new ListBooks(library);
             }
-            else if(convertOptionToInt() == 2) {
+            else if(convertOptionToInt() == 3) {
                 return new Exit();
             }
         }

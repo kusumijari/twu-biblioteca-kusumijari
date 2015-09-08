@@ -18,4 +18,27 @@ public class Book {
         return (name+"\t"+author+"\t"+yearOfPublication);
     }
 
+    @Override
+    public boolean equals(Object that) {
+        if(that == null || that.getClass() != Book.class ) {
+            return false;
+        }
+        Book thatBook = (Book)that;
+        if(this.name != thatBook.name){
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 0;
+        if(this != null) {
+            for (int i = 0; i < name.length(); i++) {
+                hash = Character.getNumericValue(name.charAt(i)) + (hash << 6) + (hash << 16) - hash;
+            }
+        }
+        return hash;
+
+    }
 }

@@ -1073,7 +1073,7 @@ sorttable = {
 }
 
 /* ******************************************************************
-         Supporting functions: bundled here to avoid depending on a library
+         Supporting functions: bundled here to avoid depending on a booklist
          ****************************************************************** */
 
 // Dean Edwards/Matthias Miller/John Resig

@@ -9,9 +9,18 @@ public class CheckoutTest {
 
     @Test
     public void shouldAcceptChoiceOfBookFromTheUser() {
-        Checkout checkout = new Checkout();
+        Library library = new Library();
+        Checkout checkout = new Checkout(library);
         ConsoleInput mockConsoleInput = mock(ConsoleInput.class);
-        when(mockConsoleInput.getInput()).thenReturn("1");
-        assertEquals("1", checkout.acceptBookChoice(mockConsoleInput));
+        when(mockConsoleInput.getInput()).thenReturn("Harry Potter");
+        assertEquals("Harry Potter", checkout.acceptBookChoice(mockConsoleInput));
+    }
+
+    @Test
+    public void shouldReturnNewBookList() {
+        Library library = new Library();
+        Checkout checkout = new Checkout(library);
+
+        assertEquals("Name\tAuthor\tYear\nHarry Potter\tJ. K. Rowling\t1997\nTale of Two Cities\tCharles Dickens\t1859\n", checkout.receiveNewBookList());
     }
 }
