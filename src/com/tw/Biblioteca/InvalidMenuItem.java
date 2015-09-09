@@ -10,8 +10,9 @@ public class InvalidMenuItem implements MenuItem{
         this.errorMessage = "Select a valid option!";
     }
 
-    public String execute() {
-        return errorMessage;
+    public void execute() {
+        ConsoleOutput consoleOutput = new ConsoleOutput( errorMessage );
+        consoleOutput.displayMessage();
     }
 
 }

@@ -10,49 +10,56 @@ public class ParserTest {
 
     @Test
     public void shouldReturnTrueIfTheOptionEnteredIsADigit() {
-        Parser parser = new Parser("1");
+        Library library = new Library();
+        Parser parser = new Parser("1", library);
 
         assertTrue(parser.isValid());
     }
 
     @Test
     public void shouldReturnFalseIfTheOptionEnteredIsAValueGreaterThanTheAvailableOptions() {
-        Parser parser = new Parser("4");
+        Library library = new Library();
+        Parser parser = new Parser("4", library);
 
         assertFalse(parser.isValid());
     }
 
     @Test
     public void shouldReturnBookListObjectIfOptionIsOne() {
-        Parser parser = new Parser("1");
+        Library library = new Library();
+        Parser parser = new Parser("1", library);
 
         assertEquals(ListBooks.class, parser.createMenuItem().getClass());
     }
 
     @Test
     public void shouldReturnInvalidMenuItemObjectIfAnIncorrectOptionIsEntered() {
-        Parser parser = new Parser("3");
+        Library library = new Library();
+        Parser parser = new Parser("3", library);
 
         assertEquals(InvalidMenuItem.class, parser.createMenuItem().getClass());
     }
 
     @Test
     public void shouldReturnFalseIfTheOptionEnteredIsANegativeNumber() {
-        Parser parser = new Parser("-1");
+        Library library = new Library();
+        Parser parser = new Parser("-1", library);
 
         assertFalse(parser.isValid());
     }
 
     @Test
     public void shouldExitObjectIfOptionIsThree() {
-        Parser parser = new Parser("3");
+        Library library = new Library();
+        Parser parser = new Parser("3", library);
 
         assertEquals(Exit.class, parser.createMenuItem().getClass());
     }
 
     @Test
     public void shouldReturnCheckoutObjectIfOptionIsTwo() {
-        Parser parser = new Parser("2");
+        Library library = new Library();
+        Parser parser = new Parser("2", library);
 
         assertEquals(Checkout.class, parser.createMenuItem().getClass());
     }

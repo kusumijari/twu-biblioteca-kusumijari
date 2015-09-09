@@ -8,27 +8,26 @@ public class Checkout implements MenuItem{
   }
 
 
-    String bookNameChoice;
-    Library library;
-    ConsoleOutput consoleOutput;
-    ConsoleInput consoleInput;
-    Book book;
+    private String bookNameChoice;
+    private Library library;
+    private ConsoleInput consoleInput;
+    private Book book;
 
 
-    Checkout(Library library) {
+    Checkout(Library library, ConsoleInput mockConsoleInput) {
         this.library = library;
 CodeCoverCoverageCounter$eds20578rzh5p5b70msh.statements[1]++;
-        consoleInput = new ConsoleInput();
+        consoleInput = mockConsoleInput;
 CodeCoverCoverageCounter$eds20578rzh5p5b70msh.statements[2]++;
     }
 
-    public String acceptBookChoice(ConsoleInput consoleInput) {
+    public String acceptBookChoice() {
         return consoleInput.getInput();
     }
 
     @Override
-    public void execute() {
-        bookNameChoice = acceptBookChoice(consoleInput);
+    public String execute() {
+        bookNameChoice = acceptBookChoice();
 CodeCoverCoverageCounter$eds20578rzh5p5b70msh.statements[3]++;
         book = new Book(bookNameChoice, "author", 0);
 CodeCoverCoverageCounter$eds20578rzh5p5b70msh.statements[4]++;
@@ -40,22 +39,14 @@ int CodeCoverConditionCoverageHelper_C1;
   ((CodeCoverConditionCoverageHelper_C1 |= (1)) == 0 || true)))
 )) && (CodeCoverCoverageCounter$eds20578rzh5p5b70msh.conditionCounters[1].incrementCounterOfBitMask(CodeCoverConditionCoverageHelper_C1, 1) || true)) || (CodeCoverCoverageCounter$eds20578rzh5p5b70msh.conditionCounters[1].incrementCounterOfBitMask(CodeCoverConditionCoverageHelper_C1, 1) && false)) {
 CodeCoverCoverageCounter$eds20578rzh5p5b70msh.branches[1]++;
-            consoleOutput = new ConsoleOutput("Thank You! Enjoy the book.");
-CodeCoverCoverageCounter$eds20578rzh5p5b70msh.statements[6]++;
-            consoleOutput.displayMessage();
-CodeCoverCoverageCounter$eds20578rzh5p5b70msh.statements[7]++;
-            System.out.print(library.toString());
-CodeCoverCoverageCounter$eds20578rzh5p5b70msh.statements[8]++;
+            return "Thank You! Enjoy the book.";
 
         }
         else {
 CodeCoverCoverageCounter$eds20578rzh5p5b70msh.branches[2]++;
-            consoleOutput = new ConsoleOutput("That book is not available");
-CodeCoverCoverageCounter$eds20578rzh5p5b70msh.statements[9]++;
-            consoleOutput.displayMessage();
-CodeCoverCoverageCounter$eds20578rzh5p5b70msh.statements[10]++;
-
+            return "That book is not available";
         }
+
     }
 
     public boolean hasBeenCheckedOut(Book book) {
@@ -66,9 +57,9 @@ CodeCoverCoverageCounter$eds20578rzh5p5b70msh.statements[10]++;
 class CodeCoverCoverageCounter$eds20578rzh5p5b70msh extends org.codecover.instrumentation.java.measurement.CounterContainer {
 
   static {
-    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "b353f5b3-fc2b-414c-88ba-15a18545c504").addObservedContainer(new CodeCoverCoverageCounter$eds20578rzh5p5b70msh ());
+    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "857b4968-287e-4122-8127-af2cbbf654e2").addObservedContainer(new CodeCoverCoverageCounter$eds20578rzh5p5b70msh ());
   }
-    public static long[] statements = new long[11];
+    public static long[] statements = new long[6];
     public static long[] branches = new long[3];
 
   public static final org.codecover.instrumentation.java.measurement.ConditionCounter[] conditionCounters = new org.codecover.instrumentation.java.measurement.ConditionCounter[2];
@@ -94,7 +85,7 @@ class CodeCoverCoverageCounter$eds20578rzh5p5b70msh extends org.codecover.instru
   public static void ping() {/* nothing to do*/}
 
   public void reset() {
-      for (int i = 1; i <= 10; i++) {
+      for (int i = 1; i <= 5; i++) {
         statements[i] = 0L;
       }
       for (int i = 1; i <= 2; i++) {
@@ -112,7 +103,7 @@ class CodeCoverCoverageCounter$eds20578rzh5p5b70msh extends org.codecover.instru
 
   public void serializeAndReset(org.codecover.instrumentation.measurement.CoverageCounterLog log) {
     log.startNamedSection("com.tw.biblioteca.Checkout.java");
-      for (int i = 1; i <= 10; i++) {
+      for (int i = 1; i <= 5; i++) {
         if (statements[i] != 0L) {
           log.passCounter("S" + i, statements[i]);
           statements[i] = 0L;

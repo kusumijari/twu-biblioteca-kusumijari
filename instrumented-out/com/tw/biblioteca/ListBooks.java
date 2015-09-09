@@ -8,7 +8,6 @@ public class ListBooks implements MenuItem {
   }
 
     private Library library;
-    private ConsoleOutput consoleOutput;
 
     public ListBooks(Library library) {
         this.library = library;
@@ -16,24 +15,18 @@ CodeCoverCoverageCounter$37xtbhjvcrcf6bkki6fbkx.statements[1]++;
     }
 
     @Override
-    public void execute() {
-        consoleOutput = new ConsoleOutput(getBooks());
-CodeCoverCoverageCounter$37xtbhjvcrcf6bkki6fbkx.statements[2]++;
-        consoleOutput.displayMessage();
-CodeCoverCoverageCounter$37xtbhjvcrcf6bkki6fbkx.statements[3]++;
-    }
-
-    public String getBooks() {
+    public String execute() {
         return library.toString();
     }
+
 }
 
 class CodeCoverCoverageCounter$37xtbhjvcrcf6bkki6fbkx extends org.codecover.instrumentation.java.measurement.CounterContainer {
 
   static {
-    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "b353f5b3-fc2b-414c-88ba-15a18545c504").addObservedContainer(new CodeCoverCoverageCounter$37xtbhjvcrcf6bkki6fbkx ());
+    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "857b4968-287e-4122-8127-af2cbbf654e2").addObservedContainer(new CodeCoverCoverageCounter$37xtbhjvcrcf6bkki6fbkx ());
   }
-    public static long[] statements = new long[4];
+    public static long[] statements = new long[2];
     public static long[] branches = new long[0];
     public static long[] loops = new long[1];
 
@@ -44,7 +37,7 @@ class CodeCoverCoverageCounter$37xtbhjvcrcf6bkki6fbkx extends org.codecover.inst
   public static void ping() {/* nothing to do*/}
 
   public void reset() {
-      for (int i = 1; i <= 3; i++) {
+      for (int i = 1; i <= 1; i++) {
         statements[i] = 0L;
       }
       for (int i = 1; i <= -1; i++) {
@@ -57,7 +50,7 @@ class CodeCoverCoverageCounter$37xtbhjvcrcf6bkki6fbkx extends org.codecover.inst
 
   public void serializeAndReset(org.codecover.instrumentation.measurement.CoverageCounterLog log) {
     log.startNamedSection("com.tw.biblioteca.ListBooks.java");
-      for (int i = 1; i <= 3; i++) {
+      for (int i = 1; i <= 1; i++) {
         if (statements[i] != 0L) {
           log.passCounter("S" + i, statements[i]);
           statements[i] = 0L;

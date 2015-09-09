@@ -10,23 +10,27 @@ public class Checkout implements MenuItem{
     private Book book;
 
 
-    Checkout(Library library) {
+    Checkout(Library library, ConsoleInput mockConsoleInput) {
         this.library = library;
-        consoleInput = new ConsoleInput();
+        consoleInput = mockConsoleInput;
     }
 
-    public String acceptBookChoice(ConsoleInput consoleInput) {
+    public String acceptBookChoice() {
         return consoleInput.getInput();
     }
 
     @Override
-    public String execute() {
-        bookNameChoice = acceptBookChoice(consoleInput);
+    public void execute() {
+        bookNameChoice = acceptBookChoice();
         book = new Book(bookNameChoice, "author", 0);
-        if(library.removeBook(book)) {
-            return "Thank You! Enjoy the book.";
+        if(hasBeenCheckedOut(book)) {
+            ConsoleOutput consoleOutput = new ConsoleOutput("Thank you! Enjoy the book.");
+            consoleOutput.displayMessage();
         }
-        return "That book is not available";
+        else {
+            ConsoleOutput consoleOutput = new ConsoleOutput("That book is not available.");
+            consoleOutput.displayMessage();
+        }
     }
 
     public boolean hasBeenCheckedOut(Book book) {

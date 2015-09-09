@@ -9,19 +9,14 @@ public class InvalidMenuItem implements MenuItem{
 
 
     String errorMessage;
-    ConsoleOutput consoleOutput;
     InvalidMenuItem() {
 
         this.errorMessage = "Select a valid option!";
 CodeCoverCoverageCounter$8kslbrqesm7jjakfe6at3iw06xiq5wh.statements[1]++;
-        consoleOutput = new ConsoleOutput(errorMessage);
-CodeCoverCoverageCounter$8kslbrqesm7jjakfe6at3iw06xiq5wh.statements[2]++;
     }
 
-    public void execute() {
-
-        System.out.println(errorMessage);
-CodeCoverCoverageCounter$8kslbrqesm7jjakfe6at3iw06xiq5wh.statements[3]++;
+    public String execute() {
+        return errorMessage;
     }
 
 }
@@ -29,9 +24,9 @@ CodeCoverCoverageCounter$8kslbrqesm7jjakfe6at3iw06xiq5wh.statements[3]++;
 class CodeCoverCoverageCounter$8kslbrqesm7jjakfe6at3iw06xiq5wh extends org.codecover.instrumentation.java.measurement.CounterContainer {
 
   static {
-    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "b353f5b3-fc2b-414c-88ba-15a18545c504").addObservedContainer(new CodeCoverCoverageCounter$8kslbrqesm7jjakfe6at3iw06xiq5wh ());
+    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "857b4968-287e-4122-8127-af2cbbf654e2").addObservedContainer(new CodeCoverCoverageCounter$8kslbrqesm7jjakfe6at3iw06xiq5wh ());
   }
-    public static long[] statements = new long[4];
+    public static long[] statements = new long[2];
     public static long[] branches = new long[0];
     public static long[] loops = new long[1];
 
@@ -42,7 +37,7 @@ class CodeCoverCoverageCounter$8kslbrqesm7jjakfe6at3iw06xiq5wh extends org.codec
   public static void ping() {/* nothing to do*/}
 
   public void reset() {
-      for (int i = 1; i <= 3; i++) {
+      for (int i = 1; i <= 1; i++) {
         statements[i] = 0L;
       }
       for (int i = 1; i <= -1; i++) {
@@ -55,7 +50,7 @@ class CodeCoverCoverageCounter$8kslbrqesm7jjakfe6at3iw06xiq5wh extends org.codec
 
   public void serializeAndReset(org.codecover.instrumentation.measurement.CoverageCounterLog log) {
     log.startNamedSection("com.tw.biblioteca.InvalidMenuItem.java");
-      for (int i = 1; i <= 3; i++) {
+      for (int i = 1; i <= 1; i++) {
         if (statements[i] != 0L) {
           log.passCounter("S" + i, statements[i]);
           statements[i] = 0L;

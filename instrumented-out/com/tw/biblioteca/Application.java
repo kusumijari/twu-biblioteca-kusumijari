@@ -43,11 +43,13 @@ CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[9]++;
 
             ConsoleInput consoleInput = new ConsoleInput();
 CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[10]++;
-            Parser parser = new Parser(consoleInput.getInput());
+            Parser parser = new Parser(consoleInput.getInput(), library);
 CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[11]++;
             MenuItem menuItem = parser.createMenuItem();
-            menuItem.execute();
 CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[12]++;
+            ConsoleOutput consoleOutput1 = new ConsoleOutput(menuItem.execute());
+            consoleOutput1.displayMessage();
+CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[13]++;
         }
     }
 }
@@ -55,9 +57,9 @@ CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[12]++;
 class CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt extends org.codecover.instrumentation.java.measurement.CounterContainer {
 
   static {
-    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "b353f5b3-fc2b-414c-88ba-15a18545c504").addObservedContainer(new CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt ());
+    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "857b4968-287e-4122-8127-af2cbbf654e2").addObservedContainer(new CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt ());
   }
-    public static long[] statements = new long[13];
+    public static long[] statements = new long[14];
     public static long[] branches = new long[0];
     public static long[] loops = new long[4];
 
@@ -68,7 +70,7 @@ class CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt extends org.codecover.i
   public static void ping() {/* nothing to do*/}
 
   public void reset() {
-      for (int i = 1; i <= 12; i++) {
+      for (int i = 1; i <= 13; i++) {
         statements[i] = 0L;
       }
       for (int i = 1; i <= -1; i++) {
@@ -81,7 +83,7 @@ class CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt extends org.codecover.i
 
   public void serializeAndReset(org.codecover.instrumentation.measurement.CoverageCounterLog log) {
     log.startNamedSection("com.tw.biblioteca.Application.java");
-      for (int i = 1; i <= 12; i++) {
+      for (int i = 1; i <= 13; i++) {
         if (statements[i] != 0L) {
           log.passCounter("S" + i, statements[i]);
           statements[i] = 0L;

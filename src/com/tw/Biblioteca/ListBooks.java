@@ -10,8 +10,12 @@ public class ListBooks implements MenuItem {
     }
 
     @Override
-    public String execute() {
-        return library.toString();
+    public void execute() {
+        ConsoleOutput consoleOutput = new ConsoleOutput( getBooks());
+        consoleOutput.displayMessage();
     }
 
+    public String getBooks() {
+        return library.toString();
+    }
 }

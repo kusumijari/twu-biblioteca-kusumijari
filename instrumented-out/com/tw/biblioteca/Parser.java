@@ -74,12 +74,14 @@ int CodeCoverConditionCoverageHelper_C4; if ((((((CodeCoverConditionCoverageHelp
   ((CodeCoverConditionCoverageHelper_C4 |= (1)) == 0 || true)))
 )) && (CodeCoverCoverageCounter$c7jzv3fosvccawach.conditionCounters[4].incrementCounterOfBitMask(CodeCoverConditionCoverageHelper_C4, 1) || true)) || (CodeCoverCoverageCounter$c7jzv3fosvccawach.conditionCounters[4].incrementCounterOfBitMask(CodeCoverConditionCoverageHelper_C4, 1) && false)) {
 CodeCoverCoverageCounter$c7jzv3fosvccawach.branches[7]++;
-                return new Checkout(library);
+CodeCoverCoverageCounter$c7jzv3fosvccawach.statements[7]++;
+                ConsoleInput mockConsoleInput = new ConsoleInput();
+                return new Checkout(library, mockConsoleInput);
 
             }
             else {
 CodeCoverCoverageCounter$c7jzv3fosvccawach.branches[8]++;
-CodeCoverCoverageCounter$c7jzv3fosvccawach.statements[7]++;
+CodeCoverCoverageCounter$c7jzv3fosvccawach.statements[8]++;
 int CodeCoverConditionCoverageHelper_C5; if((((((CodeCoverConditionCoverageHelper_C5 = 0) == 0) || true) && (
 (((CodeCoverConditionCoverageHelper_C5 |= (2)) == 0 || true) &&
  ((convertOptionToInt() == 3) && 
@@ -102,9 +104,9 @@ CodeCoverCoverageCounter$c7jzv3fosvccawach.branches[9]++;
 class CodeCoverCoverageCounter$c7jzv3fosvccawach extends org.codecover.instrumentation.java.measurement.CounterContainer {
 
   static {
-    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "b353f5b3-fc2b-414c-88ba-15a18545c504").addObservedContainer(new CodeCoverCoverageCounter$c7jzv3fosvccawach ());
+    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "857b4968-287e-4122-8127-af2cbbf654e2").addObservedContainer(new CodeCoverCoverageCounter$c7jzv3fosvccawach ());
   }
-    public static long[] statements = new long[8];
+    public static long[] statements = new long[9];
     public static long[] branches = new long[11];
 
   public static final org.codecover.instrumentation.java.measurement.ConditionCounter[] conditionCounters = new org.codecover.instrumentation.java.measurement.ConditionCounter[6];
@@ -130,7 +132,7 @@ class CodeCoverCoverageCounter$c7jzv3fosvccawach extends org.codecover.instrumen
   public static void ping() {/* nothing to do*/}
 
   public void reset() {
-      for (int i = 1; i <= 7; i++) {
+      for (int i = 1; i <= 8; i++) {
         statements[i] = 0L;
       }
       for (int i = 1; i <= 10; i++) {
@@ -148,7 +150,7 @@ class CodeCoverCoverageCounter$c7jzv3fosvccawach extends org.codecover.instrumen
 
   public void serializeAndReset(org.codecover.instrumentation.measurement.CoverageCounterLog log) {
     log.startNamedSection("com.tw.biblioteca.Parser.java");
-      for (int i = 1; i <= 7; i++) {
+      for (int i = 1; i <= 8; i++) {
         if (statements[i] != 0L) {
           log.passCounter("S" + i, statements[i]);
           statements[i] = 0L;

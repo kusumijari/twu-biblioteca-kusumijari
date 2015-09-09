@@ -6,8 +6,8 @@ public class Parser {
     private String option;
     private Library library;
 
-    public Parser(String option) {
-        this.library = new Library();
+    public Parser(String option, Library library) {
+        this.library = library;
         this.option = option;
     }
 
@@ -28,7 +28,8 @@ public class Parser {
                 return new ListBooks(library);
             }
             else if (convertOptionToInt() == 2) {
-                return new Checkout(library);
+                ConsoleInput consoleInput = new ConsoleInput();
+                return new Checkout(library, consoleInput);
             }
             else if(convertOptionToInt() == 3) {
                 return new Exit();

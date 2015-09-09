@@ -6,13 +6,13 @@ import java.util.ArrayList;
 
 public class Library{
 
-    private ArrayList<Book> booklist = new ArrayList<Book>();
+    private ArrayList<Book> books = new ArrayList<Book>();
 
     Library() {
         Book book1 = new Book("Harry Potter", "J. K. Rowling", 1997);
         Book book2 = new Book("Tale of Two Cities", "Charles Dickens", 1859);
-        booklist.add(book1);
-        booklist.add(book2);
+        books.add(book1);
+        books.add(book2);
     }
 
     @Override
@@ -21,26 +21,18 @@ public class Library{
 
         stringBuilder.append("Name\tAuthor\tYear\n");
 
-        for(Book book : booklist) {
+        for(Book book : books) {
             stringBuilder.append(book.toString()+"\n");
         }
         return stringBuilder.toString();
     }
 
     public boolean removeBook(Book nameOfBook) {
-        if(booklist.contains(nameOfBook)) {
-            booklist.remove(nameOfBook);
+        if(books.contains(nameOfBook)) {
+            books.remove(nameOfBook);
+            System.out.println(toString());
             return true;
         }
         return false;
     }
-
-    /*public boolean exists(Book nameOfBook) {
-        for(Book book : booklist){
-            if(book.equals(nameOfBook)){
-                return true;
-            }
-        }
-        return false;
-    }*/
 }
