@@ -1,82 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="528a0a30-9017-42bc-b3cb-0d89ad771639" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html-files/com/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/application/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/application/main/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/application/start/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/book/book/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/book/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/book/tostring/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/booklist/booklist/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/booklist/execute/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/booklist/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/exit/execute/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/exit/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/invalidmenuitem/execute/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/invalidmenuitem/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/invalidmenuitem/invalidmenuitem/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/menu/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/menu/menu/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/menu/tostring/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/menuitem/execute/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/menuitem/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/parser/convertoptiontoint/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/parser/createmenuitem/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/parser/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/parser/isvalid/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/parser/parser/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/view/displaymessage/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/view/getinput/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/view/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html-files/com/tw/biblioteca/view/view/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html-files/com/tw/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html-files/sorttable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report.html-files/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/BookList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Controller.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Delegator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Display.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Input.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Keyboard.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/View.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$240upl75z1b7c09r42p.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$240upl75z1b7c09r42p.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$2ajdxnz382yxmq4ezc1.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$2ajdxnz382yxmq4ezc1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$37xtbhjvcrcf6bkki6fbkx.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$37xtbhjvcrcf6bkki6fbkx.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$5lvtga7ugu3kp77gezq90rir8spt.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$5lvtga7ugu3kp77gezq90rir8spt.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$76mvy2cvdcgd41.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$76mvy2cvdcgd41.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$7ig916vgckhhep.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$7ig916vgckhhep.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$8db22my9e9gj8h.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$8db22my9e9gj8h.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$8kslbrqesm7jjakfe6at3iw06xiq5wh.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$8kslbrqesm7jjakfe6at3iw06xiq5wh.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$c7jzv3fosvccawach.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$c7jzv3fosvccawach.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$eds20578rzh5p5b70msh.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$eds20578rzh5p5b70msh.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$gii4c0tpm5key2cjebtt.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$gii4c0tpm5key2cjebtt.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$se1buoq7zqdgwppb4l63sbusf5.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/CodeCoverCoverageCounter$se1buoq7zqdgwppb4l63sbusf5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/ConsoleInput.class" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/ConsoleInput.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.clf" afterPath="$PROJECT_DIR$/test.clf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Application.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Application.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Book.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Book.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Checkout.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Checkout.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/tw/biblioteca/CheckoutTest.java" afterPath="$PROJECT_DIR$/test/com/tw/biblioteca/CheckoutTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/ConsoleInput.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/ConsoleInput.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/ConsoleInput.java" afterPath="$PROJECT_DIR$/src/com/tw/biblioteca/ConsoleInput.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/ConsoleOutput.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/ConsoleOutput.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Exit.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Exit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Factory.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Factory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/InvalidMenuItem.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/InvalidMenuItem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Library.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Library.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/ListBooks.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/ListBooks.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/tw/biblioteca/ListBooksTest.java" afterPath="$PROJECT_DIR$/test/com/tw/biblioteca/ListBooksTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Menu.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Menu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/MenuItem.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/MenuItem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Parser.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Parser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codecover.xml" afterPath="$PROJECT_DIR$/codecover.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="528a0a30-9017-42bc-b3cb-0d89ad771639" name="Default" comment="" />
     <ignored path="BibliotecaVersion1.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -792,7 +717,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13452381" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37088734" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37088734" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901296" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
