@@ -35,4 +35,15 @@ public class CheckoutTest {
 
         assertFalse(checkout.hasBeenCheckedOut(book));
     }
+
+    @Test
+    public void shouldReturnSuccessMessageIfBookIsAvailable() {
+        Library library = new Library();
+        Checkout checkout = new Checkout(library);
+        Book book = new Book("Harry Potter", "author", 0);
+
+        checkout.hasBeenCheckedOut(book);
+
+        assertEquals("Thank You! Enjoy the book.", checkout.execute());
+    }
 }

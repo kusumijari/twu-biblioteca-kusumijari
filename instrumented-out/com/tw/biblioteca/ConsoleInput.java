@@ -2,7 +2,9 @@
 
 package com.tw.biblioteca;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class ConsoleInput {
   static {
@@ -14,9 +16,23 @@ public class ConsoleInput {
 
     public String getInput() {
 CodeCoverCoverageCounter$se1buoq7zqdgwppb4l63sbusf5.statements[1]++;
-        Scanner scanner = new Scanner(System.in);
-        message = scanner.nextLine();
+        BufferedReader bufferedReader = new BufferedReader (new InputStreamReader(System.in));
 CodeCoverCoverageCounter$se1buoq7zqdgwppb4l63sbusf5.statements[2]++;
+boolean CodeCoverTryBranchHelper_Try1 = false;
+        try {
+CodeCoverTryBranchHelper_Try1 = true;
+            message = bufferedReader.readLine();
+CodeCoverCoverageCounter$se1buoq7zqdgwppb4l63sbusf5.statements[3]++;
+        } catch (IOException e) {
+CodeCoverTryBranchHelper_Try1 = false;
+CodeCoverCoverageCounter$se1buoq7zqdgwppb4l63sbusf5.branches[2]++;
+            e.printStackTrace();
+CodeCoverCoverageCounter$se1buoq7zqdgwppb4l63sbusf5.statements[4]++;
+        } finally {
+    if ( CodeCoverTryBranchHelper_Try1 ) {
+  CodeCoverCoverageCounter$se1buoq7zqdgwppb4l63sbusf5.branches[1]++;
+}
+  }
         return message;
     }
 }
@@ -24,10 +40,10 @@ CodeCoverCoverageCounter$se1buoq7zqdgwppb4l63sbusf5.statements[2]++;
 class CodeCoverCoverageCounter$se1buoq7zqdgwppb4l63sbusf5 extends org.codecover.instrumentation.java.measurement.CounterContainer {
 
   static {
-    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "b84a8ec3-2731-45e5-a5c1-2583f02fc784").addObservedContainer(new CodeCoverCoverageCounter$se1buoq7zqdgwppb4l63sbusf5 ());
+    org.codecover.instrumentation.java.measurement.ProtocolImpl.getInstance(org.codecover.instrumentation.java.measurement.CoverageResultLogFile.getInstance(null), "b353f5b3-fc2b-414c-88ba-15a18545c504").addObservedContainer(new CodeCoverCoverageCounter$se1buoq7zqdgwppb4l63sbusf5 ());
   }
-    public static long[] statements = new long[3];
-    public static long[] branches = new long[0];
+    public static long[] statements = new long[5];
+    public static long[] branches = new long[3];
     public static long[] loops = new long[1];
 
   public CodeCoverCoverageCounter$se1buoq7zqdgwppb4l63sbusf5 () {
@@ -37,10 +53,10 @@ class CodeCoverCoverageCounter$se1buoq7zqdgwppb4l63sbusf5 extends org.codecover.
   public static void ping() {/* nothing to do*/}
 
   public void reset() {
-      for (int i = 1; i <= 2; i++) {
+      for (int i = 1; i <= 4; i++) {
         statements[i] = 0L;
       }
-      for (int i = 1; i <= -1; i++) {
+      for (int i = 1; i <= 2; i++) {
         branches[i] = 0L;
       }
       for (int i = 1; i <= 0; i++) {
@@ -50,13 +66,13 @@ class CodeCoverCoverageCounter$se1buoq7zqdgwppb4l63sbusf5 extends org.codecover.
 
   public void serializeAndReset(org.codecover.instrumentation.measurement.CoverageCounterLog log) {
     log.startNamedSection("com.tw.biblioteca.ConsoleInput.java");
-      for (int i = 1; i <= 2; i++) {
+      for (int i = 1; i <= 4; i++) {
         if (statements[i] != 0L) {
           log.passCounter("S" + i, statements[i]);
           statements[i] = 0L;
         }
       }
-      for (int i = 1; i <= -1; i++) {
+      for (int i = 1; i <= 2; i++) {
         if (branches[i] != 0L) {
           log.passCounter("B"+ i, branches[i]);
           branches[i] = 0L;

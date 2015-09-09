@@ -4,11 +4,10 @@ package com.tw.biblioteca;
 
 public class Checkout implements MenuItem{
 
-    String bookNameChoice;
-    Library library;
-    ConsoleOutput consoleOutput;
-    ConsoleInput consoleInput;
-    Book book;
+    private String bookNameChoice;
+    private Library library;
+    private ConsoleInput consoleInput;
+    private Book book;
 
 
     Checkout(Library library) {
@@ -21,19 +20,13 @@ public class Checkout implements MenuItem{
     }
 
     @Override
-    public void execute() {
+    public String execute() {
         bookNameChoice = acceptBookChoice(consoleInput);
         book = new Book(bookNameChoice, "author", 0);
-        if(hasBeenCheckedOut(book)) {
-            consoleOutput = new ConsoleOutput("Thank You! Enjoy the book.");
-            consoleOutput.displayMessage();
-            System.out.print(library.toString());
+        if(library.removeBook(book)) {
+            return "Thank You! Enjoy the book.";
         }
-        else {
-            consoleOutput = new ConsoleOutput("That book is not available");
-            consoleOutput.displayMessage();
-
-        }
+        return "That book is not available";
     }
 
     public boolean hasBeenCheckedOut(Book book) {
