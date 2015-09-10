@@ -8,8 +8,8 @@ import java.io.PrintStream;
 import static junit.framework.TestCase.assertFalse;
 import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertEquals;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+import static org.mockito.Matchers.any;
+import static org.mockito.Mockito.*;
 
 public class CheckoutTest {
 
@@ -44,12 +44,15 @@ public class CheckoutTest {
         assertFalse(checkout.hasBeenCheckedOut(book));
     }
 
+
     @Test
     public void shouldReturnSuccessMessageIfBookIsAvailable() {
         Library library = mock(Library.class);
         ConsoleInput mockConsoleInput = mock(ConsoleInput.class);
         Checkout checkout = new Checkout(library, mockConsoleInput);
-        when(checkout.acceptBookChoice()).thenReturn("Harry Potter");
+        Checkout spy = spy(checkout);
+        when(spy.acceptBookChoice()).thenReturn("Harry Potter");
+        when(library.removeBook(any(Book.class))).thenReturn(true);
 
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
@@ -60,12 +63,15 @@ public class CheckoutTest {
         System.setOut(System.out);
     }
 
+
     @Test
     public void shouldReturnUnsuccessMessageIfBookIsUnavailable() {
         Library library = mock(Library.class);
         ConsoleInput mockConsoleInput = mock(ConsoleInput.class);
         Checkout checkout = new Checkout(library, mockConsoleInput);
-        when(checkout.acceptBookChoice()).thenReturn("Inferno");
+        Checkout spy = spy(checkout);
+        when(spy.acceptBookChoice()).thenReturn("Inferno");
+        when(library.removeBook(any(Book.class))).thenReturn(false);
 
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));

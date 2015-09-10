@@ -12,7 +12,6 @@ public class InvalidMenuItemTest {
     @Test
     public void shouldDisplayTheBookList() {
 
-        Library library = new Library();
         InvalidMenuItem invalidMenuItem = new InvalidMenuItem();
 
         final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
