@@ -30,9 +30,9 @@ public class Library{
     public boolean removeBook(Book nameOfBook) {
         if(books.contains(nameOfBook)) {
             books.remove(nameOfBook);
-            System.out.println(toString());
             return true;
         }
         return false;
     }
+
 }

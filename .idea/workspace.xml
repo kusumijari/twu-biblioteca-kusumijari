@@ -2,10 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="528a0a30-9017-42bc-b3cb-0d89ad771639" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/tw/biblioteca/ApplicationTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/cobertura-2.1.1/lib/asm-5.0.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/cobertura-2.1.1/lib/asm-analysis-5.0.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/cobertura-2.1.1/lib/asm-commons-5.0.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/cobertura-2.1.1/lib/asm-tree-5.0.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/cobertura-2.1.1/lib/asm-util-5.0.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/cobertura-2.1.1/lib/commons-lang3-3.3.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/cobertura-2.1.1/lib/hamcrest-core-1.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/cobertura-2.1.1/lib/jaxen-1.1.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/cobertura-2.1.1/lib/jetty-6.1.14.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/cobertura-2.1.1/lib/jetty-util-6.1.14.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/cobertura-2.1.1/lib/junit-4.11.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/cobertura-2.1.1/lib/logback-classic-1.0.13.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/cobertura-2.1.1/lib/logback-core-1.0.13.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/cobertura-2.1.1/lib/oro-2.0.8.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/cobertura-2.1.1/lib/servlet-api-2.5-6.1.14.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/cobertura-2.1.1/lib/slf4j-api-1.7.5.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/cobertura-2.1.1/examples/basic/src/com/example/simple/Simple.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/org.jacoco.agent-0.7.5.201505241946.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/org.jacoco.ant-0.7.5.201505241946.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/org.jacoco.core-0.7.5.201505241946.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/org.jacoco.report-0.7.5.201505241946.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/tw/biblioteca/ApplicationTest.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/tw/biblioteca/CheckoutTest.java" afterPath="$PROJECT_DIR$/test/com/tw/biblioteca/CheckoutTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/tw/biblioteca/InvalidMenuItemTest.java" afterPath="$PROJECT_DIR$/test/com/tw/biblioteca/InvalidMenuItemTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/tw/biblioteca/LibraryTest.java" afterPath="$PROJECT_DIR$/test/com/tw/biblioteca/LibraryTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/tw/biblioteca/FactoryTest.java" afterPath="$PROJECT_DIR$/test/com/tw/biblioteca/FactoryTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Library.java" afterPath="$PROJECT_DIR$/src/com/tw/biblioteca/Library.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Menu.java" afterPath="$PROJECT_DIR$/src/com/tw/biblioteca/Menu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/tw/biblioteca/MenuTest.java" afterPath="$PROJECT_DIR$/test/com/tw/biblioteca/MenuTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/tw/biblioteca/ParserTest.java" afterPath="$PROJECT_DIR$/test/com/tw/biblioteca/ParserTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BibliotecaVersion1.iws" />
@@ -28,11 +53,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CheckoutTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CheckoutTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/CheckoutTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3034826">
-              <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,36 +65,86 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Checkout.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Checkout.java">
+      <file leaf-file-name="build.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
-              <folding>
-                <element signature="e#418#419#0" expanded="true" />
-                <element signature="e#464#465#0" expanded="true" />
-                <element signature="e#1007#1008#0" expanded="true" />
-                <element signature="e#1054#1055#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Library.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Library.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.3283582">
+              <caret line="90" column="53" selection-start-line="90" selection-start-column="53" selection-end-line="90" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LibraryTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/LibraryTest.java">
+      <file leaf-file-name="FactoryTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/FactoryTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+              <caret line="11" column="97" selection-start-line="11" selection-start-column="97" selection-end-line="11" selection-end-column="97" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/MenuTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="59" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Menu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Menu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Exit.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Exit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+              <folding>
+                <element signature="e#133#134#0" expanded="true" />
+                <element signature="e#163#164#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Factory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Factory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParserTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/ParserTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Parser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Parser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -81,18 +156,6 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApplicationTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/ApplicationTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="0" selection-start-line="29" selection-start-column="4" selection-end-line="33" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -134,8 +197,6 @@
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/BookList.java" />
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/ExitTest.java" />
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/ViewTest.java" />
-        <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Menu.java" />
-        <option value="$PROJECT_DIR$/test/com/tw/biblioteca/MenuTest.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Delegator.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/View.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Input.java" />
@@ -146,26 +207,28 @@
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/ConsoleInputTest.java" />
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/ConsoleOutputTest.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Factory.java" />
-        <option value="$PROJECT_DIR$/test/com/tw/biblioteca/FactoryTest.java" />
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/BookTest.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Book.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/ConsoleInput.java" />
-        <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/MenuItem.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Exit.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/InvalidMenuItem.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/ListBooks.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Checkout.java" />
-        <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Library.java" />
-        <option value="$PROJECT_DIR$/test/com/tw/biblioteca/ParserTest.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Parser.java" />
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/ListBooksTest.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Application.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/InvalidMenuItemTest.java" />
-        <option value="$PROJECT_DIR$/test/com/tw/biblioteca/ApplicationTest.java" />
+        <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Library.java" />
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/LibraryTest.java" />
+        <option value="$PROJECT_DIR$/test/com/tw/biblioteca/ApplicationTest.java" />
+        <option value="$PROJECT_DIR$/test/com/tw/biblioteca/ParserTest.java" />
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/CheckoutTest.java" />
+        <option value="$PROJECT_DIR$/build.xml" />
+        <option value="$PROJECT_DIR$/test/com/tw/biblioteca/FactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Menu.java" />
+        <option value="$PROJECT_DIR$/test/com/tw/biblioteca/MenuTest.java" />
       </list>
     </option>
   </component>
@@ -199,9 +262,9 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -256,6 +319,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BibliotecaVersion1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BibliotecaVersion1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -291,85 +368,7 @@
       <recent name="com.tw.biblioteca" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CheckoutTest.shouldReturnSuccessMessageIfBookIsAvailable">
-    <configuration default="false" name="CheckoutTest.shouldReturnSuccessMessageIfBookIsAvailable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.tw.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="BibliotecaVersion1" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.tw.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.biblioteca.CheckoutTest" />
-      <option name="METHOD_NAME" value="shouldReturnSuccessMessageIfBookIsAvailable" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="InvalidMenuItemTest.shouldDisplayTheBookList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.tw.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="BibliotecaVersion1" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.tw.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.biblioteca.InvalidMenuItemTest" />
-      <option name="METHOD_NAME" value="shouldDisplayTheBookList" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ApplicationTest.shouldPrintWelcomeMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.tw.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="BibliotecaVersion1" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.tw.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.biblioteca.ApplicationTest" />
-      <option name="METHOD_NAME" value="shouldPrintWelcomeMessage" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.MenuTest">
     <configuration default="false" name="CheckoutTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -396,7 +395,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="CheckoutTest.shouldReturnUnsuccessMessageIfBookIsUnavailable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="FactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.tw.biblioteca.*" />
@@ -407,8 +406,86 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.tw.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.biblioteca.CheckoutTest" />
-      <option name="METHOD_NAME" value="shouldReturnUnsuccessMessageIfBookIsUnavailable" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.biblioteca.FactoryTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="FactoryTest.shouldReturnNewDisplayObjects" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.tw.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="BibliotecaVersion1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.tw.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.biblioteca.FactoryTest" />
+      <option name="METHOD_NAME" value="shouldReturnNewDisplayObjects" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MenuTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.tw.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="BibliotecaVersion1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.tw.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.biblioteca.MenuTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MenuTest.shouldReturnTheAvailableMenu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.tw.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="BibliotecaVersion1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.tw.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.biblioteca.MenuTest" />
+      <option name="METHOD_NAME" value="shouldReturnTheAvailableMenu" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -530,6 +607,7 @@
     </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/lib/cobertura-1.9.4.1.jar" />
       <envs />
       <method />
     </configuration>
@@ -631,19 +709,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.CheckoutTest.shouldReturnSuccessMessageIfBookIsAvailable" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.InvalidMenuItemTest.shouldDisplayTheBookList" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ApplicationTest.shouldPrintWelcomeMessage" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CheckoutTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CheckoutTest.shouldReturnUnsuccessMessageIfBookIsUnavailable" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.CheckoutTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.FactoryTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.FactoryTest.shouldReturnNewDisplayObjects" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MenuTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.MenuTest.shouldReturnTheAvailableMenu" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CheckoutTest.shouldReturnSuccessMessageIfBookIsAvailable" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CheckoutTest.shouldReturnUnsuccessMessageIfBookIsUnavailable" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CheckoutTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ApplicationTest.shouldPrintWelcomeMessage" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.InvalidMenuItemTest.shouldDisplayTheBookList" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.MenuTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MenuTest.shouldReturnTheAvailableMenu" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.FactoryTest.shouldReturnNewDisplayObjects" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.FactoryTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CheckoutTest" />
       </list>
     </recent_temporary>
   </component>
@@ -667,7 +745,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -685,8 +763,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13452381" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37088734" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13452381" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37088734" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -745,9 +823,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="94" selection-start-line="13" selection-start-column="94" selection-end-line="13" selection-end-column="94" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -779,7 +854,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -810,7 +884,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -818,7 +891,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -826,9 +898,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -860,7 +929,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -923,13 +991,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/MenuTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Application.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -941,23 +1002,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/ParserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -965,15 +1009,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -981,10 +1016,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-          <folding>
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#463#464#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -992,7 +1023,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="33" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1000,34 +1030,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Factory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/FactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Exit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding>
-            <element signature="e#133#134#0" expanded="true" />
-            <element signature="e#163#164#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1035,9 +1037,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="94" selection-start-line="13" selection-start-column="94" selection-end-line="13" selection-end-column="94" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1053,9 +1052,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="62" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1063,7 +1059,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="33" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1071,31 +1066,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1103,7 +1073,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.555555">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1111,6 +1080,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.037037">
           <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/ConsoleOutput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4477612">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -1128,28 +1104,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/ConsoleOutput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4477612">
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/ApplicationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="0" selection-start-line="29" selection-start-column="4" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Library.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1162,13 +1120,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/CheckoutTest.java">
+    <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3034826">
-          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/ParserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/CheckoutTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Exit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <element signature="e#133#134#0" expanded="true" />
+            <element signature="e#163#164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Factory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/FactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="97" selection-start-line="11" selection-start-column="97" selection-end-line="11" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/MenuTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="59" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3283582">
+          <caret line="90" column="53" selection-start-line="90" selection-start-column="53" selection-end-line="90" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>

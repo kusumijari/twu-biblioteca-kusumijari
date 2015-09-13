@@ -9,7 +9,7 @@ public class FactoryTest {
     public void shouldReturnNewDisplayObjects() {
         Factory factory = new Factory();
 
-        assertEquals(ConsoleOutput.class, factory.createConsoleOutputObject("message"));
+        assertEquals(ConsoleOutput.class, factory.createConsoleOutputObject("message").getClass());
     }
 
 }

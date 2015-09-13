@@ -35,7 +35,7 @@ public class ParserTest {
     @Test
     public void shouldReturnInvalidMenuItemObjectIfAnIncorrectOptionIsEntered() {
         Library library = new Library();
-        Parser parser = new Parser("3", library);
+        Parser parser = new Parser("99", library);
 
         assertEquals(InvalidMenuItem.class, parser.createMenuItem().getClass());
     }
