@@ -22,4 +22,8 @@ public class Controller {
     public MenuItem createMenuObject(Parser parser) {
         return parser.createMenuItem();
     }
+
+    public void executeMenuObject(MenuItem menuItem) {
+        menuItem.execute();
+    }
 }

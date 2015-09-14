@@ -3,9 +3,7 @@ package com.tw.biblioteca;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 public class ControllerTest {
 
@@ -31,12 +29,21 @@ public class ControllerTest {
 
     @Test
     public void shouldCreateTheMenuObject() {
-        Library library = new Library();
         Parser parser = mock(Parser.class);
         Controller controller = new Controller();
 
         controller.createMenuObject(parser);
 
         verify(parser).createMenuItem();
+    }
+
+    @Test
+    public void shouldExexuteTheMenuObject() {
+        MenuItem menuItem = mock(MenuItem.class);
+        Controller controller = new Controller();
+
+        controller.executeMenuObject(menuItem);
+
+        verify(menuItem).execute();
     }
 }
