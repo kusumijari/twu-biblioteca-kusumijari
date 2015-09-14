@@ -5,6 +5,7 @@ public class Checkin implements MenuItem{
 
     private Library library;
     private ConsoleInput consoleInput;
+    private Book book;
 
     public Checkin(Library library, ConsoleInput consoleInput) {
         this.library = library;
@@ -12,12 +13,16 @@ public class Checkin implements MenuItem{
     }
 
 
-    public String acceptBookChoice() {
+    public String bookChoice() {
         return consoleInput.getInput();
     }
 
     @Override
     public void execute() {
+        book = new Book(bookChoice(), "author", 0);
+            ConsoleOutput consoleOutput = new ConsoleOutput("Thank you for returning the book.");
+            consoleOutput.displayMessage();
+
 
     }
 
