@@ -20,4 +20,9 @@ public class CheckoutMovie {
     public boolean hasBeenRemoved(Movie movie) {
         return movieLibrary.removeMovie(movie);
     }
+
+    public void execute() {
+        ConsoleOutput consoleOutput = new ConsoleOutput("Thank you! Enjoy the movie.");
+        consoleOutput.displayMessage();
+    }
 }
