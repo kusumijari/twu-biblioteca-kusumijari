@@ -62,7 +62,7 @@ public class LibraryTest {
 
         library.removeBook(book);
 
-        assertTrue(library.transferFromUnavailableBooksToAvailableBooks(book));
+        assertTrue(library.returnBook(book));
     }
 
     @Test
@@ -70,7 +70,6 @@ public class LibraryTest {
         Library library = new Library();
         Book book = new Book("inferno", "author", 0);
 
-
-        assertFalse(library.transferFromUnavailableBooksToAvailableBooks(book));
+        assertFalse(library.returnBook(book));
     }
 }

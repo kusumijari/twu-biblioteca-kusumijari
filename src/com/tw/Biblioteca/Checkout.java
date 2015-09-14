@@ -23,7 +23,7 @@ public class Checkout implements MenuItem{
     public void execute() {
         bookNameChoice = acceptBookChoice();
         book = new Book(bookNameChoice, "author", 0);
-        if(hasBeenCheckedOut(book)) {
+        if(hasBeenRemoved(book)) {
             ConsoleOutput consoleOutput = new ConsoleOutput("Thank you! Enjoy the book.");
             consoleOutput.displayMessage();
         }
@@ -33,7 +33,7 @@ public class Checkout implements MenuItem{
         }
     }
 
-    public boolean hasBeenCheckedOut(Book book) {
+    public boolean hasBeenRemoved(Book book) {
         return library.removeBook(book);
     }
 }

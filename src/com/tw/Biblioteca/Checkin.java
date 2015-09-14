@@ -21,4 +21,7 @@ public class Checkin implements MenuItem{
 
     }
 
+    public boolean hasBeenReturned(Book bookToBeReturned) {
+        return library.returnBook(bookToBeReturned);
+    }
 }

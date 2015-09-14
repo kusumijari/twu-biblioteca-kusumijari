@@ -32,7 +32,7 @@ public class CheckoutTest {
         Checkout checkout = new Checkout(library, mockConsoleInput);
         Book book = new Book("Harry Potter", "author", 0);
 
-        assertTrue(checkout.hasBeenCheckedOut(book));
+        assertTrue(checkout.hasBeenRemoved(book));
     }
 
     @Test
@@ -42,7 +42,7 @@ public class CheckoutTest {
         Checkout checkout = new Checkout(library, mockConsoleInput);
         Book book = new Book("Inferno", "author", 0);
 
-        assertFalse(checkout.hasBeenCheckedOut(book));
+        assertFalse(checkout.hasBeenRemoved(book));
     }
 
 

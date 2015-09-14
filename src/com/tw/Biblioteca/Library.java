@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class Library{
 
     private ArrayList<Book> availableBooks = new ArrayList<Book>();
-    private ArrayList<Book> unavailablebooks = new ArrayList<Book>();
+    private ArrayList<Book> checkoutOutBooks = new ArrayList<Book>();
 
     Library() {
         Book book1 = new Book("Harry Potter", "J. K. Rowling", 1997);
@@ -30,17 +30,17 @@ public class Library{
 
     public boolean removeBook(Book nameOfBook) {
         if(availableBooks.contains(nameOfBook)) {
-            unavailablebooks.add(availableBooks.get(availableBooks.indexOf(nameOfBook)));
+            checkoutOutBooks.add(availableBooks.get(availableBooks.indexOf(nameOfBook)));
             availableBooks.remove(nameOfBook);
             return true;
         }
         return false;
     }
 
-    public boolean transferFromUnavailableBooksToAvailableBooks(Book returnedBook) {
-        if(unavailablebooks.contains(returnedBook)) {
-            availableBooks.add(unavailablebooks.get(unavailablebooks.indexOf(returnedBook)));
-            unavailablebooks.remove(returnedBook);
+    public boolean returnBook(Book returnedBook) {
+        if(checkoutOutBooks.contains(returnedBook)) {
+            availableBooks.add(checkoutOutBooks.get(checkoutOutBooks.indexOf(returnedBook)));
+            checkoutOutBooks.remove(returnedBook);
             return true;
         }
         return false;
