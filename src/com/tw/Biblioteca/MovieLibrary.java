@@ -25,4 +25,7 @@ public class MovieLibrary {
         return stringBuilder.toString();
     }
 
+    public boolean removeMovie(Movie movieToBeRemoved) {
+        return true;
+    }
 }
