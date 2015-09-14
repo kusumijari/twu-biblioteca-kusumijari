@@ -3,6 +3,7 @@ package com.tw.biblioteca;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -21,7 +22,7 @@ public class CheckinTest {
     }
 
     @Test
-    public void shouldCheckIfTheBookIsInTheCheckedOutList() {
+    public void shouldReturnTrueIfTheBookIsInTheCheckedOutList() {
         Library library = new Library();
         ConsoleInput mockConsoleInput = mock(ConsoleInput.class);
         Checkin checkin = new Checkin(library, mockConsoleInput);
@@ -31,5 +32,18 @@ public class CheckinTest {
         library.removeBook(bookToBeReturned);
 
         assertTrue(checkin.hasBeenReturned(bookToBeReturned));
+    }
+
+    @Test
+    public void shouldReturnFalseIfTheBookIsNotInTheCheckedOutList() {
+        Library library = new Library();
+        ConsoleInput mockConsoleInput = mock(ConsoleInput.class);
+        Checkin checkin = new Checkin(library, mockConsoleInput);
+        Book bookToBeReturned = new Book("Inferno", "author", 0);
+
+        when(mockConsoleInput.getInput()).thenReturn("Inferno");
+        library.removeBook(bookToBeReturned);
+
+        assertFalse(checkin.hasBeenReturned(bookToBeReturned));
     }
 }
