@@ -32,7 +32,7 @@ public class Parser {
                 return new Checkout(library, consoleInput);
             }
             else if(convertOptionToInt() == 3) {
-                return new Checkin();
+                return new Checkin(library, new ConsoleInput());
             }
             else if(convertOptionToInt() == 4) {
                 return new Exit();
