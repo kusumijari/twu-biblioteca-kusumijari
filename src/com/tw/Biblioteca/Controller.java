@@ -13,4 +13,8 @@ public class Controller {
     public void showMenu(ConsoleOutput consoleOutput) {
         consoleOutput.displayMessage();
     }
+
+    public String input(ConsoleInput consoleInput) {
+        return consoleInput.getInput();
+    }
 }
