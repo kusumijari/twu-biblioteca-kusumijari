@@ -22,4 +22,11 @@ public class MovieLibraryTest {
         assertTrue(movieLibrary.removeMovie(movie));
     }
 
+    @Test
+    public void shouldCheckThatASpecifiedMovieInTheLibraryExists() {
+        MovieLibrary movieLibrary = new MovieLibrary();
+        Movie movie = new Movie("Inception", 0, "director", "0");
+
+        assertTrue(movieLibrary.removeMovie(movie));
+    }
 }

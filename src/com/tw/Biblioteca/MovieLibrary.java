@@ -26,6 +26,6 @@ public class MovieLibrary {
     }
 
     public boolean removeMovie(Movie movieToBeRemoved) {
-        return true;
+            return true;
     }
 }
