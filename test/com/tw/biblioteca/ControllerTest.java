@@ -28,4 +28,15 @@ public class ControllerTest {
 
         assertEquals("1", controller.input(consoleInput));
     }
+
+    @Test
+    public void shouldCreateTheMenuObject() {
+        Library library = new Library();
+        Parser parser = mock(Parser.class);
+        Controller controller = new Controller();
+
+        controller.createMenuObject(parser);
+
+        verify(parser).createMenuItem();
+    }
 }

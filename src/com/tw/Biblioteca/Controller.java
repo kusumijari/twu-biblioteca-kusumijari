@@ -17,4 +17,9 @@ public class Controller {
     public String input(ConsoleInput consoleInput) {
         return consoleInput.getInput();
     }
+
+
+    public MenuItem createMenuObject(Parser parser) {
+        return parser.createMenuItem();
+    }
 }
