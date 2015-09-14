@@ -69,4 +69,22 @@ public class CheckinTest {
         assertEquals("Thank you for returning the book.\n", outContent.toString());
         System.setOut(System.out);
     }
+
+    @Test
+    public void shouldReturnUnsuccessfulMessageIfTheReturnWasUnuccessful() {
+        Library library = mock(Library.class);
+        ConsoleInput mockConsoleInput = mock(ConsoleInput.class);
+        Checkin checkin = new Checkin(library, mockConsoleInput);
+        Checkin spy = spy(checkin);
+        when(spy.bookChoice()).thenReturn("Inferno");
+        when(library.returnBook(any(Book.class))).thenReturn(false);
+
+        ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(outContent));
+
+        checkin.execute();
+
+        assertEquals("That is not a valid book to return.\n", outContent.toString());
+        System.setOut(System.out);
+    }
 }
