@@ -16,4 +16,8 @@ public class CheckoutMovie {
     public String acceptMovieChoice() {
         return consoleInput.getInput();
     }
+
+    public boolean hasBeenRemoved(Movie movie) {
+        return movieLibrary.removeMovie(movie);
+    }
 }

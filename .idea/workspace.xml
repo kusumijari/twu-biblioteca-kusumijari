@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="528a0a30-9017-42bc-b3cb-0d89ad771639" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/tw/biblioteca/CheckoutMovieTest.java" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/MoiveLibrary.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.ApplicationTest.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.MoiveLibrary.html" afterPath="" />
@@ -23,7 +22,8 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/8_ListBooksTest.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/9_MenuTest.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/MoiveLibrary.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Parser.java" afterPath="$PROJECT_DIR$/src/com/tw/biblioteca/Parser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/tw/biblioteca/CheckoutMovieTest.java" afterPath="$PROJECT_DIR$/test/com/tw/biblioteca/CheckoutMovieTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BibliotecaVersion1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,7 +49,7 @@
         <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/CheckoutTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="0" selection-start-line="16" selection-start-column="4" selection-end-line="26" selection-end-column="0" />
+              <caret line="46" column="0" selection-start-line="37" selection-start-column="4" selection-end-line="46" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,10 +94,12 @@
         <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/CheckoutMovie.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+              <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
               <folding>
                 <element signature="e#397#398#0" expanded="true" />
                 <element signature="e#443#444#0" expanded="true" />
+                <element signature="e#493#494#0" expanded="true" />
+                <element signature="e#547#548#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -106,8 +108,8 @@
       <file leaf-file-name="CheckoutMovieTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/CheckoutMovieTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42288557">
-              <caret line="17" column="63" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
+            <state vertical-scroll-proportion="0.9004975">
+              <caret line="40" column="54" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -228,8 +230,8 @@
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/MovieLibrary.java" />
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/ParserTest.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Parser.java" />
-        <option value="$PROJECT_DIR$/test/com/tw/biblioteca/CheckoutMovieTest.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/CheckoutMovie.java" />
+        <option value="$PROJECT_DIR$/test/com/tw/biblioteca/CheckoutMovieTest.java" />
       </list>
     </option>
   </component>
@@ -362,59 +364,7 @@
       <recent name="com.tw.biblioteca" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CheckoutMovieTest.shouldAcceptChoiceOfBookFromTheUser">
-    <configuration default="false" name="MovieLibraryTest.shouldReturnFalseIfASpecifiedBookInTheDoesNotLibraryExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.tw.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="BibliotecaVersion1" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.tw.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.biblioteca.MovieLibraryTest" />
-      <option name="METHOD_NAME" value="shouldReturnFalseIfASpecifiedBookInTheDoesNotLibraryExist" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="MovieLibraryTest.shouldNotRemoveABookIfItDoesNotExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.tw.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="BibliotecaVersion1" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.tw.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.biblioteca.MovieLibraryTest" />
-      <option name="METHOD_NAME" value="shouldNotRemoveABookIfItDoesNotExist" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.CheckoutMovieTest.shouldReturnFalseIfTheMovieDoesntExist">
     <configuration default="false" name="MovieLibraryTest.shouldReturnABookIfItDoesExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -480,6 +430,58 @@
       <option name="PACKAGE_NAME" value="com.tw.biblioteca" />
       <option name="MAIN_CLASS_NAME" value="com.tw.biblioteca.CheckoutMovieTest" />
       <option name="METHOD_NAME" value="shouldAcceptChoiceOfBookFromTheUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="CheckoutMovieTest.shouldReturnTrueIfTheBookExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.tw.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="BibliotecaVersion1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.tw.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.biblioteca.CheckoutMovieTest" />
+      <option name="METHOD_NAME" value="shouldReturnTrueIfTheBookExists" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="CheckoutMovieTest.shouldReturnFalseIfTheMovieDoesntExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.tw.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="BibliotecaVersion1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.tw.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.biblioteca.CheckoutMovieTest" />
+      <option name="METHOD_NAME" value="shouldReturnFalseIfTheMovieDoesntExist" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -703,19 +705,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.MovieLibraryTest.shouldReturnFalseIfASpecifiedBookInTheDoesNotLibraryExist" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.MovieLibraryTest.shouldNotRemoveABookIfItDoesNotExist" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.MovieLibraryTest.shouldReturnABookIfItDoesExist" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ParserTest.shouldReturnFalseIfTheOptionEnteredIsAValueGreaterThanTheAvailableOptions" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CheckoutMovieTest.shouldAcceptChoiceOfBookFromTheUser" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.MovieLibraryTest.shouldReturnABookIfItDoesExist" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ParserTest.shouldReturnFalseIfTheOptionEnteredIsAValueGreaterThanTheAvailableOptions" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CheckoutMovieTest.shouldAcceptChoiceOfBookFromTheUser" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CheckoutMovieTest.shouldReturnTrueIfTheBookExists" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CheckoutMovieTest.shouldReturnFalseIfTheMovieDoesntExist" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CheckoutMovieTest.shouldAcceptChoiceOfBookFromTheUser" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ParserTest.shouldReturnFalseIfTheOptionEnteredIsAValueGreaterThanTheAvailableOptions" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.MovieLibraryTest.shouldReturnABookIfItDoesExist" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.MovieLibraryTest.shouldNotRemoveABookIfItDoesNotExist" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.MovieLibraryTest.shouldReturnFalseIfASpecifiedBookInTheDoesNotLibraryExist" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CheckoutMovieTest.shouldReturnFalseIfTheMovieDoesntExist" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CheckoutMovieTest.shouldReturnTrueIfTheBookExists" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CheckoutMovieTest.shouldAcceptChoiceOfBookFromTheUser" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ParserTest.shouldReturnFalseIfTheOptionEnteredIsAValueGreaterThanTheAvailableOptions" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.MovieLibraryTest.shouldReturnABookIfItDoesExist" />
       </list>
     </recent_temporary>
   </component>
@@ -1193,7 +1195,7 @@
     <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/CheckoutTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="0" selection-start-line="16" selection-start-column="4" selection-end-line="26" selection-end-column="0" />
+          <caret line="46" column="0" selection-start-line="37" selection-start-column="4" selection-end-line="46" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1230,18 +1232,20 @@
     <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/CheckoutMovie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
           <folding>
             <element signature="e#397#398#0" expanded="true" />
             <element signature="e#443#444#0" expanded="true" />
+            <element signature="e#493#494#0" expanded="true" />
+            <element signature="e#547#548#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/CheckoutMovieTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42288557">
-          <caret line="17" column="63" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
+        <state vertical-scroll-proportion="0.9004975">
+          <caret line="40" column="54" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
