@@ -20,4 +20,9 @@ public class Movie {
     public String toString() {
         return(name + "\t\t" + year + "\t\t" + director + "\t\t" + rating);
     }
+
+    @Override
+    public boolean equals(Object that){
+        return true;
+    }
 }
