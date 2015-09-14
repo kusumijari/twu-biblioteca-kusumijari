@@ -9,7 +9,8 @@ public class Menu {
     Menu() {
         menu.add("1. List Books");
         menu.add("2. Checkout Book");
-        menu.add("3. Exit");
+        menu.add("3. Return Book");
+        menu.add("4. Exit");
     }
 
     @Override

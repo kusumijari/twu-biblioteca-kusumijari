@@ -47,4 +47,21 @@ public class LibraryTest {
         assertFalse(library.removeBook(book));
     }
 
+    @Test
+    public void shouldAddBookThatHasBeenRemovedToUnavailableList() {
+        Library library = new Library();
+        Book book = new Book("Harry Potter", "author", 0);
+
+        assertTrue(library.removeBook(book));
+    }
+
+    @Test
+    public void shouldAddTheReturnedBookToTheBookList () {
+        Library library = new Library();
+        Book book = new Book("Harry Potter", "author", 0);
+
+        library.removeBook(book);
+
+        assertTrue(library.transferFromUnavailableBooksToAvailableBooks(book));
+    }
 }
