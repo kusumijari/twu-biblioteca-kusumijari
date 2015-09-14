@@ -27,6 +27,7 @@ public class MovieLibrary {
 
     public boolean removeMovie(Movie movieToBeRemoved) {
         if(availableMovies.contains(movieToBeRemoved)) {
+            availableMovies.remove(movieToBeRemoved);
             return true;
         }
         return false;
