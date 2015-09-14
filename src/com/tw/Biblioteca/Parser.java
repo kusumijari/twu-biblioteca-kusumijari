@@ -14,7 +14,7 @@ public class Parser {
     }
 
     public boolean isValid() {
-        if(option.matches("[0-9]+") && convertOptionToInt() > 0 && convertOptionToInt() <= 5 ) {
+        if(option.matches("[0-9]+") && convertOptionToInt() > 0 && convertOptionToInt() <= 6 ) {
             return true;
         }
         return false;

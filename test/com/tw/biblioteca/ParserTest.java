@@ -21,7 +21,7 @@ public class ParserTest {
     public void shouldReturnFalseIfTheOptionEnteredIsAValueGreaterThanTheAvailableOptions() {
         Library library = new Library();
         MovieLibrary movieLibrary = new MovieLibrary();
-        Parser parser = new Parser("6", library, movieLibrary);
+        Parser parser = new Parser("7", library, movieLibrary);
 
         assertFalse(parser.isValid());
     }
