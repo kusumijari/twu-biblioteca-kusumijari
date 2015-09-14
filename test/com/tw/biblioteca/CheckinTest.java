@@ -17,6 +17,5 @@ public class CheckinTest {
         when(mockConsoleInput.getInput()).thenReturn("Harry Potter");
 
         assertEquals("Harry Potter", checkin.acceptBookChoice());
-
     }
 }

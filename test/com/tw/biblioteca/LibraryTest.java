@@ -64,4 +64,13 @@ public class LibraryTest {
 
         assertTrue(library.transferFromUnavailableBooksToAvailableBooks(book));
     }
+
+    @Test
+    public void shouldReturnFalseIfTheReturnedBookIsNotABookOfTheLibrary () {
+        Library library = new Library();
+        Book book = new Book("inferno", "author", 0);
+
+
+        assertFalse(library.transferFromUnavailableBooksToAvailableBooks(book));
+    }
 }
