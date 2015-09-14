@@ -2,9 +2,7 @@ package com.tw.biblioteca;
 
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class MovieLibraryTest {
 
@@ -33,6 +31,14 @@ public class MovieLibraryTest {
 
     @Test
     public void shouldReturnFalseIfASpecifiedBookInTheDoesNotLibraryExist() {
+        MovieLibrary movieLibrary = new MovieLibrary();
+        Movie movie = new Movie("Gone Girl", 0, "director", "0");
+
+        assertFalse(movieLibrary.removeMovie(movie));
+    }
+
+    @Test
+    public void shouldNotRemoveABookIfItDoesNotExist() {
         MovieLibrary movieLibrary = new MovieLibrary();
         Movie movie = new Movie("Gone Girl", 0, "director", "0");
 
