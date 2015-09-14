@@ -26,6 +26,9 @@ public class MovieLibrary {
     }
 
     public boolean removeMovie(Movie movieToBeRemoved) {
+        if(availableMovies.contains(movieToBeRemoved)) {
             return true;
+        }
+        return false;
     }
 }
