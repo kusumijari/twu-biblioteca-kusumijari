@@ -2,7 +2,7 @@
 
 package com.tw.biblioteca;
 
-public class ListMovies {
+public class ListMovies implements MenuItem{
 
     private MovieLibrary movieLibrary;
 
@@ -12,5 +12,10 @@ public class ListMovies {
 
     public String getMovies() {
         return movieLibrary.toString();
+    }
+
+    public void execute() {
+        ConsoleOutput consoleOutput = new ConsoleOutput(getMovies());
+        consoleOutput.displayMessage();
     }
 }
