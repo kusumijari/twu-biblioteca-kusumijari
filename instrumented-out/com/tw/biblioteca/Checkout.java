@@ -9,13 +9,13 @@ public class Checkout implements MenuItem{
 
 
     private String bookNameChoice;
-    private Library library;
+    private BookLibrary bookLibrary;
     private ConsoleInput consoleInput;
     private Book book;
 
 
-    Checkout(Library library, ConsoleInput mockConsoleInput) {
-        this.library = library;
+    Checkout(BookLibrary bookLibrary, ConsoleInput mockConsoleInput) {
+        this.bookLibrary = bookLibrary;
 CodeCoverCoverageCounter$eds20578rzh5p5b70msh.statements[1]++;
         consoleInput = mockConsoleInput;
 CodeCoverCoverageCounter$eds20578rzh5p5b70msh.statements[2]++;
@@ -50,7 +50,7 @@ CodeCoverCoverageCounter$eds20578rzh5p5b70msh.branches[2]++;
     }
 
     public boolean hasBeenCheckedOut(Book book) {
-        return library.removeBook(book);
+        return bookLibrary.removeBook(book);
     }
 }
 
@@ -64,7 +64,7 @@ class CodeCoverCoverageCounter$eds20578rzh5p5b70msh extends org.codecover.instru
 
   public static final org.codecover.instrumentation.java.measurement.ConditionCounter[] conditionCounters = new org.codecover.instrumentation.java.measurement.ConditionCounter[2];
   static {
-    final String SECTION_NAME = "com.tw.biblioteca.Checkout.java";
+    final String SECTION_NAME = "com.tw.biblioteca.CheckoutBook.java";
     final byte[] CONDITION_COUNTER_TYPES = {0,1};
     for (int i = 1; i <= 1; i++) {
       switch (CONDITION_COUNTER_TYPES[i]) {
@@ -79,7 +79,7 @@ class CodeCoverCoverageCounter$eds20578rzh5p5b70msh extends org.codecover.instru
     public static long[] loops = new long[1];
 
   public CodeCoverCoverageCounter$eds20578rzh5p5b70msh () {
-    super("com.tw.biblioteca.Checkout.java");
+    super("com.tw.biblioteca.CheckoutBook.java");
   }
 
   public static void ping() {/* nothing to do*/}
@@ -102,7 +102,7 @@ class CodeCoverCoverageCounter$eds20578rzh5p5b70msh extends org.codecover.instru
   }
 
   public void serializeAndReset(org.codecover.instrumentation.measurement.CoverageCounterLog log) {
-    log.startNamedSection("com.tw.biblioteca.Checkout.java");
+    log.startNamedSection("com.tw.biblioteca.CheckoutBook.java");
       for (int i = 1; i <= 5; i++) {
         if (statements[i] != 0L) {
           log.passCounter("S" + i, statements[i]);

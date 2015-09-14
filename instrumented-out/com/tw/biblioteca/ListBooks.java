@@ -7,16 +7,16 @@ public class ListBooks implements MenuItem {
     CodeCoverCoverageCounter$37xtbhjvcrcf6bkki6fbkx.ping();
   }
 
-    private Library library;
+    private BookLibrary bookLibrary;
 
-    public ListBooks(Library library) {
-        this.library = library;
+    public ListBooks(BookLibrary bookLibrary) {
+        this.bookLibrary = bookLibrary;
 CodeCoverCoverageCounter$37xtbhjvcrcf6bkki6fbkx.statements[1]++;
     }
 
     @Override
     public String execute() {
-        return library.toString();
+        return bookLibrary.toString();
     }
 
 }

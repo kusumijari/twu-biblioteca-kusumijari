@@ -10,7 +10,7 @@ public class ControllerTest {
     @Test
     public void shouldDisplayTheMenu() {
         ConsoleOutput consoleOutput = mock(ConsoleOutput.class);
-        Controller controller = new Controller(new Library(), new MovieLibrary());
+        Controller controller = new Controller(new BookLibrary(), new MovieLibrary());
 
         controller.showMenu(consoleOutput);
 
@@ -20,7 +20,7 @@ public class ControllerTest {
     @Test
     public void  shouldAcceptInput() {
         ConsoleInput consoleInput = mock(ConsoleInput.class);
-        Controller controller = new Controller(new Library(), new MovieLibrary());
+        Controller controller = new Controller(new BookLibrary(), new MovieLibrary());
 
         when(consoleInput.getInput()).thenReturn("1");
 
@@ -30,7 +30,7 @@ public class ControllerTest {
     @Test
     public void shouldCreateTheMenuObject() {
         Parser parser = mock(Parser.class);
-        Controller controller = new Controller(new Library(), new MovieLibrary());
+        Controller controller = new Controller(new BookLibrary(), new MovieLibrary());
 
         controller.createMenuObject(parser);
 
@@ -40,7 +40,7 @@ public class ControllerTest {
     @Test
     public void shouldExexuteTheMenuObject() {
         MenuItem menuItem = mock(MenuItem.class);
-        Controller controller = new Controller(new Library(), new MovieLibrary());
+        Controller controller = new Controller(new BookLibrary(), new MovieLibrary());
 
         controller.executeMenuObject(menuItem);
 

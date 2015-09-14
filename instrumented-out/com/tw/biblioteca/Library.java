@@ -93,7 +93,7 @@ class CodeCoverCoverageCounter$2ajdxnz382yxmq4ezc1 extends org.codecover.instrum
 
   public static final org.codecover.instrumentation.java.measurement.ConditionCounter[] conditionCounters = new org.codecover.instrumentation.java.measurement.ConditionCounter[2];
   static {
-    final String SECTION_NAME = "com.tw.biblioteca.Library.java";
+    final String SECTION_NAME = "com.tw.biblioteca.BookLibrary.java";
     final byte[] CONDITION_COUNTER_TYPES = {0,1};
     for (int i = 1; i <= 1; i++) {
       switch (CONDITION_COUNTER_TYPES[i]) {
@@ -108,7 +108,7 @@ class CodeCoverCoverageCounter$2ajdxnz382yxmq4ezc1 extends org.codecover.instrum
     public static long[] loops = new long[4];
 
   public CodeCoverCoverageCounter$2ajdxnz382yxmq4ezc1 () {
-    super("com.tw.biblioteca.Library.java");
+    super("com.tw.biblioteca.BookLibrary.java");
   }
 
   public static void ping() {/* nothing to do*/}
@@ -131,7 +131,7 @@ class CodeCoverCoverageCounter$2ajdxnz382yxmq4ezc1 extends org.codecover.instrum
   }
 
   public void serializeAndReset(org.codecover.instrumentation.measurement.CoverageCounterLog log) {
-    log.startNamedSection("com.tw.biblioteca.Library.java");
+    log.startNamedSection("com.tw.biblioteca.BookLibrary.java");
       for (int i = 1; i <= 11; i++) {
         if (statements[i] != 0L) {
           log.passCounter("S" + i, statements[i]);

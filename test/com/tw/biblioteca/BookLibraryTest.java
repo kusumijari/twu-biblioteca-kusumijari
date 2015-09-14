@@ -6,70 +6,70 @@ import static junit.framework.TestCase.assertFalse;
 import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertEquals;
 
-public class LibraryTest {
+public class BookLibraryTest {
 
     @Test
     public void shouldReturnContentsOfLibrary() {
-        Library library = new Library();
+        BookLibrary bookLibrary = new BookLibrary();
 
-        assertEquals("Name\tAuthor\tYear\nHarry Potter\tJ. K. Rowling\t1997\nTale of Two Cities\tCharles Dickens\t1859\n", library.toString());
+        assertEquals("Name\tAuthor\tYear\nHarry Potter\tJ. K. Rowling\t1997\nTale of Two Cities\tCharles Dickens\t1859\n", bookLibrary.toString());
     }
 
     @Test
     public void shouldRemoveASpecifiedBookFromTheLibrary() {
-        Library library = new Library();
+        BookLibrary bookLibrary = new BookLibrary();
         Book book = new Book("Harry Potter", "author", 0);
 
-        assertTrue(library.removeBook(book));
+        assertTrue(bookLibrary.removeBook(book));
     }
 
     @Test
     public void shouldCheckThatASpecifiedBookInTheLibraryExists() {
-        Library library = new Library();
+        BookLibrary bookLibrary = new BookLibrary();
         Book book = new Book("Harry Potter", "author", 0);
 
-        assertTrue(library.removeBook(book));
+        assertTrue(bookLibrary.removeBook(book));
     }
 
     @Test
     public void shouldReturnFalseIfASpecifiedBookInTheDoesNotLibraryExist() {
-        Library library = new Library();
+        BookLibrary bookLibrary = new BookLibrary();
         Book book = new Book("Inferno", "author", 0);
 
-        assertFalse(library.removeBook(book));
+        assertFalse(bookLibrary.removeBook(book));
     }
 
     @Test
     public void shouldNotRemoveABookIfItDoesNotExist() {
-        Library library = new Library();
+        BookLibrary bookLibrary = new BookLibrary();
         Book book = new Book("Inferno", "author", 0);
 
-        assertFalse(library.removeBook(book));
+        assertFalse(bookLibrary.removeBook(book));
     }
 
     @Test
     public void shouldAddBookThatHasBeenRemovedToUnavailableList() {
-        Library library = new Library();
+        BookLibrary bookLibrary = new BookLibrary();
         Book book = new Book("Harry Potter", "author", 0);
 
-        assertTrue(library.removeBook(book));
+        assertTrue(bookLibrary.removeBook(book));
     }
 
     @Test
     public void shouldAddTheReturnedBookToTheBookList () {
-        Library library = new Library();
+        BookLibrary bookLibrary = new BookLibrary();
         Book book = new Book("Harry Potter", "author", 0);
 
-        library.removeBook(book);
+        bookLibrary.removeBook(book);
 
-        assertTrue(library.returnBook(book));
+        assertTrue(bookLibrary.returnBook(book));
     }
 
     @Test
     public void shouldReturnFalseIfTheReturnedBookIsNotABookOfTheLibrary () {
-        Library library = new Library();
+        BookLibrary bookLibrary = new BookLibrary();
         Book book = new Book("inferno", "author", 0);
 
-        assertFalse(library.returnBook(book));
+        assertFalse(bookLibrary.returnBook(book));
     }
 }

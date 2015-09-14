@@ -63,7 +63,7 @@ class CodeCoverCoverageCounter$e6b4rt4ctc7yojpgfq75 extends org.codecover.instru
     public static long[] loops = new long[4];
 
   public CodeCoverCoverageCounter$e6b4rt4ctc7yojpgfq75 () {
-    super("com.tw.biblioteca.Library.java");
+    super("com.tw.biblioteca.BookLibrary.java");
   }
 
   public static void ping() {/* nothing to do*/}
@@ -81,7 +81,7 @@ class CodeCoverCoverageCounter$e6b4rt4ctc7yojpgfq75 extends org.codecover.instru
   }
 
   public void serializeAndReset(org.codecover.instrumentation.measurement.CoverageCounterLog log) {
-    log.startNamedSection("com.tw.biblioteca.Library.java");
+    log.startNamedSection("com.tw.biblioteca.BookLibrary.java");
       for (int i = 1; i <= 7; i++) {
         if (statements[i] != 0L) {
           log.passCounter("S" + i, statements[i]);

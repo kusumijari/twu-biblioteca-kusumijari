@@ -5,12 +5,12 @@ package com.tw.biblioteca;
 public class Controller {
 
     private Menu menu;
-    Library library;
+    BookLibrary bookLibrary;
     MovieLibrary movieLibrary;
 
-    public Controller(Library library, MovieLibrary movieLibrary) {
+    public Controller(BookLibrary bookLibrary, MovieLibrary movieLibrary) {
         menu = new Menu();
-        this.library = library;
+        this.bookLibrary = bookLibrary;
         this.movieLibrary = movieLibrary;
     }
 
@@ -35,7 +35,7 @@ public class Controller {
         while (true) {
             ConsoleOutput consoleOutput = new ConsoleOutput(menu.toString());
             showMenu(consoleOutput);
-            Parser parser = new Parser(input(new ConsoleInput()), library, movieLibrary);
+            Parser parser = new Parser(input(new ConsoleInput()), bookLibrary, movieLibrary);
             MenuItem menuItem = createMenuObject(parser);
             executeMenuObject(menuItem);
         }

@@ -12,53 +12,53 @@ import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.*;
 
 
-public class CheckoutTest {
+public class CheckoutBookTest {
 
     @Test
     public void shouldAcceptChoiceOfBookFromTheUser() {
-        Library library = new Library();
+        BookLibrary bookLibrary = new BookLibrary();
         ConsoleInput mockConsoleInput = mock(ConsoleInput.class);
-        Checkout checkout = new Checkout(library, mockConsoleInput);
+        CheckoutBook checkoutBook = new CheckoutBook(bookLibrary, mockConsoleInput);
 
         when(mockConsoleInput.getInput()).thenReturn("Harry Potter");
 
-        assertEquals("Harry Potter", checkout.acceptBookChoice());
+        assertEquals("Harry Potter", checkoutBook.acceptBookChoice());
     }
 
     @Test
     public void shouldReturnTrueIfTheBookExists() {
-        Library library = new Library();
+        BookLibrary bookLibrary = new BookLibrary();
         ConsoleInput mockConsoleInput = new ConsoleInput();
-        Checkout checkout = new Checkout(library, mockConsoleInput);
+        CheckoutBook checkoutBook = new CheckoutBook(bookLibrary, mockConsoleInput);
         Book book = new Book("Harry Potter", "author", 0);
 
-        assertTrue(checkout.hasBeenRemoved(book));
+        assertTrue(checkoutBook.hasBeenRemoved(book));
     }
 
     @Test
     public void shouldReturnFalseIfTheBookDoesntExist() {
-        Library library = new Library();
+        BookLibrary bookLibrary = new BookLibrary();
         ConsoleInput mockConsoleInput = new ConsoleInput();
-        Checkout checkout = new Checkout(library, mockConsoleInput);
+        CheckoutBook checkoutBook = new CheckoutBook(bookLibrary, mockConsoleInput);
         Book book = new Book("Inferno", "author", 0);
 
-        assertFalse(checkout.hasBeenRemoved(book));
+        assertFalse(checkoutBook.hasBeenRemoved(book));
     }
 
 
     @Test
     public void shouldReturnSuccessMessageIfBookIsAvailable() {
-        Library library = mock(Library.class);
+        BookLibrary bookLibrary = mock(BookLibrary.class);
         ConsoleInput mockConsoleInput = mock(ConsoleInput.class);
-        Checkout checkout = new Checkout(library, mockConsoleInput);
-        Checkout spy = spy(checkout);
+        CheckoutBook checkoutBook = new CheckoutBook(bookLibrary, mockConsoleInput);
+        CheckoutBook spy = spy(checkoutBook);
         when(spy.acceptBookChoice()).thenReturn("Harry Potter");
-        when(library.removeBook(any(Book.class))).thenReturn(true);
+        when(bookLibrary.removeBook(any(Book.class))).thenReturn(true);
 
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
 
-        checkout.execute();
+        checkoutBook.execute();
 
         assertEquals("Thank you! Enjoy the book.\n", outContent.toString());
         System.setOut(System.out);
@@ -67,17 +67,17 @@ public class CheckoutTest {
 
     @Test
     public void shouldReturnUnsuccessMessageIfBookIsUnavailable() {
-        Library library = mock(Library.class);
+        BookLibrary bookLibrary = mock(BookLibrary.class);
         ConsoleInput mockConsoleInput = mock(ConsoleInput.class);
-        Checkout checkout = new Checkout(library, mockConsoleInput);
-        Checkout spy = spy(checkout);
+        CheckoutBook checkoutBook = new CheckoutBook(bookLibrary, mockConsoleInput);
+        CheckoutBook spy = spy(checkoutBook);
         when(spy.acceptBookChoice()).thenReturn("Inferno");
-        when(library.removeBook(any(Book.class))).thenReturn(false);
+        when(bookLibrary.removeBook(any(Book.class))).thenReturn(false);
 
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
 
-        checkout.execute();
+        checkoutBook.execute();
 
         assertEquals("That book is not available.\n", outContent.toString());
         System.setOut(System.out);

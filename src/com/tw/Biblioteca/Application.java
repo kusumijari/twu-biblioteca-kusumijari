@@ -9,9 +9,9 @@ public class  Application {
     private void start() {
         ConsoleOutput consoleOutput = new ConsoleOutput("Welcome to Biblioteca");
         consoleOutput.displayMessage();
-        Library library = new Library();
+        BookLibrary bookLibrary = new BookLibrary();
         MovieLibrary movieLibrary = new MovieLibrary();
-        Controller controller = new Controller(library, movieLibrary);
+        Controller controller = new Controller(bookLibrary, movieLibrary);
         controller.delegate();
     }
 }

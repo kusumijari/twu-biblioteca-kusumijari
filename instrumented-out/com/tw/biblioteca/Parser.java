@@ -8,10 +8,10 @@ public class Parser {
   }
 
     private String option;
-    private Library library;
+    private BookLibrary bookLibrary;
 
     public Parser(String option) {
-        this.library = new Library();
+        this.bookLibrary = new BookLibrary();
 CodeCoverCoverageCounter$c7jzv3fosvccawach.statements[1]++;
         this.option = option;
 CodeCoverCoverageCounter$c7jzv3fosvccawach.statements[2]++;
@@ -62,7 +62,7 @@ int CodeCoverConditionCoverageHelper_C3;
   ((CodeCoverConditionCoverageHelper_C3 |= (1)) == 0 || true)))
 )) && (CodeCoverCoverageCounter$c7jzv3fosvccawach.conditionCounters[3].incrementCounterOfBitMask(CodeCoverConditionCoverageHelper_C3, 1) || true)) || (CodeCoverCoverageCounter$c7jzv3fosvccawach.conditionCounters[3].incrementCounterOfBitMask(CodeCoverConditionCoverageHelper_C3, 1) && false)) {
 CodeCoverCoverageCounter$c7jzv3fosvccawach.branches[5]++;
-                return new ListBooks(library);
+                return new ListBooks(bookLibrary);
 
             }
             else {
@@ -76,7 +76,7 @@ int CodeCoverConditionCoverageHelper_C4; if ((((((CodeCoverConditionCoverageHelp
 CodeCoverCoverageCounter$c7jzv3fosvccawach.branches[7]++;
 CodeCoverCoverageCounter$c7jzv3fosvccawach.statements[7]++;
                 ConsoleInput mockConsoleInput = new ConsoleInput();
-                return new Checkout(library, mockConsoleInput);
+                return new CheckoutBook(bookLibrary, mockConsoleInput);
 
             }
             else {

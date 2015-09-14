@@ -2,17 +2,17 @@
 <SrcFileList>
 <SrcFile Content="//contains a menu list that can be displayed&#10;&#10;package com.tw.biblioteca;&#10;&#10;import java.util.ArrayList;&#10;&#10;public class Menu {&#10;    ArrayList&lt;String&gt; menu= new ArrayList&lt;String&gt;();&#10;    Menu() {&#10;        menu.add(&quot;1. List Books&quot;);&#10;        menu.add(&quot;2. CheckoutBook&quot;);&#10;        menu.add(&quot;3. Exit&quot;);&#10;    }&#10;&#10;    @Override&#10;    public String toString() {&#10;        StringBuilder stringBuilder = new StringBuilder();&#10;        stringBuilder.append(&quot;Menu\n&quot;);&#10;        for(String menuItem : menu){&#10;            stringBuilder.append(menuItem+&quot;\n&quot;);&#10;        }&#10;        return stringBuilder.toString();&#10;    }&#10;}&#10;" Filename="Menu.java" Intrnl_Id="1"/>
 <SrcFile Content="//Exits the application&#10;&#10;package com.tw.biblioteca;&#10;&#10;public class Exit implements MenuItem{&#10;&#10;    @Override&#10;    public String execute() {&#10;        System.exit(0);&#10;        return &quot;exit&quot;;&#10;    }&#10;}&#10;" Filename="Exit.java" Intrnl_Id="2"/>
-<SrcFile Content="//Parses the menu option entered by the user and performs operations on the library&#10;&#10;package com.tw.biblioteca;&#10;&#10;public class Parser {&#10;    private String option;&#10;    private Library library;&#10;&#10;    public Parser(String option) {&#10;        this.library = new Library();&#10;        this.option = option;&#10;    }&#10;&#10;    public boolean isValid() {&#10;        if(option.matches(&quot;[0-9]+&quot;) &amp;&amp; convertOptionToInt() &gt; 0 &amp;&amp; convertOptionToInt() &lt;= 3 ) {&#10;            return true;&#10;        }&#10;        return false;&#10;    }&#10;&#10;    private int convertOptionToInt() {&#10;        return Integer.parseInt(option);&#10;    }&#10;&#10;    public MenuItem createMenuItem() {&#10;        if(isValid()) {&#10;            if (convertOptionToInt() == 1) {&#10;                return new ListBooks(library);&#10;            }&#10;            else if (convertOptionToInt() == 2) {&#10;                ConsoleInput mockConsoleInput = new ConsoleInput();&#10;                return new Checkout(library, mockConsoleInput);&#10;            }&#10;            else if(convertOptionToInt() == 3) {&#10;                return new Exit();&#10;            }&#10;        }&#10;        return new InvalidMenuItem();&#10;    }&#10;}&#10;" Filename="Parser.java" Intrnl_Id="3"/>
+<SrcFile Content="//Parses the menu option entered by the user and performs operations on the bookLibrary&#10;&#10;package com.tw.biblioteca;&#10;&#10;public class Parser {&#10;    private String option;&#10;    private Library bookLibrary;&#10;&#10;    public Parser(String option) {&#10;        this.bookLibrary = new Library();&#10;        this.option = option;&#10;    }&#10;&#10;    public boolean isValid() {&#10;        if(option.matches(&quot;[0-9]+&quot;) &amp;&amp; convertOptionToInt() &gt; 0 &amp;&amp; convertOptionToInt() &lt;= 3 ) {&#10;            return true;&#10;        }&#10;        return false;&#10;    }&#10;&#10;    private int convertOptionToInt() {&#10;        return Integer.parseInt(option);&#10;    }&#10;&#10;    public MenuItem createMenuItem() {&#10;        if(isValid()) {&#10;            if (convertOptionToInt() == 1) {&#10;                return new ListBooks(bookLibrary);&#10;            }&#10;            else if (convertOptionToInt() == 2) {&#10;                ConsoleInput mockConsoleInput = new ConsoleInput();&#10;                return new Checkout(bookLibrary, mockConsoleInput);&#10;            }&#10;            else if(convertOptionToInt() == 3) {&#10;                return new Exit();&#10;            }&#10;        }&#10;        return new InvalidMenuItem();&#10;    }&#10;}&#10;" Filename="Parser.java" Intrnl_Id="3"/>
 <SrcFile Content="//Contains a list of books which can be displayed&#10;&#10;package com.tw.biblioteca;&#10;&#10;import java.util.ArrayList;&#10;&#10;public class Library{&#10;&#10;    private ArrayList&lt;Book&gt; booklist = new ArrayList&lt;Book&gt;();&#10;&#10;    Library() {&#10;        Book book1 = new Book(&quot;Harry Potter&quot;, &quot;J. K. Rowling&quot;, 1997);&#10;        Book book2 = new Book(&quot;Tale of Two Cities&quot;, &quot;Charles Dickens&quot;, 1859);&#10;        booklist.add(book1);&#10;        booklist.add(book2);&#10;    }&#10;&#10;    @Override&#10;    public String toString() {&#10;        StringBuilder stringBuilder = new StringBuilder();&#10;&#10;        stringBuilder.append(&quot;Name\tAuthor\tYear\n&quot;);&#10;&#10;        for(Book book : booklist) {&#10;            stringBuilder.append(book.toString()+&quot;\n&quot;);&#10;        }&#10;        return stringBuilder.toString();&#10;    }&#10;&#10;    public boolean removeBook(Book nameOfBook) {&#10;        if(booklist.contains(nameOfBook)) {&#10;            booklist.remove(nameOfBook);&#10;            return true;&#10;        }&#10;        return false;&#10;    }&#10;&#10;    /*public boolean exists(Book nameOfBook) {&#10;        for(Book book : booklist){&#10;            if(book.equals(nameOfBook)){&#10;                return true;&#10;            }&#10;        }&#10;        return false;&#10;    }*/&#10;}&#10;" Filename="Library.java" Intrnl_Id="4"/>
 <SrcFile Content="//Contains book details in a certain format&#10;&#10;package com.tw.biblioteca;&#10;&#10;public class Book {&#10;    private String name, author;&#10;    private int yearOfPublication;&#10;&#10;    public Book(String name, String author, int yearOfPublication) {&#10;        this.name = name;&#10;        this.author = author;&#10;        this. yearOfPublication = yearOfPublication;&#10;    }&#10;&#10;    @Override&#10;    public String toString() {&#10;&#10;        return (name+&quot;\t&quot;+author+&quot;\t&quot;+yearOfPublication);&#10;    }&#10;&#10;    @Override&#10;    public boolean equals(Object that) {&#10;        if(that == null || that.getClass() != Book.class ) {&#10;            return false;&#10;        }&#10;        Book thatBook = (Book)that;&#10;        if((this.name).equals(thatBook.name)){&#10;            return true;&#10;        }&#10;        return false;&#10;    }&#10;&#10;    @Override&#10;    public int hashCode() {&#10;        int hash = 0;&#10;        if(this != null) {&#10;            for (int i = 0; i &lt; name.length(); i++) {&#10;                hash = Character.getNumericValue(name.charAt(i)) + (hash &lt;&lt; 6) + (hash &lt;&lt; 16) - hash;&#10;            }&#10;        }&#10;        return hash;&#10;&#10;    }&#10;}&#10;" Filename="Book.java" Intrnl_Id="5"/>
 <SrcFile Content="package com.tw.biblioteca;&#10;&#10;public interface MenuItem {&#10;    public String execute();&#10;}&#10;" Filename="MenuItem.java" Intrnl_Id="6"/>
 <SrcFile Content="//Tells the user to enter a valid menu option&#10;&#10;package com.tw.biblioteca;&#10;&#10;public class InvalidMenuItem implements MenuItem{&#10;&#10;    String errorMessage;&#10;    InvalidMenuItem() {&#10;&#10;        this.errorMessage = &quot;Select a valid option!&quot;;&#10;    }&#10;&#10;    public String execute() {&#10;        return errorMessage;&#10;    }&#10;&#10;}&#10;" Filename="InvalidMenuItem.java" Intrnl_Id="7"/>
 <SrcFile Content="//Receives input fromt the user&#10;&#10;package com.tw.biblioteca;&#10;&#10;import java.io.BufferedReader;&#10;import java.io.IOException;&#10;import java.io.InputStreamReader;&#10;&#10;public class ConsoleInput {&#10;&#10;    String message;&#10;&#10;    public String getInput() {&#10;        BufferedReader bufferedReader = new BufferedReader (new InputStreamReader(System.in));&#10;        try {&#10;            message = bufferedReader.readLine();&#10;        } catch (IOException e) {&#10;            e.printStackTrace();&#10;        }&#10;        return message;&#10;    }&#10;}&#10;" Filename="ConsoleInput.java" Intrnl_Id="8"/>
-<SrcFile Content="//Checks out a book from the library&#10;&#10;package com.tw.biblioteca;&#10;&#10;public class Checkout implements MenuItem{&#10;&#10;    private String bookNameChoice;&#10;    private Library library;&#10;    private ConsoleInput consoleInput;&#10;    private Book book;&#10;&#10;&#10;    Checkout(Library library, ConsoleInput mockConsoleInput) {&#10;        this.library = library;&#10;        consoleInput = mockConsoleInput;&#10;    }&#10;&#10;    public String acceptBookChoice() {&#10;        return consoleInput.getInput();&#10;    }&#10;&#10;    @Override&#10;    public String execute() {&#10;        bookNameChoice = acceptBookChoice();&#10;        book = new Book(bookNameChoice, &quot;author&quot;, 0);&#10;        if(hasBeenCheckedOut(book)) {&#10;            return &quot;Thank You! Enjoy the book.&quot;;&#10;        }&#10;        else {&#10;            return &quot;That book is not available&quot;;&#10;        }&#10;&#10;    }&#10;&#10;    public boolean hasBeenCheckedOut(Book book) {&#10;        return library.removeBook(book);&#10;    }&#10;}&#10;" Filename="Checkout.java" Intrnl_Id="9"/>
+<SrcFile Content="//Checks out a book from the bookLibrary&#10;&#10;package com.tw.biblioteca;&#10;&#10;public class Checkout implements MenuItem{&#10;&#10;    private String bookNameChoice;&#10;    private Library bookLibrary;&#10;    private ConsoleInput consoleInput;&#10;    private Book book;&#10;&#10;&#10;    Checkout(Library bookLibrary, ConsoleInput mockConsoleInput) {&#10;        this.bookLibrary = bookLibrary;&#10;        consoleInput = mockConsoleInput;&#10;    }&#10;&#10;    public String acceptBookChoice() {&#10;        return consoleInput.getInput();&#10;    }&#10;&#10;    @Override&#10;    public String execute() {&#10;        bookNameChoice = acceptBookChoice();&#10;        book = new Book(bookNameChoice, &quot;author&quot;, 0);&#10;        if(hasBeenCheckedOut(book)) {&#10;            return &quot;Thank You! Enjoy the book.&quot;;&#10;        }&#10;        else {&#10;            return &quot;That book is not available&quot;;&#10;        }&#10;&#10;    }&#10;&#10;    public boolean hasBeenCheckedOut(Book book) {&#10;        return bookLibrary.removeBook(book);&#10;    }&#10;}&#10;" Filename="Checkout.java" Intrnl_Id="9"/>
 <SrcFile Content="package com.tw.biblioteca;&#10;&#10;public class Application {&#10;    public static void main(String[] args) {&#10;        Application application = new Application();&#10;        application.start();&#10;    }&#10;&#10;    private void start() {&#10;        ConsoleOutput consoleOutput = new ConsoleOutput(&quot;Welcome to Biblioteca&quot;);&#10;        consoleOutput.displayMessage();&#10;&#10;        while(true) {&#10;            Menu menu = new Menu();&#10;            consoleOutput = new ConsoleOutput(menu.toString());&#10;            consoleOutput.displayMessage();&#10;&#10;            ConsoleInput consoleInput = new ConsoleInput();&#10;            Parser parser = new Parser(consoleInput.getInput());&#10;            MenuItem menuItem = parser.createMenuItem();&#10;            ConsoleOutput consoleOutput1 = new ConsoleOutput(menuItem.execute());&#10;            consoleOutput1.displayMessage();&#10;        }&#10;    }&#10;}&#10;" Filename="Application.java" Intrnl_Id="10"/>
 <SrcFile Content="//Building display classes&#10;&#10;package com.tw.biblioteca;&#10;&#10;public class Factory {&#10;&#10;    private ConsoleOutput consoleOutput;&#10;    public ConsoleOutput createConsoleOutputObject(String message) {&#10;        consoleOutput = new ConsoleOutput(message);&#10;        return consoleOutput;&#10;    }&#10;}&#10;" Filename="Factory.java" Intrnl_Id="11"/>
 <SrcFile Content="//Interacts with the user&#10;&#10;package com.tw.biblioteca;&#10;&#10;public class ConsoleOutput {&#10;&#10;    String message;&#10;&#10;    public ConsoleOutput(String message) {&#10;&#10;        this.message = message;&#10;    }&#10;&#10;    public void displayMessage() {&#10;&#10;        System.out.println(message);&#10;    }&#10;&#10;}&#10;" Filename="ConsoleOutput.java" Intrnl_Id="12"/>
-<SrcFile Content="//shows the list of books available in the library&#10;&#10;package com.tw.biblioteca;&#10;&#10;public class ListBooks implements MenuItem {&#10;    private Library library;&#10;&#10;    public ListBooks(Library library) {&#10;        this.library = library;&#10;    }&#10;&#10;    @Override&#10;    public String execute() {&#10;        return library.toString();&#10;    }&#10;&#10;}&#10;" Filename="ListBooks.java" Intrnl_Id="13"/>
+<SrcFile Content="//shows the list of books available in the bookLibrary&#10;&#10;package com.tw.biblioteca;&#10;&#10;public class ListBooks implements MenuItem {&#10;    private Library bookLibrary;&#10;&#10;    public ListBooks(Library bookLibrary) {&#10;        this.bookLibrary = bookLibrary;&#10;    }&#10;&#10;    @Override&#10;    public String execute() {&#10;        return bookLibrary.toString();&#10;    }&#10;&#10;}&#10;" Filename="ListBooks.java" Intrnl_Id="13"/>
 </SrcFileList>
 <CritList>
 <CritListEntry Name="org.codecover.model.utils.criteria.LoopCoverage" PluginName="org.codecover"/>
@@ -434,7 +434,7 @@
 <LocList>
 <Loc EndOffset="192" SrcFileId="4" StartOffset="135"/>
 </LocList>
-<BasicStmnt CovItemId="S1" CovItemPrefix="com.tw.biblioteca.Library.java" Intrnl_Id="96">
+<BasicStmnt CovItemId="S1" CovItemPrefix="com.tw.biblioteca.BookLibrary.java" Intrnl_Id="96">
 <LocList>
 <Loc EndOffset="192" SrcFileId="4" StartOffset="135"/>
 </LocList>
@@ -454,22 +454,22 @@
 <Loc EndOffset="386" SrcFileId="4" StartOffset="366"/>
 <Loc EndOffset="415" SrcFileId="4" StartOffset="395"/>
 </LocList>
-<BasicStmnt CovItemId="S2" CovItemPrefix="com.tw.biblioteca.Library.java" Intrnl_Id="99">
+<BasicStmnt CovItemId="S2" CovItemPrefix="com.tw.biblioteca.BookLibrary.java" Intrnl_Id="99">
 <LocList>
 <Loc EndOffset="279" SrcFileId="4" StartOffset="218"/>
 </LocList>
 </BasicStmnt>
-<BasicStmnt CovItemId="S3" CovItemPrefix="com.tw.biblioteca.Library.java" Intrnl_Id="100">
+<BasicStmnt CovItemId="S3" CovItemPrefix="com.tw.biblioteca.BookLibrary.java" Intrnl_Id="100">
 <LocList>
 <Loc EndOffset="357" SrcFileId="4" StartOffset="288"/>
 </LocList>
 </BasicStmnt>
-<BasicStmnt CovItemId="S4" CovItemPrefix="com.tw.biblioteca.Library.java" Intrnl_Id="101">
+<BasicStmnt CovItemId="S4" CovItemPrefix="com.tw.biblioteca.BookLibrary.java" Intrnl_Id="101">
 <LocList>
 <Loc EndOffset="386" SrcFileId="4" StartOffset="366"/>
 </LocList>
 </BasicStmnt>
-<BasicStmnt CovItemId="S5" CovItemPrefix="com.tw.biblioteca.Library.java" Intrnl_Id="102">
+<BasicStmnt CovItemId="S5" CovItemPrefix="com.tw.biblioteca.BookLibrary.java" Intrnl_Id="102">
 <LocList>
 <Loc EndOffset="415" SrcFileId="4" StartOffset="395"/>
 </LocList>
@@ -489,22 +489,22 @@
 <Loc EndOffset="581" SrcFileId="4" StartOffset="536"/>
 <Loc EndOffset="684" SrcFileId="4" StartOffset="591"/>
 </LocList>
-<BasicStmnt CovItemId="S6" CovItemPrefix="com.tw.biblioteca.Library.java" Intrnl_Id="105">
+<BasicStmnt CovItemId="S6" CovItemPrefix="com.tw.biblioteca.BookLibrary.java" Intrnl_Id="105">
 <LocList>
 <Loc EndOffset="526" SrcFileId="4" StartOffset="476"/>
 </LocList>
 </BasicStmnt>
-<BasicStmnt CovItemId="S7" CovItemPrefix="com.tw.biblioteca.Library.java" Intrnl_Id="106">
+<BasicStmnt CovItemId="S7" CovItemPrefix="com.tw.biblioteca.BookLibrary.java" Intrnl_Id="106">
 <LocList>
 <Loc EndOffset="581" SrcFileId="4" StartOffset="536"/>
 </LocList>
 </BasicStmnt>
-<LoopStmnt CovItemId="S8" CovItemPrefix="com.tw.biblioteca.Library.java" Intrnl_Id="107" MltplExecId="L1-2" MltplExecPrefix="com.tw.biblioteca.Library.java" NvrExecId="L1-0" NvrExecPrefix="com.tw.biblioteca.Library.java" OnceExecutedId="L1-1" OnceExecutedPrefix="com.tw.biblioteca.Library.java" OptBodyExec="true">
+<LoopStmnt CovItemId="S8" CovItemPrefix="com.tw.biblioteca.BookLibrary.java" Intrnl_Id="107" MltplExecId="L1-2" MltplExecPrefix="com.tw.biblioteca.BookLibrary.java" NvrExecId="L1-0" NvrExecPrefix="com.tw.biblioteca.BookLibrary.java" OnceExecutedId="L1-1" OnceExecutedPrefix="com.tw.biblioteca.BookLibrary.java" OptBodyExec="true">
 <StmntSeq Intrnl_Id="108">
 <LocList>
 <Loc EndOffset="674" SrcFileId="4" StartOffset="631"/>
 </LocList>
-<BasicStmnt CovItemId="S9" CovItemPrefix="com.tw.biblioteca.Library.java" Intrnl_Id="109">
+<BasicStmnt CovItemId="S9" CovItemPrefix="com.tw.biblioteca.BookLibrary.java" Intrnl_Id="109">
 <LocList>
 <Loc EndOffset="674" SrcFileId="4" StartOffset="631"/>
 </LocList>
@@ -528,8 +528,8 @@
 <LocList>
 <Loc EndOffset="901" SrcFileId="4" StartOffset="790"/>
 </LocList>
-<CondStmnt CovItemId="S10" CovItemPrefix="com.tw.biblioteca.Library.java" Intrnl_Id="112">
-<Branch CovItemId="B1" CovItemPrefix="com.tw.biblioteca.Library.java" Implct="false" Intrnl_Id="113">
+<CondStmnt CovItemId="S10" CovItemPrefix="com.tw.biblioteca.BookLibrary.java" Intrnl_Id="112">
+<Branch CovItemId="B1" CovItemPrefix="com.tw.biblioteca.BookLibrary.java" Implct="false" Intrnl_Id="113">
 <Cond/>
 <LocList>
 <Loc EndOffset="901" SrcFileId="4" StartOffset="824"/>
@@ -538,14 +538,14 @@
 <LocList>
 <Loc EndOffset="866" SrcFileId="4" StartOffset="838"/>
 </LocList>
-<BasicStmnt CovItemId="S11" CovItemPrefix="com.tw.biblioteca.Library.java" Intrnl_Id="115">
+<BasicStmnt CovItemId="S11" CovItemPrefix="com.tw.biblioteca.BookLibrary.java" Intrnl_Id="115">
 <LocList>
 <Loc EndOffset="866" SrcFileId="4" StartOffset="838"/>
 </LocList>
 </BasicStmnt>
 </StmntSeq>
 </Branch>
-<Branch CovItemId="B2" CovItemPrefix="com.tw.biblioteca.Library.java" Implct="true" Intrnl_Id="116">
+<Branch CovItemId="B2" CovItemPrefix="com.tw.biblioteca.BookLibrary.java" Implct="true" Intrnl_Id="116">
 <Cond/>
 <LocList/>
 <StmntSeq Intrnl_Id="117">
@@ -556,7 +556,7 @@
 <LocList>
 <Loc EndOffset="901" SrcFileId="4" StartOffset="790"/>
 </LocList>
-<RootTerm CovItemId="C1" CovItemPrefix="com.tw.biblioteca.Library.java" Intrnl_Id="118">
+<RootTerm CovItemId="C1" CovItemPrefix="com.tw.biblioteca.BookLibrary.java" Intrnl_Id="118">
 <BasicBoolTerm Intrnl_Id="119">
 <LocList>
 <Loc EndOffset="822" SrcFileId="4" StartOffset="793"/>
@@ -910,12 +910,12 @@
 <Loc EndOffset="332" SrcFileId="9" StartOffset="309"/>
 <Loc EndOffset="373" SrcFileId="9" StartOffset="341"/>
 </LocList>
-<BasicStmnt CovItemId="S1" CovItemPrefix="com.tw.biblioteca.Checkout.java" Intrnl_Id="182">
+<BasicStmnt CovItemId="S1" CovItemPrefix="com.tw.biblioteca.CheckoutBook.java" Intrnl_Id="182">
 <LocList>
 <Loc EndOffset="332" SrcFileId="9" StartOffset="309"/>
 </LocList>
 </BasicStmnt>
-<BasicStmnt CovItemId="S2" CovItemPrefix="com.tw.biblioteca.Checkout.java" Intrnl_Id="183">
+<BasicStmnt CovItemId="S2" CovItemPrefix="com.tw.biblioteca.CheckoutBook.java" Intrnl_Id="183">
 <LocList>
 <Loc EndOffset="373" SrcFileId="9" StartOffset="341"/>
 </LocList>
@@ -943,18 +943,18 @@
 <Loc EndOffset="609" SrcFileId="9" StartOffset="564"/>
 <Loc EndOffset="780" SrcFileId="9" StartOffset="618"/>
 </LocList>
-<BasicStmnt CovItemId="S3" CovItemPrefix="com.tw.biblioteca.Checkout.java" Intrnl_Id="187">
+<BasicStmnt CovItemId="S3" CovItemPrefix="com.tw.biblioteca.CheckoutBook.java" Intrnl_Id="187">
 <LocList>
 <Loc EndOffset="555" SrcFileId="9" StartOffset="519"/>
 </LocList>
 </BasicStmnt>
-<BasicStmnt CovItemId="S4" CovItemPrefix="com.tw.biblioteca.Checkout.java" Intrnl_Id="188">
+<BasicStmnt CovItemId="S4" CovItemPrefix="com.tw.biblioteca.CheckoutBook.java" Intrnl_Id="188">
 <LocList>
 <Loc EndOffset="609" SrcFileId="9" StartOffset="564"/>
 </LocList>
 </BasicStmnt>
-<CondStmnt CovItemId="S5" CovItemPrefix="com.tw.biblioteca.Checkout.java" Intrnl_Id="189">
-<Branch CovItemId="B1" CovItemPrefix="com.tw.biblioteca.Checkout.java" Implct="false" Intrnl_Id="190">
+<CondStmnt CovItemId="S5" CovItemPrefix="com.tw.biblioteca.CheckoutBook.java" Intrnl_Id="189">
+<Branch CovItemId="B1" CovItemPrefix="com.tw.biblioteca.CheckoutBook.java" Implct="false" Intrnl_Id="190">
 <Cond/>
 <LocList>
 <Loc EndOffset="706" SrcFileId="9" StartOffset="646"/>
@@ -963,7 +963,7 @@
 <LocList/>
 </StmntSeq>
 </Branch>
-<Branch CovItemId="B2" CovItemPrefix="com.tw.biblioteca.Checkout.java" Implct="false" Intrnl_Id="192">
+<Branch CovItemId="B2" CovItemPrefix="com.tw.biblioteca.CheckoutBook.java" Implct="false" Intrnl_Id="192">
 <Cond>
 <Loc EndOffset="719" SrcFileId="9" StartOffset="715"/>
 </Cond>
@@ -978,7 +978,7 @@
 <LocList>
 <Loc EndOffset="780" SrcFileId="9" StartOffset="618"/>
 </LocList>
-<RootTerm CovItemId="C1" CovItemPrefix="com.tw.biblioteca.Checkout.java" Intrnl_Id="194">
+<RootTerm CovItemId="C1" CovItemPrefix="com.tw.biblioteca.CheckoutBook.java" Intrnl_Id="194">
 <BasicBoolTerm Intrnl_Id="195">
 <LocList>
 <Loc EndOffset="644" SrcFileId="9" StartOffset="621"/>

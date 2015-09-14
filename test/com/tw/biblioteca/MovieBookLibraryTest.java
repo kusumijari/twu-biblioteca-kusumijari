@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class MovieLibraryTest {
+public class MovieBookLibraryTest {
 
     @Test
     public void shouldListTheMovieNames() {

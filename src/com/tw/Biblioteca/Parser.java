@@ -4,11 +4,11 @@ package com.tw.biblioteca;
 
 public class Parser {
     private String option;
-    private Library library;
+    private BookLibrary bookLibrary;
     private MovieLibrary movieLibrary;
 
-    public Parser(String option, Library library, MovieLibrary movieLibrary) {
-        this.library = library;
+    public Parser(String option, BookLibrary bookLibrary, MovieLibrary movieLibrary) {
+        this.bookLibrary = bookLibrary;
         this.option = option;
         this.movieLibrary = movieLibrary;
     }
@@ -27,14 +27,14 @@ public class Parser {
     public MenuItem createMenuItem() {
         if(isValid()) {
             if (convertOptionToInt() == 1) {
-                return new ListBooks(library);
+                return new ListBooks(bookLibrary);
             }
             else if (convertOptionToInt() == 2) {
                 ConsoleInput consoleInput = new ConsoleInput();
-                return new Checkout(library, consoleInput);
+                return new CheckoutBook(bookLibrary, consoleInput);
             }
             else if(convertOptionToInt() == 3) {
-                return new Checkin(library, new ConsoleInput());
+                return new CheckinBook(bookLibrary, new ConsoleInput());
             }
             else if(convertOptionToInt() == 4) {
                 return new ListMovies(movieLibrary);

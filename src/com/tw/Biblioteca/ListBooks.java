@@ -3,10 +3,10 @@
 package com.tw.biblioteca;
 
 public class ListBooks implements MenuItem {
-    private Library library;
+    private BookLibrary bookLibrary;
 
-    public ListBooks(Library library) {
-        this.library = library;
+    public ListBooks(BookLibrary bookLibrary) {
+        this.bookLibrary = bookLibrary;
     }
 
     @Override
@@ -16,6 +16,6 @@ public class ListBooks implements MenuItem {
     }
 
     public String getBooks() {
-        return library.toString();
+        return bookLibrary.toString();
     }
 }

@@ -13,58 +13,58 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.when;
 
-public class CheckinTest {
+public class CheckinBookTest {
 
     @Test
     public void shouldAcceptChoiceOfBookFromUser() {
-        Library library = new Library();
+        BookLibrary bookLibrary = new BookLibrary();
         ConsoleInput mockConsoleInput = mock(ConsoleInput.class);
-        Checkin checkin = new Checkin(library, mockConsoleInput);
+        CheckinBook checkinBook = new CheckinBook(bookLibrary, mockConsoleInput);
 
         when(mockConsoleInput.getInput()).thenReturn("Harry Potter");
 
-        assertEquals("Harry Potter", checkin.bookChoice());
+        assertEquals("Harry Potter", checkinBook.bookChoice());
     }
 
     @Test
     public void shouldReturnTrueIfTheBookIsInTheCheckedOutList() {
-        Library library = new Library();
+        BookLibrary bookLibrary = new BookLibrary();
         ConsoleInput mockConsoleInput = mock(ConsoleInput.class);
-        Checkin checkin = new Checkin(library, mockConsoleInput);
+        CheckinBook checkinBook = new CheckinBook(bookLibrary, mockConsoleInput);
         Book bookToBeReturned = new Book("Harry Potter", "author", 0);
 
         when(mockConsoleInput.getInput()).thenReturn("Harry Potter");
-        library.removeBook(bookToBeReturned);
+        bookLibrary.removeBook(bookToBeReturned);
 
-        assertTrue(checkin.hasBeenReturned(bookToBeReturned));
+        assertTrue(checkinBook.hasBeenReturned(bookToBeReturned));
     }
 
     @Test
     public void shouldReturnFalseIfTheBookIsNotInTheCheckedOutList() {
-        Library library = new Library();
+        BookLibrary bookLibrary = new BookLibrary();
         ConsoleInput mockConsoleInput = mock(ConsoleInput.class);
-        Checkin checkin = new Checkin(library, mockConsoleInput);
+        CheckinBook checkinBook = new CheckinBook(bookLibrary, mockConsoleInput);
         Book bookToBeReturned = new Book("Inferno", "author", 0);
 
         when(mockConsoleInput.getInput()).thenReturn("Inferno");
-        library.removeBook(bookToBeReturned);
+        bookLibrary.removeBook(bookToBeReturned);
 
-        assertFalse(checkin.hasBeenReturned(bookToBeReturned));
+        assertFalse(checkinBook.hasBeenReturned(bookToBeReturned));
     }
 
     @Test
     public void shouldReturnSuccessfulMessageIfTheReturnWasSuccessful() {
-        Library library = mock(Library.class);
+        BookLibrary bookLibrary = mock(BookLibrary.class);
         ConsoleInput mockConsoleInput = mock(ConsoleInput.class);
-        Checkin checkin = new Checkin(library, mockConsoleInput);
-        Checkin spy = spy(checkin);
+        CheckinBook checkinBook = new CheckinBook(bookLibrary, mockConsoleInput);
+        CheckinBook spy = spy(checkinBook);
         when(spy.bookChoice()).thenReturn("Harry Potter");
-        when(library.returnBook(any(Book.class))).thenReturn(true);
+        when(bookLibrary.returnBook(any(Book.class))).thenReturn(true);
 
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
 
-        checkin.execute();
+        checkinBook.execute();
 
         assertEquals("Thank you for returning the book.\n", outContent.toString());
         System.setOut(System.out);
@@ -72,17 +72,17 @@ public class CheckinTest {
 
     @Test
     public void shouldReturnUnsuccessfulMessageIfTheReturnWasUnuccessful() {
-        Library library = mock(Library.class);
+        BookLibrary bookLibrary = mock(BookLibrary.class);
         ConsoleInput mockConsoleInput = mock(ConsoleInput.class);
-        Checkin checkin = new Checkin(library, mockConsoleInput);
-        Checkin spy = spy(checkin);
+        CheckinBook checkinBook = new CheckinBook(bookLibrary, mockConsoleInput);
+        CheckinBook spy = spy(checkinBook);
         when(spy.bookChoice()).thenReturn("Inferno");
-        when(library.returnBook(any(Book.class))).thenReturn(false);
+        when(bookLibrary.returnBook(any(Book.class))).thenReturn(false);
 
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
 
-        checkin.execute();
+        checkinBook.execute();
 
         assertEquals("That is not a valid book to return.\n", outContent.toString());
         System.setOut(System.out);

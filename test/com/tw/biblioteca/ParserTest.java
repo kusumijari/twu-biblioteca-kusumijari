@@ -10,91 +10,91 @@ public class ParserTest {
 
     @Test
     public void shouldReturnTrueIfTheOptionEnteredIsADigit() {
-        Library library = new Library();
+        BookLibrary bookLibrary = new BookLibrary();
         MovieLibrary movieLibrary = new MovieLibrary();
-        Parser parser = new Parser("1", library, movieLibrary);
+        Parser parser = new Parser("1", bookLibrary, movieLibrary);
 
         assertTrue(parser.isValid());
     }
 
     @Test
     public void shouldReturnFalseIfTheOptionEnteredIsAValueGreaterThanTheAvailableOptions() {
-        Library library = new Library();
+        BookLibrary bookLibrary = new BookLibrary();
         MovieLibrary movieLibrary = new MovieLibrary();
-        Parser parser = new Parser("7", library, movieLibrary);
+        Parser parser = new Parser("7", bookLibrary, movieLibrary);
 
         assertFalse(parser.isValid());
     }
 
     @Test
     public void shouldReturnBookListObjectIfOptionIsOne() {
-        Library library = new Library();
+        BookLibrary bookLibrary = new BookLibrary();
         MovieLibrary movieLibrary = new MovieLibrary();
-        Parser parser = new Parser("1", library, movieLibrary);
+        Parser parser = new Parser("1", bookLibrary, movieLibrary);
 
         assertEquals(ListBooks.class, parser.createMenuItem().getClass());
     }
 
     @Test
     public void shouldReturnInvalidMenuItemObjectIfAnIncorrectOptionIsEntered() {
-        Library library = new Library();
+        BookLibrary bookLibrary = new BookLibrary();
         MovieLibrary movieLibrary = new MovieLibrary();
-        Parser parser = new Parser("99", library, movieLibrary);
+        Parser parser = new Parser("99", bookLibrary, movieLibrary);
 
         assertEquals(InvalidMenuItem.class, parser.createMenuItem().getClass());
     }
 
     @Test
     public void shouldReturnFalseIfTheOptionEnteredIsANegativeNumber() {
-        Library library = new Library();
+        BookLibrary bookLibrary = new BookLibrary();
         MovieLibrary movieLibrary = new MovieLibrary();
-        Parser parser = new Parser("-1", library, movieLibrary);
+        Parser parser = new Parser("-1", bookLibrary, movieLibrary);
 
         assertFalse(parser.isValid());
     }
 
     @Test
     public void shouldExitObjectIfOptionIsThree() {
-        Library library = new Library();
+        BookLibrary bookLibrary = new BookLibrary();
         MovieLibrary movieLibrary = new MovieLibrary();
-        Parser parser = new Parser("6", library, movieLibrary);
+        Parser parser = new Parser("6", bookLibrary, movieLibrary);
 
         assertEquals(Exit.class, parser.createMenuItem().getClass());
     }
 
     @Test
     public void shouldReturnCheckoutObjectIfOptionIsTwo() {
-        Library library = new Library();
+        BookLibrary bookLibrary = new BookLibrary();
         MovieLibrary movieLibrary = new MovieLibrary();
-        Parser parser = new Parser("2", library, movieLibrary);
+        Parser parser = new Parser("2", bookLibrary, movieLibrary);
 
-        assertEquals(Checkout.class, parser.createMenuItem().getClass());
+        assertEquals(CheckoutBook.class, parser.createMenuItem().getClass());
     }
 
     @Test
     public void shouldReturnReturnBookObjectIfOptionIsThree() {
-        Library library = new Library();
+        BookLibrary bookLibrary = new BookLibrary();
         MovieLibrary movieLibrary = new MovieLibrary();
-        Parser parser = new Parser("3", library, movieLibrary);
+        Parser parser = new Parser("3", bookLibrary, movieLibrary);
 
-        assertEquals(Checkin.class, parser.createMenuItem().getClass());
+        assertEquals(CheckinBook.class, parser.createMenuItem().getClass());
     }
 
 
     @Test
     public void shouldListMoviesObjectIfOptionIsFour() {
-        Library library = new Library();
+        BookLibrary bookLibrary = new BookLibrary();
         MovieLibrary movieLibrary = new MovieLibrary();
-        Parser parser = new Parser("4", library, movieLibrary);
+        Parser parser = new Parser("4", bookLibrary, movieLibrary);
 
         assertEquals(ListMovies.class, parser.createMenuItem().getClass());
     }
 
     @Test
     public void shouldReturnCheckoutMovieObjectIfOptionIsFive() {
-        Library library = new Library();
+        BookLibrary bookLibrary = new BookLibrary();
         MovieLibrary movieLibrary = new MovieLibrary();
-        Parser parser = new Parser("5", library, movieLibrary);
+        Parser parser = new Parser("5", bookLibrary, movieLibrary);
 
         assertEquals(CheckoutMovie.class, parser.createMenuItem().getClass());
     }
