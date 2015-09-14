@@ -11,7 +11,8 @@ public class Menu {
         menu.add("2. Checkout Book");
         menu.add("3. Return Book");
         menu.add("4. List Movies");
-        menu.add("5. Exit");
+        menu.add("5. Checkout Movie");
+        menu.add("6. Exit");
     }
 
     @Override
