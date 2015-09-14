@@ -23,6 +23,5 @@ public class MovieLibrary {
             stringBuilder.append(movie.toString()+"\n");
         }
         return stringBuilder.toString();
-
     }
 }
