@@ -3,6 +3,7 @@ package com.tw.biblioteca;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 public class MovieTest {
 
@@ -19,5 +20,13 @@ public class MovieTest {
 
         assertEquals(movie, movie);
     }
+
+    @Test
+    public void shouldNotBeEqualToANullObject() {
+        Movie movie = new Movie("Inception", 2010, "Christopher Nolan", "8.8");
+
+        assertNotEquals(movie, null);
+    }
+
 
 }
