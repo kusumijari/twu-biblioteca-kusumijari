@@ -19,7 +19,7 @@ public class ParserTest {
     @Test
     public void shouldReturnFalseIfTheOptionEnteredIsAValueGreaterThanTheAvailableOptions() {
         Library library = new Library();
-        Parser parser = new Parser("4", library);
+        Parser parser = new Parser("5", library);
 
         assertFalse(parser.isValid());
     }

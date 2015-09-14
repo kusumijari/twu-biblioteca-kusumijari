@@ -40,7 +40,7 @@ public class Library{
     public boolean transferFromUnavailableBooksToAvailableBooks(Book returnedBook) {
         if(unavailablebooks.contains(returnedBook)) {
             availableBooks.add(unavailablebooks.get(unavailablebooks.indexOf(returnedBook)));
-            unavailablebooks.remove(availableBooks.get(availableBooks.indexOf(returnedBook)));
+            unavailablebooks.remove(returnedBook);
             return true;
         }
         return false;
