@@ -51,7 +51,7 @@ public class ParserTest {
     @Test
     public void shouldExitObjectIfOptionIsThree() {
         Library library = new Library();
-        Parser parser = new Parser("3", library);
+        Parser parser = new Parser("4", library);
 
         assertEquals(Exit.class, parser.createMenuItem().getClass());
     }
@@ -64,4 +64,11 @@ public class ParserTest {
         assertEquals(Checkout.class, parser.createMenuItem().getClass());
     }
 
+    @Test
+    public void shouldReturnReturnBookObjectIfOptionIsThree() {
+        Library library = new Library();
+        Parser parser = new Parser("3", library);
+
+        assertEquals(Checkin.class,parser.createMenuItem().getClass());
+    }
 }

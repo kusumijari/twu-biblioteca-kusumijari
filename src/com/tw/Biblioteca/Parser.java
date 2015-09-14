@@ -32,8 +32,12 @@ public class Parser {
                 return new Checkout(library, consoleInput);
             }
             else if(convertOptionToInt() == 3) {
+                return new Checkin();
+            }
+            else if(convertOptionToInt() == 4) {
                 return new Exit();
             }
+
         }
         return new InvalidMenuItem();
     }
