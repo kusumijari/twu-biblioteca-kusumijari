@@ -34,5 +34,12 @@ public class MovieTest {
 
         assertNotEquals(movie,"not a Movie object");
     }
-    
+
+    @Test
+    public void shouldNotBeEqualToAnotherMovieObjectWithDifferentName() {
+        Movie movie = new Movie("Inception", 2010, "Christopher Nolan", "8.8");
+
+        assertNotEquals("Interstellar", movie);
+    }
+
 }
