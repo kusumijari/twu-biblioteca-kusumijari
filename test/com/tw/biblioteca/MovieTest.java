@@ -49,4 +49,11 @@ public class MovieTest {
         assertNotEquals("Inception", movie);
     }
 
+    @Test
+    public void shouldHaveEqualHashcodesIfMoviesAreEqual() {
+        Movie movie1 = new Movie("Inception", 2010, "Christopher Nolan", "8.8");
+        Movie movie2 = new Movie("Inception", 2010, "Christopher Nolan", "8.8");
+
+        assertEquals(movie1.hashCode(), movie2.hashCode());
+    }
 }
