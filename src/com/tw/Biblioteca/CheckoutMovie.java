@@ -22,7 +22,14 @@ public class CheckoutMovie {
     }
 
     public void execute() {
-        ConsoleOutput consoleOutput = new ConsoleOutput("Thank you! Enjoy the movie.");
-        consoleOutput.displayMessage();
+        String movieChoice = acceptMovieChoice();
+        if(hasBeenRemoved(new Movie(movieChoice, 0, "director", "0"))) {
+            ConsoleOutput consoleOutput = new ConsoleOutput("Thank you! Enjoy the movie.");
+            consoleOutput.displayMessage();
+        }
+        else {
+            ConsoleOutput consoleOutput = new ConsoleOutput("That is not a valid movie option.");
+            consoleOutput.displayMessage();
+        }
     }
 }

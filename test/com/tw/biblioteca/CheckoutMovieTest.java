@@ -47,7 +47,7 @@ public class CheckoutMovieTest {
     }
 
     @Test
-    public void shouldReturnSuccessMessageIfBookIsAvailable() {
+    public void shouldReturnSuccessMessageIfMovieIsAvailable() {
         MovieLibrary movieLibrary = mock(MovieLibrary.class);
         ConsoleInput mockConsoleInput = mock(ConsoleInput.class);
         CheckoutMovie checkoutMovie= new CheckoutMovie(movieLibrary, mockConsoleInput);
@@ -64,4 +64,21 @@ public class CheckoutMovieTest {
         System.setOut(System.out);
     }
 
+    @Test
+    public void shouldReturnUnsuccessfulMessageIfMovieIsUnavailable() {
+        MovieLibrary movieLibrary = mock(MovieLibrary.class);
+        ConsoleInput mockConsoleInput = mock(ConsoleInput.class);
+        CheckoutMovie checkoutMovie= new CheckoutMovie(movieLibrary, mockConsoleInput);
+        CheckoutMovie spy = spy(checkoutMovie);
+        when(spy.acceptMovieChoice()).thenReturn("Gone Girl");
+        when(movieLibrary.removeMovie(any(Movie.class))).thenReturn(false);
+
+        ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(outContent));
+
+        checkoutMovie.execute();
+
+        assertEquals("That is not a valid movie option.\n", outContent.toString());
+        System.setOut(System.out);
+    }
 }
