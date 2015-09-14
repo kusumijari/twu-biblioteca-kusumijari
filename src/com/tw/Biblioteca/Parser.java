@@ -40,6 +40,9 @@ public class Parser {
                 return new ListMovies(movieLibrary);
             }
             else if(convertOptionToInt() == 5) {
+                return new CheckoutMovie(movieLibrary, new ConsoleInput());
+            }
+            else if(convertOptionToInt() == 6){
                 return new Exit();
             }
 

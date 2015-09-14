@@ -57,7 +57,7 @@ public class ParserTest {
     public void shouldExitObjectIfOptionIsThree() {
         Library library = new Library();
         MovieLibrary movieLibrary = new MovieLibrary();
-        Parser parser = new Parser("5", library, movieLibrary);
+        Parser parser = new Parser("6", library, movieLibrary);
 
         assertEquals(Exit.class, parser.createMenuItem().getClass());
     }
@@ -88,5 +88,14 @@ public class ParserTest {
         Parser parser = new Parser("4", library, movieLibrary);
 
         assertEquals(ListMovies.class, parser.createMenuItem().getClass());
+    }
+
+    @Test
+    public void shouldReturnCheckoutMovieObjectIfOptionIsFive() {
+        Library library = new Library();
+        MovieLibrary movieLibrary = new MovieLibrary();
+        Parser parser = new Parser("5", library, movieLibrary);
+
+        assertEquals(CheckoutMovie.class, parser.createMenuItem().getClass());
     }
 }

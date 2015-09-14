@@ -2,7 +2,7 @@
 
 package com.tw.biblioteca;
 
-public class CheckoutMovie {
+public class CheckoutMovie implements MenuItem{
 
     private MovieLibrary movieLibrary;
     private ConsoleInput consoleInput;
