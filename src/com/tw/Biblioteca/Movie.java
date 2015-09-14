@@ -23,7 +23,7 @@ public class Movie {
 
     @Override
     public boolean equals(Object that){
-        if(that == null) {
+        if(that == null || that.getClass() != Movie.class) {
             return false;
         }
         return true;
