@@ -10,7 +10,8 @@ public class  Application {
         ConsoleOutput consoleOutput = new ConsoleOutput("Welcome to Biblioteca");
         consoleOutput.displayMessage();
         Library library = new Library();
-        Controller controller = new Controller(library);
+        MovieLibrary movieLibrary = new MovieLibrary();
+        Controller controller = new Controller(library, movieLibrary);
         controller.delegate();
     }
 }

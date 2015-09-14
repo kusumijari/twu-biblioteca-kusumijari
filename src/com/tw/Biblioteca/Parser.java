@@ -5,14 +5,16 @@ package com.tw.biblioteca;
 public class Parser {
     private String option;
     private Library library;
+    private MovieLibrary movieLibrary;
 
-    public Parser(String option, Library library) {
+    public Parser(String option, Library library, MovieLibrary movieLibrary) {
         this.library = library;
         this.option = option;
+        this.movieLibrary = movieLibrary;
     }
 
     public boolean isValid() {
-        if(option.matches("[0-9]+") && convertOptionToInt() > 0 && convertOptionToInt() <= 4 ) {
+        if(option.matches("[0-9]+") && convertOptionToInt() > 0 && convertOptionToInt() <= 5 ) {
             return true;
         }
         return false;
@@ -35,6 +37,9 @@ public class Parser {
                 return new Checkin(library, new ConsoleInput());
             }
             else if(convertOptionToInt() == 4) {
+                return new ListMovies(movieLibrary);
+            }
+            else if(convertOptionToInt() == 5) {
                 return new Exit();
             }
 

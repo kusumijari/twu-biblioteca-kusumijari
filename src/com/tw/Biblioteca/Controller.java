@@ -6,10 +6,12 @@ public class Controller {
 
     private Menu menu;
     Library library;
+    MovieLibrary movieLibrary;
 
-    public Controller(Library library) {
+    public Controller(Library library, MovieLibrary movieLibrary) {
         menu = new Menu();
         this.library = library;
+        this.movieLibrary = movieLibrary;
     }
 
     public void showMenu(ConsoleOutput consoleOutput) {
@@ -33,7 +35,7 @@ public class Controller {
         while (true) {
             ConsoleOutput consoleOutput = new ConsoleOutput(menu.toString());
             showMenu(consoleOutput);
-            Parser parser = new Parser(input(new ConsoleInput()), library);
+            Parser parser = new Parser(input(new ConsoleInput()), library, movieLibrary);
             MenuItem menuItem = createMenuObject(parser);
             executeMenuObject(menuItem);
         }

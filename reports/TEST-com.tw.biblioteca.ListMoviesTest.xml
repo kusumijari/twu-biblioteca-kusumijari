@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="precise64" name="com.tw.biblioteca.ConsoleOutputTest" tests="1" time="0.007" timestamp="2015-09-14T15:40:24">
+<testsuite errors="0" failures="0" hostname="precise64" name="com.tw.biblioteca.ListMoviesTest" tests="2" time="0.02" timestamp="2015-09-14T15:40:24">
   <properties>
     <property name="ant.project.invoked-targets" value="coverage" />
     <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
@@ -69,7 +69,8 @@
     <property name="ant.file.type" value="file" />
     <property name="sun.cpu.isalist" value="" />
   </properties>
-  <testcase classname="com.tw.biblioteca.ConsoleOutputTest" name="shouldPrintWelcomeMessage" time="0.0" />
+  <testcase classname="com.tw.biblioteca.ListMoviesTest" name="shouldDisplayTheBookList" time="0.005" />
+  <testcase classname="com.tw.biblioteca.ListMoviesTest" name="shouldReceiveTheListOfMoviesFromMovieLibrary" time="0.0" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
