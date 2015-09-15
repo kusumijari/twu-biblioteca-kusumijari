@@ -4,12 +4,12 @@ package com.tw.biblioteca;
 
 public class Controller {
 
-    private Menu menu;
+    private FirstMenu firstMenu;
     BookLibrary bookLibrary;
     MovieLibrary movieLibrary;
 
     public Controller(BookLibrary bookLibrary, MovieLibrary movieLibrary) {
-        menu = new Menu();
+        firstMenu = new FirstMenu();
         this.bookLibrary = bookLibrary;
         this.movieLibrary = movieLibrary;
     }
@@ -33,7 +33,7 @@ public class Controller {
 
     public void delegate() {
         while (true) {
-            ConsoleOutput consoleOutput = new ConsoleOutput(menu.toString());
+            ConsoleOutput consoleOutput = new ConsoleOutput(firstMenu.toString());
             showMenu(consoleOutput);
             Parser parser = new Parser(input(new ConsoleInput()), bookLibrary, movieLibrary);
             MenuItem menuItem = createMenuObject(parser);

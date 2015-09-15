@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="precise64" name="com.tw.biblioteca.InvalidMenuItemTest" tests="1" time="0.013" timestamp="2015-09-14T17:48:08">
+<testsuite errors="0" failures="0" hostname="precise64" name="com.tw.biblioteca.InvalidFirstMenuItemTest" tests="1" time="0.013" timestamp="2015-09-14T17:48:08">
   <properties>
     <property name="ant.project.invoked-targets" value="coverage" />
     <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
@@ -69,7 +69,7 @@
     <property name="ant.file.type" value="file" />
     <property name="sun.cpu.isalist" value="" />
   </properties>
-  <testcase classname="com.tw.biblioteca.InvalidMenuItemTest" name="shouldDisplayTheBookList" time="0.003" />
+  <testcase classname="com.tw.biblioteca.InvalidFirstMenuItemTest" name="shouldDisplayTheBookList" time="0.003" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

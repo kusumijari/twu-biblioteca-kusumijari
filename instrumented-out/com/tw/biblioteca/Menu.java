@@ -26,7 +26,7 @@ CodeCoverCoverageCounter$8db22my9e9gj8h.statements[4]++;
     public String toString() {
 CodeCoverCoverageCounter$8db22my9e9gj8h.statements[5]++;
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append("Menu\n");
+        stringBuilder.append("FirstMenu\n");
 CodeCoverCoverageCounter$8db22my9e9gj8h.statements[6]++;
 CodeCoverCoverageCounter$8db22my9e9gj8h.statements[7]++;
 byte CodeCoverTryBranchHelper_L1 = 0;
@@ -60,7 +60,7 @@ class CodeCoverCoverageCounter$8db22my9e9gj8h extends org.codecover.instrumentat
     public static long[] loops = new long[4];
 
   public CodeCoverCoverageCounter$8db22my9e9gj8h () {
-    super("com.tw.biblioteca.Menu.java");
+    super("com.tw.biblioteca.FirstMenu.java");
   }
 
   public static void ping() {/* nothing to do*/}
@@ -78,7 +78,7 @@ class CodeCoverCoverageCounter$8db22my9e9gj8h extends org.codecover.instrumentat
   }
 
   public void serializeAndReset(org.codecover.instrumentation.measurement.CoverageCounterLog log) {
-    log.startNamedSection("com.tw.biblioteca.Menu.java");
+    log.startNamedSection("com.tw.biblioteca.FirstMenu.java");
       for (int i = 1; i <= 8; i++) {
         if (statements[i] != 0L) {
           log.passCounter("S" + i, statements[i]);

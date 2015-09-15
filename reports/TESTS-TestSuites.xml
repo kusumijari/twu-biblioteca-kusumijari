@@ -1516,7 +1516,7 @@
 
       </properties>
 
-      <testcase classname="com.tw.biblioteca.InvalidMenuItemTest" name="shouldDisplayTheBookList" time="0.003" />
+      <testcase classname="com.tw.biblioteca.InvalidFirstMenuItemTest" name="shouldDisplayTheBookList" time="0.003" />
 
       <system-out />
 
@@ -1955,7 +1955,7 @@
 
       </properties>
 
-      <testcase classname="com.tw.biblioteca.MenuTest" name="shouldReturnTheAvailableMenu" time="0.0" />
+      <testcase classname="com.tw.biblioteca.FirstMenuTest" name="shouldReturnTheAvailableMenu" time="0.0" />
 
       <system-out />
 
