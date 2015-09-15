@@ -166,10 +166,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Authenticator.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Authenticator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Authenticator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5721393">
+            <state vertical-scroll-proportion="0.0">
               <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
               <folding>
                 <element signature="e#259#265#0" expanded="true" />
@@ -178,11 +178,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthenticatorTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AuthenticatorTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/AuthenticatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.74626863">
+              <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -297,8 +297,8 @@
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/LoginTest.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Login.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Authenticater.java" />
-        <option value="$PROJECT_DIR$/test/com/tw/biblioteca/AuthenticatorTest.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Authenticator.java" />
+        <option value="$PROJECT_DIR$/test/com/tw/biblioteca/AuthenticatorTest.java" />
       </list>
     </option>
   </component>
@@ -431,33 +431,7 @@
       <recent name="com.tw.biblioteca" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AuthenticatorTest.shouldCheckIftheUsernameIsInvalid">
-    <configuration default="false" name="LoginTest.shouldReturnTrueIfUsernameIsValid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.tw.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="BibliotecaVersion1" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.tw.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.biblioteca.LoginTest" />
-      <option name="METHOD_NAME" value="shouldReturnTrueIfUsernameIsValid" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.AuthenticatorTest.shouldReturnTrueIfUsernameAndPasswordIsValid">
     <configuration default="false" name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -543,6 +517,32 @@
       <option name="PACKAGE_NAME" value="com.tw.biblioteca" />
       <option name="MAIN_CLASS_NAME" value="com.tw.biblioteca.AuthenticatorTest" />
       <option name="METHOD_NAME" value="shouldCheckIftheUsernameIsInvalid" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="AuthenticatorTest.shouldReturnTrueIfUsernameAndPasswordIsValid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.tw.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="BibliotecaVersion1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.tw.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.biblioteca.AuthenticatorTest" />
+      <option name="METHOD_NAME" value="shouldReturnTrueIfUsernameAndPasswordIsValid" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -766,19 +766,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.LoginTest.shouldReturnTrueIfUsernameIsValid" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.LoginTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.LoginTest.shouldCreateSessionObjectIfUsernameAndPasswordAreAuthenticated" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Application" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.AuthenticatorTest.shouldCheckIftheUsernameIsInvalid" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.LoginTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.LoginTest.shouldCreateSessionObjectIfUsernameAndPasswordAreAuthenticated" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Application" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.AuthenticatorTest.shouldCheckIftheUsernameIsInvalid" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.AuthenticatorTest.shouldReturnTrueIfUsernameAndPasswordIsValid" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.AuthenticatorTest.shouldCheckIftheUsernameIsInvalid" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Application" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.LoginTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.LoginTest.shouldCreateSessionObjectIfUsernameAndPasswordAreAuthenticated" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.LoginTest.shouldReturnTrueIfUsernameIsValid" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.AuthenticatorTest.shouldReturnTrueIfUsernameAndPasswordIsValid" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.AuthenticatorTest.shouldCheckIftheUsernameIsInvalid" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Application" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.LoginTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.LoginTest.shouldCreateSessionObjectIfUsernameAndPasswordAreAuthenticated" />
       </list>
     </recent_temporary>
   </component>
@@ -1309,16 +1309,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/AuthenticatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Login.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1335,10 +1325,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Authenticator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5721393">
+        <state vertical-scroll-proportion="0.0">
           <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
           <folding>
             <element signature="e#259#265#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/AuthenticatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.74626863">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
