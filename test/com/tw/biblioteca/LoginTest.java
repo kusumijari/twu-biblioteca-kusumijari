@@ -38,7 +38,7 @@ public class LoginTest {
         Login login = new Login(mockConsoleInput1, mockConsoleInput2);
 
         when(mockConsoleInput1.getInput()).thenReturn("123-4567");
-        when(mockConsoleInput2.getInput()).thenReturn("password");
+        when(mockConsoleInput2.getInput()).thenReturn("password1");
 
         login.acceptUsername(mockConsoleInput1);
 

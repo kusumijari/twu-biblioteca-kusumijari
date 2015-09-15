@@ -17,7 +17,7 @@ public class User {
             return false;
         }
         User thatUser = (User) that;
-        if(this.username.equals(thatUser.username) && this.password.equals(thatUser.password)){
+        if(this.username.equals(thatUser.username)){
             return true;
         }
         return false;
