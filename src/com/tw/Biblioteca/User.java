@@ -3,11 +3,10 @@
 package com.tw.biblioteca;
 
 public class User {
-    private String role, name, username, password;
+    private String role, username, password;
 
-    public User(String role, String name, String username, String password) {
+    public User(String role, String username, String password) {
         this.role = role;
-        this.name = name;
         this.username = username;
         this.password = password;
     }
@@ -22,5 +21,9 @@ public class User {
             return true;
         }
         return false;
+    }
+
+    public String getUser() {
+        return role;
     }
 }
