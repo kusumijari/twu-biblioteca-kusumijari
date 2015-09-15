@@ -12,6 +12,7 @@ public class CustomerMenu implements Menu{
         userMenu.add("Checkout Movie");
         userMenu.add("Checkout Book");
         userMenu.add("Checkin Book");
+        userMenu.add("Logout");
         userMenu.add("Exit");
     }
 

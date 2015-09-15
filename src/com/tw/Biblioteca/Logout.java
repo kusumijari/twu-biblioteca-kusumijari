@@ -12,7 +12,7 @@ public class Logout implements MenuItem{
 
     @Override
     public void execute() {
-
+        stopSession();
     }
 
     public boolean stopSession() {
