@@ -28,5 +28,12 @@ public class AuthenticatorTest {
         assertTrue(authenticator.authenticate());
     }
 
-    
+    @Test
+    public void shouldReturnFalseIfUsernameIsValidAndPasswordIsInvalid() {
+        Authenticator authenticator =  new Authenticator(new User("role", "123-4567", "password"));
+
+        assertFalse(authenticator.authenticate());
+    }
+
+
 }

@@ -19,7 +19,11 @@ public class Authenticator {
 
     public boolean authenticate() {
         if(users.contains(user)){
-            return true;
+            for(User thatUser : users) {
+                if( thatUser.authenticatePassword(user)) {
+                    return true;
+                }
+            }
         }
         return false;
     }
