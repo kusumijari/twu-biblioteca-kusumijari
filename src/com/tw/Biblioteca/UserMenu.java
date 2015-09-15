@@ -4,7 +4,7 @@ package com.tw.biblioteca;
 
 import java.util.ArrayList;
 
-public class UserMenu {
+public class UserMenu implements Menu{
     ArrayList<String> userMenu = new ArrayList<String>();
     UserMenu() {
         userMenu.add("List Books");
