@@ -45,7 +45,7 @@ public class Controller {
 
     public Menu createMenuItem() {
         if(session.getUser().getRole().equals("Customer")){
-            return new UserMenu();
+            return new CustomerMenu();
         }
         return new DefaultMenu();
     }

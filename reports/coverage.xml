@@ -1342,7 +1342,7 @@
 						<line number="45" hits="5" branch="false"/>
 					</lines>
 				</class>
-				<class name="com.tw.biblioteca.UserMenu" filename="com/tw/biblioteca/UserMenu.java" line-rate="1.0" branch-rate="1.0" complexity="1.5">
+				<class name="com.tw.biblioteca.CustomerMenu" filename="com/tw/biblioteca/UserMenu.java" line-rate="1.0" branch-rate="1.0" complexity="1.5">
 					<methods>
 						<method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>

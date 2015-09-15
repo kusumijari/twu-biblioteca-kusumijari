@@ -3167,7 +3167,7 @@
 
       </properties>
 
-      <testcase classname="com.tw.biblioteca.UserMenuTest" name="shouldReturnTheAvailableMenu" time="0.004" />
+      <testcase classname="com.tw.biblioteca.CustomerMenuTest" name="shouldReturnTheAvailableMenu" time="0.004" />
 
       <system-out />
 
