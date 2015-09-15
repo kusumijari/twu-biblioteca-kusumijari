@@ -43,5 +43,9 @@ public class Login implements MenuItem{
             ConsoleOutput consoleOutput = new ConsoleOutput("Successful Login");
             consoleOutput.displayMessage();
         }
+        else {
+            ConsoleOutput consoleOutput = new ConsoleOutput("Login failed");
+            consoleOutput.displayMessage();
+        }
     }
 }
