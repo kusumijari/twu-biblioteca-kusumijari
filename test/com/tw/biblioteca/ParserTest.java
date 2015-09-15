@@ -78,4 +78,13 @@ public class ParserTest {
 
         assertEquals(Login.class, parser.createMenuItem().getClass());
     }
+
+    @Test
+    public void shouldReturnLogoutObjectIfOptionIsLogout() {
+        BookLibrary bookLibrary = new BookLibrary();
+        MovieLibrary movieLibrary = new MovieLibrary();
+        Parser parser = new Parser("Logout", bookLibrary, movieLibrary, new Session(new User("default", "nousername", "nopassword")));
+
+        assertEquals(Logout.class, parser.createMenuItem().getClass());
+    }
 }
