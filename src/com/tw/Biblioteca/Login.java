@@ -27,7 +27,6 @@ public class Login implements MenuItem{
         return consoleInput.getInput();
     }
 
-
     public boolean authenticate() {
         User user = new User("role", acceptUsername(consoleInput1), acceptPassword(consoleInput2));
         if(users.contains(user)) {
@@ -43,7 +42,6 @@ public class Login implements MenuItem{
     @Override
     public void execute() {
         if(authenticate()) {
-            
             ConsoleOutput consoleOutput = new ConsoleOutput("Successful Login");
             consoleOutput.displayMessage();
         }
