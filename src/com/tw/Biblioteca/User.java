@@ -23,6 +23,17 @@ public class User {
         return false;
     }
 
+    @Override
+    public int hashCode(){
+        int hash = 0;
+        if(this != null) {
+            for (int i = 0; i <  username.length(); i++) {
+                hash = Character.getNumericValue(username.charAt(i)) + (hash << 6) + (hash << 16) - hash;
+            }
+        }
+        return hash;
+
+    }
     public String getUser() {
         return role;
     }

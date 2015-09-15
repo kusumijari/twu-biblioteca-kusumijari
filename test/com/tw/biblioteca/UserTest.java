@@ -68,5 +68,12 @@ public class UserTest {
         assertEquals("User", user.getUser());
     }
 
-    
+    @Test
+    public void shouldHaveSameHashCodeForEqualUsers () {
+        User user1 = new User("User", "123-4568", "password");
+        User user2 = new User("User", "123-4568", "password");
+
+        assertEquals(user1.hashCode(), user2.hashCode());
+
+    }
 }
