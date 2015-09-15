@@ -35,6 +35,29 @@ public class UserTest {
         User user2 = new User("User", "abc", "123-4567", "password");
 
         assertEquals(user1, user2);
+    }
 
+    @Test
+    public void shouldNotBeEqualToAnotherUserWithDifferentUsernameAndSamePassword() {
+        User user1 = new User("User", "abc", "123-4568", "password");
+        User user2 = new User("User", "abc", "123-4567", "password");
+
+        assertNotEquals(user1, user2);
+    }
+
+    @Test
+    public void shouldNotBeEqualToAnotherUserWithDifferentUsernameAndDifferentPassword() {
+        User user1 = new User("User", "abc", "123-4568", "password1");
+        User user2 = new User("User", "abc", "123-4567", "password");
+
+        assertNotEquals(user1, user2);
+    }
+
+    @Test
+    public void shouldNotBeEqualToAnotherUserWithSameUsernameAndDifferentPassword() {
+        User user1 = new User("User", "abc", "123-4567", "password1");
+        User user2 = new User("User", "abc", "123-4567", "password");
+
+        assertNotEquals(user1, user2);
     }
 }
