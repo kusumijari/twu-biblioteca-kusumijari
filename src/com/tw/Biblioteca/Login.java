@@ -8,7 +8,7 @@ public class Login {
 
     ArrayList<User> users = new ArrayList<User>();
 
-    public Login() {
+     Login() {
         User user1 = new User("Customer", "123-4567", "password");
         User user2 = new User("Librarian", "123-4568", "password");
         users.add(user1);
@@ -20,4 +20,11 @@ public class Login {
         consoleOutput.displayMessage();
         return consoleInput.getInput();
     }
+
+    public String acceptPassword(ConsoleInput consoleInput) {
+        ConsoleOutput consoleOutput = new ConsoleOutput("Enter Password:");
+        consoleOutput.displayMessage();
+        return consoleInput.getInput();
+    }
+    
 }
