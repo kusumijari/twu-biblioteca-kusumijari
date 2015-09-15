@@ -7,11 +7,13 @@ public class Controller {
     private FirstMenu firstMenu;
     BookLibrary bookLibrary;
     MovieLibrary movieLibrary;
+    Session session;
 
     public Controller(BookLibrary bookLibrary, MovieLibrary movieLibrary) {
         firstMenu = new FirstMenu();
         this.bookLibrary = bookLibrary;
         this.movieLibrary = movieLibrary;
+        session = new Session(new User("default", "nousername", "nopassword"));
     }
 
     public void showMenu(ConsoleOutput consoleOutput) {
@@ -35,7 +37,7 @@ public class Controller {
         while (true) {
             ConsoleOutput consoleOutput = new ConsoleOutput(firstMenu.toString());
             showMenu(consoleOutput);
-            Parser parser = new Parser(input(new ConsoleInput()), bookLibrary, movieLibrary);
+            Parser parser = new Parser(input(new ConsoleInput()), bookLibrary, movieLibrary, session);
             MenuItem menuItem = createMenuObject(parser);
             executeMenuObject(menuItem);
         }

@@ -6,11 +6,13 @@ public class Parser {
     private String option;
     private BookLibrary bookLibrary;
     private MovieLibrary movieLibrary;
+    private Session session;
 
-    public Parser(String option, BookLibrary bookLibrary, MovieLibrary movieLibrary) {
+    public Parser(String option, BookLibrary bookLibrary, MovieLibrary movieLibrary, Session session) {
         this.bookLibrary = bookLibrary;
         this.option = option;
         this.movieLibrary = movieLibrary;
+        this.session = session;
     }
 
     public MenuItem createMenuItem() {
@@ -34,7 +36,7 @@ public class Parser {
                 return new Exit();
             }
             else if(option.equals("Login")) {
-                return new Login(new ConsoleInput(), new ConsoleInput());
+                return new Login(new ConsoleInput(), new ConsoleInput(), session);
             }
         return new InvalidMenuItem();
     }

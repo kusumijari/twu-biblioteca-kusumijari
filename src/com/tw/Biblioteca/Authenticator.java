@@ -1,4 +1,4 @@
-//checks if the username and password is authentic and based on that creates new session if needed
+//checks if the username and password is authentic
 
 package com.tw.biblioteca;
 

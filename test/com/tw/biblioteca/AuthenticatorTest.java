@@ -9,7 +9,7 @@ public class AuthenticatorTest {
 
     @Test
     public void shouldReturnTrueIfUsernameIsValid() {
-        Authenticator authenticator =  new Authenticator(new User("role", "123-4567", "password"));
+        Authenticator authenticator =  new Authenticator(new User("role", "123-4567", "password1"));
 
         assertTrue(authenticator.authenticate());
     }
@@ -34,6 +34,4 @@ public class AuthenticatorTest {
 
         assertFalse(authenticator.authenticate());
     }
-
-
 }
