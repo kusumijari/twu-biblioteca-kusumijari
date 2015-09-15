@@ -33,6 +33,9 @@ public class Parser {
             else if(option.equals("Exit")){
                 return new Exit();
             }
+            else if(option.equals("Login")) {
+                return new Login(new ConsoleInput(), new ConsoleInput());
+            }
         return new InvalidMenuItem();
     }
 }

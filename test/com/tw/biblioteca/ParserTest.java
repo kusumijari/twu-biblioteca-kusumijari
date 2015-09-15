@@ -69,4 +69,13 @@ public class ParserTest {
 
         assertEquals(CheckoutMovie.class, parser.createMenuItem().getClass());
     }
+
+    @Test
+    public void shouldReturnLoginObjectIfOptionIsLogin() {
+        BookLibrary bookLibrary = new BookLibrary();
+        MovieLibrary movieLibrary = new MovieLibrary();
+        Parser parser = new Parser("Login", bookLibrary, movieLibrary);
+
+        assertEquals(Login.class, parser.createMenuItem().getClass());
+    }
 }
