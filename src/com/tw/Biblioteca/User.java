@@ -14,7 +14,7 @@ public class User {
 
     @Override
     public boolean equals(Object that) {
-        if(that == null){
+        if(that == null || that.getClass() != User.class){
             return false;
         }
         return true;

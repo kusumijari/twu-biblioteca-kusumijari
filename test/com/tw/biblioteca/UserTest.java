@@ -21,5 +21,12 @@ public class UserTest {
         assertNotEquals(user, null);
     }
 
+    @Test
+    public void shouldNotBeEqualToAnyOtherObject() {
+        User user = new User("User", "abc", "123-4567", "password");
+
+        assertNotEquals(user, "not a user");
+    }
+
 
 }
