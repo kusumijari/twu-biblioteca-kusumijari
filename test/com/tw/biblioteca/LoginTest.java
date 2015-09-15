@@ -80,6 +80,22 @@ public class LoginTest {
     }
 
     @Test
+    public void shouldReturnFalseIfUsernameIsValidAndPasswordIsInvalid() {
+        ConsoleInput mockConsoleInput1 = mock(ConsoleInput.class);
+        ConsoleInput mockConsoleInput2 = mock(ConsoleInput.class);
+        Login login = new Login(mockConsoleInput1, mockConsoleInput2);
+
+        when(mockConsoleInput1.getInput()).thenReturn("123-4567");
+        when(mockConsoleInput2.getInput()).thenReturn("password");
+
+        login.acceptUsername(mockConsoleInput1);
+
+        login.acceptPassword(mockConsoleInput2);
+
+        assertFalse(login.authenticate());
+    }
+
+    @Test
     public void shouldDisplaySuccessfulMessageIfLoginIsSuccessful() {
         ConsoleInput mockConsoleInput1 = mock(ConsoleInput.class);
         ConsoleInput mockConsoleInput2 = mock(ConsoleInput.class);

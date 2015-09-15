@@ -76,7 +76,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Factory.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Library.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/MoiveLibrary.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Login.java" afterPath="$PROJECT_DIR$/src/com/tw/biblioteca/Login.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/tw/biblioteca/LoginTest.java" afterPath="$PROJECT_DIR$/test/com/tw/biblioteca/LoginTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -180,8 +179,8 @@
       <file leaf-file-name="LoginTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/LoginTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.70149255">
-              <caret line="74" column="35" selection-start-line="74" selection-start-column="35" selection-end-line="74" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.80099505">
+              <caret line="94" column="20" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -271,8 +270,8 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/UserTest.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/User.java" />
-        <option value="$PROJECT_DIR$/test/com/tw/biblioteca/LoginTest.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Login.java" />
+        <option value="$PROJECT_DIR$/test/com/tw/biblioteca/LoginTest.java" />
       </list>
     </option>
   </component>
@@ -405,33 +404,7 @@
       <recent name="com.tw.biblioteca" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LoginTest.shouldReturnTrueIfUsernameAndPasswordIsValid">
-    <configuration default="false" name="UserTest.shouldReturnTrueIfPasswordIsCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.tw.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="BibliotecaVersion1" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.tw.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.biblioteca.UserTest" />
-      <option name="METHOD_NAME" value="shouldReturnTrueIfPasswordIsCorrect" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.LoginTest.shouldReturnFalseIfUsernameIsValidAndPasswordIsInvalid">
     <configuration default="false" name="UserTest.shouldReturnFalseIfPasswordIsIncorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -523,6 +496,32 @@
       <option name="PACKAGE_NAME" value="com.tw.biblioteca" />
       <option name="MAIN_CLASS_NAME" value="com.tw.biblioteca.LoginTest" />
       <option name="METHOD_NAME" value="shouldReturnTrueIfUsernameAndPasswordIsValid" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="LoginTest.shouldReturnFalseIfUsernameIsValidAndPasswordIsInvalid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.tw.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="BibliotecaVersion1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.tw.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.biblioteca.LoginTest" />
+      <option name="METHOD_NAME" value="shouldReturnFalseIfUsernameIsValidAndPasswordIsInvalid" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -746,19 +745,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.UserTest.shouldReturnTrueIfPasswordIsCorrect" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.UserTest.shouldReturnFalseIfPasswordIsIncorrect" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.LoginTest.shouldReturnTrueIfUsernameIsValid" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.LoginTest.shouldCheckIftheUsernameIsInvalid" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.LoginTest.shouldReturnTrueIfUsernameAndPasswordIsValid" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.UserTest.shouldReturnFalseIfPasswordIsIncorrect" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.LoginTest.shouldReturnTrueIfUsernameIsValid" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.LoginTest.shouldCheckIftheUsernameIsInvalid" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.LoginTest.shouldReturnTrueIfUsernameAndPasswordIsValid" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.LoginTest.shouldReturnFalseIfUsernameIsValidAndPasswordIsInvalid" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.LoginTest.shouldReturnTrueIfUsernameAndPasswordIsValid" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.LoginTest.shouldCheckIftheUsernameIsInvalid" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.LoginTest.shouldReturnTrueIfUsernameIsValid" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.UserTest.shouldReturnFalseIfPasswordIsIncorrect" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.UserTest.shouldReturnTrueIfPasswordIsCorrect" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.LoginTest.shouldReturnFalseIfUsernameIsValidAndPasswordIsInvalid" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.LoginTest.shouldReturnTrueIfUsernameAndPasswordIsValid" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.LoginTest.shouldCheckIftheUsernameIsInvalid" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.LoginTest.shouldReturnTrueIfUsernameIsValid" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.UserTest.shouldReturnFalseIfPasswordIsIncorrect" />
       </list>
     </recent_temporary>
   </component>
@@ -1305,8 +1304,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/LoginTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70149255">
-          <caret line="74" column="35" selection-start-line="74" selection-start-column="35" selection-end-line="74" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.80099505">
+          <caret line="94" column="20" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
