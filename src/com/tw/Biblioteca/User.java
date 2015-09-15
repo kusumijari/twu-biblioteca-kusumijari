@@ -17,6 +17,10 @@ public class User {
         if(that == null || that.getClass() != User.class){
             return false;
         }
-        return true;
+        User thatUser = (User) that;
+        if(this.username.equals(thatUser.username)){
+            return true;
+        }
+        return false;
     }
 }
