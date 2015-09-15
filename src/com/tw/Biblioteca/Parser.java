@@ -13,41 +13,26 @@ public class Parser {
         this.movieLibrary = movieLibrary;
     }
 
-    public boolean isValid() {
-        if(option.matches("[0-9]+") && convertOptionToInt() > 0 && convertOptionToInt() <= 6 ) {
-            return true;
-        }
-        return false;
-    }
-
-    private int convertOptionToInt() {
-        return Integer.parseInt(option);
-    }
-
     public MenuItem createMenuItem() {
-        if(isValid()) {
-            if (convertOptionToInt() == 1) {
+            if (option.equals("List Books")) {
                 return new ListBooks(bookLibrary);
             }
-            else if (convertOptionToInt() == 2) {
+            else if (option.equals("Checkout Book")) {
                 ConsoleInput consoleInput = new ConsoleInput();
                 return new CheckoutBook(bookLibrary, consoleInput);
             }
-            else if(convertOptionToInt() == 3) {
+            else if(option.equals("Checkin Book")) {
                 return new CheckinBook(bookLibrary, new ConsoleInput());
             }
-            else if(convertOptionToInt() == 4) {
+            else if(option.equals("List Movies")) {
                 return new ListMovies(movieLibrary);
             }
-            else if(convertOptionToInt() == 5) {
+            else if(option.equals("Checkout Movie")) {
                 return new CheckoutMovie(movieLibrary, new ConsoleInput());
             }
-            else if(convertOptionToInt() == 6){
+            else if(option.equals("Exit")){
                 return new Exit();
             }
-
-
-        }
         return new InvalidMenuItem();
     }
 }
