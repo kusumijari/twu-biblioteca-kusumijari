@@ -5,11 +5,13 @@ package com.tw.biblioteca;
 public class Book {
     private String name, author;
     private int yearOfPublication;
+    private String checkedOut;
 
     public Book(String name, String author, int yearOfPublication) {
         this.name = name;
         this.author = author;
         this. yearOfPublication = yearOfPublication;
+        checkedOut = "not checked out";
     }
 
     @Override
