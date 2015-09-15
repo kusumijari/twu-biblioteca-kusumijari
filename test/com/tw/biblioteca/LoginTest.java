@@ -32,13 +32,13 @@ public class LoginTest {
     }
 
     @Test
-    public void shouldCheckIftheUserAndPasswordInformationIsValid() {
+    public void shouldReturnTrueIfUsernameIsValid() {
         ConsoleInput mockConsoleInput1 = mock(ConsoleInput.class);
         ConsoleInput mockConsoleInput2 = mock(ConsoleInput.class);
         Login login = new Login(mockConsoleInput1, mockConsoleInput2);
 
         when(mockConsoleInput1.getInput()).thenReturn("123-4567");
-        when(mockConsoleInput2.getInput()).thenReturn("password1");
+        when(mockConsoleInput2.getInput()).thenReturn("password");
 
         login.acceptUsername(mockConsoleInput1);
 
