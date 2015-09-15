@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.assertTrue;
 
 public class UserTest {
 
@@ -59,5 +60,13 @@ public class UserTest {
 
         assertEquals(user1.hashCode(), user2.hashCode());
 
+    }
+
+    @Test
+    public void shouldReturnTrueIfPasswordIsCorrect() {
+        User user1 = new User("Customer", "123-4567", "password");
+        User user2 = new User("Customer", "123-4567", "password");
+
+        assertTrue(user1.authenticatePassword(user2));
     }
 }

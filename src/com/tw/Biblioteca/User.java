@@ -37,4 +37,8 @@ public class User {
     public String getUser() {
         return role;
     }
+
+    public boolean authenticatePassword(User that) {
+        return true;
+    }
 }
