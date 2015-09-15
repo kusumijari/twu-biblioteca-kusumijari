@@ -38,7 +38,7 @@ public class LoginTest {
         Login login = new Login(mockConsoleInput1, mockConsoleInput2);
 
         when(mockConsoleInput1.getInput()).thenReturn("123-4567");
-        when(mockConsoleInput2.getInput()).thenReturn("password");
+        when(mockConsoleInput2.getInput()).thenReturn("password1");
 
         login.acceptUsername(mockConsoleInput1);
 
@@ -135,5 +135,18 @@ public class LoginTest {
 
         assertEquals("Login failed\n", outContent.toString());
         System.setOut(System.out);
+    }
+
+    @Test
+    public void shouldCreateSessionObjectIfUsernameAndPasswordAreAuthenticated() {
+        ConsoleInput mockConsoleInput1 = mock(ConsoleInput.class);
+        ConsoleInput mockConsoleInput2 = mock(ConsoleInput.class);
+        Login login = new Login(mockConsoleInput1, mockConsoleInput2);
+
+        when(mockConsoleInput1.getInput()).thenReturn("123-4567");
+
+        login.acceptUsername(mockConsoleInput1);
+
+        assertEquals(Session.class, login.startSession().getClass());
     }
 }
