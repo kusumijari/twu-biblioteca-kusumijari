@@ -35,7 +35,7 @@ public class Controller {
 
     public void delegate() {
         while (true) {
-            ConsoleOutput consoleOutput = new ConsoleOutput(defaultMenu.toString());
+            ConsoleOutput consoleOutput = new ConsoleOutput(MenuItem().toString());
             showMenu(consoleOutput);
             Parser parser = new Parser(input(new ConsoleInput()), bookLibrary, movieLibrary, session);
             MenuItem menuItem = createMenuObject(parser);
@@ -43,7 +43,7 @@ public class Controller {
         }
     }
 
-    public Menu createMenuItem() {
+    public Menu MenuItem() {
         if(session.getUser().getRole().equals("Customer")){
             return new CustomerMenu();
         }

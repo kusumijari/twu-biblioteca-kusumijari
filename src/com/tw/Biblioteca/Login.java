@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 public class Login implements MenuItem{
 
+    User user;
     ConsoleInput consoleInput1, consoleInput2;
     ArrayList<User> users = new ArrayList<User>();
     Session session;
@@ -30,7 +31,7 @@ public class Login implements MenuItem{
     }
 
     public boolean authenticate() {
-        User user = new User("role", acceptUsername(consoleInput1), acceptPassword(consoleInput2));
+        user = new User("role", acceptUsername(consoleInput1), acceptPassword(consoleInput2));
         if(users.contains(user)) {
             for(User thatUser : users) {
                 if( thatUser.authenticatePassword(user)) {
@@ -44,7 +45,7 @@ public class Login implements MenuItem{
     @Override
     public void execute() {
         if(authenticate()) {
-            session = startSession();
+            startSession();
             ConsoleOutput consoleOutput = new ConsoleOutput("Successful Login");
             consoleOutput.displayMessage();
         }
@@ -54,9 +55,7 @@ public class Login implements MenuItem{
         }
     }
 
-    public Session startSession() {
-        User user = new User("role", acceptUsername(consoleInput1), acceptPassword(consoleInput2));
-
-        return new Session(user);
+    public boolean startSession() {
+        return session.setUser(users.get(users.indexOf(user)));
     }
 }
