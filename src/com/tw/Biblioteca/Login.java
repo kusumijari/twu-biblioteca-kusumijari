@@ -32,7 +32,11 @@ public class Login implements MenuItem{
     public boolean authenticate() {
         User user = new User("role", acceptUsername(consoleInput1), acceptPassword(consoleInput2));
         if(users.contains(user)) {
-            return true;
+            for(User thatUser : users) {
+                if( thatUser.authenticatePassword(user)) {
+                    return true;
+                }
+            }
         }
         return false;
     }
