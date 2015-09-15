@@ -28,11 +28,13 @@ public class UserTest {
         assertNotEquals(user, "not a user");
     }
 
+
     @Test
-    public void shouldBeEqualToAnotherUserWithSameUsername() {
+    public void shouldBeEqualToAnotherUserWithSameUsernameAndSamePassword() {
         User user1 = new User("User", "abc", "123-4567", "password");
         User user2 = new User("User", "abc", "123-4567", "password");
 
         assertEquals(user1, user2);
+
     }
 }
