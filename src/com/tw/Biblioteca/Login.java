@@ -26,5 +26,8 @@ public class Login {
         consoleOutput.displayMessage();
         return consoleInput.getInput();
     }
-    
+
+    public boolean authenticate() {
+        return true;
+    }
 }
