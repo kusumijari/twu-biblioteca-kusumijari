@@ -47,4 +47,10 @@ public class ControllerTest {
         verify(menuItem).execute();
     }
 
+    @Test
+    public void shouldReturnFirstMenu() {
+        Controller controller = new Controller(new BookLibrary(), new MovieLibrary());
+
+        assertEquals(FirstMenu.class, controller.createMenuItem().getClass());
+    }
 }

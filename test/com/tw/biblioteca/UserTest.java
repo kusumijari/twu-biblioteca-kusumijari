@@ -48,7 +48,7 @@ public class UserTest {
     public void shouldGetTheRoleOfTheUser() {
         User user = new User("Customer", "123-4567", "password");
 
-        assertEquals("Customer", user.getUser());
+        assertEquals("Customer", user.getRole());
     }
 
     @Test

@@ -42,4 +42,8 @@ public class Controller {
             executeMenuObject(menuItem);
         }
     }
+
+    public Menu createMenuItem() {
+        return new FirstMenu();
+    }
 }

@@ -34,7 +34,7 @@ public class User {
         return hash;
 
     }
-    public String getUser() {
+    public String getRole() {
         return role;
     }
 
