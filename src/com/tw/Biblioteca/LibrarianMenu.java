@@ -3,7 +3,7 @@ package com.tw.biblioteca;
 
 import java.util.ArrayList;
 
-public class LibrarianMenu {
+public class LibrarianMenu implements Menu{
 
     ArrayList<String> librarianMenu = new ArrayList<String>();
     LibrarianMenu() {

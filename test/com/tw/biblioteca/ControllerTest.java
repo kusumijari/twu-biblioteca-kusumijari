@@ -66,4 +66,12 @@ public class ControllerTest {
 
         assertEquals(CustomerMenu.class, controller.createMenuItem().getClass());
     }
+
+    @Test
+    public void shouldReturnLibrarianMenuIfRoleIsLibrarian() {
+        Session session = new Session(new User("Librarian", "nousername", "nopassword"));
+        Controller controller = new Controller(new BookLibrary(), new MovieLibrary(), session);
+
+        assertEquals(LibrarianMenu.class, controller.createMenuItem().getClass());
+    }
 }

@@ -47,6 +47,9 @@ public class Controller {
         if(session.getUser().getRole().equals("Customer")){
             return new CustomerMenu();
         }
+        else if(session.getUser().getRole().equals("Librarian")){
+            return new LibrarianMenu();
+        }
         return new DefaultMenu();
     }
 }
