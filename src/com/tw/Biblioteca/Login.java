@@ -1,11 +1,11 @@
-//Asks for the login and password creates a user to be checked
+//Asks for the login and password and authenticates the user
 
 package com.tw.biblioteca;
 
 
 import java.util.ArrayList;
 
-public class Login {
+public class Login implements MenuItem{
 
     User user;
     ConsoleInput consoleInput1, consoleInput2;
@@ -35,5 +35,13 @@ public class Login {
             return true;
         }
         return false;
+    }
+
+    @Override
+    public void execute() {
+        if(authenticate()) {
+            ConsoleOutput consoleOutput = new ConsoleOutput("Successful Login");
+            consoleOutput.displayMessage();
+        }
     }
 }
