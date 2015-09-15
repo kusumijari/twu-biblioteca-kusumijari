@@ -9,8 +9,9 @@ public class ControllerTest {
 
     @Test
     public void shouldDisplayTheMenu() {
+        Session session = new Session(new User("default", "nousername", "nopassword"));
         ConsoleOutput consoleOutput = mock(ConsoleOutput.class);
-        Controller controller = new Controller(new BookLibrary(), new MovieLibrary());
+        Controller controller = new Controller(new BookLibrary(), new MovieLibrary(), session);
 
         controller.showMenu(consoleOutput);
 
@@ -19,8 +20,9 @@ public class ControllerTest {
 
     @Test
     public void  shouldAcceptInput() {
+        Session session = new Session(new User("default", "nousername", "nopassword"));
         ConsoleInput consoleInput = mock(ConsoleInput.class);
-        Controller controller = new Controller(new BookLibrary(), new MovieLibrary());
+        Controller controller = new Controller(new BookLibrary(), new MovieLibrary(), session);
 
         when(consoleInput.getInput()).thenReturn("1");
 
@@ -29,8 +31,9 @@ public class ControllerTest {
 
     @Test
     public void shouldCreateTheMenuObject() {
+        Session session = new Session(new User("default", "nousername", "nopassword"));
         Parser parser = mock(Parser.class);
-        Controller controller = new Controller(new BookLibrary(), new MovieLibrary());
+        Controller controller = new Controller(new BookLibrary(), new MovieLibrary(), session);
 
         controller.createMenuObject(parser);
 
@@ -39,8 +42,9 @@ public class ControllerTest {
 
     @Test
     public void shouldExexuteTheMenuObject() {
+        Session session = new Session(new User("default", "nousername", "nopassword"));
         MenuItem menuItem = mock(MenuItem.class);
-        Controller controller = new Controller(new BookLibrary(), new MovieLibrary());
+        Controller controller = new Controller(new BookLibrary(), new MovieLibrary(), session);
 
         controller.executeMenuObject(menuItem);
 
@@ -48,9 +52,18 @@ public class ControllerTest {
     }
 
     @Test
-    public void shouldReturnFirstMenu() {
-        Controller controller = new Controller(new BookLibrary(), new MovieLibrary());
+    public void shouldReturnDefaultMenu() {
+        Session session = new Session(new User("default", "nousername", "nopassword"));
+        Controller controller = new Controller(new BookLibrary(), new MovieLibrary(), session);
 
         assertEquals(DefaultMenu.class, controller.createMenuItem().getClass());
+    }
+
+    @Test
+    public void shouldReturnUserMenuIfRoleIsUser() {
+        Session session = new Session(new User("Customer", "nousername", "nopassword"));
+        Controller controller = new Controller(new BookLibrary(), new MovieLibrary(), session);
+
+        assertEquals(UserMenu.class, controller.createMenuItem().getClass());
     }
 }

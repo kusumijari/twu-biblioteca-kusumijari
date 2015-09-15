@@ -11,7 +11,8 @@ public class  Application {
         consoleOutput.displayMessage();
         BookLibrary bookLibrary = new BookLibrary();
         MovieLibrary movieLibrary = new MovieLibrary();
-        Controller controller = new Controller(bookLibrary, movieLibrary);
+        Session session = new Session(new User("default", "nousername", "nopassword"));
+        Controller controller = new Controller(bookLibrary, movieLibrary, session);
         controller.delegate();
     }
 }

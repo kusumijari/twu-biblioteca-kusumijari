@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="528a0a30-9017-42bc-b3cb-0d89ad771639" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/tw/biblioteca/DefaultMenuTest.java" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/Checkin.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/Checkout.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/Factory.class" afterPath="" />
@@ -94,25 +93,15 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/9_InvalidMenuItemTest.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/9_LibraryTest.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/9_MenuTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/tw/biblioteca/FirstMenuTest.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/com/tw/biblioteca/InvalidFirstMenuItemTest.java" afterPath="$PROJECT_DIR$/test/com/tw/biblioteca/InvalidDefaultMenuItemTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/10_FirstMenuTest.html" afterPath="$PROJECT_DIR$/reports/com/tw/biblioteca/10_FirstMenuTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/11_InvalidFirstMenuItemTest.html" afterPath="$PROJECT_DIR$/reports/com/tw/biblioteca/11_InvalidFirstMenuItemTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Application.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Application.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Authenticater.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Checkin.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Checkout.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Factory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/FirstMenu.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Library.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/MoiveLibrary.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/tw/biblioteca/ControllerTest.java" afterPath="$PROJECT_DIR$/test/com/tw/biblioteca/ControllerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/cobertura-2.1.1/LICENSE.txt" afterPath="$PROJECT_DIR$/lib/cobertura-2.1.1/LICENSE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Menu.java" afterPath="$PROJECT_DIR$/instrumented-out/com/tw/biblioteca/Menu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.FirstMenuTest.xml" afterPath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.FirstMenuTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.InvalidFirstMenuItemTest.xml" afterPath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.InvalidFirstMenuItemTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TESTS-TestSuites.xml" afterPath="$PROJECT_DIR$/reports/TESTS-TestSuites.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codecover.xml" afterPath="$PROJECT_DIR$/codecover.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.Controller.html" afterPath="$PROJECT_DIR$/reports/com.tw.biblioteca.Controller.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.FirstMenu.html" afterPath="$PROJECT_DIR$/reports/com.tw.biblioteca.FirstMenu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/coverage.xml" afterPath="$PROJECT_DIR$/reports/coverage.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/frame-sourcefiles-com.tw.biblioteca.html" afterPath="$PROJECT_DIR$/reports/frame-sourcefiles-com.tw.biblioteca.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/frame-sourcefiles.html" afterPath="$PROJECT_DIR$/reports/frame-sourcefiles.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/frame-summary-com.tw.biblioteca.html" afterPath="$PROJECT_DIR$/reports/frame-summary-com.tw.biblioteca.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.clf" afterPath="$PROJECT_DIR$/test.clf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BibliotecaVersion1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -200,7 +189,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Application.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+              <caret line="14" column="81" selection-start-line="14" selection-start-column="81" selection-end-line="14" selection-end-column="81" />
               <folding />
             </state>
           </provider>
@@ -210,11 +199,8 @@
         <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="46" column="30" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="30" />
-              <folding>
-                <element signature="e#1317#1318#0" expanded="true" />
-                <element signature="e#1357#1358#0" expanded="true" />
-              </folding>
+              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -222,8 +208,8 @@
       <file leaf-file-name="ControllerTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/ControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8153846">
-              <caret line="53" column="32" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.82587063">
+              <caret line="63" column="56" selection-start-line="63" selection-start-column="56" selection-end-line="63" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -304,7 +290,6 @@
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/MovieLibrary.java" />
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/CheckoutMovieTest.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/CheckoutMovie.java" />
-        <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Application.java" />
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/MenuTest.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Menu.java" />
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/UserMenuTest.java" />
@@ -325,6 +310,7 @@
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Parser.java" />
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/ParserTest.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/User.java" />
+        <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Application.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Controller.java" />
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/ControllerTest.java" />
       </list>
@@ -459,33 +445,7 @@
       <recent name="com.tw.biblioteca" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ControllerTest.shouldReturnMenuTypeBasedOnSession">
-    <configuration default="false" name="AuthenticatorTest.shouldReturnFalseIfUsernameIsValidAndPasswordIsInvalid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.tw.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="BibliotecaVersion1" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.tw.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.biblioteca.AuthenticatorTest" />
-      <option name="METHOD_NAME" value="shouldReturnFalseIfUsernameIsValidAndPasswordIsInvalid" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.ControllerTest.shouldReturnUserMenuIfRoleIsUser">
     <configuration default="false" name="AuthenticatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -571,6 +531,32 @@
       <option name="PACKAGE_NAME" value="com.tw.biblioteca" />
       <option name="MAIN_CLASS_NAME" value="com.tw.biblioteca.ControllerTest" />
       <option name="METHOD_NAME" value="shouldReturnMenuTypeBasedOnSession" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ControllerTest.shouldReturnUserMenuIfRoleIsUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.tw.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="BibliotecaVersion1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.tw.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.biblioteca.ControllerTest" />
+      <option name="METHOD_NAME" value="shouldReturnUserMenuIfRoleIsUser" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -794,19 +780,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.AuthenticatorTest.shouldReturnFalseIfUsernameIsValidAndPasswordIsInvalid" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.AuthenticatorTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.LoginTest" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Application" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ControllerTest.shouldReturnMenuTypeBasedOnSession" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.AuthenticatorTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.LoginTest" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Application" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ControllerTest.shouldReturnMenuTypeBasedOnSession" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ControllerTest.shouldReturnUserMenuIfRoleIsUser" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ControllerTest.shouldReturnMenuTypeBasedOnSession" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Application" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.LoginTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.AuthenticatorTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.AuthenticatorTest.shouldReturnFalseIfUsernameIsValidAndPasswordIsInvalid" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ControllerTest.shouldReturnUserMenuIfRoleIsUser" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ControllerTest.shouldReturnMenuTypeBasedOnSession" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Application" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.LoginTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.AuthenticatorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -849,7 +835,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37088734" sideWeight="0.49761903" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37088734" sideWeight="0.49761903" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1337,25 +1323,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="30" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="30" />
-          <folding>
-            <element signature="e#1317#1318#0" expanded="true" />
-            <element signature="e#1357#1358#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1364,10 +1331,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="81" selection-start-line="14" selection-start-column="81" selection-end-line="14" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/ControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8153846">
-          <caret line="53" column="32" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.82587063">
+          <caret line="63" column="56" selection-start-line="63" selection-start-column="56" selection-end-line="63" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

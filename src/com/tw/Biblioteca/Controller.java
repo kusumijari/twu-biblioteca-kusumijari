@@ -9,11 +9,11 @@ public class Controller {
     MovieLibrary movieLibrary;
     Session session;
 
-    public Controller(BookLibrary bookLibrary, MovieLibrary movieLibrary) {
+    public Controller(BookLibrary bookLibrary, MovieLibrary movieLibrary, Session session) {
         defaultMenu = new DefaultMenu();
         this.bookLibrary = bookLibrary;
         this.movieLibrary = movieLibrary;
-        session = new Session(new User("default", "nousername", "nopassword"));
+        this.session = session;
     }
 
     public void showMenu(ConsoleOutput consoleOutput) {
@@ -44,6 +44,9 @@ public class Controller {
     }
 
     public Menu createMenuItem() {
+        if(session.getUser().getRole().equals("Customer")){
+            return new UserMenu();
+        }
         return new DefaultMenu();
     }
 }
