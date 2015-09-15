@@ -14,6 +14,9 @@ public class User {
 
     @Override
     public boolean equals(Object that) {
+        if(that == null){
+            return false;
+        }
         return true;
     }
 }

@@ -3,6 +3,7 @@ package com.tw.biblioteca;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 public class UserTest {
 
@@ -12,4 +13,13 @@ public class UserTest {
 
         assertEquals(user, user);
     }
+
+    @Test
+    public void shouldNotBeEqualToNull() {
+        User user = new User("User", "abc", "123-4567", "password");
+
+        assertNotEquals(user, null);
+    }
+
+
 }
