@@ -10,6 +10,7 @@ public class FirstMenu implements Menu {
         firstMenu.add("List Books");
         firstMenu.add("List Movies");
         firstMenu.add("Checkout Movie");
+        firstMenu.add("Login");
         firstMenu.add("Exit");
     }
 
