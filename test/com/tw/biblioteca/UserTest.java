@@ -2,9 +2,7 @@ package com.tw.biblioteca;
 
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class UserTest {
 
@@ -68,5 +66,14 @@ public class UserTest {
         User user2 = new User("Customer", "123-4567", "password");
 
         assertTrue(user1.authenticatePassword(user2));
+    }
+
+
+    @Test
+    public void shouldReturnFalseIfPasswordIsIncorrect() {
+        User user1 = new User("Customer", "123-4567", "password");
+        User user2 = new User("Customer", "123-4567", "password1");
+
+        assertFalse(user1.authenticatePassword(user2));
     }
 }

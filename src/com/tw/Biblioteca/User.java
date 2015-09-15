@@ -39,6 +39,9 @@ public class User {
     }
 
     public boolean authenticatePassword(User that) {
-        return true;
+        if(this.password.equals(that.password)) {
+            return true;
+        }
+        return false;
     }
 }
