@@ -11,6 +11,6 @@ public class CustomerMenuTest {
     public void shouldReturnTheAvailableMenu() {
         CustomerMenu customerMenu = new CustomerMenu();
 
-        assertEquals("User Menu\nList Books\nList Movies\nCheckout Movie\nCheckout Book\nCheckin Book\nExit\n", customerMenu.toString());
+        assertEquals("Customer Menu\nList Books\nList Movies\nCheckout Movie\nCheckout Book\nCheckin Book\nExit\n", customerMenu.toString());
     }
 }

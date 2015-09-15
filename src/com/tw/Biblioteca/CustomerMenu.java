@@ -18,7 +18,7 @@ public class CustomerMenu implements Menu{
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append("User Menu\n");
+        stringBuilder.append("Customer Menu\n");
         for(String menuItem : userMenu){
             stringBuilder.append(menuItem+"\n");
         }
