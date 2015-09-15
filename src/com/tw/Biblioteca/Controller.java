@@ -4,13 +4,13 @@ package com.tw.biblioteca;
 
 public class Controller {
 
-    private FirstMenu firstMenu;
+    private DefaultMenu defaultMenu;
     BookLibrary bookLibrary;
     MovieLibrary movieLibrary;
     Session session;
 
     public Controller(BookLibrary bookLibrary, MovieLibrary movieLibrary) {
-        firstMenu = new FirstMenu();
+        defaultMenu = new DefaultMenu();
         this.bookLibrary = bookLibrary;
         this.movieLibrary = movieLibrary;
         session = new Session(new User("default", "nousername", "nopassword"));
@@ -35,7 +35,7 @@ public class Controller {
 
     public void delegate() {
         while (true) {
-            ConsoleOutput consoleOutput = new ConsoleOutput(firstMenu.toString());
+            ConsoleOutput consoleOutput = new ConsoleOutput(defaultMenu.toString());
             showMenu(consoleOutput);
             Parser parser = new Parser(input(new ConsoleInput()), bookLibrary, movieLibrary, session);
             MenuItem menuItem = createMenuObject(parser);
@@ -44,6 +44,6 @@ public class Controller {
     }
 
     public Menu createMenuItem() {
-        return new FirstMenu();
+        return new DefaultMenu();
     }
 }

@@ -34,8 +34,8 @@ if (CodeCoverTryBranchHelper_L1 == 0) {
   CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.loops[3]++;
 }
 CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[6]++;
-            FirstMenu firstMenu = new FirstMenu();
-            consoleOutput = new ConsoleOutput(firstMenu.toString());
+            DefaultMenu defaultMenu = new DefaultMenu();
+            consoleOutput = new ConsoleOutput(defaultMenu.toString());
 CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[7]++;
             consoleOutput.displayMessage();
 CodeCoverCoverageCounter$3vgwt0av9sl7ni17pa5o5qvdt.statements[8]++;

@@ -1667,7 +1667,7 @@
 
       </properties>
 
-      <testcase classname="com.tw.biblioteca.FirstMenuTest" name="shouldReturnTheAvailableMenu" time="0.0" />
+      <testcase classname="com.tw.biblioteca.DefaultMenuTest" name="shouldReturnTheAvailableMenu" time="0.0" />
 
       <system-out />
 
@@ -1812,7 +1812,7 @@
 
       </properties>
 
-      <testcase classname="com.tw.biblioteca.InvalidFirstMenuItemTest" name="shouldDisplayTheBookList" time="0.004" />
+      <testcase classname="com.tw.biblioteca.InvalidDefaultMenuItemTest" name="shouldDisplayTheBookList" time="0.004" />
 
       <system-out />
 

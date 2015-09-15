@@ -51,6 +51,6 @@ public class ControllerTest {
     public void shouldReturnFirstMenu() {
         Controller controller = new Controller(new BookLibrary(), new MovieLibrary());
 
-        assertEquals(FirstMenu.class, controller.createMenuItem().getClass());
+        assertEquals(DefaultMenu.class, controller.createMenuItem().getClass());
     }
 }

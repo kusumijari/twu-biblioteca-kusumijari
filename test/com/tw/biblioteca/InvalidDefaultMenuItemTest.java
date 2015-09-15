@@ -7,7 +7,7 @@ import java.io.PrintStream;
 
 import static org.junit.Assert.assertEquals;
 
-public class InvalidFirstMenuItemTest {
+public class InvalidDefaultMenuItemTest {
 
     @Test
     public void shouldDisplayTheBookList() {

@@ -28,7 +28,7 @@ B1 1
 START_SECTION "com.tw.biblioteca.ConsoleOutput.java"
 S1 2
 S2 2
-START_SECTION "com.tw.biblioteca.FirstMenu.java"
+START_SECTION "com.tw.biblioteca.DefaultMenu.java"
 S1 1
 S2 1
 S3 1
