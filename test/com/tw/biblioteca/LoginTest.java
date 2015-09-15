@@ -48,7 +48,7 @@ public class LoginTest {
     }
 
     @Test
-    public void shouldCheckIftheUserAndPasswordInformationIsInvalid() {
+    public void shouldCheckIftheUsernameIsInvalid() {
         ConsoleInput mockConsoleInput1 = mock(ConsoleInput.class);
         ConsoleInput mockConsoleInput2 = mock(ConsoleInput.class);
         Login login = new Login(mockConsoleInput1, mockConsoleInput2);
