@@ -50,7 +50,7 @@ CodeCoverCoverageCounter$eds20578rzh5p5b70msh.branches[2]++;
     }
 
     public boolean hasBeenCheckedOut(Book book) {
-        return bookLibrary.removeBook(book);
+        return bookLibrary.removeBook(book, session);
     }
 }
 

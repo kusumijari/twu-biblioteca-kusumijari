@@ -18,7 +18,8 @@ public class CheckoutBookTest {
     public void shouldAcceptChoiceOfBookFromTheUser() {
         BookLibrary bookLibrary = new BookLibrary();
         ConsoleInput mockConsoleInput = mock(ConsoleInput.class);
-        CheckoutBook checkoutBook = new CheckoutBook(bookLibrary, mockConsoleInput);
+        Session session = new Session(new User("Customer", "123-4567", "password1"));
+        CheckoutBook checkoutBook = new CheckoutBook(bookLibrary, mockConsoleInput, session);
 
         when(mockConsoleInput.getInput()).thenReturn("Harry Potter");
 
@@ -29,7 +30,8 @@ public class CheckoutBookTest {
     public void shouldReturnTrueIfTheBookExists() {
         BookLibrary bookLibrary = new BookLibrary();
         ConsoleInput mockConsoleInput = new ConsoleInput();
-        CheckoutBook checkoutBook = new CheckoutBook(bookLibrary, mockConsoleInput);
+        Session session = new Session(new User("Customer", "123-4567", "password1"));
+        CheckoutBook checkoutBook = new CheckoutBook(bookLibrary, mockConsoleInput, session);
         Book book = new Book("Harry Potter", "author", 0);
 
         assertTrue(checkoutBook.hasBeenRemoved(book));
@@ -39,7 +41,8 @@ public class CheckoutBookTest {
     public void shouldReturnFalseIfTheBookDoesntExist() {
         BookLibrary bookLibrary = new BookLibrary();
         ConsoleInput mockConsoleInput = new ConsoleInput();
-        CheckoutBook checkoutBook = new CheckoutBook(bookLibrary, mockConsoleInput);
+        Session session = new Session(new User("Customer", "123-4567", "password1"));
+        CheckoutBook checkoutBook = new CheckoutBook(bookLibrary, mockConsoleInput,session);
         Book book = new Book("Inferno", "author", 0);
 
         assertFalse(checkoutBook.hasBeenRemoved(book));
@@ -50,10 +53,11 @@ public class CheckoutBookTest {
     public void shouldReturnSuccessMessageIfBookIsAvailable() {
         BookLibrary bookLibrary = mock(BookLibrary.class);
         ConsoleInput mockConsoleInput = mock(ConsoleInput.class);
-        CheckoutBook checkoutBook = new CheckoutBook(bookLibrary, mockConsoleInput);
+        Session session = new Session(new User("Customer", "123-4567", "password1"));
+        CheckoutBook checkoutBook = new CheckoutBook(bookLibrary, mockConsoleInput,session);
         CheckoutBook spy = spy(checkoutBook);
         when(spy.acceptBookChoice()).thenReturn("Harry Potter");
-        when(bookLibrary.removeBook(any(Book.class))).thenReturn(true);
+        when(bookLibrary.removeBook(any(Book.class), session)).thenReturn(true);
 
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
@@ -69,10 +73,11 @@ public class CheckoutBookTest {
     public void shouldReturnUnsuccessMessageIfBookIsUnavailable() {
         BookLibrary bookLibrary = mock(BookLibrary.class);
         ConsoleInput mockConsoleInput = mock(ConsoleInput.class);
-        CheckoutBook checkoutBook = new CheckoutBook(bookLibrary, mockConsoleInput);
+        Session session = new Session(new User("Customer", "123-4567", "password1"));
+        CheckoutBook checkoutBook = new CheckoutBook(bookLibrary, mockConsoleInput,session);
         CheckoutBook spy = spy(checkoutBook);
         when(spy.acceptBookChoice()).thenReturn("Inferno");
-        when(bookLibrary.removeBook(any(Book.class))).thenReturn(false);
+        when(bookLibrary.removeBook(any(Book.class), session)).thenReturn(false);
 
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));

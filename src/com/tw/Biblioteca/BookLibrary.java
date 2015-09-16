@@ -3,11 +3,13 @@
 package com.tw.biblioteca;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class BookLibrary {
 
     private ArrayList<Book> availableBooks = new ArrayList<Book>();
     private ArrayList<Book> checkoutOutBooks = new ArrayList<Book>();
+    private HashMap<Book, User> hashMap = new HashMap<Book, User>();
 
     BookLibrary() {
         Book book1 = new Book("Harry Potter", "J. K. Rowling", 1997);
@@ -28,7 +30,7 @@ public class BookLibrary {
         return stringBuilder.toString();
     }
 
-    public boolean removeBook(Book nameOfBook) {
+    public boolean removeBook(Book nameOfBook, Session session) {
         if(availableBooks.contains(nameOfBook)) {
             checkoutOutBooks.add(availableBooks.get(availableBooks.indexOf(nameOfBook)));
             availableBooks.remove(nameOfBook);
@@ -44,5 +46,10 @@ public class BookLibrary {
             return true;
         }
         return false;
+    }
+
+    public HashMap addToHashmap(Book book, Session session) {
+        hashMap.put(book,session.getUser());
+        return hashMap;
     }
 }

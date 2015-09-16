@@ -8,11 +8,13 @@ public class CheckoutBook implements MenuItem{
     private BookLibrary bookLibrary;
     private ConsoleInput consoleInput;
     private Book book;
+    private Session session;
 
 
-    CheckoutBook(BookLibrary bookLibrary, ConsoleInput mockConsoleInput) {
+    CheckoutBook(BookLibrary bookLibrary, ConsoleInput mockConsoleInput, Session session) {
         this.bookLibrary = bookLibrary;
         consoleInput = mockConsoleInput;
+        this.session = session;
     }
 
     public String acceptBookChoice() {
@@ -34,6 +36,6 @@ public class CheckoutBook implements MenuItem{
     }
 
     public boolean hasBeenRemoved(Book book) {
-        return bookLibrary.removeBook(book);
+        return bookLibrary.removeBook(book, session);
     }
 }

@@ -21,7 +21,7 @@ public class Parser {
             }
             else if (option.equals("Checkout Book")) {
                 ConsoleInput consoleInput = new ConsoleInput();
-                return new CheckoutBook(bookLibrary, consoleInput);
+                return new CheckoutBook(bookLibrary, consoleInput,session);
             }
             else if(option.equals("Checkin Book")) {
                 return new CheckinBook(bookLibrary, new ConsoleInput());

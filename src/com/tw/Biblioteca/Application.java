@@ -12,6 +12,7 @@ public class  Application {
         BookLibrary bookLibrary = new BookLibrary();
         MovieLibrary movieLibrary = new MovieLibrary();
         Session session = new Session(new User("default", "nousername", "nopassword"));
+        User currentUser = new User("default", "nousername", "nopassword");
         Controller controller = new Controller(bookLibrary, movieLibrary, session);
         controller.delegate();
     }

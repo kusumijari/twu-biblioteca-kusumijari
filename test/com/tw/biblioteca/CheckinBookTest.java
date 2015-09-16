@@ -34,7 +34,8 @@ public class CheckinBookTest {
         Book bookToBeReturned = new Book("Harry Potter", "author", 0);
 
         when(mockConsoleInput.getInput()).thenReturn("Harry Potter");
-        bookLibrary.removeBook(bookToBeReturned);
+        Session session = new Session(new User("Customer", "123-4567", "password1"));
+        bookLibrary.removeBook(bookToBeReturned, session);
 
         assertTrue(checkinBook.hasBeenReturned(bookToBeReturned));
     }
@@ -45,9 +46,11 @@ public class CheckinBookTest {
         ConsoleInput mockConsoleInput = mock(ConsoleInput.class);
         CheckinBook checkinBook = new CheckinBook(bookLibrary, mockConsoleInput);
         Book bookToBeReturned = new Book("Inferno", "author", 0);
+        Session session = new Session(new User("Customer", "123-4567", "password1"));
+
 
         when(mockConsoleInput.getInput()).thenReturn("Inferno");
-        bookLibrary.removeBook(bookToBeReturned);
+        bookLibrary.removeBook(bookToBeReturned, session);
 
         assertFalse(checkinBook.hasBeenReturned(bookToBeReturned));
     }
