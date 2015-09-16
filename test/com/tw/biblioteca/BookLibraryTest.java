@@ -105,8 +105,19 @@ public class BookLibraryTest {
         Session session = new Session(new User("Customer", "123-4567", "password"));
         HashMap<Book, User> hashMap = new HashMap<Book, User>();
 
-        bookLibrary.removeBook(book,session);
+        bookLibrary.removeBook(book, session);
 
         assertEquals(hashMap, bookLibrary.removeBookAndUserFromHashmap(book));
+    }
+
+    @Test
+    public void shouldReturnBookOnlyIfItsTheUserWhoCheckedItOut() {
+        BookLibrary bookLibrary = new BookLibrary();
+        Book book = new Book("Harry Potter", "author", 0);
+        Session session = new Session(new User("Customer", "123-4567", "password"));
+
+        bookLibrary.removeBook(book, session);
+
+        assertTrue(bookLibrary.isCorrectUser(book, session));
     }
 }

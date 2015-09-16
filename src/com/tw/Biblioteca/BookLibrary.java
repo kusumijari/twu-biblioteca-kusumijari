@@ -55,9 +55,12 @@ public class BookLibrary {
         return checkedOutBookDetails;
     }
 
-
     public HashMap removeBookAndUserFromHashmap(Book book) {
         checkedOutBookDetails.remove(book);
         return checkedOutBookDetails;
+    }
+
+    public boolean isCorrectUser(Book book, Session session) {
+        return true;
     }
 }
