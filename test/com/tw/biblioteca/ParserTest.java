@@ -7,7 +7,7 @@ import static junit.framework.Assert.assertEquals;
 public class ParserTest {
 
     @Test
-    public void shouldReturnBookListObjectIfOptionIsOne() {
+    public void shouldReturnBookListObjectIfOptionIsListBooks() {
         BookLibrary bookLibrary = new BookLibrary();
         MovieLibrary movieLibrary = new MovieLibrary();
         Parser parser = new Parser("List Books", bookLibrary, movieLibrary, new Session(new User("default", "nousername", "nopassword")));
@@ -32,16 +32,7 @@ public class ParserTest {
 
         assertEquals(Exit.class, parser.createMenuItem().getClass());
     }
-
-    @Test
-    public void shouldReturnCheckoutObjectIfOptionIsCheckoutBook() {
-        BookLibrary bookLibrary = new BookLibrary();
-        MovieLibrary movieLibrary = new MovieLibrary();
-        Parser parser = new Parser("Checkout Book", bookLibrary, movieLibrary, new Session(new User("default", "nousername", "nopassword")));
-
-        assertEquals(CheckoutBook.class, parser.createMenuItem().getClass());
-    }
-
+    
     @Test
     public void shouldReturnReturnBookObjectIfOptionIsCheckinBook() {
         BookLibrary bookLibrary = new BookLibrary();
@@ -95,5 +86,23 @@ public class ParserTest {
         Parser parser = new Parser("Checkedout Book Details", bookLibrary, movieLibrary, new Session(new User("default", "nousername", "nopassword")));
 
         assertEquals(CheckedoutBookDetails.class, parser.createMenuItem().getClass());
+    }
+
+    @Test
+    public void shouldReturnCheckoutObjectIfOptionIsCheckoutBookAndUserIsNotDefault() {
+        BookLibrary bookLibrary = new BookLibrary();
+        MovieLibrary movieLibrary = new MovieLibrary();
+        Parser parser = new Parser("Checkout Book", bookLibrary, movieLibrary, new Session(new User("Customer", "nousername", "nopassword")));
+
+        assertEquals(CheckoutBook.class, parser.createMenuItem().getClass());
+    }
+
+    @Test
+    public void shouldNotReturnCheckoutObjectIfOptionIsCheckoutBookAndUserIsDefault() {
+        BookLibrary bookLibrary = new BookLibrary();
+        MovieLibrary movieLibrary = new MovieLibrary();
+        Parser parser = new Parser("Checkout Book", bookLibrary, movieLibrary, new Session(new User("default", "nousername", "nopassword")));
+
+        assertEquals(InvalidMenuItem.class, parser.createMenuItem().getClass());
     }
 }

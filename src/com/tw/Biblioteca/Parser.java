@@ -19,7 +19,7 @@ public class Parser {
             if (option.equals("List Books")) {
                 return new ListBooks(bookLibrary);
             }
-            else if (option.equals("Checkout Book")) {
+            else if (option.equals("Checkout Book") && (session.getUser().getRole()).equals("Customer") || (session.getUser().getRole()).equals("Librarian")) {
                 ConsoleInput consoleInput = new ConsoleInput();
                 return new CheckoutBook(bookLibrary, consoleInput,session);
             }

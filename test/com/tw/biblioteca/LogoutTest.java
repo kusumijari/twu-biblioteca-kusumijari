@@ -30,5 +30,4 @@ public class LogoutTest {
         assertEquals("Successful Logout.\n", outContent.toString());
         System.setOut(System.out);
     }
-
 }
