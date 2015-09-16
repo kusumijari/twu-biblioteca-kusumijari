@@ -151,4 +151,13 @@ public class ParserTest {
         assertEquals(InvalidMenuItem.class, parser.createMenuItem().getClass());
     }
 
+    @Test
+    public void shouldReturnUserDetailsObjectIfOptionIsUserDetailsAndUserIsLibrarian() {
+        BookLibrary bookLibrary = new BookLibrary();
+        MovieLibrary movieLibrary = new MovieLibrary();
+        Parser parser = new Parser("User Details", bookLibrary, movieLibrary, new Session(new User("Librarian", "nousername", "nopassword", "noname", "noemail", 0)));
+
+        assertEquals(UserDetails.class, parser.createMenuItem().getClass());
+    }
+
 }

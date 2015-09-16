@@ -44,6 +44,9 @@ public class Parser {
             else if(option.equals("Checkedout Book Details") && session.getUser().getRole().equals("Librarian")){
                 return new CheckedoutBookDetails(bookLibrary);
             }
+            else if(option.equals("User Details") && session.getUser().getRole().equals("Librarian")){
+                return new UserDetails(session);
+            }
         return new InvalidMenuItem();
     }
 }
