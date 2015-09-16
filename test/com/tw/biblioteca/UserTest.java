@@ -76,4 +76,11 @@ public class UserTest {
 
         assertFalse(user1.authenticatePassword(user2));
     }
+
+    @Test
+    public void shouldGetUsername() {
+        User user = new User("Customer", "123-4567", "password1");
+
+        assertEquals("123-4567", user.getUsername());
+    }
 }

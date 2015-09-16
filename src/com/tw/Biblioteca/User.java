@@ -44,4 +44,8 @@ public class User {
         }
         return false;
     }
+
+    public String getUsername() {
+        return username;
+    }
 }
