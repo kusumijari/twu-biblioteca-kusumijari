@@ -120,4 +120,16 @@ public class BookLibraryTest {
 
         assertTrue(bookLibrary.isCorrectUser(book, session));
     }
+
+    @Test
+    public void shouldReturnFalseIfITheUserWhoCheckedoutTheBookIsNotTheOneWhoReturnsTheBook() {
+        BookLibrary bookLibrary = new BookLibrary();
+        Book book = new Book("Harry Potter", "author", 0);
+        Session session1 = new Session(new User("Customer", "123-4567", "password1"));
+        Session session2 = new Session(new User("Customer", "222-2222", "password2"));
+
+        bookLibrary.removeBook(book, session1);
+
+        assertFalse(bookLibrary.isCorrectUser(book, session2));
+    }
 }

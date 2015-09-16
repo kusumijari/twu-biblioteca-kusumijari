@@ -17,8 +17,10 @@ public class Login implements MenuItem{
         this.consoleInput2 = consoleInput2;
         User user1 = new User("Customer", "123-4567", "password1");
         User user2 = new User("Librarian", "111-1111", "password2");
+        User user3 = new User("Customer", "222-2222", "password2");
         users.add(user1);
         users.add(user2);
+        users.add(user3);
         this.session = session;
     }
 

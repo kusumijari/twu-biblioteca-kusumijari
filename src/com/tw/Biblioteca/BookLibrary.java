@@ -61,6 +61,9 @@ public class BookLibrary {
     }
 
     public boolean isCorrectUser(Book book, Session session) {
-        return true;
+        if((checkedOutBookDetails.get(book)).equals(session.getUser())){
+            return true;
+        }
+        return false;
     }
 }
