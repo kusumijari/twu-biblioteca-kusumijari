@@ -94,13 +94,14 @@ public class LoginTest {
     public void shouldCreateSessionObjectIfUsernameAndPasswordAreAuthenticated() {
         ConsoleInput mockConsoleInput1 = mock(ConsoleInput.class);
         ConsoleInput mockConsoleInput2 = mock(ConsoleInput.class);
-        Login login = new Login(mockConsoleInput1, mockConsoleInput2,  new Session((new User("Customer", "123-4567", "password"))));
+        User user = new User("Customer", "123-4567", "password");
+        Login login = new Login(mockConsoleInput1, mockConsoleInput2,  new Session(user));
 
         when(mockConsoleInput1.getInput()).thenReturn("123-4567");
 
         login.acceptUsername(mockConsoleInput1);
         login.authenticate();
 
-        assertTrue(login.startSession());
+        assertEquals(user, login.startSession());
     }
 }

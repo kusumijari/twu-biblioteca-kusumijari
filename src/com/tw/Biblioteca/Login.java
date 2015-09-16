@@ -57,7 +57,7 @@ public class Login implements MenuItem{
         }
     }
 
-    public boolean startSession() {
+    public User startSession() {
         return session.setUser(users.get(users.indexOf(user)));
     }
 }

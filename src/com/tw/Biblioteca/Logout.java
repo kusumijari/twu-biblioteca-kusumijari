@@ -15,9 +15,10 @@ public class Logout implements MenuItem{
         stopSession();
         ConsoleOutput consoleOutput = new ConsoleOutput("Successful Logout.");
         consoleOutput.displayMessage();
+
     }
 
-    public boolean stopSession() {
+    public User stopSession() {
         User defaultUser = new User("default", "nousername", "nopassword");
 
         return session.setUser(defaultUser);

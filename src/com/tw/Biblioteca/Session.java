@@ -14,8 +14,8 @@ public class Session {
         return currentUser;
     }
 
-    public boolean setUser(User user) {
-        currentUser=user;
-        return true;
+    public User setUser(User user) {
+        currentUser = user;
+        return currentUser;
     }
 }

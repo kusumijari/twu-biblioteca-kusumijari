@@ -3,7 +3,6 @@ package com.tw.biblioteca;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 public class SessionTest {
 
@@ -19,6 +18,6 @@ public class SessionTest {
         Session session = new Session(new User("Customer", "123-4567", "somepassword"));
         User user = new User("Librarian", "111-1111", "password2");
 
-        assertTrue(session.setUser(user));
+        assertEquals(user, session.setUser(user));
     }
 }
