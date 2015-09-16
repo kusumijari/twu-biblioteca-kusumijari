@@ -142,5 +142,12 @@ public class ParserTest {
         assertEquals(CheckedoutBookDetails.class, parser.createMenuItem().getClass());
     }
 
-    
+    @Test
+    public void shouldReturnInvalidObjectIfOptionIsCheckedOutBookDetailsAndUserIsGuest() {
+        BookLibrary bookLibrary = new BookLibrary();
+        MovieLibrary movieLibrary = new MovieLibrary();
+        Parser parser = new Parser("Checkedout Book Details", bookLibrary, movieLibrary, new Session(new User("default", "nousername", "nopassword")));
+
+        assertEquals(InvalidMenuItem.class, parser.createMenuItem().getClass());
+    }
 }
