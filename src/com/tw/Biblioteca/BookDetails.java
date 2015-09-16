@@ -5,7 +5,7 @@ package com.tw.biblioteca;
 import java.util.HashMap;
 import java.util.Map;
 
-public class BookDetails {
+public class BookDetails implements MenuItem{
 
     private BookLibrary bookLibrary;
 
@@ -22,5 +22,11 @@ public class BookDetails {
             stringBuilder.append(entry.getKey() + "\t-\t" + entry.getValue().getUsername() + "\n");
         }
         return stringBuilder.toString();
+    }
+
+    @Override
+    public void execute() {
+        ConsoleOutput consoleOutput = new ConsoleOutput(toString());
+        consoleOutput.displayMessage();
     }
 }
