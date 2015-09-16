@@ -9,7 +9,7 @@ public class BookLibrary {
 
     private ArrayList<Book> availableBooks = new ArrayList<Book>();
     private ArrayList<Book> checkoutOutBooks = new ArrayList<Book>();
-    private HashMap<Book, User> hashMap = new HashMap<Book, User>();
+    private HashMap<Book, User> checkedOutBookDetails = new HashMap<Book, User>();
 
     BookLibrary() {
         Book book1 = new Book("Harry Potter", "J. K. Rowling", 1997);
@@ -34,6 +34,7 @@ public class BookLibrary {
         if(availableBooks.contains(nameOfBook)) {
             checkoutOutBooks.add(availableBooks.get(availableBooks.indexOf(nameOfBook)));
             availableBooks.remove(nameOfBook);
+            addToHashmap(checkoutOutBooks.get(checkoutOutBooks.indexOf(nameOfBook)), session);
             return true;
         }
         return false;
@@ -43,13 +44,20 @@ public class BookLibrary {
         if(checkoutOutBooks.contains(returnedBook)) {
             availableBooks.add(checkoutOutBooks.get(checkoutOutBooks.indexOf(returnedBook)));
             checkoutOutBooks.remove(returnedBook);
+            removeBookAndUserFromHashmap(returnedBook);
             return true;
         }
         return false;
     }
 
     public HashMap addToHashmap(Book book, Session session) {
-        hashMap.put(book,session.getUser());
-        return hashMap;
+        checkedOutBookDetails.put(book, session.getUser());
+        return checkedOutBookDetails;
+    }
+
+
+    public HashMap removeBookAndUserFromHashmap(Book book) {
+        checkedOutBookDetails.remove(book);
+        return checkedOutBookDetails;
     }
 }
