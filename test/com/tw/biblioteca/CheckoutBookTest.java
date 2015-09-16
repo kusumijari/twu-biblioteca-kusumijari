@@ -57,7 +57,7 @@ public class CheckoutBookTest {
         CheckoutBook checkoutBook = new CheckoutBook(bookLibrary, mockConsoleInput,session);
         CheckoutBook spy = spy(checkoutBook);
         when(spy.acceptBookChoice()).thenReturn("Harry Potter");
-        when(bookLibrary.removeBook(any(Book.class), session)).thenReturn(true);
+        when(bookLibrary.removeBook(any(Book.class), any(Session.class))).thenReturn(true);
 
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
@@ -77,7 +77,7 @@ public class CheckoutBookTest {
         CheckoutBook checkoutBook = new CheckoutBook(bookLibrary, mockConsoleInput,session);
         CheckoutBook spy = spy(checkoutBook);
         when(spy.acceptBookChoice()).thenReturn("Inferno");
-        when(bookLibrary.removeBook(any(Book.class), session)).thenReturn(false);
+        when(bookLibrary.removeBook(any(Book.class), any(Session.class))).thenReturn(false);
 
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));

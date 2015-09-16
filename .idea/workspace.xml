@@ -16,8 +16,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.ApplicationTest.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.AuthenticatorTest.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.CheckinTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.CheckoutBookMovieTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.CheckoutBookTest.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.CheckoutMovieTest.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.CheckoutTest.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.ConsoleInputTest.xml" afterPath="" />
@@ -203,22 +201,14 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Library.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/MoiveLibrary.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/UserMenu.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/Application.class" afterPath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/Application.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/Book.class" afterPath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/Book.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/BookLibrary.class" afterPath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/BookLibrary.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/CheckinBook.class" afterPath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/CheckinBook.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/CheckoutBook.class" afterPath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/CheckoutBook.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/Controller.class" afterPath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/Controller.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/LibrarianMenu.class" afterPath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/LibrarianMenu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/Login.class" afterPath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/Login.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/Parser.class" afterPath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/Parser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/Session.class" afterPath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/Session.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/User.class" afterPath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/User.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cobertura.ser" afterPath="$PROJECT_DIR$/cobertura.ser" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/tw/biblioteca/CheckinBookTest.java" afterPath="$PROJECT_DIR$/test/com/tw/biblioteca/CheckinBookTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/tw/biblioteca/CheckoutBookTest.java" afterPath="$PROJECT_DIR$/test/com/tw/biblioteca/CheckoutBookTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.BookLibraryTest.xml" afterPath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.BookLibraryTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.BookTest.xml" afterPath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.BookTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.CheckedoutBookDetailsTest.xml" afterPath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.CheckedoutBookDetailsTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.CheckinBookTest.xml" afterPath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.CheckinBookTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.CheckoutBookMovieTest.xml" afterPath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.CheckoutBookMovieTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.CheckoutBookTest.xml" afterPath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.CheckoutBookTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BibliotecaVersion1.iws" />
@@ -241,15 +231,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BookLibraryTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/BookLibraryTest.java">
+      <file leaf-file-name="CheckoutBookTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/CheckoutBookTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="151" column="86" selection-start-line="151" selection-start-column="8" selection-end-line="151" selection-end-column="86" />
-              <folding>
-                <element signature="e#3438#3450#0" expanded="true" />
-                <element signature="e#3905#3917#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.8507463">
+              <caret line="89" column="1" selection-start-line="89" selection-start-column="1" selection-end-line="89" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -324,10 +311,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CheckinBookTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CheckinBookTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/CheckinBookTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8507463">
+            <state vertical-scroll-proportion="0.0">
               <caret line="100" column="1" selection-start-line="100" selection-start-column="1" selection-end-line="100" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -417,7 +404,6 @@
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/CustomerMenuTest.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Application.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/CheckoutBook.java" />
-        <option value="$PROJECT_DIR$/test/com/tw/biblioteca/CheckoutBookTest.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Controller.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Login.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/CheckinBook.java" />
@@ -432,6 +418,7 @@
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/LibrarianMenu.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Parser.java" />
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/CheckinBookTest.java" />
+        <option value="$PROJECT_DIR$/test/com/tw/biblioteca/CheckoutBookTest.java" />
       </list>
     </option>
   </component>
@@ -564,7 +551,7 @@
       <recent name="com.tw.biblioteca" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CheckinBookTest">
+  <component name="RunManager" selected="JUnit.CheckoutBookTest">
     <configuration default="false" name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -583,32 +570,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="BibliotecaVersion1" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="CheckedoutBookDetailsTest.shouldDisplayTheBookList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.tw.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="BibliotecaVersion1" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.tw.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.biblioteca.CheckedoutBookDetailsTest" />
-      <option name="METHOD_NAME" value="shouldDisplayTheBookList" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
       <method />
     </configuration>
     <configuration default="false" name="CheckinBookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -677,6 +638,32 @@
       <option name="MAIN_CLASS_NAME" value="com.tw.biblioteca.CheckinBookTest" />
       <option name="METHOD_NAME" value="shouldReturnUnsuccessfulMessageIfTheReturnWasUnuccessful" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="CheckoutBookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.tw.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="BibliotecaVersion1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.tw.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.biblioteca.CheckoutBookTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -900,18 +887,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Application" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CheckedoutBookDetailsTest.shouldDisplayTheBookList" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CheckinBookTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CheckinBookTest.shouldReturnSuccessfulMessageIfTheReturnWasSuccessful" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CheckinBookTest.shouldReturnUnsuccessfulMessageIfTheReturnWasUnuccessful" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.CheckinBookTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CheckinBookTest.shouldReturnSuccessfulMessageIfTheReturnWasSuccessful" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CheckinBookTest.shouldReturnUnsuccessfulMessageIfTheReturnWasUnuccessful" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CheckoutBookTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CheckinBookTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CheckinBookTest.shouldReturnUnsuccessfulMessageIfTheReturnWasUnuccessful" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CheckinBookTest.shouldReturnSuccessfulMessageIfTheReturnWasSuccessful" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Application" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CheckedoutBookDetailsTest.shouldDisplayTheBookList" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CheckoutBookTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CheckinBookTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CheckinBookTest.shouldReturnUnsuccessfulMessageIfTheReturnWasUnuccessful" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CheckinBookTest.shouldReturnSuccessfulMessageIfTheReturnWasSuccessful" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Application" />
       </list>
     </recent_temporary>
   </component>
@@ -1269,14 +1256,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/CheckoutBookTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="76" column="90" selection-start-line="76" selection-start-column="90" selection-end-line="76" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/ControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1488,11 +1467,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/CheckinBookTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8507463">
+        <state vertical-scroll-proportion="0.0">
           <caret line="100" column="1" selection-start-line="100" selection-start-column="1" selection-end-line="100" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/CheckoutBookTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8507463">
+          <caret line="89" column="1" selection-start-line="89" selection-start-column="1" selection-end-line="89" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
