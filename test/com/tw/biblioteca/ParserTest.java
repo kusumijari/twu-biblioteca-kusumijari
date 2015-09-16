@@ -34,16 +34,6 @@ public class ParserTest {
     }
 
     @Test
-    public void shouldReturnReturnBookObjectIfOptionIsCheckinBook() {
-        BookLibrary bookLibrary = new BookLibrary();
-        MovieLibrary movieLibrary = new MovieLibrary();
-        Parser parser = new Parser("Checkin Book", bookLibrary, movieLibrary, new Session(new User("default", "nousername", "nopassword")));
-
-        assertEquals(CheckinBook.class, parser.createMenuItem().getClass());
-    }
-
-
-    @Test
     public void shouldListMoviesObjectIfOptionIsListMovies() {
         BookLibrary bookLibrary = new BookLibrary();
         MovieLibrary movieLibrary = new MovieLibrary();
@@ -116,12 +106,12 @@ public class ParserTest {
     }
 
     @Test
-    public void shouldReturnCheckinObjectIfOptionIsCheckinBookAndUserIsNotDefault() {
+    public void shouldReturnCheckinObjectIfOptionIsCheckinBookAndUserIsCustomer() {
         BookLibrary bookLibrary = new BookLibrary();
         MovieLibrary movieLibrary = new MovieLibrary();
         Parser parser = new Parser("Checkin Book", bookLibrary, movieLibrary, new Session(new User("Customer", "nousername", "nopassword")));
 
-        assertEquals(CheckoutBook.class, parser.createMenuItem().getClass());
+        assertEquals(CheckinBook.class, parser.createMenuItem().getClass());
     }
 
     @Test
@@ -131,5 +121,15 @@ public class ParserTest {
         Parser parser = new Parser("Checkin Book", bookLibrary, movieLibrary, new Session(new User("default", "nousername", "nopassword")));
 
         assertEquals(InvalidMenuItem.class, parser.createMenuItem().getClass());
+    }
+
+    @Test
+    public void shouldReturnCheckinObjectIfOptionIsCheckinBookAndUserIsLibrarian() {
+        BookLibrary bookLibrary = new BookLibrary();
+        MovieLibrary movieLibrary = new MovieLibrary();
+        Parser parser = new Parser("Checkin Book", bookLibrary, movieLibrary, new Session(new User("Librarian", "nousername", "nopassword")));
+
+        assertEquals(CheckinBook.class, parser.createMenuItem().getClass());
+
     }
 }
