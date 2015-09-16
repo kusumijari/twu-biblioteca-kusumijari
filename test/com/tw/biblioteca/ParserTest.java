@@ -89,10 +89,19 @@ public class ParserTest {
     }
 
     @Test
-    public void shouldReturnCheckoutObjectIfOptionIsCheckoutBookAndUserIsNotDefault() {
+    public void shouldReturnCheckoutObjectIfOptionIsCheckoutBookAndUserIsCustomer() {
         BookLibrary bookLibrary = new BookLibrary();
         MovieLibrary movieLibrary = new MovieLibrary();
         Parser parser = new Parser("Checkout Book", bookLibrary, movieLibrary, new Session(new User("Customer", "nousername", "nopassword")));
+
+        assertEquals(CheckoutBook.class, parser.createMenuItem().getClass());
+    }
+
+    @Test
+    public void shouldReturnCheckoutObjectIfOptionIsCheckoutBookAndUserIsLibrarian() {
+        BookLibrary bookLibrary = new BookLibrary();
+        MovieLibrary movieLibrary = new MovieLibrary();
+        Parser parser = new Parser("Checkout Book", bookLibrary, movieLibrary, new Session(new User("Librarian", "nousername", "nopassword")));
 
         assertEquals(CheckoutBook.class, parser.createMenuItem().getClass());
     }
