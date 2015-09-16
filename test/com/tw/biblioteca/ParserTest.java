@@ -32,7 +32,7 @@ public class ParserTest {
 
         assertEquals(Exit.class, parser.createMenuItem().getClass());
     }
-    
+
     @Test
     public void shouldReturnReturnBookObjectIfOptionIsCheckinBook() {
         BookLibrary bookLibrary = new BookLibrary();
@@ -102,6 +102,24 @@ public class ParserTest {
         BookLibrary bookLibrary = new BookLibrary();
         MovieLibrary movieLibrary = new MovieLibrary();
         Parser parser = new Parser("Checkout Book", bookLibrary, movieLibrary, new Session(new User("default", "nousername", "nopassword")));
+
+        assertEquals(InvalidMenuItem.class, parser.createMenuItem().getClass());
+    }
+
+    @Test
+    public void shouldReturnCheckinObjectIfOptionIsCheckinBookAndUserIsNotDefault() {
+        BookLibrary bookLibrary = new BookLibrary();
+        MovieLibrary movieLibrary = new MovieLibrary();
+        Parser parser = new Parser("Checkin Book", bookLibrary, movieLibrary, new Session(new User("Customer", "nousername", "nopassword")));
+
+        assertEquals(CheckoutBook.class, parser.createMenuItem().getClass());
+    }
+
+    @Test
+    public void shouldNotReturnCheckoinObjectIfOptionIsCheckinBookAndUserIsDefault() {
+        BookLibrary bookLibrary = new BookLibrary();
+        MovieLibrary movieLibrary = new MovieLibrary();
+        Parser parser = new Parser("Checkin Book", bookLibrary, movieLibrary, new Session(new User("default", "nousername", "nopassword")));
 
         assertEquals(InvalidMenuItem.class, parser.createMenuItem().getClass());
     }

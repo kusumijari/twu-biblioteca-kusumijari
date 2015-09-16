@@ -21,10 +21,10 @@ public class Parser {
             }
             else if (option.equals("Checkout Book") && (session.getUser().getRole()).equals("Customer") || (session.getUser().getRole()).equals("Librarian")) {
                 ConsoleInput consoleInput = new ConsoleInput();
-                return new CheckoutBook(bookLibrary, consoleInput,session);
+                return new CheckoutBook(bookLibrary, consoleInput, session);
             }
-            else if(option.equals("Checkin Book")) {
-                return new CheckinBook(bookLibrary, new ConsoleInput(),session);
+            else if(option.equals("Checkin Book") && (session.getUser().getRole()).equals("Customer") || (session.getUser().getRole()).equals("Librarian")) {
+                return new CheckinBook(bookLibrary, new ConsoleInput(), session);
             }
             else if(option.equals("List Movies")) {
                 return new ListMovies(movieLibrary);
