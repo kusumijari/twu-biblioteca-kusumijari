@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="precise64" name="com.tw.biblioteca.BookLibraryTest" tests="8" time="0.03" timestamp="2015-09-15T17:57:23">
+<testsuite errors="0" failures="0" hostname="precise64" name="com.tw.biblioteca.BookLibraryTest" tests="15" time="0.85" timestamp="2015-09-16T11:07:14">
   <properties>
     <property name="ant.project.invoked-targets" value="coverage" />
     <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
@@ -49,7 +49,7 @@
     <property name="user.name" value="vagrant" />
     <property name="java.class.path" value="/vagrant/IdeaProjects/BibliotecaVersion1/instrumented:/vagrant/IdeaProjects/BibliotecaVersion1/lib/junit-4.11.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/hamcrest-core-1.3.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/mockito-all-1.9.5.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/system-rules-1.12.0-javadoc.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/system-rules-1.12.0-sources.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/system-rules-1.12.0.jar:/vagrant/IdeaProjects/BibliotecaVersion1/out:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/cobertura-2.1.1-javadoc.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/cobertura-2.1.1-sources.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/cobertura-2.1.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/asm-5.0.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/asm-analysis-5.0.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/asm-commons-5.0.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/asm-tree-5.0.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/asm-util-5.0.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/commons-lang3-3.3.2.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/hamcrest-core-1.3.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/jaxen-1.1.4.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/jetty-6.1.14.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/jetty-util-6.1.14.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/junit-4.11.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/logback-classic-1.0.13.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/logback-core-1.0.13.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/oro-2.0.8.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/servlet-api-2.5-6.1.14.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/slf4j-api-1.7.5.jar:/usr/share/java/ant-launcher-1.8.2.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
     <property name="java.vm.specification.version" value="1.7" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases6823588261248514948.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher5561825480509047337.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit1102397743750779972.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases9007856961973556521.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher899668675592937751.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit7106343003142436943.properties" />
     <property name="java.home" value="/usr/lib/jvm/java-7-openjdk-amd64/jre" />
     <property name="sun.arch.data.model" value="64" />
     <property name="java.specification.vendor" value="Oracle Corporation" />
@@ -69,14 +69,38 @@
     <property name="ant.file.type" value="file" />
     <property name="sun.cpu.isalist" value="" />
   </properties>
-  <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldRemoveASpecifiedBookFromTheLibrary" time="0.008" />
-  <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldReturnContentsOfLibrary" time="0.0" />
+  <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldRemoveASpecifiedBookFromTheLibrary" time="0.668" />
+  <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldReturnBookIfItIsReturnedByTheCorrectUser" time="0.0" />
+  <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldReturnBookOnlyIfItsTheUserWhoCheckedItOut" time="0.0" />
+  <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldReturnContentsOfLibrary" time="0.001" />
   <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldReturnFalseIfTheReturnedBookIsNotABookOfTheLibrary" time="0.0" />
   <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldCheckThatASpecifiedBookInTheLibraryExists" time="0.0" />
+  <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldRemoveEntryFromBooksDetailsOnCheckinOfBook" time="0.0" />
   <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldReturnFalseIfASpecifiedBookInTheDoesNotLibraryExist" time="0.0" />
+  <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldAddBookAndUserToHashmap" time="0.0" />
+  <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldReturnFalseIfITheUserWhoCheckedoutTheBookIsNotTheOneWhoReturnsTheBook" time="0.0" />
   <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldAddTheReturnedBookToTheBookList" time="0.0" />
+  <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldNotReturnBookIfItIsReturnedByTheIncorrectUser" time="0.0" />
+  <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldGetTheCheckoutBookDetails" time="0.0" />
   <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldNotRemoveABookIfItDoesNotExist" time="0.0" />
   <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldAddBookThatHasBeenRemovedToUnavailableList" time="0.0" />
-  <system-out><![CDATA[]]></system-out>
+  <system-out><![CDATA[11:07:14,377 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+11:07:14,378 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+11:07:14,380 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/cobertura-2.1.1-sources.jar!/logback.xml]
+11:07:14,383 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+11:07:14,383 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/cobertura-2.1.1.jar!/logback.xml]
+11:07:14,383 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/cobertura-2.1.1-sources.jar!/logback.xml]
+11:07:14,458 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@54b216b3 - URL [jar:file:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/cobertura-2.1.1-sources.jar!/logback.xml] is not of type file
+11:07:14,584 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+11:07:14,589 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+11:07:14,624 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+11:07:14,685 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+11:07:14,872 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [net.sourceforge.cobertura] to INFO
+11:07:14,872 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to DEBUG
+11:07:14,872 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+11:07:14,874 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+11:07:14,876 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@77f06d35 - Registering current configuration as safe fallback point
+
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

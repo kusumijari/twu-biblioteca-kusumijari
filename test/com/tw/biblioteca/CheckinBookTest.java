@@ -68,7 +68,7 @@ public class CheckinBookTest {
         CheckinBook checkinBook = new CheckinBook(bookLibrary, mockConsoleInput, session);
         CheckinBook spy = spy(checkinBook);
         when(spy.bookChoice()).thenReturn("Harry Potter");
-        when(bookLibrary.returnBook(any(Book.class), session)).thenReturn(true);
+        when(bookLibrary.returnBook(any(Book.class), any(Session.class))).thenReturn(true);
 
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
@@ -88,7 +88,7 @@ public class CheckinBookTest {
         CheckinBook checkinBook = new CheckinBook(bookLibrary, mockConsoleInput, session);
         CheckinBook spy = spy(checkinBook);
         when(spy.bookChoice()).thenReturn("Inferno");
-        when(bookLibrary.returnBook(any(Book.class), session)).thenReturn(false);
+        when(bookLibrary.returnBook(any(Book.class), any(Session.class))).thenReturn(false);
 
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));

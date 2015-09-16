@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="2" failures="0" hostname="precise64" name="com.tw.biblioteca.CheckinBookTest" tests="5" time="0.456" timestamp="2015-09-16T11:07:15">
+<testsuite errors="0" failures="0" hostname="precise64" name="com.tw.biblioteca.CheckedoutBookDetailsTest" tests="2" time="0.024" timestamp="2015-09-16T11:07:15">
   <properties>
     <property name="ant.project.invoked-targets" value="coverage" />
     <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
@@ -69,45 +69,8 @@
     <property name="ant.file.type" value="file" />
     <property name="sun.cpu.isalist" value="" />
   </properties>
-  <testcase classname="com.tw.biblioteca.CheckinBookTest" name="shouldReturnFalseIfTheBookIsNotInTheCheckedOutList" time="0.354" />
-  <testcase classname="com.tw.biblioteca.CheckinBookTest" name="shouldAcceptChoiceOfBookFromUser" time="0.003" />
-  <testcase classname="com.tw.biblioteca.CheckinBookTest" name="shouldReturnSuccessfulMessageIfTheReturnWasSuccessful" time="0.082">
-    <error message="&#xa;Invalid use of argument matchers!&#xa;2 matchers expected, 1 recorded:&#xa;-&gt; at com.tw.biblioteca.CheckinBookTest.shouldReturnSuccessfulMessageIfTheReturnWasSuccessful(CheckinBookTest.java:71)&#xa;&#xa;This exception may occur if matchers are combined with raw values:&#xa;    //incorrect:&#xa;    someMethod(anyObject(), &quot;raw String&quot;);&#xa;When using matchers, all arguments have to be provided by matchers.&#xa;For example:&#xa;    //correct:&#xa;    someMethod(anyObject(), eq(&quot;String by matcher&quot;));&#xa;&#xa;For more info see javadoc for Matchers class.&#xa;" type="org.mockito.exceptions.misusing.InvalidUseOfMatchersException">org.mockito.exceptions.misusing.InvalidUseOfMatchersException: 
-Invalid use of argument matchers!
-2 matchers expected, 1 recorded:
--&gt; at com.tw.biblioteca.CheckinBookTest.shouldReturnSuccessfulMessageIfTheReturnWasSuccessful(CheckinBookTest.java:71)
-
-This exception may occur if matchers are combined with raw values:
-    //incorrect:
-    someMethod(anyObject(), &quot;raw String&quot;);
-When using matchers, all arguments have to be provided by matchers.
-For example:
-    //correct:
-    someMethod(anyObject(), eq(&quot;String by matcher&quot;));
-
-
-	at com.tw.biblioteca.CheckinBookTest.shouldReturnSuccessfulMessageIfTheReturnWasSuccessful(CheckinBookTest.java:71)
-</error>
-  </testcase>
-  <testcase classname="com.tw.biblioteca.CheckinBookTest" name="shouldReturnTrueIfTheBookIsInTheCheckedOutList" time="0.001" />
-  <testcase classname="com.tw.biblioteca.CheckinBookTest" name="shouldReturnUnsuccessfulMessageIfTheReturnWasUnuccessful" time="0.001">
-    <error message="&#xa;Invalid use of argument matchers!&#xa;2 matchers expected, 1 recorded:&#xa;-&gt; at com.tw.biblioteca.CheckinBookTest.shouldReturnUnsuccessfulMessageIfTheReturnWasUnuccessful(CheckinBookTest.java:91)&#xa;&#xa;This exception may occur if matchers are combined with raw values:&#xa;    //incorrect:&#xa;    someMethod(anyObject(), &quot;raw String&quot;);&#xa;When using matchers, all arguments have to be provided by matchers.&#xa;For example:&#xa;    //correct:&#xa;    someMethod(anyObject(), eq(&quot;String by matcher&quot;));&#xa;&#xa;For more info see javadoc for Matchers class.&#xa;" type="org.mockito.exceptions.misusing.InvalidUseOfMatchersException">org.mockito.exceptions.misusing.InvalidUseOfMatchersException: 
-Invalid use of argument matchers!
-2 matchers expected, 1 recorded:
--&gt; at com.tw.biblioteca.CheckinBookTest.shouldReturnUnsuccessfulMessageIfTheReturnWasUnuccessful(CheckinBookTest.java:91)
-
-This exception may occur if matchers are combined with raw values:
-    //incorrect:
-    someMethod(anyObject(), &quot;raw String&quot;);
-When using matchers, all arguments have to be provided by matchers.
-For example:
-    //correct:
-    someMethod(anyObject(), eq(&quot;String by matcher&quot;));
-
-
-	at com.tw.biblioteca.CheckinBookTest.shouldReturnUnsuccessfulMessageIfTheReturnWasUnuccessful(CheckinBookTest.java:91)
-</error>
-  </testcase>
+  <testcase classname="com.tw.biblioteca.CheckedoutBookDetailsTest" name="shouldFormatTheBookDetails" time="0.008" />
+  <testcase classname="com.tw.biblioteca.CheckedoutBookDetailsTest" name="shouldDisplayTheBookList" time="0.004" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
