@@ -132,4 +132,12 @@ public class BookLibraryTest {
 
         assertFalse(bookLibrary.isCorrectUser(book, session2));
     }
+
+    @Test
+    public void shouldReturnBookIfItIsReturnedByTheCorrectUser() {
+        BookLibrary bookLibrary = new BookLibrary();
+        Book book = new Book("Harry Potter", "author", 0);
+        Session session1 = new Session(new User("Customer", "123-4567", "password1"));
+        bookLibrary.removeBook(book, session1);
+    }
 }

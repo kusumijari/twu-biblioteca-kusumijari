@@ -104,7 +104,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/MoiveLibrary.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/UserMenu.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/tw/biblioteca/BookLibraryTest.java" afterPath="$PROJECT_DIR$/test/com/tw/biblioteca/BookLibraryTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Login.java" afterPath="$PROJECT_DIR$/src/com/tw/biblioteca/Login.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BibliotecaVersion1.iws" />
@@ -180,8 +179,8 @@
       <file leaf-file-name="BookLibraryTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/BookLibraryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.75124377">
-              <caret line="130" column="16" selection-start-line="130" selection-start-column="16" selection-end-line="130" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.80099505">
+              <caret line="140" column="47" selection-start-line="140" selection-start-column="47" selection-end-line="140" selection-end-column="47" />
               <folding>
                 <element signature="e#3309#3321#0" expanded="true" />
                 <element signature="e#3776#3788#0" expanded="true" />
@@ -323,8 +322,8 @@
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Controller.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/BookDetails.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Login.java" />
-        <option value="$PROJECT_DIR$/test/com/tw/biblioteca/BookLibraryTest.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/BookLibrary.java" />
+        <option value="$PROJECT_DIR$/test/com/tw/biblioteca/BookLibraryTest.java" />
       </list>
     </option>
   </component>
@@ -457,33 +456,7 @@
       <recent name="com.tw.biblioteca" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BookLibraryTest.shouldReturnFalseIfITheUserWhoCheckedoutTheBookIsNotTheOneWhoReturnsTheBook">
-    <configuration default="false" name="BookLibraryTest.shouldAddBookAndUserToHashmap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.tw.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="BibliotecaVersion1" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.tw.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.biblioteca.BookLibraryTest" />
-      <option name="METHOD_NAME" value="shouldAddBookAndUserToHashmap" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.BookLibraryTest.shouldReturnBookIfItIsReturnedByTheCorrectUser">
     <configuration default="false" name="BookLibraryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -575,6 +548,32 @@
       <option name="PACKAGE_NAME" value="com.tw.biblioteca" />
       <option name="MAIN_CLASS_NAME" value="com.tw.biblioteca.BookLibraryTest" />
       <option name="METHOD_NAME" value="shouldReturnFalseIfITheUserWhoCheckedoutTheBookIsNotTheOneWhoReturnsTheBook" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="BookLibraryTest.shouldReturnBookIfItIsReturnedByTheCorrectUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.tw.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="BibliotecaVersion1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.tw.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.biblioteca.BookLibraryTest" />
+      <option name="METHOD_NAME" value="shouldReturnBookIfItIsReturnedByTheCorrectUser" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -798,19 +797,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.BookLibraryTest.shouldAddBookAndUserToHashmap" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.BookLibraryTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.BookLibraryTest.shouldRemoveEntryFromBooksDetailsOnCheckinOfBook" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.BookLibraryTest.shouldReturnBookOnlyIfItsTheUserWhoCheckedItOut" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.BookLibraryTest.shouldReturnFalseIfITheUserWhoCheckedoutTheBookIsNotTheOneWhoReturnsTheBook" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.BookLibraryTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.BookLibraryTest.shouldRemoveEntryFromBooksDetailsOnCheckinOfBook" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.BookLibraryTest.shouldReturnBookOnlyIfItsTheUserWhoCheckedItOut" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BookLibraryTest.shouldReturnFalseIfITheUserWhoCheckedoutTheBookIsNotTheOneWhoReturnsTheBook" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BookLibraryTest.shouldReturnBookIfItIsReturnedByTheCorrectUser" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.BookLibraryTest.shouldReturnFalseIfITheUserWhoCheckedoutTheBookIsNotTheOneWhoReturnsTheBook" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BookLibraryTest.shouldReturnBookOnlyIfItsTheUserWhoCheckedItOut" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.BookLibraryTest.shouldRemoveEntryFromBooksDetailsOnCheckinOfBook" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.BookLibraryTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BookLibraryTest.shouldAddBookAndUserToHashmap" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BookLibraryTest.shouldReturnBookIfItIsReturnedByTheCorrectUser" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BookLibraryTest.shouldReturnFalseIfITheUserWhoCheckedoutTheBookIsNotTheOneWhoReturnsTheBook" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BookLibraryTest.shouldReturnBookOnlyIfItsTheUserWhoCheckedItOut" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.BookLibraryTest.shouldRemoveEntryFromBooksDetailsOnCheckinOfBook" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.BookLibraryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1367,8 +1366,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/BookLibraryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75124377">
-          <caret line="130" column="16" selection-start-line="130" selection-start-column="16" selection-end-line="130" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.80099505">
+          <caret line="140" column="47" selection-start-line="140" selection-start-column="47" selection-end-line="140" selection-end-column="47" />
           <folding>
             <element signature="e#3309#3321#0" expanded="true" />
             <element signature="e#3776#3788#0" expanded="true" />
