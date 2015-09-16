@@ -87,4 +87,13 @@ public class ParserTest {
 
         assertEquals(Logout.class, parser.createMenuItem().getClass());
     }
+
+    @Test
+    public void shouldReturnCheckedOutBookDetailsObjectIfOptionIsCheckedOutBookDetails() {
+        BookLibrary bookLibrary = new BookLibrary();
+        MovieLibrary movieLibrary = new MovieLibrary();
+        Parser parser = new Parser("Checkedout Book Details", bookLibrary, movieLibrary, new Session(new User("default", "nousername", "nopassword")));
+
+        assertEquals(CheckedoutBookDetails.class, parser.createMenuItem().getClass());
+    }
 }

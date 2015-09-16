@@ -7,7 +7,7 @@ import java.io.PrintStream;
 
 import static org.junit.Assert.assertEquals;
 
-public class BookDetailsTest {
+public class CheckedoutBookDetailsTest {
 
     @Test
     public void shouldFormatTheBookDetails() {
@@ -16,9 +16,9 @@ public class BookDetailsTest {
         Session session = new Session(new User("Customer", "123-4567", "password1"));
 
         bookLibrary.removeBook(book, session);
-        BookDetails bookDetails = new BookDetails(bookLibrary);
+        CheckedoutBookDetails checkedoutBookDetails = new CheckedoutBookDetails(bookLibrary);
 
-        assertEquals("Book\t-\tUser\nHarry Potter\tJ. K. Rowling\t1997\t-\t123-4567\n", bookDetails.toString());
+        assertEquals("Book\t-\tUser\nHarry Potter\tJ. K. Rowling\t1997\t-\t123-4567\n", checkedoutBookDetails.toString());
     }
 
     @Test
@@ -29,9 +29,9 @@ public class BookDetailsTest {
         final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
 
-        bookLibrary.removeBook(book,session);
-        BookDetails bookDetails = new BookDetails(bookLibrary);
-        bookDetails.execute();
+        bookLibrary.removeBook(book, session);
+        CheckedoutBookDetails checkedoutBookDetails = new CheckedoutBookDetails(bookLibrary);
+        checkedoutBookDetails.execute();
 
         assertEquals("Book\t-\tUser\nHarry Potter\tJ. K. Rowling\t1997\t-\t123-4567\n\n", outContent.toString());
         System.setOut(System.out);
