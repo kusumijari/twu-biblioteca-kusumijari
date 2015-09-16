@@ -156,4 +156,12 @@ public class BookLibraryTest {
 
         assertFalse(bookLibrary.returnBook(book, session2));
     }
+
+    @Test
+    public void shouldGetTheCheckoutBookDetails() {
+        BookLibrary bookLibrary = new BookLibrary();
+        HashMap<Book, User> hashMap = new HashMap<>();
+
+        assertEquals(hashMap, bookLibrary.getCheckOutBookDetails());
+    }
 }

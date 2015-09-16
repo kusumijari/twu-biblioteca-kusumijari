@@ -66,4 +66,8 @@ public class BookLibrary {
         }
         return false;
     }
+
+    public HashMap getCheckOutBookDetails() {
+        return checkedOutBookDetails;
+    }
 }
