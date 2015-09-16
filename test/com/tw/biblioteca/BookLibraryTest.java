@@ -139,5 +139,7 @@ public class BookLibraryTest {
         Book book = new Book("Harry Potter", "author", 0);
         Session session1 = new Session(new User("Customer", "123-4567", "password1"));
         bookLibrary.removeBook(book, session1);
+
+        assertTrue(bookLibrary.returnBook(book));
     }
 }
