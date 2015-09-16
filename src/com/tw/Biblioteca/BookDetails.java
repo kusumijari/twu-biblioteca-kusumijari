@@ -15,11 +15,11 @@ public class BookDetails {
 
     @Override
     public String toString() {
-        HashMap<User, Book> bookDetails =  bookLibrary.getCheckOutBookDetails();
+        HashMap<Book, User> bookDetails =  bookLibrary.getCheckOutBookDetails();
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append("Book-User\n");
-        for(Map.Entry<User,Book> entry : bookDetails.entrySet() ){
-            stringBuilder.append(entry.getKey() + "-" + entry.getValue() + "\n");
+        stringBuilder.append("Book\t-\tUser\n");
+        for(Map.Entry<Book, User> entry : bookDetails.entrySet() ){
+            stringBuilder.append(entry.getKey() + "\t-\t" + entry.getValue().getUsername() + "\n");
         }
         return stringBuilder.toString();
     }

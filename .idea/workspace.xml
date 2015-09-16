@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="528a0a30-9017-42bc-b3cb-0d89ad771639" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/tw/biblioteca/BookDetailsTest.java" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/Checkin.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/Checkout.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/Factory.class" afterPath="" />
@@ -103,7 +102,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Library.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/MoiveLibrary.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/UserMenu.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/tw/biblioteca/UserTest.java" afterPath="$PROJECT_DIR$/test/com/tw/biblioteca/UserTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/tw/biblioteca/BookDetailsTest.java" afterPath="$PROJECT_DIR$/test/com/tw/biblioteca/BookDetailsTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BibliotecaVersion1.iws" />
@@ -169,11 +168,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BookDetails.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BookDetails.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/BookDetails.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.42288557">
+              <caret line="17" column="42" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#266#267#0" expanded="true" />
@@ -183,39 +182,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/User.java">
+      <file leaf-file-name="BookDetailsTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/BookDetailsTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
-              <folding>
-                <element signature="e#950#951#0" expanded="true" />
-                <element signature="e#977#978#0" expanded="true" />
-                <element signature="e#1179#1180#0" expanded="true" />
-                <element signature="e#1210#1211#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/UserTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="83" column="41" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="41" />
+              <caret line="16" column="70" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BookDetailsTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/BookDetailsTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.07462686">
-              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -325,10 +299,10 @@
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/CheckinBookTest.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/BookLibrary.java" />
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/BookLibraryTest.java" />
-        <option value="$PROJECT_DIR$/src/com/tw/biblioteca/BookDetails.java" />
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/UserTest.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/User.java" />
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/BookDetailsTest.java" />
+        <option value="$PROJECT_DIR$/src/com/tw/biblioteca/BookDetails.java" />
       </list>
     </option>
   </component>
@@ -461,7 +435,7 @@
       <recent name="com.tw.biblioteca" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserTest.shouldGetUsername">
+  <component name="RunManager" selected="JUnit.BookDetailsTest.shouldDisplayTheBookDetails">
     <configuration default="false" name="BookLibraryTest.shouldNotReturnBookIfItIsReturnedByTheIncorrectUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -804,8 +778,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.UserTest.shouldGetUsername" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BookDetailsTest.shouldDisplayTheBookDetails" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BookDetailsTest.shouldDisplayTheBookDetails" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.UserTest.shouldGetUsername" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.BookLibraryTest.shouldGetTheCheckoutBookDetails" />
         <item index="3" class="java.lang.String" itemvalue="Application.Application" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.BookLibraryTest.shouldNotReturnBookIfItIsReturnedByTheIncorrectUser" />
@@ -1348,21 +1322,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/BookDetails.java">
+    <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/UserTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.80099505">
+          <caret line="83" column="41" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#266#267#0" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.80099505">
           <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
           <folding>
             <element signature="e#950#951#0" expanded="true" />
@@ -1373,21 +1345,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/UserTest.java">
+    <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/BookDetailsTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="83" column="41" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="41" />
+          <caret line="16" column="70" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/BookDetailsTest.java">
+    <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/BookDetails.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07462686">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-          <folding />
+        <state vertical-scroll-proportion="0.42288557">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#266#267#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
