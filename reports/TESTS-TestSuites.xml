@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="0" hostname="precise64" id="0" name="AuthenticatorTest" package="com.tw.biblioteca" tests="4" time="0.833" timestamp="2015-09-15T17:57:22">
+  <testsuite errors="0" failures="0" hostname="precise64" id="0" name="BookLibraryTest" package="com.tw.biblioteca" tests="15" time="0.817" timestamp="2015-09-16T11:17:55">
       <properties>
           <property name="ant.project.invoked-targets" value="coverage" />
 
@@ -98,7 +98,7 @@
 
           <property name="java.vm.specification.version" value="1.7" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases6823588261248514948.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher5561825480509047337.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit1102397743750779972.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases8820723639605596199.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher1203033390155887245.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit6896958527236869637.properties" />
 
           <property name="java.home" value="/usr/lib/jvm/java-7-openjdk-amd64/jre" />
 
@@ -138,37 +138,59 @@
 
       </properties>
 
-      <testcase classname="com.tw.biblioteca.AuthenticatorTest" name="shouldReturnFalseIfUsernameIsValidAndPasswordIsInvalid" time="0.67" />
+      <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldRemoveASpecifiedBookFromTheLibrary" time="0.66" />
 
-      <testcase classname="com.tw.biblioteca.AuthenticatorTest" name="shouldCheckIftheUsernameIsInvalid" time="0.0" />
+      <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldReturnBookIfItIsReturnedByTheCorrectUser" time="0.0" />
 
-      <testcase classname="com.tw.biblioteca.AuthenticatorTest" name="shouldReturnTrueIfUsernameIsValid" time="0.0" />
+      <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldReturnBookOnlyIfItsTheUserWhoCheckedItOut" time="0.0" />
 
-      <testcase classname="com.tw.biblioteca.AuthenticatorTest" name="shouldReturnTrueIfUsernameAndPasswordIsValid" time="0.0" />
+      <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldReturnContentsOfLibrary" time="0.003" />
 
-      <system-out><![CDATA[17:57:22,768 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
-17:57:22,770 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
-17:57:22,771 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/cobertura-2.1.1-sources.jar!/logback.xml]
-17:57:22,774 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
-17:57:22,774 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/cobertura-2.1.1.jar!/logback.xml]
-17:57:22,774 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/cobertura-2.1.1-sources.jar!/logback.xml]
-17:57:22,847 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@19c2da48 - URL [jar:file:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/cobertura-2.1.1-sources.jar!/logback.xml] is not of type file
-17:57:22,965 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
-17:57:22,970 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
-17:57:23,008 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
-17:57:23,068 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
-17:57:23,267 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [net.sourceforge.cobertura] to INFO
-17:57:23,267 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to DEBUG
-17:57:23,267 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
-17:57:23,270 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
-17:57:23,275 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@4788ba2e - Registering current configuration as safe fallback point
+      <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldReturnFalseIfTheReturnedBookIsNotABookOfTheLibrary" time="0.0" />
+
+      <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldCheckThatASpecifiedBookInTheLibraryExists" time="0.0" />
+
+      <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldRemoveEntryFromBooksDetailsOnCheckinOfBook" time="0.0" />
+
+      <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldReturnFalseIfASpecifiedBookInTheDoesNotLibraryExist" time="0.0" />
+
+      <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldAddBookAndUserToHashmap" time="0.0" />
+
+      <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldReturnFalseIfITheUserWhoCheckedoutTheBookIsNotTheOneWhoReturnsTheBook" time="0.0" />
+
+      <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldAddTheReturnedBookToTheBookList" time="0.0" />
+
+      <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldNotReturnBookIfItIsReturnedByTheIncorrectUser" time="0.0" />
+
+      <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldGetTheCheckoutBookDetails" time="0.0" />
+
+      <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldNotRemoveABookIfItDoesNotExist" time="0.0" />
+
+      <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldAddBookThatHasBeenRemovedToUnavailableList" time="0.0" />
+
+      <system-out><![CDATA[11:17:56,169 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+11:17:56,170 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+11:17:56,171 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/cobertura-2.1.1-sources.jar!/logback.xml]
+11:17:56,174 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+11:17:56,174 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/cobertura-2.1.1.jar!/logback.xml]
+11:17:56,174 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/cobertura-2.1.1-sources.jar!/logback.xml]
+11:17:56,254 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@5c3bb813 - URL [jar:file:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/cobertura-2.1.1-sources.jar!/logback.xml] is not of type file
+11:17:56,380 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+11:17:56,386 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+11:17:56,423 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+11:17:56,485 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+11:17:56,668 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [net.sourceforge.cobertura] to INFO
+11:17:56,668 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to DEBUG
+11:17:56,668 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+11:17:56,670 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+11:17:56,673 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@54b216b3 - Registering current configuration as safe fallback point
 
 ]]></system-out>
 
       <system-err />
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="precise64" id="1" name="BookLibraryTest" package="com.tw.biblioteca" tests="8" time="0.03" timestamp="2015-09-15T17:57:23">
+  <testsuite errors="0" failures="0" hostname="precise64" id="1" name="BookTest" package="com.tw.biblioteca" tests="7" time="0.027" timestamp="2015-09-16T11:17:56">
       <properties>
           <property name="ant.project.invoked-targets" value="coverage" />
 
@@ -266,166 +288,7 @@
 
           <property name="java.vm.specification.version" value="1.7" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases6823588261248514948.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher5561825480509047337.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit1102397743750779972.properties" />
-
-          <property name="java.home" value="/usr/lib/jvm/java-7-openjdk-amd64/jre" />
-
-          <property name="sun.arch.data.model" value="64" />
-
-          <property name="java.specification.vendor" value="Oracle Corporation" />
-
-          <property name="user.language" value="en" />
-
-          <property name="main.name" value="Application" />
-
-          <property name="ant.file.Biblioteca" value="/vagrant/IdeaProjects/BibliotecaVersion1/build.xml" />
-
-          <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
-
-          <property name="java.vm.info" value="mixed mode" />
-
-          <property name="java.version" value="1.7.0_79" />
-
-          <property name="java.ext.dirs" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext" />
-
-          <property name="sun.boot.class.path" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/classes" />
-
-          <property name="java.vendor" value="Oracle Corporation" />
-
-          <property name="file.separator" value="/" />
-
-          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
-
-          <property name="sun.cpu.endian" value="little" />
-
-          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
-
-          <property name="ant.file.type" value="file" />
-
-          <property name="sun.cpu.isalist" value="" />
-
-      </properties>
-
-      <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldRemoveASpecifiedBookFromTheLibrary" time="0.008" />
-
-      <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldReturnContentsOfLibrary" time="0.0" />
-
-      <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldReturnFalseIfTheReturnedBookIsNotABookOfTheLibrary" time="0.0" />
-
-      <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldCheckThatASpecifiedBookInTheLibraryExists" time="0.0" />
-
-      <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldReturnFalseIfASpecifiedBookInTheDoesNotLibraryExist" time="0.0" />
-
-      <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldAddTheReturnedBookToTheBookList" time="0.0" />
-
-      <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldNotRemoveABookIfItDoesNotExist" time="0.0" />
-
-      <testcase classname="com.tw.biblioteca.BookLibraryTest" name="shouldAddBookThatHasBeenRemovedToUnavailableList" time="0.0" />
-
-      <system-out />
-
-      <system-err />
-
-  </testsuite>
-  <testsuite errors="0" failures="0" hostname="precise64" id="2" name="BookTest" package="com.tw.biblioteca" tests="7" time="0.018" timestamp="2015-09-15T17:57:23">
-      <properties>
-          <property name="ant.project.invoked-targets" value="coverage" />
-
-          <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
-
-          <property name="project.name" value="BibliotecaVersion1" />
-
-          <property name="sun.boot.library.path" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64" />
-
-          <property name="java.vm.version" value="24.79-b02" />
-
-          <property name="ant.library.dir" value="/usr/share/ant/lib" />
-
-          <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 3 2011" />
-
-          <property name="ant.java.version" value="1.7" />
-
-          <property name="java.vm.vendor" value="Oracle Corporation" />
-
-          <property name="java.vendor.url" value="http://java.oracle.com/" />
-
-          <property name="path.separator" value=":" />
-
-          <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
-
-          <property name="file.encoding.pkg" value="sun.io" />
-
-          <property name="user.country" value="US" />
-
-          <property name="sun.java.launcher" value="SUN_STANDARD" />
-
-          <property name="sun.os.patch.level" value="unknown" />
-
-          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
-
-          <property name="user.dir" value="/vagrant/IdeaProjects/BibliotecaVersion1" />
-
-          <property name="java.runtime.version" value="1.7.0_79-b14" />
-
-          <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
-
-          <property name="basedir" value="/vagrant/IdeaProjects/BibliotecaVersion1" />
-
-          <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/endorsed" />
-
-          <property name="os.arch" value="amd64" />
-
-          <property name="ant.project.default-target" value="coverage" />
-
-          <property name="java.io.tmpdir" value="/tmp" />
-
-          <property name="ant.core.lib" value="/usr/share/ant/lib/ant.jar" />
-
-          <property name="line.separator" value="&#xa;" />
-
-          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
-
-          <property name="os.name" value="Linux" />
-
-          <property name="ant.home" value="/usr/share/ant" />
-
-          <property name="ant.project.name" value="Biblioteca" />
-
-          <property name="sun.jnu.encoding" value="ISO-8859-1" />
-
-          <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib" />
-
-          <property name="ant.file.type.Biblioteca" value="file" />
-
-          <property name="java.class.version" value="51.0" />
-
-          <property name="java.specification.name" value="Java Platform API Specification" />
-
-          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
-
-          <property name="os.version" value="3.2.0-23-generic" />
-
-          <property name="package.name" value="com.tw.biblioteca" />
-
-          <property name="ant.file" value="/vagrant/IdeaProjects/BibliotecaVersion1/build.xml" />
-
-          <property name="user.home" value="/home/vagrant" />
-
-          <property name="user.timezone" value="" />
-
-          <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
-
-          <property name="file.encoding" value="ISO-8859-1" />
-
-          <property name="java.specification.version" value="1.7" />
-
-          <property name="user.name" value="vagrant" />
-
-          <property name="java.class.path" value="/vagrant/IdeaProjects/BibliotecaVersion1/instrumented:/vagrant/IdeaProjects/BibliotecaVersion1/lib/junit-4.11.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/hamcrest-core-1.3.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/mockito-all-1.9.5.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/system-rules-1.12.0-javadoc.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/system-rules-1.12.0-sources.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/system-rules-1.12.0.jar:/vagrant/IdeaProjects/BibliotecaVersion1/out:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/cobertura-2.1.1-javadoc.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/cobertura-2.1.1-sources.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/cobertura-2.1.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/asm-5.0.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/asm-analysis-5.0.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/asm-commons-5.0.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/asm-tree-5.0.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/asm-util-5.0.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/commons-lang3-3.3.2.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/hamcrest-core-1.3.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/jaxen-1.1.4.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/jetty-6.1.14.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/jetty-util-6.1.14.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/junit-4.11.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/logback-classic-1.0.13.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/logback-core-1.0.13.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/oro-2.0.8.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/servlet-api-2.5-6.1.14.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/slf4j-api-1.7.5.jar:/usr/share/java/ant-launcher-1.8.2.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
-
-          <property name="java.vm.specification.version" value="1.7" />
-
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases6823588261248514948.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher5561825480509047337.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit1102397743750779972.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases8820723639605596199.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher1203033390155887245.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit6896958527236869637.properties" />
 
           <property name="java.home" value="/usr/lib/jvm/java-7-openjdk-amd64/jre" />
 
@@ -469,13 +332,13 @@
 
       <testcase classname="com.tw.biblioteca.BookTest" name="shouldBeEqualToItself" time="0.0" />
 
-      <testcase classname="com.tw.biblioteca.BookTest" name="shouldNotBeEqualToAnotherBookObjectWithDifferentName" time="0.001" />
+      <testcase classname="com.tw.biblioteca.BookTest" name="shouldNotBeEqualToAnotherBookObjectWithDifferentName" time="0.0" />
 
-      <testcase classname="com.tw.biblioteca.BookTest" name="shouldReturnEachBookInColumnForm" time="0.001" />
+      <testcase classname="com.tw.biblioteca.BookTest" name="shouldReturnEachBookInColumnForm" time="0.0" />
 
       <testcase classname="com.tw.biblioteca.BookTest" name="shouldNotBeEqualToANullObject" time="0.0" />
 
-      <testcase classname="com.tw.biblioteca.BookTest" name="shouldHaveEqualHashcodesIfBooksAreEqual" time="0.001" />
+      <testcase classname="com.tw.biblioteca.BookTest" name="shouldHaveEqualHashcodesIfBooksAreEqual" time="0.0" />
 
       <testcase classname="com.tw.biblioteca.BookTest" name="shouldNotBeEqualToAnObjectOtherThanBook" time="0.0" />
 
@@ -484,7 +347,7 @@
       <system-err />
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="precise64" id="3" name="CheckinBookTest" package="com.tw.biblioteca" tests="5" time="0.457" timestamp="2015-09-15T17:57:23">
+  <testsuite errors="0" failures="0" hostname="precise64" id="2" name="CheckedoutBookDetailsTest" package="com.tw.biblioteca" tests="2" time="0.025" timestamp="2015-09-16T11:17:56">
       <properties>
           <property name="ant.project.invoked-targets" value="coverage" />
 
@@ -582,7 +445,7 @@
 
           <property name="java.vm.specification.version" value="1.7" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases6823588261248514948.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher5561825480509047337.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit1102397743750779972.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases8820723639605596199.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher1203033390155887245.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit6896958527236869637.properties" />
 
           <property name="java.home" value="/usr/lib/jvm/java-7-openjdk-amd64/jre" />
 
@@ -622,11 +485,158 @@
 
       </properties>
 
-      <testcase classname="com.tw.biblioteca.CheckinBookTest" name="shouldReturnFalseIfTheBookIsNotInTheCheckedOutList" time="0.368" />
+      <testcase classname="com.tw.biblioteca.CheckedoutBookDetailsTest" name="shouldFormatTheBookDetails" time="0.008" />
+
+      <testcase classname="com.tw.biblioteca.CheckedoutBookDetailsTest" name="shouldDisplayTheBookList" time="0.003" />
+
+      <system-out />
+
+      <system-err />
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="precise64" id="3" name="CheckinBookTest" package="com.tw.biblioteca" tests="5" time="0.442" timestamp="2015-09-16T11:17:56">
+      <properties>
+          <property name="ant.project.invoked-targets" value="coverage" />
+
+          <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+
+          <property name="project.name" value="BibliotecaVersion1" />
+
+          <property name="sun.boot.library.path" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64" />
+
+          <property name="java.vm.version" value="24.79-b02" />
+
+          <property name="ant.library.dir" value="/usr/share/ant/lib" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 3 2011" />
+
+          <property name="ant.java.version" value="1.7" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="user.country" value="US" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="user.dir" value="/vagrant/IdeaProjects/BibliotecaVersion1" />
+
+          <property name="java.runtime.version" value="1.7.0_79-b14" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+
+          <property name="basedir" value="/vagrant/IdeaProjects/BibliotecaVersion1" />
+
+          <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/endorsed" />
+
+          <property name="os.arch" value="amd64" />
+
+          <property name="ant.project.default-target" value="coverage" />
+
+          <property name="java.io.tmpdir" value="/tmp" />
+
+          <property name="ant.core.lib" value="/usr/share/ant/lib/ant.jar" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="os.name" value="Linux" />
+
+          <property name="ant.home" value="/usr/share/ant" />
+
+          <property name="ant.project.name" value="Biblioteca" />
+
+          <property name="sun.jnu.encoding" value="ISO-8859-1" />
+
+          <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib" />
+
+          <property name="ant.file.type.Biblioteca" value="file" />
+
+          <property name="java.class.version" value="51.0" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="os.version" value="3.2.0-23-generic" />
+
+          <property name="package.name" value="com.tw.biblioteca" />
+
+          <property name="ant.file" value="/vagrant/IdeaProjects/BibliotecaVersion1/build.xml" />
+
+          <property name="user.home" value="/home/vagrant" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+
+          <property name="file.encoding" value="ISO-8859-1" />
+
+          <property name="java.specification.version" value="1.7" />
+
+          <property name="user.name" value="vagrant" />
+
+          <property name="java.class.path" value="/vagrant/IdeaProjects/BibliotecaVersion1/instrumented:/vagrant/IdeaProjects/BibliotecaVersion1/lib/junit-4.11.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/hamcrest-core-1.3.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/mockito-all-1.9.5.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/system-rules-1.12.0-javadoc.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/system-rules-1.12.0-sources.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/system-rules-1.12.0.jar:/vagrant/IdeaProjects/BibliotecaVersion1/out:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/cobertura-2.1.1-javadoc.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/cobertura-2.1.1-sources.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/cobertura-2.1.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/asm-5.0.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/asm-analysis-5.0.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/asm-commons-5.0.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/asm-tree-5.0.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/asm-util-5.0.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/commons-lang3-3.3.2.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/hamcrest-core-1.3.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/jaxen-1.1.4.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/jetty-6.1.14.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/jetty-util-6.1.14.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/junit-4.11.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/logback-classic-1.0.13.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/logback-core-1.0.13.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/oro-2.0.8.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/servlet-api-2.5-6.1.14.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/slf4j-api-1.7.5.jar:/usr/share/java/ant-launcher-1.8.2.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
+
+          <property name="java.vm.specification.version" value="1.7" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases8820723639605596199.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher1203033390155887245.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit6896958527236869637.properties" />
+
+          <property name="java.home" value="/usr/lib/jvm/java-7-openjdk-amd64/jre" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="user.language" value="en" />
+
+          <property name="main.name" value="Application" />
+
+          <property name="ant.file.Biblioteca" value="/vagrant/IdeaProjects/BibliotecaVersion1/build.xml" />
+
+          <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="java.version" value="1.7.0_79" />
+
+          <property name="java.ext.dirs" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext" />
+
+          <property name="sun.boot.class.path" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/classes" />
+
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="ant.file.type" value="file" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+      </properties>
+
+      <testcase classname="com.tw.biblioteca.CheckinBookTest" name="shouldReturnFalseIfTheBookIsNotInTheCheckedOutList" time="0.349" />
 
       <testcase classname="com.tw.biblioteca.CheckinBookTest" name="shouldAcceptChoiceOfBookFromUser" time="0.003" />
 
-      <testcase classname="com.tw.biblioteca.CheckinBookTest" name="shouldReturnSuccessfulMessageIfTheReturnWasSuccessful" time="0.068" />
+      <testcase classname="com.tw.biblioteca.CheckinBookTest" name="shouldReturnSuccessfulMessageIfTheReturnWasSuccessful" time="0.074" />
 
       <testcase classname="com.tw.biblioteca.CheckinBookTest" name="shouldReturnTrueIfTheBookIsInTheCheckedOutList" time="0.001" />
 
@@ -637,7 +647,7 @@
       <system-err />
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="precise64" id="4" name="CheckoutBookMovieTest" package="com.tw.biblioteca" tests="5" time="0.058" timestamp="2015-09-15T17:57:23">
+  <testsuite errors="0" failures="0" hostname="precise64" id="4" name="CheckoutBookMovieTest" package="com.tw.biblioteca" tests="5" time="0.063" timestamp="2015-09-16T11:17:57">
       <properties>
           <property name="ant.project.invoked-targets" value="coverage" />
 
@@ -735,7 +745,7 @@
 
           <property name="java.vm.specification.version" value="1.7" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases6823588261248514948.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher5561825480509047337.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit1102397743750779972.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases8820723639605596199.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher1203033390155887245.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit6896958527236869637.properties" />
 
           <property name="java.home" value="/usr/lib/jvm/java-7-openjdk-amd64/jre" />
 
@@ -775,22 +785,22 @@
 
       </properties>
 
-      <testcase classname="com.tw.biblioteca.CheckoutBookMovieTest" name="shouldReturnUnsuccessfulMessageIfMovieIsUnavailable" time="0.031" />
+      <testcase classname="com.tw.biblioteca.CheckoutBookMovieTest" name="shouldReturnUnsuccessfulMessageIfMovieIsUnavailable" time="0.041" />
 
-      <testcase classname="com.tw.biblioteca.CheckoutBookMovieTest" name="shouldAcceptChoiceOfMovieFromTheUser" time="0.002" />
+      <testcase classname="com.tw.biblioteca.CheckoutBookMovieTest" name="shouldAcceptChoiceOfMovieFromTheUser" time="0.001" />
 
-      <testcase classname="com.tw.biblioteca.CheckoutBookMovieTest" name="shouldReturnFalseIfTheMovieDoesntExist" time="0.001" />
+      <testcase classname="com.tw.biblioteca.CheckoutBookMovieTest" name="shouldReturnFalseIfTheMovieDoesntExist" time="0.0" />
 
       <testcase classname="com.tw.biblioteca.CheckoutBookMovieTest" name="shouldReturnSuccessMessageIfMovieIsAvailable" time="0.001" />
 
-      <testcase classname="com.tw.biblioteca.CheckoutBookMovieTest" name="shouldReturnTrueIfTheMovieExists" time="0.0" />
+      <testcase classname="com.tw.biblioteca.CheckoutBookMovieTest" name="shouldReturnTrueIfTheMovieExists" time="0.001" />
 
       <system-out />
 
       <system-err />
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="precise64" id="5" name="CheckoutBookTest" package="com.tw.biblioteca" tests="5" time="0.046" timestamp="2015-09-15T17:57:23">
+  <testsuite errors="0" failures="0" hostname="precise64" id="5" name="CheckoutBookTest" package="com.tw.biblioteca" tests="5" time="0.04" timestamp="2015-09-16T11:17:57">
       <properties>
           <property name="ant.project.invoked-targets" value="coverage" />
 
@@ -888,7 +898,7 @@
 
           <property name="java.vm.specification.version" value="1.7" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases6823588261248514948.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher5561825480509047337.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit1102397743750779972.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases8820723639605596199.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher1203033390155887245.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit6896958527236869637.properties" />
 
           <property name="java.home" value="/usr/lib/jvm/java-7-openjdk-amd64/jre" />
 
@@ -928,13 +938,13 @@
 
       </properties>
 
-      <testcase classname="com.tw.biblioteca.CheckoutBookTest" name="shouldReturnUnsuccessMessageIfBookIsUnavailable" time="0.024" />
+      <testcase classname="com.tw.biblioteca.CheckoutBookTest" name="shouldReturnUnsuccessMessageIfBookIsUnavailable" time="0.025" />
 
       <testcase classname="com.tw.biblioteca.CheckoutBookTest" name="shouldAcceptChoiceOfBookFromTheUser" time="0.0" />
 
       <testcase classname="com.tw.biblioteca.CheckoutBookTest" name="shouldReturnTrueIfTheBookExists" time="0.0" />
 
-      <testcase classname="com.tw.biblioteca.CheckoutBookTest" name="shouldReturnSuccessMessageIfBookIsAvailable" time="0.005" />
+      <testcase classname="com.tw.biblioteca.CheckoutBookTest" name="shouldReturnSuccessMessageIfBookIsAvailable" time="0.001" />
 
       <testcase classname="com.tw.biblioteca.CheckoutBookTest" name="shouldReturnFalseIfTheBookDoesntExist" time="0.0" />
 
@@ -943,7 +953,7 @@
       <system-err />
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="precise64" id="6" name="ConsoleInputTest" package="com.tw.biblioteca" tests="1" time="0.01" timestamp="2015-09-15T17:57:24">
+  <testsuite errors="0" failures="0" hostname="precise64" id="6" name="ConsoleInputTest" package="com.tw.biblioteca" tests="1" time="0.01" timestamp="2015-09-16T11:17:57">
       <properties>
           <property name="ant.project.invoked-targets" value="coverage" />
 
@@ -1041,7 +1051,7 @@
 
           <property name="java.vm.specification.version" value="1.7" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases6823588261248514948.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher5561825480509047337.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit1102397743750779972.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases8820723639605596199.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher1203033390155887245.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit6896958527236869637.properties" />
 
           <property name="java.home" value="/usr/lib/jvm/java-7-openjdk-amd64/jre" />
 
@@ -1088,7 +1098,7 @@
       <system-err />
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="precise64" id="7" name="ConsoleOutputTest" package="com.tw.biblioteca" tests="1" time="0.008" timestamp="2015-09-15T17:57:24">
+  <testsuite errors="0" failures="0" hostname="precise64" id="7" name="ConsoleOutputTest" package="com.tw.biblioteca" tests="1" time="0.012" timestamp="2015-09-16T11:17:57">
       <properties>
           <property name="ant.project.invoked-targets" value="coverage" />
 
@@ -1186,7 +1196,7 @@
 
           <property name="java.vm.specification.version" value="1.7" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases6823588261248514948.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher5561825480509047337.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit1102397743750779972.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases8820723639605596199.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher1203033390155887245.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit6896958527236869637.properties" />
 
           <property name="java.home" value="/usr/lib/jvm/java-7-openjdk-amd64/jre" />
 
@@ -1226,14 +1236,14 @@
 
       </properties>
 
-      <testcase classname="com.tw.biblioteca.ConsoleOutputTest" name="shouldPrintWelcomeMessage" time="0.0" />
+      <testcase classname="com.tw.biblioteca.ConsoleOutputTest" name="shouldPrintWelcomeMessage" time="0.001" />
 
       <system-out />
 
       <system-err />
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="precise64" id="8" name="ControllerTest" package="com.tw.biblioteca" tests="4" time="0.068" timestamp="2015-09-15T17:57:24">
+  <testsuite errors="0" failures="0" hostname="precise64" id="8" name="ControllerTest" package="com.tw.biblioteca" tests="7" time="0.078" timestamp="2015-09-16T11:17:57">
       <properties>
           <property name="ant.project.invoked-targets" value="coverage" />
 
@@ -1331,7 +1341,7 @@
 
           <property name="java.vm.specification.version" value="1.7" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases6823588261248514948.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher5561825480509047337.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit1102397743750779972.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases8820723639605596199.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher1203033390155887245.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit6896958527236869637.properties" />
 
           <property name="java.home" value="/usr/lib/jvm/java-7-openjdk-amd64/jre" />
 
@@ -1371,20 +1381,26 @@
 
       </properties>
 
-      <testcase classname="com.tw.biblioteca.ControllerTest" name="shouldDisplayTheMenu" time="0.042" />
+      <testcase classname="com.tw.biblioteca.ControllerTest" name="shouldReturnLibrarianMenuIfRoleIsLibrarian" time="0.016" />
 
-      <testcase classname="com.tw.biblioteca.ControllerTest" name="shouldExexuteTheMenuObject" time="0.005" />
+      <testcase classname="com.tw.biblioteca.ControllerTest" name="shouldDisplayTheMenu" time="0.024" />
 
-      <testcase classname="com.tw.biblioteca.ControllerTest" name="shouldCreateTheMenuObject" time="0.006" />
+      <testcase classname="com.tw.biblioteca.ControllerTest" name="shouldExexuteTheMenuObject" time="0.009" />
+
+      <testcase classname="com.tw.biblioteca.ControllerTest" name="shouldCreateTheMenuObject" time="0.009" />
 
       <testcase classname="com.tw.biblioteca.ControllerTest" name="shouldAcceptInput" time="0.001" />
 
+      <testcase classname="com.tw.biblioteca.ControllerTest" name="shouldReturnUserMenuIfRoleIsUser" time="0.003" />
+
+      <testcase classname="com.tw.biblioteca.ControllerTest" name="shouldReturnDefaultMenu" time="0.0" />
+
       <system-out />
 
       <system-err />
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="precise64" id="9" name="ExitTest" package="com.tw.biblioteca" tests="1" time="0.029" timestamp="2015-09-15T17:57:24">
+  <testsuite errors="0" failures="0" hostname="precise64" id="9" name="CustomerMenuTest" package="com.tw.biblioteca" tests="1" time="0.007" timestamp="2015-09-16T11:17:57">
       <properties>
           <property name="ant.project.invoked-targets" value="coverage" />
 
@@ -1482,7 +1498,7 @@
 
           <property name="java.vm.specification.version" value="1.7" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases6823588261248514948.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher5561825480509047337.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit1102397743750779972.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases8820723639605596199.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher1203033390155887245.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit6896958527236869637.properties" />
 
           <property name="java.home" value="/usr/lib/jvm/java-7-openjdk-amd64/jre" />
 
@@ -1522,14 +1538,14 @@
 
       </properties>
 
-      <testcase classname="com.tw.biblioteca.ExitTest" name="shouldExitTheApplication" time="0.002" />
+      <testcase classname="com.tw.biblioteca.CustomerMenuTest" name="shouldReturnTheAvailableMenu" time="0.0" />
 
       <system-out />
 
       <system-err />
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="precise64" id="10" name="FirstMenuTest" package="com.tw.biblioteca" tests="1" time="0.007" timestamp="2015-09-15T17:57:24">
+  <testsuite errors="0" failures="0" hostname="precise64" id="10" name="DefaultMenuTest" package="com.tw.biblioteca" tests="1" time="0.007" timestamp="2015-09-16T11:17:57">
       <properties>
           <property name="ant.project.invoked-targets" value="coverage" />
 
@@ -1627,7 +1643,7 @@
 
           <property name="java.vm.specification.version" value="1.7" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases6823588261248514948.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher5561825480509047337.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit1102397743750779972.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases8820723639605596199.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher1203033390155887245.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit6896958527236869637.properties" />
 
           <property name="java.home" value="/usr/lib/jvm/java-7-openjdk-amd64/jre" />
 
@@ -1674,7 +1690,7 @@
       <system-err />
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="precise64" id="11" name="InvalidFirstMenuItemTest" package="com.tw.biblioteca" tests="1" time="0.011" timestamp="2015-09-15T17:57:24">
+  <testsuite errors="0" failures="0" hostname="precise64" id="11" name="ExitTest" package="com.tw.biblioteca" tests="1" time="0.018" timestamp="2015-09-16T11:17:57">
       <properties>
           <property name="ant.project.invoked-targets" value="coverage" />
 
@@ -1772,7 +1788,152 @@
 
           <property name="java.vm.specification.version" value="1.7" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases6823588261248514948.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher5561825480509047337.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit1102397743750779972.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases8820723639605596199.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher1203033390155887245.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit6896958527236869637.properties" />
+
+          <property name="java.home" value="/usr/lib/jvm/java-7-openjdk-amd64/jre" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="user.language" value="en" />
+
+          <property name="main.name" value="Application" />
+
+          <property name="ant.file.Biblioteca" value="/vagrant/IdeaProjects/BibliotecaVersion1/build.xml" />
+
+          <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="java.version" value="1.7.0_79" />
+
+          <property name="java.ext.dirs" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext" />
+
+          <property name="sun.boot.class.path" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/classes" />
+
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="ant.file.type" value="file" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+      </properties>
+
+      <testcase classname="com.tw.biblioteca.ExitTest" name="shouldExitTheApplication" time="0.002" />
+
+      <system-out />
+
+      <system-err />
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="precise64" id="12" name="InvalidDefaultMenuItemTest" package="com.tw.biblioteca" tests="1" time="0.01" timestamp="2015-09-16T11:17:57">
+      <properties>
+          <property name="ant.project.invoked-targets" value="coverage" />
+
+          <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+
+          <property name="project.name" value="BibliotecaVersion1" />
+
+          <property name="sun.boot.library.path" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64" />
+
+          <property name="java.vm.version" value="24.79-b02" />
+
+          <property name="ant.library.dir" value="/usr/share/ant/lib" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 3 2011" />
+
+          <property name="ant.java.version" value="1.7" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="user.country" value="US" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="user.dir" value="/vagrant/IdeaProjects/BibliotecaVersion1" />
+
+          <property name="java.runtime.version" value="1.7.0_79-b14" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+
+          <property name="basedir" value="/vagrant/IdeaProjects/BibliotecaVersion1" />
+
+          <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/endorsed" />
+
+          <property name="os.arch" value="amd64" />
+
+          <property name="ant.project.default-target" value="coverage" />
+
+          <property name="java.io.tmpdir" value="/tmp" />
+
+          <property name="ant.core.lib" value="/usr/share/ant/lib/ant.jar" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="os.name" value="Linux" />
+
+          <property name="ant.home" value="/usr/share/ant" />
+
+          <property name="ant.project.name" value="Biblioteca" />
+
+          <property name="sun.jnu.encoding" value="ISO-8859-1" />
+
+          <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib" />
+
+          <property name="ant.file.type.Biblioteca" value="file" />
+
+          <property name="java.class.version" value="51.0" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="os.version" value="3.2.0-23-generic" />
+
+          <property name="package.name" value="com.tw.biblioteca" />
+
+          <property name="ant.file" value="/vagrant/IdeaProjects/BibliotecaVersion1/build.xml" />
+
+          <property name="user.home" value="/home/vagrant" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+
+          <property name="file.encoding" value="ISO-8859-1" />
+
+          <property name="java.specification.version" value="1.7" />
+
+          <property name="user.name" value="vagrant" />
+
+          <property name="java.class.path" value="/vagrant/IdeaProjects/BibliotecaVersion1/instrumented:/vagrant/IdeaProjects/BibliotecaVersion1/lib/junit-4.11.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/hamcrest-core-1.3.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/mockito-all-1.9.5.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/system-rules-1.12.0-javadoc.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/system-rules-1.12.0-sources.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/system-rules-1.12.0.jar:/vagrant/IdeaProjects/BibliotecaVersion1/out:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/cobertura-2.1.1-javadoc.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/cobertura-2.1.1-sources.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/cobertura-2.1.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/asm-5.0.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/asm-analysis-5.0.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/asm-commons-5.0.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/asm-tree-5.0.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/asm-util-5.0.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/commons-lang3-3.3.2.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/hamcrest-core-1.3.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/jaxen-1.1.4.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/jetty-6.1.14.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/jetty-util-6.1.14.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/junit-4.11.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/logback-classic-1.0.13.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/logback-core-1.0.13.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/oro-2.0.8.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/servlet-api-2.5-6.1.14.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/slf4j-api-1.7.5.jar:/usr/share/java/ant-launcher-1.8.2.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
+
+          <property name="java.vm.specification.version" value="1.7" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases8820723639605596199.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher1203033390155887245.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit6896958527236869637.properties" />
 
           <property name="java.home" value="/usr/lib/jvm/java-7-openjdk-amd64/jre" />
 
@@ -1819,7 +1980,7 @@
       <system-err />
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="precise64" id="12" name="LibrarianMenuTest" package="com.tw.biblioteca" tests="1" time="0.01" timestamp="2015-09-15T17:57:24">
+  <testsuite errors="0" failures="0" hostname="precise64" id="13" name="LibrarianMenuTest" package="com.tw.biblioteca" tests="1" time="0.007" timestamp="2015-09-16T11:17:57">
       <properties>
           <property name="ant.project.invoked-targets" value="coverage" />
 
@@ -1917,7 +2078,7 @@
 
           <property name="java.vm.specification.version" value="1.7" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases6823588261248514948.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher5561825480509047337.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit1102397743750779972.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases8820723639605596199.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher1203033390155887245.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit6896958527236869637.properties" />
 
           <property name="java.home" value="/usr/lib/jvm/java-7-openjdk-amd64/jre" />
 
@@ -1957,14 +2118,14 @@
 
       </properties>
 
-      <testcase classname="com.tw.biblioteca.LibrarianMenuTest" name="shouldReturnTheAvailableMenu" time="0.003" />
+      <testcase classname="com.tw.biblioteca.LibrarianMenuTest" name="shouldReturnTheAvailableMenu" time="0.0" />
 
       <system-out />
 
       <system-err />
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="precise64" id="13" name="ListBooksTest" package="com.tw.biblioteca" tests="2" time="0.012" timestamp="2015-09-15T17:57:24">
+  <testsuite errors="0" failures="0" hostname="precise64" id="14" name="ListBooksTest" package="com.tw.biblioteca" tests="2" time="0.012" timestamp="2015-09-16T11:17:57">
       <properties>
           <property name="ant.project.invoked-targets" value="coverage" />
 
@@ -2062,7 +2223,7 @@
 
           <property name="java.vm.specification.version" value="1.7" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases6823588261248514948.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher5561825480509047337.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit1102397743750779972.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases8820723639605596199.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher1203033390155887245.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit6896958527236869637.properties" />
 
           <property name="java.home" value="/usr/lib/jvm/java-7-openjdk-amd64/jre" />
 
@@ -2111,7 +2272,7 @@
       <system-err />
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="precise64" id="14" name="ListMoviesTest" package="com.tw.biblioteca" tests="2" time="0.014" timestamp="2015-09-15T17:57:24">
+  <testsuite errors="0" failures="0" hostname="precise64" id="15" name="ListMoviesTest" package="com.tw.biblioteca" tests="2" time="0.022" timestamp="2015-09-16T11:17:57">
       <properties>
           <property name="ant.project.invoked-targets" value="coverage" />
 
@@ -2209,7 +2370,7 @@
 
           <property name="java.vm.specification.version" value="1.7" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases6823588261248514948.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher5561825480509047337.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit1102397743750779972.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases8820723639605596199.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher1203033390155887245.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit6896958527236869637.properties" />
 
           <property name="java.home" value="/usr/lib/jvm/java-7-openjdk-amd64/jre" />
 
@@ -2249,7 +2410,7 @@
 
       </properties>
 
-      <testcase classname="com.tw.biblioteca.ListMoviesTest" name="shouldDisplayTheBookList" time="0.005" />
+      <testcase classname="com.tw.biblioteca.ListMoviesTest" name="shouldDisplayTheBookList" time="0.012" />
 
       <testcase classname="com.tw.biblioteca.ListMoviesTest" name="shouldReceiveTheListOfMoviesFromMovieLibrary" time="0.0" />
 
@@ -2258,7 +2419,7 @@
       <system-err />
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="precise64" id="15" name="LoginTest" package="com.tw.biblioteca" tests="6" time="0.033" timestamp="2015-09-15T17:57:24">
+  <testsuite errors="0" failures="0" hostname="precise64" id="16" name="LoginTest" package="com.tw.biblioteca" tests="6" time="0.023" timestamp="2015-09-16T11:17:57">
       <properties>
           <property name="ant.project.invoked-targets" value="coverage" />
 
@@ -2356,7 +2517,7 @@
 
           <property name="java.vm.specification.version" value="1.7" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases6823588261248514948.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher5561825480509047337.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit1102397743750779972.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases8820723639605596199.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher1203033390155887245.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit6896958527236869637.properties" />
 
           <property name="java.home" value="/usr/lib/jvm/java-7-openjdk-amd64/jre" />
 
@@ -2396,15 +2557,15 @@
 
       </properties>
 
-      <testcase classname="com.tw.biblioteca.LoginTest" name="shouldDisplaySuccessfulMessageIfLoginIsSuccessful" time="0.007" />
+      <testcase classname="com.tw.biblioteca.LoginTest" name="shouldDisplaySuccessfulMessageIfLoginIsSuccessful" time="0.005" />
 
-      <testcase classname="com.tw.biblioteca.LoginTest" name="shouldAcceptUsernameFromUser" time="0.001" />
+      <testcase classname="com.tw.biblioteca.LoginTest" name="shouldAcceptUsernameFromUser" time="0.0" />
 
-      <testcase classname="com.tw.biblioteca.LoginTest" name="shouldCreateSessionObjectIfUsernameAndPasswordAreAuthenticated" time="0.0" />
+      <testcase classname="com.tw.biblioteca.LoginTest" name="shouldCreateSessionObjectIfUsernameAndPasswordAreAuthenticated" time="0.001" />
 
       <testcase classname="com.tw.biblioteca.LoginTest" name="shouldAcceptPasswordFromUser" time="0.0" />
 
-      <testcase classname="com.tw.biblioteca.LoginTest" name="shouldReturnTrueIfUsernamAndPasswordIsAuthenticated" time="0.0" />
+      <testcase classname="com.tw.biblioteca.LoginTest" name="shouldReturnTrueIfUsernamAndPasswordIsAuthenticated" time="0.001" />
 
       <testcase classname="com.tw.biblioteca.LoginTest" name="shouldDisplayUnsuccessfulMessageIfLoginIsUnsccessful" time="0.001" />
 
@@ -2413,7 +2574,7 @@
       <system-err />
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="precise64" id="16" name="MovieBookLibraryTest" package="com.tw.biblioteca" tests="6" time="0.016" timestamp="2015-09-15T17:57:24">
+  <testsuite errors="0" failures="0" hostname="precise64" id="17" name="LogoutTest" package="com.tw.biblioteca" tests="1" time="0.01" timestamp="2015-09-16T11:17:57">
       <properties>
           <property name="ant.project.invoked-targets" value="coverage" />
 
@@ -2511,7 +2672,152 @@
 
           <property name="java.vm.specification.version" value="1.7" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases6823588261248514948.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher5561825480509047337.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit1102397743750779972.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases8820723639605596199.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher1203033390155887245.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit6896958527236869637.properties" />
+
+          <property name="java.home" value="/usr/lib/jvm/java-7-openjdk-amd64/jre" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="user.language" value="en" />
+
+          <property name="main.name" value="Application" />
+
+          <property name="ant.file.Biblioteca" value="/vagrant/IdeaProjects/BibliotecaVersion1/build.xml" />
+
+          <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="java.version" value="1.7.0_79" />
+
+          <property name="java.ext.dirs" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext" />
+
+          <property name="sun.boot.class.path" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/classes" />
+
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="ant.file.type" value="file" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+      </properties>
+
+      <testcase classname="com.tw.biblioteca.LogoutTest" name="shouldSetTheSessionUserRoleTodefault" time="0.003" />
+
+      <system-out />
+
+      <system-err />
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="precise64" id="18" name="MovieBookLibraryTest" package="com.tw.biblioteca" tests="6" time="0.022" timestamp="2015-09-16T11:17:57">
+      <properties>
+          <property name="ant.project.invoked-targets" value="coverage" />
+
+          <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+
+          <property name="project.name" value="BibliotecaVersion1" />
+
+          <property name="sun.boot.library.path" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64" />
+
+          <property name="java.vm.version" value="24.79-b02" />
+
+          <property name="ant.library.dir" value="/usr/share/ant/lib" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 3 2011" />
+
+          <property name="ant.java.version" value="1.7" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="user.country" value="US" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="user.dir" value="/vagrant/IdeaProjects/BibliotecaVersion1" />
+
+          <property name="java.runtime.version" value="1.7.0_79-b14" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+
+          <property name="basedir" value="/vagrant/IdeaProjects/BibliotecaVersion1" />
+
+          <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/endorsed" />
+
+          <property name="os.arch" value="amd64" />
+
+          <property name="ant.project.default-target" value="coverage" />
+
+          <property name="java.io.tmpdir" value="/tmp" />
+
+          <property name="ant.core.lib" value="/usr/share/ant/lib/ant.jar" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="os.name" value="Linux" />
+
+          <property name="ant.home" value="/usr/share/ant" />
+
+          <property name="ant.project.name" value="Biblioteca" />
+
+          <property name="sun.jnu.encoding" value="ISO-8859-1" />
+
+          <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib" />
+
+          <property name="ant.file.type.Biblioteca" value="file" />
+
+          <property name="java.class.version" value="51.0" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="os.version" value="3.2.0-23-generic" />
+
+          <property name="package.name" value="com.tw.biblioteca" />
+
+          <property name="ant.file" value="/vagrant/IdeaProjects/BibliotecaVersion1/build.xml" />
+
+          <property name="user.home" value="/home/vagrant" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+
+          <property name="file.encoding" value="ISO-8859-1" />
+
+          <property name="java.specification.version" value="1.7" />
+
+          <property name="user.name" value="vagrant" />
+
+          <property name="java.class.path" value="/vagrant/IdeaProjects/BibliotecaVersion1/instrumented:/vagrant/IdeaProjects/BibliotecaVersion1/lib/junit-4.11.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/hamcrest-core-1.3.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/mockito-all-1.9.5.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/system-rules-1.12.0-javadoc.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/system-rules-1.12.0-sources.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/system-rules-1.12.0.jar:/vagrant/IdeaProjects/BibliotecaVersion1/out:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/cobertura-2.1.1-javadoc.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/cobertura-2.1.1-sources.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/cobertura-2.1.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/asm-5.0.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/asm-analysis-5.0.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/asm-commons-5.0.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/asm-tree-5.0.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/asm-util-5.0.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/commons-lang3-3.3.2.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/hamcrest-core-1.3.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/jaxen-1.1.4.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/jetty-6.1.14.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/jetty-util-6.1.14.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/junit-4.11.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/logback-classic-1.0.13.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/logback-core-1.0.13.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/oro-2.0.8.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/servlet-api-2.5-6.1.14.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/slf4j-api-1.7.5.jar:/usr/share/java/ant-launcher-1.8.2.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
+
+          <property name="java.vm.specification.version" value="1.7" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases8820723639605596199.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher1203033390155887245.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit6896958527236869637.properties" />
 
           <property name="java.home" value="/usr/lib/jvm/java-7-openjdk-amd64/jre" />
 
@@ -2557,7 +2863,7 @@
 
       <testcase classname="com.tw.biblioteca.MovieBookLibraryTest" name="shouldReturnFalseIfASpecifiedBookInTheDoesNotLibraryExist" time="0.0" />
 
-      <testcase classname="com.tw.biblioteca.MovieBookLibraryTest" name="shouldListTheMovieNames" time="0.001" />
+      <testcase classname="com.tw.biblioteca.MovieBookLibraryTest" name="shouldListTheMovieNames" time="0.0" />
 
       <testcase classname="com.tw.biblioteca.MovieBookLibraryTest" name="shouldRemoveASpecifiedMovieFromTheLibrary" time="0.0" />
 
@@ -2568,7 +2874,7 @@
       <system-err />
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="precise64" id="17" name="MovieTest" package="com.tw.biblioteca" tests="7" time="0.017" timestamp="2015-09-15T17:57:24">
+  <testsuite errors="0" failures="0" hostname="precise64" id="19" name="MovieTest" package="com.tw.biblioteca" tests="7" time="0.019" timestamp="2015-09-16T11:17:57">
       <properties>
           <property name="ant.project.invoked-targets" value="coverage" />
 
@@ -2666,7 +2972,7 @@
 
           <property name="java.vm.specification.version" value="1.7" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases6823588261248514948.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher5561825480509047337.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit1102397743750779972.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases8820723639605596199.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher1203033390155887245.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit6896958527236869637.properties" />
 
           <property name="java.home" value="/usr/lib/jvm/java-7-openjdk-amd64/jre" />
 
@@ -2710,13 +3016,13 @@
 
       <testcase classname="com.tw.biblioteca.MovieTest" name="shouldBeEqualToItself" time="0.0" />
 
-      <testcase classname="com.tw.biblioteca.MovieTest" name="shouldReturnEachMovieInColumnForm" time="0.0" />
+      <testcase classname="com.tw.biblioteca.MovieTest" name="shouldReturnEachMovieInColumnForm" time="0.001" />
 
-      <testcase classname="com.tw.biblioteca.MovieTest" name="shouldNotBeEqualToAnObjectOtherThanMovie" time="0.001" />
+      <testcase classname="com.tw.biblioteca.MovieTest" name="shouldNotBeEqualToAnObjectOtherThanMovie" time="0.0" />
 
       <testcase classname="com.tw.biblioteca.MovieTest" name="shouldHaveEqualHashcodesIfMoviesAreEqual" time="0.0" />
 
-      <testcase classname="com.tw.biblioteca.MovieTest" name="shouldNotBeEqualToANullObject" time="0.001" />
+      <testcase classname="com.tw.biblioteca.MovieTest" name="shouldNotBeEqualToANullObject" time="0.0" />
 
       <testcase classname="com.tw.biblioteca.MovieTest" name="shouldNotBeEqualToAnotherMovieObjectWithDifferentName" time="0.0" />
 
@@ -2725,7 +3031,7 @@
       <system-err />
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="precise64" id="18" name="ParserTest" package="com.tw.biblioteca" tests="8" time="0.034" timestamp="2015-09-15T17:57:24">
+  <testsuite errors="0" failures="0" hostname="precise64" id="20" name="ParserTest" package="com.tw.biblioteca" tests="10" time="0.027" timestamp="2015-09-16T11:17:57">
       <properties>
           <property name="ant.project.invoked-targets" value="coverage" />
 
@@ -2823,7 +3129,7 @@
 
           <property name="java.vm.specification.version" value="1.7" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases6823588261248514948.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher5561825480509047337.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit1102397743750779972.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases8820723639605596199.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher1203033390155887245.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit6896958527236869637.properties" />
 
           <property name="java.home" value="/usr/lib/jvm/java-7-openjdk-amd64/jre" />
 
@@ -2863,17 +3169,21 @@
 
       </properties>
 
-      <testcase classname="com.tw.biblioteca.ParserTest" name="shouldListMoviesObjectIfOptionIsListMovies" time="0.0" />
+      <testcase classname="com.tw.biblioteca.ParserTest" name="shouldListMoviesObjectIfOptionIsListMovies" time="0.001" />
 
       <testcase classname="com.tw.biblioteca.ParserTest" name="shouldExitObjectIfOptionIsExit" time="0.003" />
 
-      <testcase classname="com.tw.biblioteca.ParserTest" name="shouldReturnReturnBookObjectIfOptionIsCheckinBook" time="0.001" />
+      <testcase classname="com.tw.biblioteca.ParserTest" name="shouldReturnReturnBookObjectIfOptionIsCheckinBook" time="0.0" />
 
-      <testcase classname="com.tw.biblioteca.ParserTest" name="shouldReturnBookListObjectIfOptionIsOne" time="0.002" />
+      <testcase classname="com.tw.biblioteca.ParserTest" name="shouldReturnBookListObjectIfOptionIsOne" time="0.0" />
 
       <testcase classname="com.tw.biblioteca.ParserTest" name="shouldReturnCheckoutObjectIfOptionIsCheckoutBook" time="0.0" />
 
+      <testcase classname="com.tw.biblioteca.ParserTest" name="shouldReturnLogoutObjectIfOptionIsLogout" time="0.0" />
+
       <testcase classname="com.tw.biblioteca.ParserTest" name="shouldReturnLoginObjectIfOptionIsLogin" time="0.0" />
+
+      <testcase classname="com.tw.biblioteca.ParserTest" name="shouldReturnCheckedOutBookDetailsObjectIfOptionIsCheckedOutBookDetails" time="0.0" />
 
       <testcase classname="com.tw.biblioteca.ParserTest" name="shouldReturnInvalidMenuItemObjectIfAnIncorrectOptionIsEntered" time="0.0" />
 
@@ -2884,7 +3194,7 @@
       <system-err />
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="precise64" id="19" name="SessionTest" package="com.tw.biblioteca" tests="1" time="0.007" timestamp="2015-09-15T17:57:24">
+  <testsuite errors="0" failures="0" hostname="precise64" id="21" name="SessionTest" package="com.tw.biblioteca" tests="2" time="0.01" timestamp="2015-09-16T11:17:57">
       <properties>
           <property name="ant.project.invoked-targets" value="coverage" />
 
@@ -2982,7 +3292,7 @@
 
           <property name="java.vm.specification.version" value="1.7" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases6823588261248514948.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher5561825480509047337.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit1102397743750779972.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases8820723639605596199.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher1203033390155887245.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit6896958527236869637.properties" />
 
           <property name="java.home" value="/usr/lib/jvm/java-7-openjdk-amd64/jre" />
 
@@ -3022,14 +3332,16 @@
 
       </properties>
 
-      <testcase classname="com.tw.biblioteca.SessionTest" name="shouldGetTheSessionDetails" time="0.001" />
+      <testcase classname="com.tw.biblioteca.SessionTest" name="shouldSetTheSessionDetails" time="0.0" />
+
+      <testcase classname="com.tw.biblioteca.SessionTest" name="shouldGetTheSessionDetails" time="0.0" />
 
       <system-out />
 
       <system-err />
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="precise64" id="20" name="UserMenuTest" package="com.tw.biblioteca" tests="1" time="0.011" timestamp="2015-09-15T17:57:24">
+  <testsuite errors="0" failures="0" hostname="precise64" id="22" name="UserTest" package="com.tw.biblioteca" tests="10" time="0.023" timestamp="2015-09-16T11:17:58">
       <properties>
           <property name="ant.project.invoked-targets" value="coverage" />
 
@@ -3127,7 +3439,7 @@
 
           <property name="java.vm.specification.version" value="1.7" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases6823588261248514948.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher5561825480509047337.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit1102397743750779972.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases8820723639605596199.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher1203033390155887245.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit6896958527236869637.properties" />
 
           <property name="java.home" value="/usr/lib/jvm/java-7-openjdk-amd64/jre" />
 
@@ -3167,150 +3479,7 @@
 
       </properties>
 
-      <testcase classname="com.tw.biblioteca.CustomerMenuTest" name="shouldReturnTheAvailableMenu" time="0.004" />
-
-      <system-out />
-
-      <system-err />
-
-  </testsuite>
-  <testsuite errors="0" failures="0" hostname="precise64" id="21" name="UserTest" package="com.tw.biblioteca" tests="9" time="0.02" timestamp="2015-09-15T17:57:24">
-      <properties>
-          <property name="ant.project.invoked-targets" value="coverage" />
-
-          <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
-
-          <property name="project.name" value="BibliotecaVersion1" />
-
-          <property name="sun.boot.library.path" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64" />
-
-          <property name="java.vm.version" value="24.79-b02" />
-
-          <property name="ant.library.dir" value="/usr/share/ant/lib" />
-
-          <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 3 2011" />
-
-          <property name="ant.java.version" value="1.7" />
-
-          <property name="java.vm.vendor" value="Oracle Corporation" />
-
-          <property name="java.vendor.url" value="http://java.oracle.com/" />
-
-          <property name="path.separator" value=":" />
-
-          <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
-
-          <property name="file.encoding.pkg" value="sun.io" />
-
-          <property name="user.country" value="US" />
-
-          <property name="sun.java.launcher" value="SUN_STANDARD" />
-
-          <property name="sun.os.patch.level" value="unknown" />
-
-          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
-
-          <property name="user.dir" value="/vagrant/IdeaProjects/BibliotecaVersion1" />
-
-          <property name="java.runtime.version" value="1.7.0_79-b14" />
-
-          <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
-
-          <property name="basedir" value="/vagrant/IdeaProjects/BibliotecaVersion1" />
-
-          <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/endorsed" />
-
-          <property name="os.arch" value="amd64" />
-
-          <property name="ant.project.default-target" value="coverage" />
-
-          <property name="java.io.tmpdir" value="/tmp" />
-
-          <property name="ant.core.lib" value="/usr/share/ant/lib/ant.jar" />
-
-          <property name="line.separator" value="&#xa;" />
-
-          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
-
-          <property name="os.name" value="Linux" />
-
-          <property name="ant.home" value="/usr/share/ant" />
-
-          <property name="ant.project.name" value="Biblioteca" />
-
-          <property name="sun.jnu.encoding" value="ISO-8859-1" />
-
-          <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib" />
-
-          <property name="ant.file.type.Biblioteca" value="file" />
-
-          <property name="java.class.version" value="51.0" />
-
-          <property name="java.specification.name" value="Java Platform API Specification" />
-
-          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
-
-          <property name="os.version" value="3.2.0-23-generic" />
-
-          <property name="package.name" value="com.tw.biblioteca" />
-
-          <property name="ant.file" value="/vagrant/IdeaProjects/BibliotecaVersion1/build.xml" />
-
-          <property name="user.home" value="/home/vagrant" />
-
-          <property name="user.timezone" value="" />
-
-          <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
-
-          <property name="file.encoding" value="ISO-8859-1" />
-
-          <property name="java.specification.version" value="1.7" />
-
-          <property name="user.name" value="vagrant" />
-
-          <property name="java.class.path" value="/vagrant/IdeaProjects/BibliotecaVersion1/instrumented:/vagrant/IdeaProjects/BibliotecaVersion1/lib/junit-4.11.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/hamcrest-core-1.3.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/mockito-all-1.9.5.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/system-rules-1.12.0-javadoc.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/system-rules-1.12.0-sources.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/system-rules-1.12.0.jar:/vagrant/IdeaProjects/BibliotecaVersion1/out:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/cobertura-2.1.1-javadoc.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/cobertura-2.1.1-sources.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/cobertura-2.1.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/asm-5.0.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/asm-analysis-5.0.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/asm-commons-5.0.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/asm-tree-5.0.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/asm-util-5.0.1.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/commons-lang3-3.3.2.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/hamcrest-core-1.3.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/jaxen-1.1.4.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/jetty-6.1.14.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/jetty-util-6.1.14.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/junit-4.11.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/logback-classic-1.0.13.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/logback-core-1.0.13.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/oro-2.0.8.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/servlet-api-2.5-6.1.14.jar:/vagrant/IdeaProjects/BibliotecaVersion1/lib/cobertura-2.1.1/lib/slf4j-api-1.7.5.jar:/usr/share/java/ant-launcher-1.8.2.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
-
-          <property name="java.vm.specification.version" value="1.7" />
-
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junittestcases6823588261248514948.properties filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/vagrant/IdeaProjects/BibliotecaVersion1/reports/IGNORETHIS.xml crashfile=/vagrant/IdeaProjects/BibliotecaVersion1/junitvmwatcher5561825480509047337.properties propsfile=/vagrant/IdeaProjects/BibliotecaVersion1/junit1102397743750779972.properties" />
-
-          <property name="java.home" value="/usr/lib/jvm/java-7-openjdk-amd64/jre" />
-
-          <property name="sun.arch.data.model" value="64" />
-
-          <property name="java.specification.vendor" value="Oracle Corporation" />
-
-          <property name="user.language" value="en" />
-
-          <property name="main.name" value="Application" />
-
-          <property name="ant.file.Biblioteca" value="/vagrant/IdeaProjects/BibliotecaVersion1/build.xml" />
-
-          <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
-
-          <property name="java.vm.info" value="mixed mode" />
-
-          <property name="java.version" value="1.7.0_79" />
-
-          <property name="java.ext.dirs" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext" />
-
-          <property name="sun.boot.class.path" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/classes" />
-
-          <property name="java.vendor" value="Oracle Corporation" />
-
-          <property name="file.separator" value="/" />
-
-          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
-
-          <property name="sun.cpu.endian" value="little" />
-
-          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
-
-          <property name="ant.file.type" value="file" />
-
-          <property name="sun.cpu.isalist" value="" />
-
-      </properties>
+      <testcase classname="com.tw.biblioteca.UserTest" name="shouldGetUsername" time="0.001" />
 
       <testcase classname="com.tw.biblioteca.UserTest" name="shouldBeEqualToItself" time="0.0" />
 
@@ -3322,7 +3491,7 @@
 
       <testcase classname="com.tw.biblioteca.UserTest" name="shouldHaveSameHashCodeForEqualUsers" time="0.0" />
 
-      <testcase classname="com.tw.biblioteca.UserTest" name="shouldGetTheRoleOfTheUser" time="0.001" />
+      <testcase classname="com.tw.biblioteca.UserTest" name="shouldGetTheRoleOfTheUser" time="0.0" />
 
       <testcase classname="com.tw.biblioteca.UserTest" name="shouldNotBeEqualToAnotherUserWithDifferentUsername" time="0.0" />
 

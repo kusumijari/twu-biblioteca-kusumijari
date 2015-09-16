@@ -13,6 +13,8 @@ public class Logout implements MenuItem{
     @Override
     public void execute() {
         stopSession();
+        ConsoleOutput consoleOutput = new ConsoleOutput("Successful Logout.");
+        consoleOutput.displayMessage();
     }
 
     public boolean stopSession() {
