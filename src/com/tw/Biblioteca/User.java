@@ -3,12 +3,16 @@
 package com.tw.biblioteca;
 
 public class User {
-    private String role, username, password;
+    private String role, username, password, name, email;
+    private int phoneNumber;
 
-    public User(String role, String username, String password) {
+    public User(String role, String username, String password, String name, String email, int phoneNumber) {
         this.role = role;
         this.username = username;
         this.password = password;
+        this.name = name;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
     }
 
     @Override
@@ -47,5 +51,10 @@ public class User {
 
     public String getUsername() {
         return username;
+    }
+
+    @Override
+    public String toString(){
+        return ("Name:" + name + "\nEmail:" + email + "\nPhone Number:" + phoneNumber);
     }
 }

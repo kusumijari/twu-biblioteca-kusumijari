@@ -13,7 +13,7 @@ public class CheckedoutBookDetailsTest {
     public void shouldFormatTheBookDetails() {
         BookLibrary bookLibrary = new BookLibrary();
         Book book = new Book("Harry Potter", "author", 0);
-        Session session = new Session(new User("Customer", "123-4567", "password1"));
+        Session session = new Session(new User("Customer", "123-4567", "password1", "abc", "abc@mail.com", 12345));
 
         bookLibrary.removeBook(book, session);
         CheckedoutBookDetails checkedoutBookDetails = new CheckedoutBookDetails(bookLibrary);
@@ -25,7 +25,7 @@ public class CheckedoutBookDetailsTest {
     public void shouldDisplayTheBookList() {
         BookLibrary bookLibrary = new BookLibrary();
         Book book = new Book("Harry Potter", "author", 0);
-        Session session = new Session(new User("Customer", "123-4567", "password1"));
+        Session session = new Session(new User("Customer", "123-4567", "password1", "abc", "abc@mail.com", 12345));
         final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
 

@@ -8,21 +8,21 @@ public class UserTest {
 
     @Test
     public void shouldBeEqualToItself() {
-        User user = new User("Customer", "123-4567", "password");
+        User user = new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345);
 
         assertEquals(user, user);
     }
 
     @Test
     public void shouldNotBeEqualToNull() {
-        User user = new User("Customer", "123-4567", "password");
+        User user = new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345);
 
         assertNotEquals(user, null);
     }
 
     @Test
     public void shouldNotBeEqualToAnyOtherObject() {
-        User user = new User("Customer", "123-4567", "password");
+        User user = new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345);
 
         assertNotEquals(user, "not a user");
     }
@@ -30,31 +30,31 @@ public class UserTest {
 
     @Test
     public void shouldBeEqualToAnotherUserWithSameUsername() {
-        User user1 = new User("Customer", "123-4567", "password");
-        User user2 = new User("Customer", "123-4567", "password");
+        User user1 = new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345);
+        User user2 = new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345);
 
         assertEquals(user1, user2);
     }
 
     @Test
     public void shouldNotBeEqualToAnotherUserWithDifferentUsername() {
-        User user1 = new User("Customer", "123-4568", "password");
-        User user2 = new User("Customer", "123-4567", "password");
+        User user1 = new User("Customer", "123-4568", "password", "abc" , "abc@mail.com", 12345);
+        User user2 = new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345);
 
         assertNotEquals(user1, user2);
     }
 
     @Test
     public void shouldGetTheRoleOfTheUser() {
-        User user = new User("Customer", "123-4567", "password");
+        User user = new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345);
 
         assertEquals("Customer", user.getRole());
     }
 
     @Test
     public void shouldHaveSameHashCodeForEqualUsers () {
-        User user1 = new User("Customer", "123-4568", "password");
-        User user2 = new User("Customer", "123-4568", "password");
+        User user1 = new User("Customer", "123-4568", "password", "abc" , "abc@mail.com", 12345);
+        User user2 = new User("Customer", "123-4568", "password", "abc" , "abc@mail.com", 12345);
 
         assertEquals(user1.hashCode(), user2.hashCode());
 
@@ -62,8 +62,8 @@ public class UserTest {
 
     @Test
     public void shouldReturnTrueIfPasswordIsCorrect() {
-        User user1 = new User("Customer", "123-4567", "password");
-        User user2 = new User("Customer", "123-4567", "password");
+        User user1 = new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345);
+        User user2 = new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345);
 
         assertTrue(user1.authenticatePassword(user2));
     }
@@ -71,16 +71,23 @@ public class UserTest {
 
     @Test
     public void shouldReturnFalseIfPasswordIsIncorrect() {
-        User user1 = new User("Customer", "123-4567", "password");
-        User user2 = new User("Customer", "123-4567", "password1");
+        User user1 = new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345);
+        User user2 = new User("Customer", "123-4567", "password1", "abc", "abc@mail.com", 12345);
 
         assertFalse(user1.authenticatePassword(user2));
     }
 
     @Test
     public void shouldGetUsername() {
-        User user = new User("Customer", "123-4567", "password1");
+        User user = new User("Customer", "123-4567", "password1", "abc", "abc@mail.com", 12345);
 
         assertEquals("123-4567", user.getUsername());
+    }
+
+    @Test
+    public void shouldReturnUserDetails() {
+        User user = new User("Customer", "123-4567", "password1", "abc", "abc@mail.com", 12345);
+
+        assertEquals("Name:abc\nEmail:abc@mail.com\nPhone Number:12345", user.toString());
     }
 }

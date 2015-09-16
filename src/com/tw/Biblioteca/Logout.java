@@ -19,7 +19,7 @@ public class Logout implements MenuItem{
     }
 
     public User stopSession() {
-        User defaultUser = new User("default", "nousername", "nopassword");
+        User defaultUser = new User("default", "nousername", "nopassword", "noname", "noemail", 0);
 
         return session.setUser(defaultUser);
     }

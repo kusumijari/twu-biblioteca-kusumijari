@@ -19,7 +19,7 @@ public class CheckinBookTest {
     public void shouldAcceptChoiceOfBookFromUser() {
         BookLibrary bookLibrary = new BookLibrary();
         ConsoleInput mockConsoleInput = mock(ConsoleInput.class);
-        User user = new User("Customer", "123-4567", "password");
+        User user = new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345);
         Session session = new Session(user);
         CheckinBook checkinBook = new CheckinBook(bookLibrary, mockConsoleInput, session);
 
@@ -32,7 +32,7 @@ public class CheckinBookTest {
     public void shouldReturnTrueIfTheBookIsInTheCheckedOutList() {
         BookLibrary bookLibrary = new BookLibrary();
         ConsoleInput mockConsoleInput = mock(ConsoleInput.class);
-        User user = new User("Customer", "123-4567", "password");
+        User user = new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345);
         Session session = new Session(user);
         CheckinBook checkinBook = new CheckinBook(bookLibrary, mockConsoleInput, session);
         Book bookToBeReturned = new Book("Harry Potter", "author", 0);
@@ -47,7 +47,7 @@ public class CheckinBookTest {
     public void shouldReturnFalseIfTheBookIsNotInTheCheckedOutList() {
         BookLibrary bookLibrary = new BookLibrary();
         ConsoleInput mockConsoleInput = mock(ConsoleInput.class);
-        User user = new User("Customer", "123-4567", "password");
+        User user = new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345);
         Session session = new Session(user);
         CheckinBook checkinBook = new CheckinBook(bookLibrary, mockConsoleInput, session);
         Book bookToBeReturned = new Book("Inferno", "author", 0);
@@ -63,7 +63,7 @@ public class CheckinBookTest {
     public void shouldReturnSuccessfulMessageIfTheReturnWasSuccessful() {
         BookLibrary bookLibrary = mock(BookLibrary.class);
         ConsoleInput mockConsoleInput = mock(ConsoleInput.class);
-        User user = new User("Customer", "123-4567", "password");
+        User user = new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345);
         Session session = new Session(user);
         CheckinBook checkinBook = new CheckinBook(bookLibrary, mockConsoleInput, session);
         CheckinBook spy = spy(checkinBook);
@@ -83,7 +83,7 @@ public class CheckinBookTest {
     public void shouldReturnUnsuccessfulMessageIfTheReturnWasUnuccessful() {
         BookLibrary bookLibrary = mock(BookLibrary.class);
         ConsoleInput mockConsoleInput = mock(ConsoleInput.class);
-        User user = new User("Customer", "123-4567", "password");
+        User user = new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345);
         Session session = new Session(user);
         CheckinBook checkinBook = new CheckinBook(bookLibrary, mockConsoleInput, session);
         CheckinBook spy = spy(checkinBook);

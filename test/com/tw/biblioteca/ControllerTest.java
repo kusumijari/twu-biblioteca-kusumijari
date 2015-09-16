@@ -9,7 +9,7 @@ public class ControllerTest {
 
     @Test
     public void shouldDisplayTheMenu() {
-        Session session = new Session(new User("default", "nousername", "nopassword"));
+        Session session = new Session(new User("default", "nousername", "nopassword", "abc", "abc@mail.com", 12345));
         ConsoleOutput consoleOutput = mock(ConsoleOutput.class);
         Controller controller = new Controller(new BookLibrary(), new MovieLibrary(), session);
 
@@ -20,7 +20,7 @@ public class ControllerTest {
 
     @Test
     public void  shouldAcceptInput() {
-        Session session = new Session(new User("default", "nousername", "nopassword"));
+        Session session = new Session(new User("default", "nousername", "nopassword", "abc", "abc@mail.com", 12345));
         ConsoleInput consoleInput = mock(ConsoleInput.class);
         Controller controller = new Controller(new BookLibrary(), new MovieLibrary(), session);
 
@@ -31,7 +31,7 @@ public class ControllerTest {
 
     @Test
     public void shouldCreateTheMenuObject() {
-        Session session = new Session(new User("default", "nousername", "nopassword"));
+        Session session = new Session(new User("default", "nousername", "nopassword", "abc", "abc@mail.com", 12345));
         Parser parser = mock(Parser.class);
         Controller controller = new Controller(new BookLibrary(), new MovieLibrary(), session);
 
@@ -42,7 +42,7 @@ public class ControllerTest {
 
     @Test
     public void shouldExexuteTheMenuObject() {
-        Session session = new Session(new User("default", "nousername", "nopassword"));
+        Session session = new Session(new User("default", "nousername", "nopassword", "abc", "abc@mail.com", 12345));
         MenuItem menuItem = mock(MenuItem.class);
         Controller controller = new Controller(new BookLibrary(), new MovieLibrary(), session);
 
@@ -53,7 +53,7 @@ public class ControllerTest {
 
     @Test
     public void shouldReturnDefaultMenu() {
-        Session session = new Session(new User("default", "nousername", "nopassword"));
+        Session session = new Session(new User("default", "nousername", "nopassword", "abc", "abc@mail.com", 12345));
         Controller controller = new Controller(new BookLibrary(), new MovieLibrary(), session);
 
         assertEquals(DefaultMenu.class, controller.MenuItem().getClass());
@@ -61,7 +61,7 @@ public class ControllerTest {
 
     @Test
     public void shouldReturnUserMenuIfRoleIsUser() {
-        Session session = new Session(new User("Customer", "nousername", "nopassword"));
+        Session session = new Session(new User("Customer", "nousername", "nopassword", "abc", "abc@mail.com", 12345));
         Controller controller = new Controller(new BookLibrary(), new MovieLibrary(), session);
 
         assertEquals(CustomerMenu.class, controller.MenuItem().getClass());
@@ -69,7 +69,7 @@ public class ControllerTest {
 
     @Test
     public void shouldReturnLibrarianMenuIfRoleIsLibrarian() {
-        Session session = new Session(new User("Librarian", "nousername", "nopassword"));
+        Session session = new Session(new User("Librarian", "nousername", "nopassword", "abc", "abc@mail.com", 12345));
         Controller controller = new Controller(new BookLibrary(), new MovieLibrary(), session);
 
         assertEquals(LibrarianMenu.class, controller.MenuItem().getClass());

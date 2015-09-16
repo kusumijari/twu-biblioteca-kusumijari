@@ -18,7 +18,7 @@ public class CheckoutBookTest {
     public void shouldAcceptChoiceOfBookFromTheUser() {
         BookLibrary bookLibrary = new BookLibrary();
         ConsoleInput mockConsoleInput = mock(ConsoleInput.class);
-        Session session = new Session(new User("Customer", "123-4567", "password1"));
+        Session session = new Session(new User("Customer", "123-4567", "password1", "abc", "abc@mail.com", 12345));
         CheckoutBook checkoutBook = new CheckoutBook(bookLibrary, mockConsoleInput, session);
 
         when(mockConsoleInput.getInput()).thenReturn("Harry Potter");
@@ -30,7 +30,7 @@ public class CheckoutBookTest {
     public void shouldReturnTrueIfTheBookExists() {
         BookLibrary bookLibrary = new BookLibrary();
         ConsoleInput mockConsoleInput = new ConsoleInput();
-        Session session = new Session(new User("Customer", "123-4567", "password1"));
+        Session session = new Session(new User("Customer", "123-4567", "password1", "abc", "abc@mail.com", 12345));
         CheckoutBook checkoutBook = new CheckoutBook(bookLibrary, mockConsoleInput, session);
         Book book = new Book("Harry Potter", "author", 0);
 
@@ -41,7 +41,7 @@ public class CheckoutBookTest {
     public void shouldReturnFalseIfTheBookDoesntExist() {
         BookLibrary bookLibrary = new BookLibrary();
         ConsoleInput mockConsoleInput = new ConsoleInput();
-        Session session = new Session(new User("Customer", "123-4567", "password1"));
+        Session session = new Session(new User("Customer", "123-4567", "password1", "abc", "abc@mail.com", 12345));
         CheckoutBook checkoutBook = new CheckoutBook(bookLibrary, mockConsoleInput,session);
         Book book = new Book("Inferno", "author", 0);
 
@@ -53,7 +53,7 @@ public class CheckoutBookTest {
     public void shouldReturnSuccessMessageIfBookIsAvailable() {
         BookLibrary bookLibrary = mock(BookLibrary.class);
         ConsoleInput mockConsoleInput = mock(ConsoleInput.class);
-        Session session = new Session(new User("Customer", "123-4567", "password1"));
+        Session session = new Session(new User("Customer", "123-4567", "password1", "abc", "abc@mail.com", 12345));
         CheckoutBook checkoutBook = new CheckoutBook(bookLibrary, mockConsoleInput,session);
         CheckoutBook spy = spy(checkoutBook);
         when(spy.acceptBookChoice()).thenReturn("Harry Potter");
@@ -73,7 +73,7 @@ public class CheckoutBookTest {
     public void shouldReturnUnsuccessMessageIfBookIsUnavailable() {
         BookLibrary bookLibrary = mock(BookLibrary.class);
         ConsoleInput mockConsoleInput = mock(ConsoleInput.class);
-        Session session = new Session(new User("Customer", "123-4567", "password1"));
+        Session session = new Session(new User("Customer", "123-4567", "password1", "abc", "abc@mail.com", 12345));
         CheckoutBook checkoutBook = new CheckoutBook(bookLibrary, mockConsoleInput,session);
         CheckoutBook spy = spy(checkoutBook);
         when(spy.acceptBookChoice()).thenReturn("Inferno");

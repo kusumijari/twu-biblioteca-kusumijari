@@ -21,7 +21,7 @@ public class BookLibraryTest {
     public void shouldRemoveASpecifiedBookFromTheLibrary() {
         BookLibrary bookLibrary = new BookLibrary();
         Book book = new Book("Harry Potter", "author", 0);
-        User user = new User("Customer", "123-4567", "password");
+        User user = new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345);
         Session session = new Session(user);
 
         assertTrue(bookLibrary.removeBook(book, session));
@@ -31,7 +31,7 @@ public class BookLibraryTest {
     public void shouldCheckThatASpecifiedBookInTheLibraryExists() {
         BookLibrary bookLibrary = new BookLibrary();
         Book book = new Book("Harry Potter", "author", 0);
-        User user = new User("Customer", "123-4567", "password");
+        User user = new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345);
         Session session = new Session(user);
 
         assertTrue(bookLibrary.removeBook(book, session));
@@ -41,7 +41,7 @@ public class BookLibraryTest {
     public void shouldReturnFalseIfASpecifiedBookInTheDoesNotLibraryExist() {
         BookLibrary bookLibrary = new BookLibrary();
         Book book = new Book("Inferno", "author", 0);
-        User user = new User("Customer", "123-4567", "password");
+        User user = new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345);
         Session session = new Session(user);
 
         assertFalse(bookLibrary.removeBook(book, session));
@@ -51,7 +51,7 @@ public class BookLibraryTest {
     public void shouldNotRemoveABookIfItDoesNotExist() {
         BookLibrary bookLibrary = new BookLibrary();
         Book book = new Book("Inferno", "author", 0);
-        User user = new User("Customer", "123-4567", "password");
+        User user = new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345);
         Session session = new Session(user);
 
         assertFalse(bookLibrary.removeBook(book, session));
@@ -61,7 +61,7 @@ public class BookLibraryTest {
     public void shouldAddBookThatHasBeenRemovedToUnavailableList() {
         BookLibrary bookLibrary = new BookLibrary();
         Book book = new Book("Harry Potter", "author", 0);
-        User user = new User("Customer", "123-4567", "password");
+        User user = new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345);
         Session session = new Session(user);
 
         assertTrue(bookLibrary.removeBook(book, session));
@@ -71,7 +71,7 @@ public class BookLibraryTest {
     public void shouldAddTheReturnedBookToTheBookList() {
         BookLibrary bookLibrary = new BookLibrary();
         Book book = new Book("Harry Potter", "author", 0);
-        User user = new User("Customer", "123-4567", "password");
+        User user = new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345);
         Session session = new Session(user);
 
         bookLibrary.removeBook(book, session);
@@ -83,7 +83,7 @@ public class BookLibraryTest {
     public void shouldReturnFalseIfTheReturnedBookIsNotABookOfTheLibrary() {
         BookLibrary bookLibrary = new BookLibrary();
         Book book = new Book("inferno", "author", 0);
-        User user = new User("Customer", "123-4567", "password");
+        User user = new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345);
         Session session = new Session(user);
 
         assertFalse(bookLibrary.returnBook(book, session));
@@ -93,7 +93,7 @@ public class BookLibraryTest {
     public void shouldAddBookAndUserToHashmap(){
         BookLibrary bookLibrary = new BookLibrary();
         Book book = new Book("Harry Potter", "author", 0);
-        Session session = new Session(new User("Customer", "123-4567", "password"));
+        Session session = new Session(new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345));
         HashMap<Book, User> hashMap = new HashMap<Book, User>();
         hashMap.put(book, session.getUser());
 
@@ -104,7 +104,7 @@ public class BookLibraryTest {
     public void shouldRemoveEntryFromBooksDetailsOnCheckinOfBook() {
         BookLibrary bookLibrary = new BookLibrary();
         Book book = new Book("Harry Potter", "author", 0);
-        Session session = new Session(new User("Customer", "123-4567", "password"));
+        Session session = new Session(new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345));
         HashMap<Book, User> hashMap = new HashMap<Book, User>();
 
         bookLibrary.removeBook(book, session);
@@ -116,7 +116,7 @@ public class BookLibraryTest {
     public void shouldReturnBookOnlyIfItsTheUserWhoCheckedItOut() {
         BookLibrary bookLibrary = new BookLibrary();
         Book book = new Book("Harry Potter", "author", 0);
-        Session session = new Session(new User("Customer", "123-4567", "password"));
+        Session session = new Session(new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345));
 
         bookLibrary.removeBook(book, session);
 
@@ -127,8 +127,8 @@ public class BookLibraryTest {
     public void shouldReturnFalseIfITheUserWhoCheckedoutTheBookIsNotTheOneWhoReturnsTheBook() {
         BookLibrary bookLibrary = new BookLibrary();
         Book book = new Book("Harry Potter", "author", 0);
-        Session session1 = new Session(new User("Customer", "123-4567", "password1"));
-        Session session2 = new Session(new User("Customer", "222-2222", "password2"));
+        Session session1 = new Session(new User("Customer", "123-4567", "password1", "abc", "abc@mail.com", 12345));
+        Session session2 = new Session(new User("Customer", "222-2222", "password2", "abc", "abc@mail.com", 12345));
 
         bookLibrary.removeBook(book, session1);
 
@@ -139,7 +139,7 @@ public class BookLibraryTest {
     public void shouldReturnBookIfItIsReturnedByTheCorrectUser() {
         BookLibrary bookLibrary = new BookLibrary();
         Book book = new Book("Harry Potter", "author", 0);
-        Session session1 = new Session(new User("Customer", "123-4567", "password1"));
+        Session session1 = new Session(new User("Customer", "123-4567", "password1", "abc", "abc@mail.com", 12345));
         bookLibrary.removeBook(book, session1);
 
         assertTrue(bookLibrary.returnBook(book, session1));
@@ -149,8 +149,8 @@ public class BookLibraryTest {
     public void shouldNotReturnBookIfItIsReturnedByTheIncorrectUser() {
         BookLibrary bookLibrary = new BookLibrary();
         Book book = new Book("Harry Potter", "author", 0);
-        Session session1 = new Session(new User("Customer", "123-4567", "password1"));
-        Session session2 = new Session(new User("Customer", "222-2222", "password2"));
+        Session session1 = new Session(new User("Customer", "123-4567", "password1", "abc", "abc@mail.com", 12345));
+        Session session2 = new Session(new User("Customer", "222-2222", "password2", "abc", "abc@mail.com", 12345));
 
         bookLibrary.removeBook(book, session1);
 
