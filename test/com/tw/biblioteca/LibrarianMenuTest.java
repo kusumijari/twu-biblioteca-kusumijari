@@ -10,6 +10,6 @@ public class LibrarianMenuTest {
     public void shouldReturnTheAvailableMenu() {
         LibrarianMenu librarianMenu = new LibrarianMenu();
 
-        assertEquals("Librarian Menu\nList Books\nList Movies\nCheckout Movie\nCheckout Book\nCheckin Book\nBook Details\nLogout\nExit\n", librarianMenu.toString());
+        assertEquals("Librarian Menu\nList Books\nList Movies\nCheckout Movie\nCheckout Book\nCheckin Book\nCheckedout Book Details\nLogout\nExit\n", librarianMenu.toString());
     }
 }

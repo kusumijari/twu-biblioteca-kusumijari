@@ -12,7 +12,7 @@ public class LibrarianMenu implements Menu{
         librarianMenu.add("Checkout Movie");
         librarianMenu.add("Checkout Book");
         librarianMenu.add("Checkin Book");
-        librarianMenu.add("Book Details");
+        librarianMenu.add("Checkedout Book Details");
         librarianMenu.add("Logout");
         librarianMenu.add("Exit");
     }

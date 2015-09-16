@@ -41,6 +41,9 @@ public class Parser {
             else if(option.equals("Logout")) {
                 return new Logout(session);
             }
+            else if(option.equals("Checkedout Book Details")){
+                return new CheckedoutBookDetails(bookLibrary);
+            }
         return new InvalidMenuItem();
     }
 }
