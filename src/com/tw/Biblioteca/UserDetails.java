@@ -2,7 +2,7 @@
 
 package com.tw.biblioteca;
 
-public class UserDetails {
+public class UserDetails implements MenuItem{
 
     private Session session;
 
@@ -12,5 +12,10 @@ public class UserDetails {
 
     public String getDetails() {
         return session.getUser().toString();
+    }
+
+    public void execute() {
+        ConsoleOutput consoleOutput = new ConsoleOutput(getDetails());
+        consoleOutput.displayMessage();
     }
 }
