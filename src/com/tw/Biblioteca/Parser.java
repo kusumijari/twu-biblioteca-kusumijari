@@ -24,7 +24,7 @@ public class Parser {
                 return new CheckoutBook(bookLibrary, consoleInput,session);
             }
             else if(option.equals("Checkin Book")) {
-                return new CheckinBook(bookLibrary, new ConsoleInput());
+                return new CheckinBook(bookLibrary, new ConsoleInput(),session);
             }
             else if(option.equals("List Movies")) {
                 return new ListMovies(movieLibrary);

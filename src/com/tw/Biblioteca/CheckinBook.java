@@ -6,10 +6,12 @@ public class CheckinBook implements MenuItem{
     private BookLibrary bookLibrary;
     private ConsoleInput consoleInput;
     private Book book;
+    private Session session;
 
-    public CheckinBook(BookLibrary bookLibrary, ConsoleInput consoleInput) {
+    public CheckinBook(BookLibrary bookLibrary, ConsoleInput consoleInput, Session session) {
         this.bookLibrary = bookLibrary;
         this.consoleInput = consoleInput;
+        this.session = session;
     }
 
 
@@ -31,6 +33,6 @@ public class CheckinBook implements MenuItem{
     }
 
     public boolean hasBeenReturned(Book bookToBeReturned) {
-        return bookLibrary.returnBook(bookToBeReturned);
+        return bookLibrary.returnBook(bookToBeReturned, session);
     }
 }

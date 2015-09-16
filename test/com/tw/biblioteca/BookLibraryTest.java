@@ -76,15 +76,17 @@ public class BookLibraryTest {
 
         bookLibrary.removeBook(book, session);
 
-        assertTrue(bookLibrary.returnBook(book));
+        assertTrue(bookLibrary.returnBook(book, session));
     }
 
     @Test
     public void shouldReturnFalseIfTheReturnedBookIsNotABookOfTheLibrary() {
         BookLibrary bookLibrary = new BookLibrary();
         Book book = new Book("inferno", "author", 0);
+        User user = new User("Customer", "123-4567", "password");
+        Session session = new Session(user);
 
-        assertFalse(bookLibrary.returnBook(book));
+        assertFalse(bookLibrary.returnBook(book, session));
     }
 
     @Test
@@ -140,6 +142,18 @@ public class BookLibraryTest {
         Session session1 = new Session(new User("Customer", "123-4567", "password1"));
         bookLibrary.removeBook(book, session1);
 
-        assertTrue(bookLibrary.returnBook(book));
+        assertTrue(bookLibrary.returnBook(book, session1));
+    }
+
+    @Test
+    public void shouldNotReturnBookIfItIsReturnedByTheIncorrectUser() {
+        BookLibrary bookLibrary = new BookLibrary();
+        Book book = new Book("Harry Potter", "author", 0);
+        Session session1 = new Session(new User("Customer", "123-4567", "password1"));
+        Session session2 = new Session(new User("Customer", "222-2222", "password2"));
+
+        bookLibrary.removeBook(book, session1);
+
+        assertFalse(bookLibrary.returnBook(book, session2));
     }
 }

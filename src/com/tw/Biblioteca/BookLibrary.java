@@ -40,8 +40,8 @@ public class BookLibrary {
         return false;
     }
 
-    public boolean returnBook(Book returnedBook) {
-        if(checkoutOutBooks.contains(returnedBook)) {
+    public boolean returnBook(Book returnedBook, Session session) {
+        if(checkoutOutBooks.contains(returnedBook) && isCorrectUser(returnedBook, session)) {
             availableBooks.add(checkoutOutBooks.get(checkoutOutBooks.indexOf(returnedBook)));
             checkoutOutBooks.remove(returnedBook);
             removeBookAndUserFromHashmap(returnedBook);
