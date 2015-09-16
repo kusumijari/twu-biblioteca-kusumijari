@@ -88,6 +88,6 @@ public class UserTest {
     public void shouldReturnUserDetails() {
         User user = new User("Customer", "123-4567", "password1", "abc", "abc@mail.com", 12345);
 
-        assertEquals("Name:abc\nEmail:abc@mail.com\nPhone Number:12345", user.toString());
+        assertEquals("Name:abc\tEmail:abc@mail.com\tPhone Number:12345", user.toString());
     }
 }

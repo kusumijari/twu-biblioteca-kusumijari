@@ -150,4 +150,5 @@ public class ParserTest {
 
         assertEquals(InvalidMenuItem.class, parser.createMenuItem().getClass());
     }
+
 }

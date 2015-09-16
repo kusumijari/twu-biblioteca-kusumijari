@@ -55,6 +55,6 @@ public class User {
 
     @Override
     public String toString(){
-        return ("Name:" + name + "\nEmail:" + email + "\nPhone Number:" + phoneNumber);
+        return ("Name:" + name + "\tEmail:" + email + "\tPhone Number:" + phoneNumber);
     }
 }
