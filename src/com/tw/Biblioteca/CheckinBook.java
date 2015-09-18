@@ -18,6 +18,7 @@ public class CheckinBook implements MenuItem{
 
 
     public String bookChoice() {
+        checkinChoicePrompt();
         return consoleInput.getInput();
     }
 
@@ -36,5 +37,10 @@ public class CheckinBook implements MenuItem{
 
     public boolean hasBeenReturned(Book bookToBeReturned) {
         return bookLibrary.returnBook(bookToBeReturned, session);
+    }
+
+    public void checkinChoicePrompt() {
+        ConsoleOutput consoleOutput = new ConsoleOutput("Enter the book you want to check in:");
+        consoleOutput.displayMessage();
     }
 }

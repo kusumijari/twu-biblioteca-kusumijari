@@ -78,7 +78,7 @@ public class CheckinBookTest {
 
         checkinBook.execute();
 
-        assertEquals("Thank you for returning the book.\n", outContent.toString());
+        assertEquals("Enter the book you want to check in:\nThank you for returning the book.\n", outContent.toString());
         System.setOut(System.out);
     }
 
@@ -98,7 +98,24 @@ public class CheckinBookTest {
 
         checkinBook.execute();
 
-        assertEquals("That is not a valid book to return.\n", outContent.toString());
+        assertEquals("Enter the book you want to check in:\nThat is not a valid book to return.\n", outContent.toString());
         System.setOut(System.out);
+    }
+
+    @Test
+    public void shouldDisplayMessageToAskForCheckoutBook() {
+        BookLibrary bookLibrary = new BookLibrary();
+        ConsoleInput consoleInput = new ConsoleInput();
+        User user = new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345);
+        Session session = new Session(user);
+        CheckinBook checkinBook = new CheckinBook(bookLibrary, consoleInput, session);
+        ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(outContent));
+
+        checkinBook.checkinChoicePrompt();
+
+        assertEquals("Enter the book you want to check in:\n", outContent.toString());
+        System.setOut(System.out);
+
     }
 }
