@@ -67,7 +67,7 @@ public class CheckoutBookTest {
 
         checkoutBook.execute();
 
-        assertEquals("Enter the book you want to checkout.\nThank you! Enjoy the book.\n", outContent.toString());
+        assertEquals("Enter the book you want to checkout:\nThank you! Enjoy the book.\n", outContent.toString());
         System.setOut(System.out);
     }
 

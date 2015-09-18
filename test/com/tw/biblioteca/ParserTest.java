@@ -136,7 +136,7 @@ public class ParserTest {
         MovieLibrary movieLibrary = new MovieLibrary();
         Parser parser = new Parser("Checkedout Book Details", bookLibrary, movieLibrary, new Session(new User("Librarian", "111-1111", PASSWORD, NAME, EMAIL, PHONENUMBER)));
 
-        assertEquals(CheckedoutBookDetails.class, parser.createMenuItem().getClass());
+        assertEquals(CheckedoutBookStatus.class, parser.createMenuItem().getClass());
     }
 
     @Test

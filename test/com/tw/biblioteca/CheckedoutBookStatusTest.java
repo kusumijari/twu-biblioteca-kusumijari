@@ -7,7 +7,7 @@ import java.io.PrintStream;
 
 import static org.junit.Assert.assertEquals;
 
-public class CheckedoutBookDetailsTest {
+public class CheckedoutBookStatusTest {
 
     private static final String AUTHOR = "auhtor";
     private static final int YEAROFPUBLICATION = 0;
@@ -19,9 +19,9 @@ public class CheckedoutBookDetailsTest {
         Session session = new Session(new User("Customer", "123-4567", "password1", "abc", "abc@mail.com", 12345));
 
         bookLibrary.removeBook(book, session);
-        CheckedoutBookDetails checkedoutBookDetails = new CheckedoutBookDetails(bookLibrary);
+        CheckedoutBookStatus checkedoutBookStatus = new CheckedoutBookStatus(bookLibrary);
 
-        assertEquals("Book\t-\tUser\nHarry Potter\tJ. K. Rowling\t1997\t-\t123-4567\n", checkedoutBookDetails.toString());
+        assertEquals("Book\t-\tUser\nHarry Potter\tJ. K. Rowling\t1997\t-\t123-4567\n", checkedoutBookStatus.toString());
     }
 
     @Test
@@ -33,8 +33,8 @@ public class CheckedoutBookDetailsTest {
         System.setOut(new PrintStream(outContent));
 
         bookLibrary.removeBook(book, session);
-        CheckedoutBookDetails checkedoutBookDetails = new CheckedoutBookDetails(bookLibrary);
-        checkedoutBookDetails.execute();
+        CheckedoutBookStatus checkedoutBookStatus = new CheckedoutBookStatus(bookLibrary);
+        checkedoutBookStatus.execute();
 
         assertEquals("Book\t-\tUser\nHarry Potter\tJ. K. Rowling\t1997\t-\t123-4567\n\n", outContent.toString());
         System.setOut(System.out);
