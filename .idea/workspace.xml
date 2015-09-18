@@ -5,133 +5,101 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="528a0a30-9017-42bc-b3cb-0d89ad771639" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tw/biblioteca/CheckedoutBookStatus.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.BookLibraryTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.BookTest.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.CheckedoutBookDetailsTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.CheckinBookTest.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.CheckoutBookMovieTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.CheckoutBookTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.CheckoutMovieTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.ConsoleInputTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.ConsoleOutputTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.ControllerTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.CustomerMenuTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.DefaultMenuTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.ExitTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.InvalidDefaultMenuItemTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.LibrarianMenuTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.ListBooksTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.ListMoviesTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.LoginTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.LogoutTest.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.MovieBookLibraryTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.MovieLibraryTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.MovieTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.ParserTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.SessionTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.UserDetailsTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.UserTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/TESTS-TestSuites.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/all-tests.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/allclasses-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/alltests-errors.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/alltests-fails.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.Application.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.Book.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.BookLibrary.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.CheckedoutBookDetails.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.CheckinBook.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.CheckoutBook.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.CheckoutMovie.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.ConsoleInput.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.ConsoleOutput.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.Controller.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.CustomerMenu.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.DefaultMenu.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.Exit.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.InvalidMenuItem.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.LibrarianMenu.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.ListBooks.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.ListMovies.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.Login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.Logout.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.Menu.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.MenuItem.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.Movie.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.MovieLibrary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.Parser.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.Session.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.User.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.UserDetails.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/0_BookLibraryTest-out.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/0_BookLibraryTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/10_DefaultMenuTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/11_ExitTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/12_InvalidDefaultMenuItemTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/13_LibrarianMenuTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/14_ListBooksTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/15_ListMoviesTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/16_LoginTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/17_LogoutTest.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/18_MovieBookLibraryTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/18_MovieLibraryTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/19_MovieTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/1_BookTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/20_ParserTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/21_SessionTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/22_UserDetailsTest.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/22_UserTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/23_UserTest.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/2_CheckedoutBookDetailsTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/3_CheckinBookTest.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/4_CheckoutBookMovieTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/4_CheckoutBookTest.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/5_CheckoutBookTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/5_CheckoutMovieTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/6_ConsoleInputTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/7_ConsoleOutputTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/8_ControllerTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/9_CustomerMenuTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/coverage-summary.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/coverage.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/css/help.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/css/sortabletable.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/css/source-viewer.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/css/tooltip.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/frame-packages.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/frame-sourcefiles-com.tw.biblioteca.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/frame-sourcefiles.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/frame-summary-com.tw.biblioteca.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/frame-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/help.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/images/blank.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/images/downsimple.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/images/upsimple.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/js/customsorttypes.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/js/popup.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/js/sortabletable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/js/stringbuilder.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/overview-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/overview-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/stylesheet.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/CheckedoutBookDetails.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/com/tw/biblioteca/CheckedoutBookDetailsTest.java" afterPath="$PROJECT_DIR$/test/com/tw/biblioteca/CheckedoutBookStatusTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/ConsoleInput.class" afterPath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/ConsoleInput.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/Controller.class" afterPath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/Controller.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/Login.class" afterPath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/Login.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/Parser.class" afterPath="$PROJECT_DIR$/instrumented/com/tw/biblioteca/Parser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cobertura.ser" afterPath="$PROJECT_DIR$/cobertura.ser" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/tw/biblioteca/CheckoutBookTest.java" afterPath="$PROJECT_DIR$/test/com/tw/biblioteca/CheckoutBookTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/ConsoleInput.java" afterPath="$PROJECT_DIR$/src/com/tw/biblioteca/ConsoleInput.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Controller.java" afterPath="$PROJECT_DIR$/src/com/tw/biblioteca/Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/tw/biblioteca/ControllerTest.java" afterPath="$PROJECT_DIR$/test/com/tw/biblioteca/ControllerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tw/biblioteca/Parser.java" afterPath="$PROJECT_DIR$/src/com/tw/biblioteca/Parser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/tw/biblioteca/ParserTest.java" afterPath="$PROJECT_DIR$/test/com/tw/biblioteca/ParserTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/0_BookLibraryTest-out.html" afterPath="$PROJECT_DIR$/reports/com/tw/biblioteca/0_BookLibraryTest-out.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/0_BookLibraryTest.html" afterPath="$PROJECT_DIR$/reports/com/tw/biblioteca/0_BookLibraryTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/10_DefaultMenuTest.html" afterPath="$PROJECT_DIR$/reports/com/tw/biblioteca/10_DefaultMenuTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/11_ExitTest.html" afterPath="$PROJECT_DIR$/reports/com/tw/biblioteca/11_ExitTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/12_InvalidDefaultMenuItemTest.html" afterPath="$PROJECT_DIR$/reports/com/tw/biblioteca/12_InvalidDefaultMenuItemTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/13_LibrarianMenuTest.html" afterPath="$PROJECT_DIR$/reports/com/tw/biblioteca/13_LibrarianMenuTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/14_ListBooksTest.html" afterPath="$PROJECT_DIR$/reports/com/tw/biblioteca/14_ListBooksTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/15_ListMoviesTest.html" afterPath="$PROJECT_DIR$/reports/com/tw/biblioteca/15_ListMoviesTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/16_LoginTest.html" afterPath="$PROJECT_DIR$/reports/com/tw/biblioteca/16_LoginTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/17_LogoutTest.html" afterPath="$PROJECT_DIR$/reports/com/tw/biblioteca/17_LogoutTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/18_MovieLibraryTest.html" afterPath="$PROJECT_DIR$/reports/com/tw/biblioteca/18_MovieLibraryTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/19_MovieTest.html" afterPath="$PROJECT_DIR$/reports/com/tw/biblioteca/19_MovieTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/1_BookTest.html" afterPath="$PROJECT_DIR$/reports/com/tw/biblioteca/1_BookTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/20_ParserTest.html" afterPath="$PROJECT_DIR$/reports/com/tw/biblioteca/20_ParserTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/21_SessionTest.html" afterPath="$PROJECT_DIR$/reports/com/tw/biblioteca/21_SessionTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/22_UserDetailsTest.html" afterPath="$PROJECT_DIR$/reports/com/tw/biblioteca/22_UserDetailsTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/23_UserTest.html" afterPath="$PROJECT_DIR$/reports/com/tw/biblioteca/23_UserTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/2_CheckedoutBookStatusTest.html" afterPath="$PROJECT_DIR$/reports/com/tw/biblioteca/2_CheckedoutBookStatusTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/3_CheckinBookTest.html" afterPath="$PROJECT_DIR$/reports/com/tw/biblioteca/3_CheckinBookTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/4_CheckoutBookTest.html" afterPath="$PROJECT_DIR$/reports/com/tw/biblioteca/4_CheckoutBookTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/5_CheckoutMovieTest.html" afterPath="$PROJECT_DIR$/reports/com/tw/biblioteca/5_CheckoutMovieTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/6_ConsoleInputTest.html" afterPath="$PROJECT_DIR$/reports/com/tw/biblioteca/6_ConsoleInputTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/7_ConsoleOutputTest.html" afterPath="$PROJECT_DIR$/reports/com/tw/biblioteca/7_ConsoleOutputTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/8_ControllerTest.html" afterPath="$PROJECT_DIR$/reports/com/tw/biblioteca/8_ControllerTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/9_CustomerMenuTest.html" afterPath="$PROJECT_DIR$/reports/com/tw/biblioteca/9_CustomerMenuTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.BookLibraryTest.xml" afterPath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.BookLibraryTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.BookTest.xml" afterPath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.BookTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.CheckedoutBookStatusTest.xml" afterPath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.CheckedoutBookStatusTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.CheckinBookTest.xml" afterPath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.CheckinBookTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.CheckoutBookTest.xml" afterPath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.CheckoutBookTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.CheckoutMovieTest.xml" afterPath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.CheckoutMovieTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.ConsoleInputTest.xml" afterPath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.ConsoleInputTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.ConsoleOutputTest.xml" afterPath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.ConsoleOutputTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.ControllerTest.xml" afterPath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.ControllerTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.CustomerMenuTest.xml" afterPath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.CustomerMenuTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.DefaultMenuTest.xml" afterPath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.DefaultMenuTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.ExitTest.xml" afterPath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.ExitTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.InvalidDefaultMenuItemTest.xml" afterPath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.InvalidDefaultMenuItemTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.LibrarianMenuTest.xml" afterPath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.LibrarianMenuTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.ListBooksTest.xml" afterPath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.ListBooksTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.ListMoviesTest.xml" afterPath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.ListMoviesTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.LoginTest.xml" afterPath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.LoginTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.LogoutTest.xml" afterPath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.LogoutTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.MovieLibraryTest.xml" afterPath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.MovieLibraryTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.MovieTest.xml" afterPath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.MovieTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.ParserTest.xml" afterPath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.ParserTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.SessionTest.xml" afterPath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.SessionTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.UserDetailsTest.xml" afterPath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.UserDetailsTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.UserTest.xml" afterPath="$PROJECT_DIR$/reports/TEST-com.tw.biblioteca.UserTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/TESTS-TestSuites.xml" afterPath="$PROJECT_DIR$/reports/TESTS-TestSuites.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/all-tests.html" afterPath="$PROJECT_DIR$/reports/all-tests.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.Application.html" afterPath="$PROJECT_DIR$/reports/com.tw.biblioteca.Application.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.Book.html" afterPath="$PROJECT_DIR$/reports/com.tw.biblioteca.Book.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.BookLibrary.html" afterPath="$PROJECT_DIR$/reports/com.tw.biblioteca.BookLibrary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.CheckedoutBookStatus.html" afterPath="$PROJECT_DIR$/reports/com.tw.biblioteca.CheckedoutBookStatus.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.CheckinBook.html" afterPath="$PROJECT_DIR$/reports/com.tw.biblioteca.CheckinBook.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.CheckoutBook.html" afterPath="$PROJECT_DIR$/reports/com.tw.biblioteca.CheckoutBook.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.CheckoutMovie.html" afterPath="$PROJECT_DIR$/reports/com.tw.biblioteca.CheckoutMovie.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.ConsoleInput.html" afterPath="$PROJECT_DIR$/reports/com.tw.biblioteca.ConsoleInput.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.ConsoleOutput.html" afterPath="$PROJECT_DIR$/reports/com.tw.biblioteca.ConsoleOutput.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.Controller.html" afterPath="$PROJECT_DIR$/reports/com.tw.biblioteca.Controller.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.CustomerMenu.html" afterPath="$PROJECT_DIR$/reports/com.tw.biblioteca.CustomerMenu.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.DefaultMenu.html" afterPath="$PROJECT_DIR$/reports/com.tw.biblioteca.DefaultMenu.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.Exit.html" afterPath="$PROJECT_DIR$/reports/com.tw.biblioteca.Exit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.InvalidMenuItem.html" afterPath="$PROJECT_DIR$/reports/com.tw.biblioteca.InvalidMenuItem.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.LibrarianMenu.html" afterPath="$PROJECT_DIR$/reports/com.tw.biblioteca.LibrarianMenu.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.ListBooks.html" afterPath="$PROJECT_DIR$/reports/com.tw.biblioteca.ListBooks.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.ListMovies.html" afterPath="$PROJECT_DIR$/reports/com.tw.biblioteca.ListMovies.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.Login.html" afterPath="$PROJECT_DIR$/reports/com.tw.biblioteca.Login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.Logout.html" afterPath="$PROJECT_DIR$/reports/com.tw.biblioteca.Logout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.Menu.html" afterPath="$PROJECT_DIR$/reports/com.tw.biblioteca.Menu.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.MenuItem.html" afterPath="$PROJECT_DIR$/reports/com.tw.biblioteca.MenuItem.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.Movie.html" afterPath="$PROJECT_DIR$/reports/com.tw.biblioteca.Movie.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.MovieLibrary.html" afterPath="$PROJECT_DIR$/reports/com.tw.biblioteca.MovieLibrary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.Parser.html" afterPath="$PROJECT_DIR$/reports/com.tw.biblioteca.Parser.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.Session.html" afterPath="$PROJECT_DIR$/reports/com.tw.biblioteca.Session.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.User.html" afterPath="$PROJECT_DIR$/reports/com.tw.biblioteca.User.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com.tw.biblioteca.UserDetails.html" afterPath="$PROJECT_DIR$/reports/com.tw.biblioteca.UserDetails.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/coverage-summary.xml" afterPath="$PROJECT_DIR$/reports/coverage-summary.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/coverage.xml" afterPath="$PROJECT_DIR$/reports/coverage.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/frame-summary-com.tw.biblioteca.html" afterPath="$PROJECT_DIR$/reports/frame-summary-com.tw.biblioteca.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/frame-summary.html" afterPath="$PROJECT_DIR$/reports/frame-summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/overview-summary.html" afterPath="$PROJECT_DIR$/reports/overview-summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/com/tw/biblioteca/package-summary.html" afterPath="$PROJECT_DIR$/reports/com/tw/biblioteca/package-summary.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BibliotecaVersion1.iws" />
@@ -167,18 +135,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CheckedoutBookStatus.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/CheckedoutBookStatus.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CheckoutBookTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/tw/biblioteca/CheckoutBookTest.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -189,11 +145,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27363184">
+            <state vertical-scroll-proportion="0.0">
               <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.17412935">
+              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -293,7 +259,6 @@
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/UserMenu.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/FirstMenu.java" />
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/FirstMenuTest.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Authenticater.java" />
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/AuthenticatorTest.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Authenticator.java" />
@@ -335,6 +300,7 @@
         <option value="$PROJECT_DIR$/test/com/tw/biblioteca/ControllerTest.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/ConsoleInput.java" />
         <option value="$PROJECT_DIR$/src/com/tw/biblioteca/Controller.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -390,42 +356,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="BibliotecaVersion1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BibliotecaVersion1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BibliotecaVersion1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="biblioteca" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BibliotecaVersion1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BibliotecaVersion1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="biblioteca" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -915,14 +845,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/ConsoleOutput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/DefaultMenu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1032,6 +954,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="59" column="1" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1047,6 +970,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1054,6 +978,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1061,6 +986,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1068,6 +994,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1075,6 +1002,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1341,8 +1271,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tw/biblioteca/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27363184">
+        <state vertical-scroll-proportion="0.0">
           <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17412935">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
           <folding />
         </state>
       </provider>
