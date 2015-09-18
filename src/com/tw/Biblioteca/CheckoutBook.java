@@ -40,4 +40,9 @@ public class CheckoutBook implements MenuItem{
     public boolean hasBeenRemoved(Book book) {
         return bookLibrary.removeBook(book, session);
     }
+
+    public void checkoutChoicePrompt() {
+        ConsoleOutput consoleOutput = new ConsoleOutput("Enter the book you want to checkout.");
+        consoleOutput.displayMessage();
+    }
 }

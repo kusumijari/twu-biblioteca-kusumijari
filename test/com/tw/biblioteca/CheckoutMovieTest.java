@@ -13,7 +13,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.when;
 
-public class CheckoutBookMovieTest {
+public class CheckoutMovieTest {
 
     private static final int YEAR = 0;
     private static final String DIRECTOR = "director";
@@ -85,4 +85,5 @@ public class CheckoutBookMovieTest {
         assertEquals("That is not a valid movie option.\n", outContent.toString());
         System.setOut(System.out);
     }
+    
 }

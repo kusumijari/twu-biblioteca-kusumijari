@@ -90,4 +90,20 @@ public class CheckoutBookTest {
         assertEquals("That book is not available.\n", outContent.toString());
         System.setOut(System.out);
     }
+
+    @Test
+    public void shouldDisplayThePromptMessageForCheckout() {
+        BookLibrary bookLibrary = new BookLibrary();
+        ConsoleInput mockConsoleInput = mock(ConsoleInput.class);
+        Session session = new Session(new User("Customer", "123-4567", "password1", "abc", "abc@mail.com", 12345));
+        CheckoutBook checkoutBook = new CheckoutBook(bookLibrary, mockConsoleInput, session);
+
+        ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(outContent));
+
+        checkoutBook.checkoutChoicePrompt();
+
+        assertEquals("Enter the book you want to checkout.\n", outContent.toString());
+        System.setOut(System.out);
+    }
 }
