@@ -25,11 +25,12 @@ public class Login implements MenuItem{
     }
 
     public String acceptUsername(ConsoleInput consoleInput) {
-        loginPrompt();
+        loginUsernamePrompt();
         return consoleInput.getInput();
     }
 
     public String acceptPassword(ConsoleInput consoleInput) {
+        loginPasswordPrompt();
         return consoleInput.getInput();
     }
 
@@ -62,8 +63,13 @@ public class Login implements MenuItem{
         return session.setUser(users.get(users.indexOf(user)));
     }
 
-    public void loginPrompt() {
+    public void loginUsernamePrompt() {
         ConsoleOutput consoleOutput = new ConsoleOutput("Enter username:");
+        consoleOutput.displayMessage();
+    }
+
+    public void loginPasswordPrompt() {
+        ConsoleOutput consoleOutput = new ConsoleOutput("Enter password:");
         consoleOutput.displayMessage();
     }
 }

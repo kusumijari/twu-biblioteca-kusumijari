@@ -65,7 +65,7 @@ public class LoginTest {
 
         login.execute();
 
-        assertEquals("Enter username:\nSuccessful Login\n", outContent.toString());
+        assertEquals("Enter username:\nEnter password:\nSuccessful Login\n", outContent.toString());
         System.setOut(System.out);
     }
 
@@ -86,7 +86,7 @@ public class LoginTest {
 
         login.execute();
 
-        assertEquals("Enter username:\nLogin failed\n", outContent.toString());
+        assertEquals("Enter username:\nEnter password:\nLogin failed\n", outContent.toString());
         System.setOut(System.out);
     }
 
@@ -106,14 +106,26 @@ public class LoginTest {
     }
 
     @Test
-    public void shouldDisplayPromptMessageForLogin() {
+    public void shouldDisplayPromptMessageForLoginUsername() {
         Login login = new Login(new ConsoleInput(), new ConsoleInput(), new Session(new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345)));
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
 
-        login.loginPrompt();
+        login.loginUsernamePrompt();
 
         assertEquals("Enter username:\n", outContent.toString());
+        System.setOut(System.out);
+    }
+
+    @Test
+    public void shouldDisplayPromptMessageForLoginPassword() {
+        Login login = new Login(new ConsoleInput(), new ConsoleInput(), new Session(new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345)));
+        ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(outContent));
+
+        login.loginPasswordPrompt();
+
+        assertEquals("Enter password:\n", outContent.toString());
         System.setOut(System.out);
     }
 }
