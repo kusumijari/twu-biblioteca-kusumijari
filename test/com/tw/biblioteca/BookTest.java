@@ -57,5 +57,4 @@ public class BookTest {
         assertEquals(book1.hashCode(), book2.hashCode());
     }
 
-
 }

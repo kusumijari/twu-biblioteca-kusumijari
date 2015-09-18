@@ -30,7 +30,7 @@ public class UserDetailsTest {
 
         userDetails.execute();
 
-        assertEquals("Name:abc\tEmail:abc@mail.com\tPhone Number:12345 \n", outContent.toString());
+        assertEquals("Name:abc\tEmail:abc@mail.com\tPhone Number:12345\n", outContent.toString());
         System.setOut(System.out);
     }
 }

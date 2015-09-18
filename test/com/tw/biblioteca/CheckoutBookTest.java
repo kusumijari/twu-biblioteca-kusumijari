@@ -14,6 +14,9 @@ import static org.mockito.Mockito.*;
 
 public class CheckoutBookTest {
 
+    private static final String AUTHOR = "auhtor";
+    private static final int YEAROFPUBLICATION = 0;
+
     @Test
     public void shouldAcceptChoiceOfBookFromTheUser() {
         BookLibrary bookLibrary = new BookLibrary();
@@ -32,7 +35,7 @@ public class CheckoutBookTest {
         ConsoleInput mockConsoleInput = new ConsoleInput();
         Session session = new Session(new User("Customer", "123-4567", "password1", "abc", "abc@mail.com", 12345));
         CheckoutBook checkoutBook = new CheckoutBook(bookLibrary, mockConsoleInput, session);
-        Book book = new Book("Harry Potter", "author", 0);
+        Book book = new Book("Harry Potter", AUTHOR, YEAROFPUBLICATION);
 
         assertTrue(checkoutBook.hasBeenRemoved(book));
     }
@@ -43,7 +46,7 @@ public class CheckoutBookTest {
         ConsoleInput mockConsoleInput = new ConsoleInput();
         Session session = new Session(new User("Customer", "123-4567", "password1", "abc", "abc@mail.com", 12345));
         CheckoutBook checkoutBook = new CheckoutBook(bookLibrary, mockConsoleInput,session);
-        Book book = new Book("Inferno", "author", 0);
+        Book book = new Book("Inferno",AUTHOR, YEAROFPUBLICATION);
 
         assertFalse(checkoutBook.hasBeenRemoved(book));
     }

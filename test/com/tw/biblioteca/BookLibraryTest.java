@@ -10,6 +10,9 @@ import static org.junit.Assert.assertEquals;
 
 public class BookLibraryTest {
 
+    private static final String AUTHOR = "auhtor";
+    private static final int YEAROFPUBLICATION = 0;
+    
     @Test
     public void shouldReturnContentsOfLibrary() {
         BookLibrary bookLibrary = new BookLibrary();
@@ -20,7 +23,7 @@ public class BookLibraryTest {
     @Test
     public void shouldRemoveASpecifiedBookFromTheLibrary() {
         BookLibrary bookLibrary = new BookLibrary();
-        Book book = new Book("Harry Potter", "author", 0);
+        Book book = new Book("Harry Potter", AUTHOR, YEAROFPUBLICATION);
         User user = new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345);
         Session session = new Session(user);
 
@@ -30,7 +33,7 @@ public class BookLibraryTest {
     @Test
     public void shouldCheckThatASpecifiedBookInTheLibraryExists() {
         BookLibrary bookLibrary = new BookLibrary();
-        Book book = new Book("Harry Potter", "author", 0);
+        Book book = new Book("Harry Potter", AUTHOR, YEAROFPUBLICATION);
         User user = new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345);
         Session session = new Session(user);
 
@@ -40,7 +43,7 @@ public class BookLibraryTest {
     @Test
     public void shouldReturnFalseIfASpecifiedBookInTheDoesNotLibraryExist() {
         BookLibrary bookLibrary = new BookLibrary();
-        Book book = new Book("Inferno", "author", 0);
+        Book book = new Book("Inferno", AUTHOR, YEAROFPUBLICATION);
         User user = new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345);
         Session session = new Session(user);
 
@@ -50,7 +53,7 @@ public class BookLibraryTest {
     @Test
     public void shouldNotRemoveABookIfItDoesNotExist() {
         BookLibrary bookLibrary = new BookLibrary();
-        Book book = new Book("Inferno", "author", 0);
+        Book book = new Book("Inferno", AUTHOR, YEAROFPUBLICATION);
         User user = new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345);
         Session session = new Session(user);
 
@@ -60,7 +63,7 @@ public class BookLibraryTest {
     @Test
     public void shouldAddBookThatHasBeenRemovedToUnavailableList() {
         BookLibrary bookLibrary = new BookLibrary();
-        Book book = new Book("Harry Potter", "author", 0);
+        Book book = new Book("Harry Potter", AUTHOR, YEAROFPUBLICATION);
         User user = new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345);
         Session session = new Session(user);
 
@@ -70,7 +73,7 @@ public class BookLibraryTest {
     @Test
     public void shouldAddTheReturnedBookToTheBookList() {
         BookLibrary bookLibrary = new BookLibrary();
-        Book book = new Book("Harry Potter", "author", 0);
+        Book book = new Book("Harry Potter", AUTHOR, YEAROFPUBLICATION);
         User user = new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345);
         Session session = new Session(user);
 
@@ -82,7 +85,7 @@ public class BookLibraryTest {
     @Test
     public void shouldReturnFalseIfTheReturnedBookIsNotABookOfTheLibrary() {
         BookLibrary bookLibrary = new BookLibrary();
-        Book book = new Book("inferno", "author", 0);
+        Book book = new Book("inferno", AUTHOR, YEAROFPUBLICATION);
         User user = new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345);
         Session session = new Session(user);
 
@@ -92,7 +95,7 @@ public class BookLibraryTest {
     @Test
     public void shouldAddBookAndUserToHashmap(){
         BookLibrary bookLibrary = new BookLibrary();
-        Book book = new Book("Harry Potter", "author", 0);
+        Book book = new Book("Harry Potter", AUTHOR, YEAROFPUBLICATION);
         Session session = new Session(new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345));
         HashMap<Book, User> hashMap = new HashMap<Book, User>();
         hashMap.put(book, session.getUser());
@@ -103,7 +106,7 @@ public class BookLibraryTest {
     @Test
     public void shouldRemoveEntryFromBooksDetailsOnCheckinOfBook() {
         BookLibrary bookLibrary = new BookLibrary();
-        Book book = new Book("Harry Potter", "author", 0);
+        Book book = new Book("Harry Potter", AUTHOR, YEAROFPUBLICATION);
         Session session = new Session(new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345));
         HashMap<Book, User> hashMap = new HashMap<Book, User>();
 
@@ -115,7 +118,7 @@ public class BookLibraryTest {
     @Test
     public void shouldReturnBookOnlyIfItsTheUserWhoCheckedItOut() {
         BookLibrary bookLibrary = new BookLibrary();
-        Book book = new Book("Harry Potter", "author", 0);
+        Book book = new Book("Harry Potter", AUTHOR, YEAROFPUBLICATION);
         Session session = new Session(new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345));
 
         bookLibrary.removeBook(book, session);
@@ -126,7 +129,7 @@ public class BookLibraryTest {
     @Test
     public void shouldReturnFalseIfITheUserWhoCheckedoutTheBookIsNotTheOneWhoReturnsTheBook() {
         BookLibrary bookLibrary = new BookLibrary();
-        Book book = new Book("Harry Potter", "author", 0);
+        Book book = new Book("Harry Potter", AUTHOR, YEAROFPUBLICATION);
         Session session1 = new Session(new User("Customer", "123-4567", "password1", "abc", "abc@mail.com", 12345));
         Session session2 = new Session(new User("Customer", "222-2222", "password2", "abc", "abc@mail.com", 12345));
 
@@ -138,7 +141,7 @@ public class BookLibraryTest {
     @Test
     public void shouldReturnBookIfItIsReturnedByTheCorrectUser() {
         BookLibrary bookLibrary = new BookLibrary();
-        Book book = new Book("Harry Potter", "author", 0);
+        Book book = new Book("Harry Potter", AUTHOR, YEAROFPUBLICATION);
         Session session1 = new Session(new User("Customer", "123-4567", "password1", "abc", "abc@mail.com", 12345));
         bookLibrary.removeBook(book, session1);
 
@@ -148,7 +151,7 @@ public class BookLibraryTest {
     @Test
     public void shouldNotReturnBookIfItIsReturnedByTheIncorrectUser() {
         BookLibrary bookLibrary = new BookLibrary();
-        Book book = new Book("Harry Potter", "author", 0);
+        Book book = new Book("Harry Potter", AUTHOR, YEAROFPUBLICATION);
         Session session1 = new Session(new User("Customer", "123-4567", "password1", "abc", "abc@mail.com", 12345));
         Session session2 = new Session(new User("Customer", "222-2222", "password2", "abc", "abc@mail.com", 12345));
 

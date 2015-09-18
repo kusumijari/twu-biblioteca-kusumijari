@@ -4,6 +4,8 @@ package com.tw.biblioteca;
 
 public class CheckoutBook implements MenuItem{
 
+    private static final String AUTHOR = "auhtor";
+    private static final int YEAROFPUBLICATION = 0;
     private String bookNameChoice;
     private BookLibrary bookLibrary;
     private ConsoleInput consoleInput;
@@ -24,7 +26,7 @@ public class CheckoutBook implements MenuItem{
     @Override
     public void execute() {
         bookNameChoice = acceptBookChoice();
-        book = new Book(bookNameChoice, "author", 0);
+        book = new Book(bookNameChoice, AUTHOR, YEAROFPUBLICATION);
         if(hasBeenRemoved(book)) {
             ConsoleOutput consoleOutput = new ConsoleOutput("Thank you! Enjoy the book.");
             consoleOutput.displayMessage();

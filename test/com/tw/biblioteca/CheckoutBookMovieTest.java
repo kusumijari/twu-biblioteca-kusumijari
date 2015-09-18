@@ -15,6 +15,10 @@ import static org.mockito.Mockito.when;
 
 public class CheckoutBookMovieTest {
 
+    private static final int YEAR = 0;
+    private static final String DIRECTOR = "director";
+    private static final String RATING = "rating";
+    
     @Test
     public void shouldAcceptChoiceOfMovieFromTheUser() {
         MovieLibrary movieLibrary = new MovieLibrary();
@@ -31,7 +35,7 @@ public class CheckoutBookMovieTest {
         MovieLibrary movieLibrary = new MovieLibrary();
         ConsoleInput mockConsoleInput = new ConsoleInput();
         CheckoutMovie checkoutMovie = new CheckoutMovie(movieLibrary, mockConsoleInput);
-        Movie movie = new Movie("Inception", 0, "director", "0");
+        Movie movie = new Movie("Inception", YEAR, DIRECTOR, RATING);
 
         assertTrue(checkoutMovie.hasBeenRemoved(movie));
     }
@@ -41,7 +45,7 @@ public class CheckoutBookMovieTest {
         MovieLibrary movieLibrary = new MovieLibrary();
         ConsoleInput mockConsoleInput = new ConsoleInput();
         CheckoutMovie checkoutMovie = new CheckoutMovie(movieLibrary, mockConsoleInput);
-        Movie movie = new Movie("Gone Girl", 0, "director", "0");
+        Movie movie = new Movie("Gone Girl", YEAR, DIRECTOR, RATING);
 
         assertFalse(checkoutMovie.hasBeenRemoved(movie));
     }

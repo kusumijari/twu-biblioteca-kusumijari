@@ -15,6 +15,9 @@ import static org.mockito.Mockito.when;
 
 public class CheckinBookTest {
 
+    private static final String AUTHOR = "auhtor";
+    private static final int YEAROFPUBLICATION = 0;
+    
     @Test
     public void shouldAcceptChoiceOfBookFromUser() {
         BookLibrary bookLibrary = new BookLibrary();
@@ -35,7 +38,7 @@ public class CheckinBookTest {
         User user = new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345);
         Session session = new Session(user);
         CheckinBook checkinBook = new CheckinBook(bookLibrary, mockConsoleInput, session);
-        Book bookToBeReturned = new Book("Harry Potter", "author", 0);
+        Book bookToBeReturned = new Book("Harry Potter", AUTHOR, YEAROFPUBLICATION);
 
         when(mockConsoleInput.getInput()).thenReturn("Harry Potter");
         bookLibrary.removeBook(bookToBeReturned, session);
@@ -50,7 +53,7 @@ public class CheckinBookTest {
         User user = new User("Customer", "123-4567", "password", "abc", "abc@mail.com", 12345);
         Session session = new Session(user);
         CheckinBook checkinBook = new CheckinBook(bookLibrary, mockConsoleInput, session);
-        Book bookToBeReturned = new Book("Inferno", "author", 0);
+        Book bookToBeReturned = new Book("Inferno", AUTHOR, YEAROFPUBLICATION);
 
 
         when(mockConsoleInput.getInput()).thenReturn("Inferno");

@@ -7,9 +7,15 @@ import static org.mockito.Mockito.*;
 
 public class ControllerTest {
 
+    private static final String USERNAME = "username";
+    private static final String PASSWORD = "password";
+    private static final String NAME = "name";
+    private static final String EMAIL = "email";
+    private static final int PHONENUMBER = 0;
+
     @Test
     public void shouldDisplayTheMenu() {
-        Session session = new Session(new User("default", "nousername", "nopassword", "abc", "abc@mail.com", 12345));
+        Session session = new Session(new User("Default", USERNAME, PASSWORD, NAME, EMAIL, PHONENUMBER));
         ConsoleOutput consoleOutput = mock(ConsoleOutput.class);
         Controller controller = new Controller(new BookLibrary(), new MovieLibrary(), session);
 
@@ -20,7 +26,7 @@ public class ControllerTest {
 
     @Test
     public void  shouldAcceptInput() {
-        Session session = new Session(new User("default", "nousername", "nopassword", "abc", "abc@mail.com", 12345));
+        Session session = new Session(new User("Default", USERNAME, PASSWORD, NAME, EMAIL, PHONENUMBER));
         ConsoleInput consoleInput = mock(ConsoleInput.class);
         Controller controller = new Controller(new BookLibrary(), new MovieLibrary(), session);
 
@@ -31,7 +37,7 @@ public class ControllerTest {
 
     @Test
     public void shouldCreateTheMenuObject() {
-        Session session = new Session(new User("default", "nousername", "nopassword", "abc", "abc@mail.com", 12345));
+        Session session = new Session(new User("Default", USERNAME, PASSWORD, NAME, EMAIL, PHONENUMBER));
         Parser parser = mock(Parser.class);
         Controller controller = new Controller(new BookLibrary(), new MovieLibrary(), session);
 
@@ -42,7 +48,7 @@ public class ControllerTest {
 
     @Test
     public void shouldExexuteTheMenuObject() {
-        Session session = new Session(new User("default", "nousername", "nopassword", "abc", "abc@mail.com", 12345));
+        Session session = new Session(new User("Default", USERNAME, PASSWORD, NAME, EMAIL, PHONENUMBER));
         MenuItem menuItem = mock(MenuItem.class);
         Controller controller = new Controller(new BookLibrary(), new MovieLibrary(), session);
 
@@ -53,7 +59,7 @@ public class ControllerTest {
 
     @Test
     public void shouldReturnDefaultMenu() {
-        Session session = new Session(new User("default", "nousername", "nopassword", "abc", "abc@mail.com", 12345));
+        Session session = new Session(new User("Default", USERNAME, PASSWORD, NAME, EMAIL, PHONENUMBER));
         Controller controller = new Controller(new BookLibrary(), new MovieLibrary(), session);
 
         assertEquals(DefaultMenu.class, controller.MenuItem().getClass());
@@ -61,7 +67,7 @@ public class ControllerTest {
 
     @Test
     public void shouldReturnUserMenuIfRoleIsUser() {
-        Session session = new Session(new User("Customer", "nousername", "nopassword", "abc", "abc@mail.com", 12345));
+        Session session = new Session(new User("Customer", USERNAME, PASSWORD, NAME, EMAIL, PHONENUMBER));
         Controller controller = new Controller(new BookLibrary(), new MovieLibrary(), session);
 
         assertEquals(CustomerMenu.class, controller.MenuItem().getClass());
@@ -69,7 +75,7 @@ public class ControllerTest {
 
     @Test
     public void shouldReturnLibrarianMenuIfRoleIsLibrarian() {
-        Session session = new Session(new User("Librarian", "nousername", "nopassword", "abc", "abc@mail.com", 12345));
+        Session session = new Session(new User("Librarian", USERNAME, PASSWORD, NAME, EMAIL, PHONENUMBER));
         Controller controller = new Controller(new BookLibrary(), new MovieLibrary(), session);
 
         assertEquals(LibrarianMenu.class, controller.MenuItem().getClass());

@@ -3,6 +3,8 @@ package com.tw.biblioteca;
 
 public class CheckinBook implements MenuItem{
 
+    private static final String AUTHOR = "author";
+    private static final int YEAROFPUBLICATION = 0;
     private BookLibrary bookLibrary;
     private ConsoleInput consoleInput;
     private Book book;
@@ -21,7 +23,7 @@ public class CheckinBook implements MenuItem{
 
     @Override
     public void execute() {
-        book = new Book(bookChoice(), "author", 0);
+        book = new Book(bookChoice(), AUTHOR, YEAROFPUBLICATION);
         if(hasBeenReturned(book)) {
             ConsoleOutput consoleOutput = new ConsoleOutput("Thank you for returning the book.");
             consoleOutput.displayMessage();

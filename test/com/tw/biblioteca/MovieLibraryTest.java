@@ -4,7 +4,12 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class MovieBookLibraryTest {
+public class MovieLibraryTest {
+
+
+    private static final int YEAR = 0;
+    private static final String DIRECTOR = "director";
+    private static final String RATING = "rating";
 
     @Test
     public void shouldListTheMovieNames() {
@@ -16,7 +21,7 @@ public class MovieBookLibraryTest {
     @Test
     public void shouldRemoveASpecifiedMovieFromTheLibrary() {
         MovieLibrary movieLibrary = new MovieLibrary();
-        Movie movie = new Movie("Inception", 0, "director", "0");
+        Movie movie = new Movie("Inception", 2010, "Christopher Nolan", "8.8");
 
         assertTrue(movieLibrary.removeMovie(movie));
     }
@@ -24,7 +29,7 @@ public class MovieBookLibraryTest {
     @Test
     public void shouldCheckThatASpecifiedMovieInTheLibraryExists() {
         MovieLibrary movieLibrary = new MovieLibrary();
-        Movie movie = new Movie("Inception", 0, "director", "0");
+        Movie movie = new Movie("Inception", 2010, "Christopher Nolan", "8.8");
 
         assertTrue(movieLibrary.removeMovie(movie));
     }
@@ -32,7 +37,7 @@ public class MovieBookLibraryTest {
     @Test
     public void shouldReturnFalseIfASpecifiedBookInTheDoesNotLibraryExist() {
         MovieLibrary movieLibrary = new MovieLibrary();
-        Movie movie = new Movie("Gone Girl", 0, "director", "0");
+        Movie movie = new Movie("Gone Girl", 2010, DIRECTOR, RATING);
 
         assertFalse(movieLibrary.removeMovie(movie));
     }
@@ -40,7 +45,7 @@ public class MovieBookLibraryTest {
     @Test
     public void shouldNotRemoveABookIfItDoesNotExist() {
         MovieLibrary movieLibrary = new MovieLibrary();
-        Movie movie = new Movie("Gone Girl", 0, "director", "0");
+        Movie movie = new Movie("Gone Girl", YEAR, DIRECTOR, RATING);
 
         assertFalse(movieLibrary.removeMovie(movie));
     }
@@ -48,7 +53,7 @@ public class MovieBookLibraryTest {
     @Test
     public void shouldReturnABookIfItDoesExist() {
         MovieLibrary movieLibrary = new MovieLibrary();
-        Movie movie = new Movie("Inception", 0, "director", "0");
+        Movie movie = new Movie("Inception", 2010, "Christopher Nolan", "8.8");
 
         assertTrue(movieLibrary.removeMovie(movie));
     }

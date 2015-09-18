@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="precise64" name="com.tw.biblioteca.ListMoviesTest" tests="2" time="0.013" timestamp="2015-09-18T04:41:35">
+<testsuite errors="0" failures="0" hostname="precise64" name="com.tw.biblioteca.MovieLibraryTest" tests="6" time="0.018" timestamp="2015-09-18T04:41:35">
   <properties>
     <property name="ant.project.invoked-targets" value="coverage" />
     <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
@@ -69,8 +69,12 @@
     <property name="ant.file.type" value="file" />
     <property name="sun.cpu.isalist" value="" />
   </properties>
-  <testcase classname="com.tw.biblioteca.ListMoviesTest" name="shouldDisplayTheBookList" time="0.003" />
-  <testcase classname="com.tw.biblioteca.ListMoviesTest" name="shouldReceiveTheListOfMoviesFromMovieLibrary" time="0.0" />
+  <testcase classname="com.tw.biblioteca.MovieLibraryTest" name="shouldReturnABookIfItDoesExist" time="0.0" />
+  <testcase classname="com.tw.biblioteca.MovieLibraryTest" name="shouldCheckThatASpecifiedMovieInTheLibraryExists" time="0.0" />
+  <testcase classname="com.tw.biblioteca.MovieLibraryTest" name="shouldReturnFalseIfASpecifiedBookInTheDoesNotLibraryExist" time="0.0" />
+  <testcase classname="com.tw.biblioteca.MovieLibraryTest" name="shouldListTheMovieNames" time="0.0" />
+  <testcase classname="com.tw.biblioteca.MovieLibraryTest" name="shouldRemoveASpecifiedMovieFromTheLibrary" time="0.0" />
+  <testcase classname="com.tw.biblioteca.MovieLibraryTest" name="shouldNotRemoveABookIfItDoesNotExist" time="0.0" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
