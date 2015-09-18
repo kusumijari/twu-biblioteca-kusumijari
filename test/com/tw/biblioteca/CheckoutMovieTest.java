@@ -64,7 +64,7 @@ public class CheckoutMovieTest {
 
         checkoutMovie.execute();
 
-        assertEquals("Thank you! Enjoy the movie.\n", outContent.toString());
+        assertEquals("Enter the movie you want to checkout:\nThank you! Enjoy the movie.\n", outContent.toString());
         System.setOut(System.out);
     }
 
@@ -82,8 +82,23 @@ public class CheckoutMovieTest {
 
         checkoutMovie.execute();
 
-        assertEquals("That is not a valid movie option.\n", outContent.toString());
+        assertEquals("Enter the movie you want to checkout:\nThat is not a valid movie option.\n", outContent.toString());
         System.setOut(System.out);
     }
-    
+
+    @Test
+    public void shouldDisplayPromptMessageForCheckoutOfMovie() {
+        MovieLibrary movieLibrary = new MovieLibrary();
+        ConsoleInput mockConsoleInput = mock(ConsoleInput.class);
+        CheckoutMovie checkoutMovie = new CheckoutMovie(movieLibrary, mockConsoleInput);
+
+        ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(outContent));
+
+        checkoutMovie.checkoutMoviePrompt();
+
+        System.setOut(System.out);
+        assertEquals("Enter the movie you want to checkout:\n", outContent.toString());
+
+    }
 }

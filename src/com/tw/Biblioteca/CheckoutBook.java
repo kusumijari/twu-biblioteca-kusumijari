@@ -20,6 +20,7 @@ public class CheckoutBook implements MenuItem{
     }
 
     public String acceptBookChoice() {
+        checkoutChoicePrompt();
         return consoleInput.getInput();
     }
 
@@ -42,7 +43,7 @@ public class CheckoutBook implements MenuItem{
     }
 
     public void checkoutChoicePrompt() {
-        ConsoleOutput consoleOutput = new ConsoleOutput("Enter the book you want to checkout.");
+        ConsoleOutput consoleOutput = new ConsoleOutput("Enter the book you want to checkout:");
         consoleOutput.displayMessage();
     }
 }

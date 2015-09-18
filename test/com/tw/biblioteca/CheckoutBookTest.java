@@ -67,7 +67,7 @@ public class CheckoutBookTest {
 
         checkoutBook.execute();
 
-        assertEquals("Thank you! Enjoy the book.\n", outContent.toString());
+        assertEquals("Enter the book you want to checkout.\nThank you! Enjoy the book.\n", outContent.toString());
         System.setOut(System.out);
     }
 
@@ -87,7 +87,7 @@ public class CheckoutBookTest {
 
         checkoutBook.execute();
 
-        assertEquals("That book is not available.\n", outContent.toString());
+        assertEquals("Enter the book you want to checkout:\nThat book is not available.\n", outContent.toString());
         System.setOut(System.out);
     }
 
@@ -103,7 +103,7 @@ public class CheckoutBookTest {
 
         checkoutBook.checkoutChoicePrompt();
 
-        assertEquals("Enter the book you want to checkout.\n", outContent.toString());
+        assertEquals("Enter the book you want to checkout:\n", outContent.toString());
         System.setOut(System.out);
     }
 }

@@ -17,6 +17,7 @@ public class CheckoutMovie implements MenuItem{
 
 
     public String acceptMovieChoice() {
+        checkoutMoviePrompt();
         return consoleInput.getInput();
     }
 
@@ -34,5 +35,10 @@ public class CheckoutMovie implements MenuItem{
             ConsoleOutput consoleOutput = new ConsoleOutput("That is not a valid movie option.");
             consoleOutput.displayMessage();
         }
+    }
+
+    public void checkoutMoviePrompt() {
+        ConsoleOutput consoleOutput = new ConsoleOutput("Enter the movie you want to checkout:");
+        consoleOutput.displayMessage();
     }
 }

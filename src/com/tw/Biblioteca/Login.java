@@ -25,6 +25,7 @@ public class Login implements MenuItem{
     }
 
     public String acceptUsername(ConsoleInput consoleInput) {
+        loginPrompt();
         return consoleInput.getInput();
     }
 
@@ -59,5 +60,10 @@ public class Login implements MenuItem{
 
     public User startSession() {
         return session.setUser(users.get(users.indexOf(user)));
+    }
+
+    public void loginPrompt() {
+        ConsoleOutput consoleOutput = new ConsoleOutput("Enter username:");
+        consoleOutput.displayMessage();
     }
 }
