@@ -2,7 +2,7 @@ out
 *.iml
 .idea/
 /.DS_Store
-instrumented
-instrumented-out
+/instrumented
+/instrumented-out
 BibliotecaVersion1.jar
 reports
