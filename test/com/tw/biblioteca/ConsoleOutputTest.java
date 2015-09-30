@@ -20,11 +20,11 @@ public class ConsoleOutputTest {
 
     @Test
     public void shouldPrintWelcomeMessage() {
-        ConsoleOutput consoleOutput = new ConsoleOutput("Welcome to Biblioteca");
+        ConsoleOutput consoleOutput = new ConsoleOutput("Welcome to biblioteca");
 
         consoleOutput.displayMessage();
 
-        assertEquals("Welcome to Biblioteca\n", outContent.toString());
+        assertEquals("Welcome to biblioteca\n", outContent.toString());
     }
 
 

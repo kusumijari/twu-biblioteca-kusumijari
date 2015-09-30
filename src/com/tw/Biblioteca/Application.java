@@ -13,7 +13,7 @@ public class  Application {
     }
 
     private void start() {
-        ConsoleOutput consoleOutput = new ConsoleOutput("Welcome to Biblioteca");
+        ConsoleOutput consoleOutput = new ConsoleOutput("Welcome to biblioteca");
         consoleOutput.displayMessage();
         BookLibrary bookLibrary = new BookLibrary();
         MovieLibrary movieLibrary = new MovieLibrary();
